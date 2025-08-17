@@ -25,6 +25,8 @@ jobs:
         with:
           repository: easybangumiorg/website
           path: website
+          token: ${{ secrets.TOKEN }}
+          ref: main
 
       # 安装依赖
       - name: Install uv
