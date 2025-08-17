@@ -12,18 +12,12 @@ permissions:
 
 jobs:
   main:
+    concurrency: ci-${{ github.ref }}
     runs-on: ubuntu-latest
     steps:
       # 签出当前仓库
       - name: Checkout code
         uses: actions/checkout@v4
-
-      # 签出website仓库
-      - name: Checkout website repo
-        uses: actions/checkout@v4
-        with:
-          repository: easybangumiorg/website
-          path: website
 
       # 安装依赖
       - name: Install uv
@@ -38,18 +32,14 @@ jobs:
       - name: Run parser
         run: uv run ebjer parse --from "./extensions" --to "./repository/v2"
 
-      # 复制文件，如果对应文件夹不存在则创建
-      - name: Copy files
-        run: |
-          mkdir -p website/src/.vuepress/public/repository/v2/
-          cp -r ./repository/v2/* website/src/.vuepress/public/repository/v2/
-
       # 提交更改
-      - name: Commit changes
-        run: |
-          git config --global user.name "GitHub Action"
-          git config --global user.email "action@github.com"
-          cd website
-          git add src/.vuepress/public/repository/v2
-          git commit -m "Update repository" || echo "No changes to commit"
-          git push -u origin main
+      - name: Deploy to publish
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: ./repository
+          repository-name: easybangumiorg/website
+          target-folder: src/.vuepress/public
+          commit-message: Update repository
+          token: ${{ secrets.WEBSITE_TOKEN }}
+          # 测试
+          dry-run: true
