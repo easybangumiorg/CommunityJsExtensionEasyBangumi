@@ -48,9 +48,10 @@ jobs:
       # 创建提交
       - name: Create commit
         run: |
+          cd website
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add website/src/.vuepress/public/repository/v2/
+          git add src/.vuepress/public/repository/v2/
           git commit -m "Update repository"
 
       # 提交更改
