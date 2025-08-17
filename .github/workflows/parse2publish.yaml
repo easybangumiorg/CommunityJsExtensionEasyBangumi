@@ -63,3 +63,5 @@ jobs:
           branch: main
           repository: easybangumiorg/website
           github_token: ${{ secrets.TOKEN }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
