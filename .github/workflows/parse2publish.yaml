@@ -40,6 +40,6 @@ jobs:
           repository-name: easybangumiorg/website
           target-folder: src/.vuepress/public
           commit-message: Update repository
-          token: ${{ secrets.WEBSITE_TOKEN }}
+          ssh-key: ${{ secrets.WEBSITE_TOKEN }}
           # 测试
           dry-run: true
