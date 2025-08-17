@@ -48,7 +48,7 @@ jobs:
       # 创建提交
       - name: Create commit
         run: |
-          cd website
+          pushd website
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add src/.vuepress/public/repository/v2/
@@ -59,6 +59,5 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           branch: main
-          directory: website
           repository: easybangumiorg/website
           github_token: ${{ secrets.TOKEN }}
