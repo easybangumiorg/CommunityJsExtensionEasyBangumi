@@ -36,7 +36,7 @@ jobs:
 
       # 运行解析器
       - name: Run parser
-        run: uv run parse --from "./extensions" --to "./repository/v2"
+        run: uv run ebjer parse --from "./extensions" --to "./repository/v2"
 
       # 复制文件，如果对应文件夹不存在则创建
       - name: Copy files
