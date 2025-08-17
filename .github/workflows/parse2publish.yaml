@@ -60,5 +60,3 @@ jobs:
             git commit -m "Update repository from CommunityJsExtensionEasyBangumi"
             git push origin main
           fi
-        env:
-          GITHUB_TOKEN: ${{ secrets.TOKEN }}
