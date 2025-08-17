@@ -25,8 +25,6 @@ jobs:
         with:
           repository: easybangumiorg/website
           path: website
-          persist-credentials: true
-          ssh-key: ${{ secrets.WEBSITE_TOKEN }}
 
       # 安装依赖
       - name: Install uv
@@ -59,7 +57,7 @@ jobs:
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
-          github_token: ${{ secrets.token }}
           branch: main
           directory: website
           repository: easybangumiorg/website
+          github_token: ${{ secrets.TOKEN }}
