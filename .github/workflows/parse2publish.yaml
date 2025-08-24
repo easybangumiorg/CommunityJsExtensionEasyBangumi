@@ -53,7 +53,7 @@ jobs:
           cd website
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add src/.vuepress/public/repository/v2/
+          git add src/public/repository/v2/
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
