@@ -44,8 +44,8 @@ jobs:
       # 复制文件
       - name: Copy files
         run: |
-          mkdir -p website/src/.vuepress/public/repository/v2/
-          cp -r repository/v2/* website/src/.vuepress/public/repository/v2/
+          mkdir -p website/src/public/repository/v2/
+          cp -r repository/v2/* website/src/public/repository/v2/
         
       # 创建提交并推送
       - name: Commit and push changes
