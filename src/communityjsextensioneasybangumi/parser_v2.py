@@ -8,7 +8,7 @@ from glob import glob
 from typing import Optional
 
 
-DEFAULT_COVER = "https://easybangumi.org/icons/FAVICON-RAW.png"
+DEFAULT_COVER = "https://easybangumi.org/icons/logo-025x.webp"
 REPO_URL = "https://easybangumi.org/repository/v2"
 WORKDIR = Path.cwd()
 REPOSITORY_FOLDER = WORKDIR / 'repository/v2'
