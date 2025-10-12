@@ -43,9 +43,10 @@ jobs:
       - name: Run parser
         run: uv run ebjer parse --from "extensions" --to "repository/v2"
 
-      # 复制文件
-      - name: Copy files
+      # 部署文件
+      - name: Deploy files
         run: |
+          rm -rf website/src/public/repository/v2/
           mkdir -p website/src/public/repository/v2/
           cp -r repository/v2/* website/src/public/repository/v2/
         

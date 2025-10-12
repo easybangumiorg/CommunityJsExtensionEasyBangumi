@@ -22,9 +22,6 @@ class ExtensionMeta:
     versionCode: int
     versionName: str
     url: Optional[str] = None
-    
-    # woc何言居然用外链
-    # TODO: 将icon代理到纯纯看番？但是GitHub Actions应该获取不到部分网站的icon
     cover: Optional[str] = None
 
     def __post_init__(self):
@@ -50,7 +47,7 @@ class ExtensionMeta:
         assert data.get('key'), "Key is required"
         return cls(
             key=data['key'],
-            label=data.get('label', 'Unknown'),
+            label=data.get('label', data['key']),
             versionCode=int(data.get('versionCode', '0')),
             versionName=data.get('versionName', '0.0'),
             cover=data.get('cover', DEFAULT_COVER),

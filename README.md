@@ -1,4 +1,4 @@
-# EasyBangumi-JS-Extension
+# Community EasyBangumi Js Extension
 
 纯纯看番社区 JS 源仓库
 

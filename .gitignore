@@ -12,3 +12,4 @@ wheels/
 
 repository/**
 website/**
+.vscode/**
