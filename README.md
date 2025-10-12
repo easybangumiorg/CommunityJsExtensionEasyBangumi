@@ -1,6 +1,6 @@
 # EasyBangumi-JS-Extension
 
-纯纯看番官方 JS 源仓库
+纯纯看番社区 JS 源仓库
 
 ## Statement
 
