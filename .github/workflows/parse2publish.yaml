@@ -46,7 +46,7 @@ jobs:
       # 部署文件
       - name: Deploy files
         run: |
-          rm -rf website/src/public/repository/v2/
+          rm -rf website/src/public/repository/v2/ || true
           mkdir -p website/src/public/repository/v2/
           cp -r repository/v2/* website/src/public/repository/v2/
         
