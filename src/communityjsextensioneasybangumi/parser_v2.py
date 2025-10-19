@@ -23,7 +23,7 @@ class ExtensionMeta:
     versionName: str
     url: Optional[str] = None
     cover: Optional[str] = None
-    __blocked: bool = field(default=False)
+    blocked: bool = field(default=False)
 
     def __post_init__(self):
         if not self.url:
@@ -35,7 +35,7 @@ class ExtensionMeta:
 
     @property
     def is_blocked(self) -> bool:
-        return self.__blocked
+        return self.blocked
 
     def to_dict(self):
         return {
@@ -56,7 +56,7 @@ class ExtensionMeta:
             versionCode=int(data.get('versionCode', '0')),
             versionName=data.get('versionName', '0.0'),
             cover=data.get('cover', DEFAULT_COVER),
-            __blocked=data.get('blocked', False),
+            blocked=data.get('blocked', False),
         )
 
 
