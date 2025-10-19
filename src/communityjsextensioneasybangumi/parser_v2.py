@@ -2,7 +2,7 @@ import os
 import re
 import json
 import shutil
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from pathlib import Path
 from glob import glob
 from typing import Optional
@@ -23,6 +23,7 @@ class ExtensionMeta:
     versionName: str
     url: Optional[str] = None
     cover: Optional[str] = None
+    __blocked: bool = field(default=False)
 
     def __post_init__(self):
         if not self.url:
@@ -31,6 +32,10 @@ class ExtensionMeta:
     @property
     def name(self) -> str:
         return f"{self.key}.js"
+
+    @property
+    def is_blocked(self) -> bool:
+        return self.__blocked
 
     def to_dict(self):
         return {
@@ -51,6 +56,7 @@ class ExtensionMeta:
             versionCode=int(data.get('versionCode', '0')),
             versionName=data.get('versionName', '0.0'),
             cover=data.get('cover', DEFAULT_COVER),
+            __blocked=data.get('blocked', False),
         )
 
 
@@ -110,9 +116,12 @@ def parse_extensions(from_dir: Optional[str] | Path, to_dir: Optional[str] | Pat
             traceback.print_exc()
             continue
 
+    # 写入索引文件, 过滤掉被屏蔽的扩展
     if os.path.exists(index_file):
         os.remove(index_file)
     with open(index_file, 'w', encoding='utf-8') as f:
         for ext in extensions:
-            f.write(json.dumps(ext.to_dict(), ensure_ascii=False) + '\n')
+            if not ext.is_blocked:
+                f.write(json.dumps(ext.to_dict(), ensure_ascii=False) + '\n')
+
     return 0
