@@ -2,7 +2,7 @@ import os
 import re
 import json
 import shutil
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from pathlib import Path
 from glob import glob
 from typing import Optional
@@ -22,10 +22,8 @@ class ExtensionMeta:
     versionCode: int
     versionName: str
     url: Optional[str] = None
-    
-    # woc何言居然用外链
-    # TODO: 将icon代理到纯纯看番？但是GitHub Actions应该获取不到部分网站的icon
     cover: Optional[str] = None
+    blocked: bool = field(default=False)
 
     def __post_init__(self):
         if not self.url:
@@ -34,6 +32,10 @@ class ExtensionMeta:
     @property
     def name(self) -> str:
         return f"{self.key}.js"
+
+    @property
+    def is_blocked(self) -> bool:
+        return self.blocked
 
     def to_dict(self):
         return {
@@ -50,10 +52,11 @@ class ExtensionMeta:
         assert data.get('key'), "Key is required"
         return cls(
             key=data['key'],
-            label=data.get('label', 'Unknown'),
+            label=data.get('label', data['key']),
             versionCode=int(data.get('versionCode', '0')),
             versionName=data.get('versionName', '0.0'),
             cover=data.get('cover', DEFAULT_COVER),
+            blocked=data.get('blocked', False),
         )
 
 
@@ -113,9 +116,12 @@ def parse_extensions(from_dir: Optional[str] | Path, to_dir: Optional[str] | Pat
             traceback.print_exc()
             continue
 
+    # 写入索引文件, 过滤掉被屏蔽的扩展
     if os.path.exists(index_file):
         os.remove(index_file)
     with open(index_file, 'w', encoding='utf-8') as f:
         for ext in extensions:
-            f.write(json.dumps(ext.to_dict(), ensure_ascii=False) + '\n')
+            if not ext.is_blocked:
+                f.write(json.dumps(ext.to_dict(), ensure_ascii=False) + '\n')
+
     return 0

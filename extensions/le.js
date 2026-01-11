@@ -4,6 +4,7 @@
 // @versionCode 1
 // @libVersion 12
 // @cover https://ylsp.tv/logo.png
+// @blocked true
 
 // Inject
 var networkHelper = Inject_NetworkHelper;
