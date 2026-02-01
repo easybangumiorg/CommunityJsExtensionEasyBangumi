@@ -1,7 +1,7 @@
 // @key heyanle.age
 // @label Age动漫
-// @versionName 1.0
-// @versionCode 1
+// @versionName 1.1
+// @versionCode 2
 // @libVersion 13
 // @cover https://www.agedm.io/favicon.ico
 
@@ -198,6 +198,7 @@ function playline(doc, summary) {
             .iterator();
     var epRoot = doc.select("body > div.body_content_wrapper.pb-2 > div > section > div > div.video_detail_right.ps-3.flex-grow-1 > div.video_detail_playlist_wrapper.pt-4 > div.tab-content > div > ul").iterator();
     var playLines = new ArrayList();
+    var vipPlayLines = new ArrayList();
     var ii = 1;
     while (tabs.hasNext() && epRoot.hasNext()) {
         var tab = tabs.next();
@@ -212,23 +213,27 @@ function playline(doc, summary) {
             if (element != null) {
                 label = element.text();
             }
-            es.add(
-                new Episode(
-                    id = (index + 1).toString(),
-                    label = label,
-                    order = index
-                )
+            var epi = new Episode(
+                id = (index + 1).toString(),
+                label = label,
+                order = index
             );
+            es.add(epi);
+           
         }
-        playLines.add(
-            new PlayLine(
-                id = ii.toString(),
-                label = tab.text(),
-                episode = es
-            )
+        var playLine = new PlayLine(
+            id = ii.toString(),
+            label = tab.text(),
+            episode = es
         );
+        if (playLine.label.contains("VIP")) {
+            vipPlayLines.add(playLine);
+        } else {
+            playLines.add(playLine);
+        }
         ii++;
     }
+    playLines.addAll(vipPlayLines);
     return playLines;
 }
 
@@ -294,38 +299,75 @@ function PlayComponent_getPlayInfo(summary, playLine, episode) {
     if (webProxy == null) {
         throw new ParserException("解析错误 webProxy is null");
     }
-    webProxy.loadUrl(url, networkHelper.defaultLinuxUA, null, null, true);
+    var ua = networkHelper.defaultLinuxUA;;
+    var res = null;
+    webProxy.loadUrl(url, ua, null, null, true);
     webProxy.waitingForPageLoaded();
-    webProxy.waitingForResourceLoaded(".*jx\.ejtsyc\.com.*", true, 2000);
-    var m3u8Url = webProxy.waitingForResourceLoaded(".*index\.m3u8", true, 2000);
-    var mp4Url = webProxy.waitingForResourceLoaded(".*\.mp4", true, 2000);
-                
-    var type = PlayerInfo.DECODE_TYPE_OTHER;
-    if(m3u8Url == null && mp4Url == null){ 
-          var  content = webProxy.getContentWithIframe();
-        var doc = Jsoup.parse(content);
-        var videoEle = doc.select("video.art-video").first();
-        if (videoEle != null) {
-             res = videoEle.attr("src");
+    if (playLine.label.contains("VIP")){
+        if (playLine.label.contains("腾讯")){
+            var mp4Url = webProxy.waitingForResourceLoaded("qq\.com.*\.mp4.*", true, 2000);
+            if (mp4Url != null && mp4Url.length() > 0) {
+                res = mp4Url;
+            }
+
+        } else if (playLine.label.contains("自建云")){
+            var m3u8Url = webProxy.waitingForResourceLoaded(".*jx\.ejtsyc\.com.*m3u8.*", true, 2000);
+            if (m3u8Url != null && m3u8Url.length() > 0) {
+                res = m3u8Url;
+            }
+        } else if (playLine.label.contains("西瓜")){
+            webProxy.delay(5000);
+            var  content = webProxy.getContentWithIframe();
+            var doc = Jsoup.parse(content);
+            var videoEle = doc.select("video.art-video").first();
+            if (videoEle != null) {
+                res = videoEle.attr("src");
+            }
         }
     }
-    if (m3u8Url != null) {
-        res = m3u8Url;
-    } else {
-        res = mp4Url;
+    if (res == null || res.length() == 0) {
+        webProxy.waitingForResourceLoaded(".*jx\.ejtsyc\.com.*", true, 2000);
+        var m3u8Url = webProxy.waitingForResourceLoaded(".*index\.m3u8.*", true, 2000);
+        var mp4Url = webProxy.waitingForResourceLoaded(".*\.mp4.*", true, 2000);
+                    
+        var type = PlayerInfo.DECODE_TYPE_OTHER;
+        if((m3u8Url == null || m3u8Url.length() == 0) && (mp4Url == null || mp4Url.length() == 0)) { 
+            if (playLine.label.contains("VIP")){
+                webProxy.delay(1000);
+            }
+            var  content = webProxy.getContentWithIframe();
+            var doc = Jsoup.parse(content);
+            var videoEle = doc.select("video.art-video").first();
+            if (videoEle != null) {
+                res = videoEle.attr("src");
+            }
+        }
+        if (m3u8Url != null && m3u8Url.length() > 0) {
+            res = m3u8Url;
+        }
+        if (mp4Url != null && mp4Url.length() > 0) {
+            res = mp4Url;
+        }
     }
 
-    if (res == null || res.length == 0) {
-        throw new ParserException("解析错误，未找到播放地址");
+
+    
+
+    if (res == null || res.length() == 0) {
+        throw new ParserException("解析错误，未找到播放地址" + res);
     }
-    if (res.endsWith(".m3u8")) {
+    if (res.contains("m3u8")) {
         type = PlayerInfo.DECODE_TYPE_HLS;
     }
-
-
-    return new PlayerInfo(
+    var info = new PlayerInfo(
         type, res
-    )
+    );
+    var header = new HashMap();
+    header.put("User-Agent", ua);
+    info.header = header;
+
+
+    return info;
 
 
 }
