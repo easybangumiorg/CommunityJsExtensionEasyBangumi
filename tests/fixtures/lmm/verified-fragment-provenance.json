@@ -1,0 +1,17 @@
+{
+  "raw_json_decode_skipped": {
+    "verified-fragments.log": 1,
+    "home-play-fragments.log": 1,
+    "verified-lines-schema.log": 0
+  },
+  "provenance": {
+    "verified-search-card.html": "Unchanged search card structure from normal user-verified phone page; inline click handler removed.",
+    "verified-home-cards.html": "Three actual captured home cards in returned order; section/title wrapper added from the observed first homepage heading.",
+    "verified-tabs.html": "Actual detail tab wrapper; names dp云播 and 聚合线路.",
+    "verified-line-1.html": "Actual complete selected first scroll-content from verified-lines-schema.log.",
+    "verified-line-2.html": "Actual complete second scroll-content from verified-lines-schema.log.",
+    "verified-detail-fragments.html": "Actual tabs and both episode wrappers; h1 and episode-count wrapper assembled using verified search title/label; description synthetic.",
+    "verified-play-fragments.html": "Actual play header, tabs and both episode wrappers; placeholder iframe reconstructed from the observed src.",
+    "verified-player-schema.json": "Actual safe player metadata only; URL/url_next/token values never recorded."
+  }
+}

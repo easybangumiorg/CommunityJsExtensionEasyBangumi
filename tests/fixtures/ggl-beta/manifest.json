@@ -1,0 +1,178 @@
+{
+  "retrieved_at": "2026-10-14T09:06:49.276172+00:00",
+  "site": "https://beta.girigirilove.com",
+  "api_host": "https://m3u8.girigirilove.com",
+  "api_base_path": "/api.php",
+  "javascript_evidence": [
+    {
+      "url": "https://beta.girigirilove.com/assets/DetailPage-DMkbNuwA.js",
+      "sha256": "abed6d3d4db63f90692eb000537b72905735f22a26384ed96b748111cefe14c3",
+      "bytes": 29817
+    },
+    {
+      "url": "https://beta.girigirilove.com/assets/vod-normalize-BV1iBSDX.js",
+      "sha256": "26ff6c4c00103bfa691d8de5cddf23f0f944b6b50912a4d8dc673819ca87c4a6",
+      "bytes": 2459
+    },
+    {
+      "url": "https://beta.girigirilove.com/assets/BrowsePage-D7ybpDsW.js",
+      "sha256": "37b9f1506cc8e883ae6d24985ea5aa222687075736d790c7457b5a723d9c3cd1",
+      "bytes": 5575
+    },
+    {
+      "url": "https://beta.girigirilove.com/assets/queries-CB5xZ2BK.js",
+      "sha256": "d3907a0c7b948fbd8503e22ba5d95b0fe972c43e46f07110afb0556f8ad9e5bd",
+      "bytes": 2243
+    },
+    {
+      "url": "https://beta.girigirilove.com/assets/avatar-jMYeTGZo.js",
+      "sha256": "4b36a88f552227ea671a347da03a37dde2b3879b5f029ca743277b05bd044262",
+      "bytes": 3339
+    },
+    {
+      "url": "https://beta.girigirilove.com/assets/MediaGrid-BWZpWTQU.js",
+      "sha256": "b5437064cfd17cbb99644316932f01958fdd3b38b439b1844442dcb804711e9d",
+      "bytes": 516
+    },
+    {
+      "url": "https://beta.girigirilove.com/assets/CollectionDetailPage-C3WGXfRf.js",
+      "sha256": "5468a4d1e0daca9923192680a732228337ebfae4b80ed5b9b98603336e4bc78a",
+      "bytes": 2660
+    },
+    {
+      "url": "https://beta.girigirilove.com/assets/api-zI43XRBE.js",
+      "sha256": "fb00ae9d632aaaa3422f939e7dcd31c8133ca27cc31e2eae93b998642d7786da",
+      "bytes": 1786
+    },
+    {
+      "url": "https://beta.girigirilove.com/assets/index-FTujx58n.js",
+      "sha256": "53dfe1a1ab144640009b93f20a6bc47a09d5d002efb07457d2bde0ea2f01ba03",
+      "bytes": 1642265
+    },
+    {
+      "url": "https://beta.girigirilove.com/assets/useTimeout-DNAr3AAv.js",
+      "sha256": "9c5977c6ec5339bbb3383b1feda77299686ab7b28c8fcbe3997f68e489d43b70",
+      "bytes": 457
+    },
+    {
+      "url": "https://beta.girigirilove.com/assets/LoginGate-DS0xbbb0.js",
+      "sha256": "2c416f8c7927acc5b92e3f91dd2889025cc2c343b4ab436faaba10870d571ee7",
+      "bytes": 1982
+    },
+    {
+      "url": "https://beta.girigirilove.com/assets/PlayerPage-Ct88esH6.js",
+      "sha256": "020cfc543bdf3108d8291299d4c5ab2b4a5f02fd78feffd7409ec25d4a753fd2",
+      "bytes": 310786
+    },
+    {
+      "url": "https://beta.girigirilove.com/assets/useOpenChangeComplete-BQRSEqNW.js",
+      "sha256": "cc113e5d62aae6a4fd1a374190b31de7654fd51283ae94bcfca83166dde9eb97",
+      "bytes": 6806
+    },
+    {
+      "url": "https://beta.girigirilove.com/assets/normalize-DeEUDmld.js",
+      "sha256": "6fa63487069ce539155f217dc9a4deb3b334837e45306a14cdb4a50cacea97fc",
+      "bytes": 165
+    },
+    {
+      "url": "https://beta.girigirilove.com/assets/RelatedSection-C8peiFRH.js",
+      "sha256": "3f97881a34986cd553d224603055d04373572df083201fd96b1711d71c9fb6e2",
+      "bytes": 3601
+    },
+    {
+      "url": "https://beta.girigirilove.com/assets/useBaseQuery-CiBVLTdf.js",
+      "sha256": "7d37cb65f5f9cc5f290e0537cbaff551d729e5b6fe883b7c8708f3bc60b78def",
+      "bytes": 15591
+    },
+    {
+      "url": "https://beta.girigirilove.com/assets/HomePage-BCHb7-Nd.js",
+      "sha256": "b025a794928b3d2a5a71f639f5629a9685cebabb5c58d9168fd15937078a3aeb",
+      "bytes": 11509
+    },
+    {
+      "url": "https://beta.girigirilove.com/assets/SearchPage-BK5inwk1.js",
+      "sha256": "951c8dad04f340ea32162eeecbf142d57520afabb7c52e9bca688ba03f885c22",
+      "bytes": 3003
+    },
+    {
+      "url": "https://beta.girigirilove.com/assets/useMatch-DgSJMgvg.js",
+      "sha256": "f261fbbae4dd443da833facaabb28c5f3756c3f7e24eeaf9b6df309d040a95b4",
+      "bytes": 579
+    },
+    {
+      "url": "https://beta.girigirilove.com/assets/api-xmadAYno.js",
+      "sha256": "d67a6b0950ffab7b5b80f039c3255a5bb73e7734da6cff1801c1df8f8673f000",
+      "bytes": 1682
+    },
+    {
+      "url": "https://beta.girigirilove.com/assets/client-vmSFOY5W.js",
+      "sha256": "b406c88e0610aa2dfb648f2ee02356cea32afa635d5dabf379314fe0979e39e4",
+      "bytes": 121417
+    },
+    {
+      "url": "https://beta.girigirilove.com/assets/useOnMount-CooCkOSq.js",
+      "sha256": "41bf8ad008accb3458a3b8414ef057cca68982bf01d1e2a84514c0f539426906",
+      "bytes": 144
+    },
+    {
+      "url": "https://beta.girigirilove.com/assets/react-DB-4Zxce.js",
+      "sha256": "3b2c8562002adff0b5f5d9d3c10584a4158d3b8428c48e31941ed6fcbb274c13",
+      "bytes": 8529
+    }
+  ],
+  "fixture_policy": "Only public title/ID/cover/status/category metadata retained. Descriptions and all media URLs replaced with synthetic .invalid values. No account, cookies, password, token or authorization header used or retained.",
+  "search_query": "孤独摇滚",
+  "search_order": [
+    {
+      "vod_id": 26538,
+      "title": "孤独摇滚总集篇"
+    },
+    {
+      "vod_id": 26168,
+      "title": "LIVE STAGE 孤独摇滚 舞台剧"
+    },
+    {
+      "vod_id": 1091,
+      "title": "孤独摇滚！"
+    }
+  ],
+  "categories": [
+    {
+      "id": 2,
+      "label": "日番",
+      "page_1_rows": 20,
+      "total": 3148
+    },
+    {
+      "id": 3,
+      "label": "美番",
+      "page_1_rows": 20,
+      "total": 38
+    },
+    {
+      "id": 21,
+      "label": "剧场版",
+      "page_1_rows": 20,
+      "total": 489
+    },
+    {
+      "id": 20,
+      "label": "真人番剧",
+      "page_1_rows": 20,
+      "total": 77
+    },
+    {
+      "id": 24,
+      "label": "BD副音轨",
+      "page_1_rows": 20,
+      "total": 25
+    },
+    {
+      "id": 26,
+      "label": "演唱会及其他",
+      "page_1_rows": 18,
+      "total": 18
+    }
+  ],
+  "media_checks_file": "../media-probes.json"
+}

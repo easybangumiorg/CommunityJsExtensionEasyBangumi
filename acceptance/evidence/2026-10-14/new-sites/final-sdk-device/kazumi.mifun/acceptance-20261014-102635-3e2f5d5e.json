@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "protocolVersion": "source-acceptance-v1",
+  "generatedAt": "2026-10-14T10:26:49.372Z",
+  "context": {
+    "app": {
+      "buildType": "debug",
+      "gitCommit": "fed45da5fd0a508ec313fdb3f9054c687e724545",
+      "packageName": "com.heyanle.easybangumi4.sourcelab",
+      "versionCode": 115,
+      "versionName": "6.1.3"
+    },
+    "device": {
+      "androidVersion": "16",
+      "apiLevel": 36,
+      "isPhysicalDevice": true,
+      "manufacturer": "Xiaomi",
+      "model": "23127PN0CC",
+      "serial": "6a022def"
+    },
+    "network": "same-LAN-WiFi-ADB",
+    "repositoryEnvironment": "dev"
+  },
+  "config": {
+    "keywords": [
+      "孤独摇滚",
+      "孤獨搖滾",
+      "ぼっち・ざ・ろっく！",
+      "Bocchi the Rock"
+    ],
+    "manualTimeoutMs": 600000,
+    "maxManualAttempts": 3,
+    "minimumProgressMs": 3000,
+    "playBudgetMs": 240000,
+    "playInfoTimeoutMs": 45000,
+    "playTimeoutMs": 60000,
+    "selected": [
+      "kazumi.mifun"
+    ],
+    "stepTimeoutMs": 25000,
+    "steps": [
+      "HOME",
+      "SEARCH",
+      "PLAY"
+    ]
+  },
+  "results": [
+    {
+      "key": "kazumi.mifun",
+      "label": "MiFun",
+      "versionName": "1.1",
+      "versionCode": 10100,
+      "sourceSha256": "8048135c15412389421290bf8f242f51f39a655246b12874a1c13e29aaef2253",
+      "startedAt": "2026-10-14T10:26:38.544Z",
+      "finishedAt": "2026-10-14T10:26:49.372Z",
+      "verdict": "PASS",
+      "acceptance": "SEARCH_PLAYABLE",
+      "steps": [
+        {
+          "detail": "首页页签「首页推荐」40 条内容",
+          "elapsedMs": 1797,
+          "step": "HOME",
+          "verdict": "PASS"
+        },
+        {
+          "detail": "「孤独摇滚」RESULTS(2)；选择结果第 1 部「孤独摇滚！」",
+          "elapsedMs": 467,
+          "step": "SEARCH",
+          "verdict": "PASS"
+        },
+        {
+          "detail": "搜索「孤独摇滚！」线路 1/4「特快云」第01集，首帧 1920x1080，推进 3096ms（已尝试 1 条线路）",
+          "elapsedMs": 8562,
+          "step": "PLAY",
+          "verdict": "PASS"
+        }
+      ],
+      "searchAttempts": [
+        {
+          "detail": "「孤独摇滚」2 条",
+          "elapsedMs": 466,
+          "keyword": "孤独摇滚",
+          "pageKey": 0,
+          "resultCount": 2,
+          "status": "RESULTS"
+        }
+      ],
+      "selection": {
+        "cartoonId": "14163",
+        "homePageLabel": null,
+        "keyword": "孤独摇滚",
+        "resultIndex": 0,
+        "route": "SEARCH_RESULT",
+        "title": "孤独摇滚！"
+      },
+      "lineAttempts": [
+        {
+          "detail": "首帧已渲染，进度推进 3096ms",
+          "elapsedMs": 7946,
+          "episodeId": "14163-1-1",
+          "episodeLabel": "第01集",
+          "episodeOrder": 0,
+          "firstFrame": true,
+          "lineId": "1",
+          "lineIndex": 0,
+          "lineLabel": "特快云",
+          "progressMs": 3096,
+          "status": "PASS",
+          "videoHeight": 1080,
+          "videoWidth": 1920
+        }
+      ],
+      "playBudgetExhausted": false,
+      "minimumProgressMs": 3000,
+      "totalLineCount": 4,
+      "verificationEvents": [],
+      "manualWaitMs": 0
+    }
+  ]
+}

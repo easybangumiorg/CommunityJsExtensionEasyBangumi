@@ -1,0 +1,30 @@
+name: validate-source-repository
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'extensions/**'
+      - 'dev-extensions/**'
+      - 'channel/dev/**'
+      - 'src/**'
+      - 'tests/**'
+      - 'pyproject.toml'
+      - 'uv.lock'
+      - '.github/workflows/**'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+      - run: uv sync --locked --all-extras --dev
+      - run: uv run python -m unittest discover -s tests -v
+      # 索引必须与当前 PR 源字节匹配且固定 SHA；main 再检查公开 raw 字节。
+      - run: uv run ebjer channel-check --source-dir dev-extensions --index channel/dev/index.jsonl

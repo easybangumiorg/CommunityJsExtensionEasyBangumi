@@ -1,0 +1,13 @@
+{
+  "code": 1,
+  "msg": "合成测试",
+  "info": {
+    "vod_id": 99,
+    "vod_name": "合成番剧",
+    "vod_class": "音乐,喜剧",
+    "vod_isend": 1,
+    "vod_pic": "upload/cover.webp",
+    "vod_play_from": "empty$$$chs$$$hd",
+    "vod_play_url": "$$$#前篇$https://media.invalid/first.m3u8?name=a$b#后篇$https://media.invalid/second.m3u8$$$01$https://cdn.invalid/first.mp4#02$https://cdn.invalid/second.mp4"
+  }
+}

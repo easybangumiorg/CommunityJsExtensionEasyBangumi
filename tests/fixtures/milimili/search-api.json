@@ -1,0 +1,94 @@
+{
+  "videos": [
+    {
+      "shortId": "ml1522",
+      "title": "孤独摇滚！",
+      "thumbnailUrl": "https://img.milimili.moe/bgm/pic/cover/l/e2/e7/328609_2EHLJ.jpg",
+      "detailPath": "/bangumi/ml1522",
+      "managedEpisodeCount": 12,
+      "summary": "合成测试简介：用于验证详情字段映射，不包含站点剧情文本。",
+      "bangumiMetadata": {
+        "tags": [
+          "音乐",
+          "轻百合",
+          "日常",
+          "乐队题材",
+          "漫画改",
+          "搞笑",
+          "百合",
+          "漫改",
+          "乐队",
+          "校园",
+          "青春",
+          "治愈",
+          "萌",
+          "少女乐队",
+          "社恐"
+        ],
+        "workType": "TV",
+        "releaseYear": 2022,
+        "bangumiScore": 8.4
+      }
+    },
+    {
+      "shortId": "ml942",
+      "title": "剧场总集篇孤独摇滚！ Re:Re:",
+      "thumbnailUrl": "https://img.milimili.moe/bgm/pic/cover/l/8e/16/459642_83jcG.jpg",
+      "detailPath": "/bangumi/ml942",
+      "managedEpisodeCount": 1,
+      "summary": "合成测试简介：用于验证详情字段映射，不包含站点剧情文本。",
+      "bangumiMetadata": {
+        "tags": [
+          "总集篇",
+          "漫画改",
+          "音乐",
+          "日常",
+          "百合",
+          "乐队",
+          "孤独摇滚",
+          "搞笑",
+          "漫改",
+          "轻百合",
+          "校园",
+          "治愈",
+          "青春",
+          "少女乐队",
+          "轻百"
+        ],
+        "workType": "剧场版",
+        "releaseYear": 2024,
+        "bangumiScore": 7.5
+      }
+    },
+    {
+      "shortId": "ml948",
+      "title": "剧场总集篇孤独摇滚！ Re:",
+      "thumbnailUrl": "https://img.milimili.moe/bgm/pic/cover/l/4d/fe/436738_Z960u.jpg",
+      "detailPath": "/bangumi/ml948",
+      "managedEpisodeCount": 1,
+      "summary": "合成测试简介：用于验证详情字段映射，不包含站点剧情文本。",
+      "bangumiMetadata": {
+        "tags": [
+          "总集篇",
+          "漫画改",
+          "音乐",
+          "日常",
+          "百合",
+          "乐队",
+          "搞笑",
+          "孤独摇滚",
+          "漫改",
+          "治愈",
+          "轻百合",
+          "校园",
+          "青春",
+          "轻百",
+          "少女乐队"
+        ],
+        "workType": "剧场版",
+        "releaseYear": 2024,
+        "bangumiScore": 7.4
+      }
+    }
+  ]
+}

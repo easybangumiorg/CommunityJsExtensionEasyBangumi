@@ -1,0 +1,32 @@
+{
+  "code": 1,
+  "msg": "获取成功",
+  "info": {
+    "offset": 0,
+    "limit": 24,
+    "total": 3,
+    "rows": [
+      {
+        "vod_id": 26538,
+        "vod_name": "孤独摇滚总集篇",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20250417-1/bab60d9e2670110e4c00186618755d9a.webp",
+        "vod_remarks": "",
+        "vod_year": "2024"
+      },
+      {
+        "vod_id": 26168,
+        "vod_name": "LIVE STAGE 孤独摇滚 舞台剧",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20240902-1/2f39ec183be572efa1eb05cb6e22a579.webp",
+        "vod_remarks": "",
+        "vod_year": "2023"
+      },
+      {
+        "vod_id": 1091,
+        "vod_name": "孤独摇滚！",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20230404-1/b0ebddc307efc68f8d28352335e5c040.webp",
+        "vod_remarks": "已完结",
+        "vod_year": "2022"
+      }
+    ]
+  }
+}

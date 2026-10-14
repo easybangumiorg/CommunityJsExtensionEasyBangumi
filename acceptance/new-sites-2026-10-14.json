@@ -1,0 +1,456 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-14",
+  "branch": "feat/new-site-adapters",
+  "baseCommit": "696188e",
+  "distribution": {
+    "environment": "dev",
+    "state": "dev retained; three passed candidates also approved for release; deployment awaits user-managed PR",
+    "releaseApprovalAdded": true,
+    "promotionRecord": "acceptance/release-promotion-2026-10-14.json"
+  },
+  "clientCompatibility": "Dedicated .sourcelab build includes verification bridge fixes. GGL/LMM captcha resumption requires that client capability; older published APK compatibility remains unverified. User requested the passed sources together in release, with this requirement retained in the promotion record.",
+  "deviceIdentity": {
+    "physicalSerial": "6a022def",
+    "mappingEvidence": "acceptance/evidence/2026-10-14/new-sites/wireless-device.json",
+    "mappingEvidenceSha256": "4f7b0831d3236c5a048beea2345917fffb03094b505f7892bafb64470aab3b11",
+    "historicalMetadataNote": "Earlier raw reports put the Wi-Fi ADB selector in context.device.serial. Originals retained; final reports use ro.serialno and runner records adbTarget separately."
+  },
+  "candidates": [
+    {
+      "key": "heyanle.ggl.beta",
+      "sourcePath": "dev-extensions/girigirilove-beta.js",
+      "versionName": "1.0",
+      "versionCode": 1,
+      "sourceSha256": "f7734b546d88b18161863bf2045d2f359120564a437133aeb5846158c4972748",
+      "fixtureChecks": 208,
+      "deviceAcceptance": "SEARCH_PLAYABLE",
+      "deviceVerdict": "PASS",
+      "evidence": {
+        "path": "acceptance/evidence/2026-10-14/new-sites/final-sdk-device/heyanle.ggl.beta/acceptance-20261014-102615-4ab07cfc.json",
+        "sha256": "18531ec36a8b8357f7ffec5c465119ce4d02bff2615de0f6d852df11e5e05b82"
+      },
+      "sourceBytesMatchEvidence": true,
+      "selection": {
+        "cartoonId": "26538",
+        "homePageLabel": null,
+        "keyword": "孤独摇滚",
+        "resultIndex": 0,
+        "route": "SEARCH_RESULT",
+        "title": "孤独摇滚总集篇"
+      },
+      "steps": [
+        {
+          "detail": "首页页签「日番」20 条内容",
+          "elapsedMs": 1494,
+          "step": "HOME",
+          "verdict": "PASS"
+        },
+        {
+          "detail": "「孤独摇滚」RESULTS(3)；选择结果第 1 部「孤独摇滚总集篇」",
+          "elapsedMs": 372,
+          "step": "SEARCH",
+          "verdict": "PASS"
+        },
+        {
+          "detail": "搜索「孤独摇滚总集篇」线路 1/1「chs」前篇，首帧 1920x1080，推进 3105ms（已尝试 1 条线路）",
+          "elapsedMs": 5871,
+          "step": "PLAY",
+          "verdict": "PASS"
+        }
+      ],
+      "lineAttempts": [
+        {
+          "detail": "首帧已渲染，进度推进 3105ms",
+          "elapsedMs": 5615,
+          "episodeId": "0",
+          "episodeLabel": "前篇",
+          "episodeOrder": 0,
+          "firstFrame": true,
+          "lineId": "0",
+          "lineIndex": 0,
+          "lineLabel": "chs",
+          "progressMs": 3105,
+          "status": "PASS",
+          "videoHeight": 1080,
+          "videoWidth": 1920
+        }
+      ],
+      "verificationEvents": [],
+      "releaseApproved": true,
+      "limitation": null
+    },
+    {
+      "key": "heyanle.milimili",
+      "sourcePath": "dev-extensions/milimili.js",
+      "versionName": "1.0",
+      "versionCode": 1,
+      "sourceSha256": "0ee103dd134bfc57ba33321bb4d72c1d4615c9a90f0e63033322fafe0434bd54",
+      "fixtureChecks": 185,
+      "deviceAcceptance": "MANUAL_VERIFICATION_REQUIRED",
+      "deviceVerdict": "SUSPECT",
+      "evidence": {
+        "path": "acceptance/evidence/2026-10-14/new-sites/final-device/heyanle.milimili/acceptance-20261014-102037-c8c2a852.json",
+        "sha256": "b7dbfb507b5762d2f08761deaa2671a8ac787a9a4a25f8c8f30afc5cae118d31"
+      },
+      "sourceBytesMatchEvidence": true,
+      "selection": {
+        "cartoonId": "ml1522",
+        "homePageLabel": null,
+        "keyword": "孤独摇滚",
+        "resultIndex": 0,
+        "route": "SEARCH_RESULT",
+        "title": "孤独摇滚！"
+      },
+      "steps": [
+        {
+          "detail": "首页页签「最近更新」24 条内容",
+          "elapsedMs": 1803,
+          "step": "HOME",
+          "verdict": "PASS"
+        },
+        {
+          "detail": "「孤独摇滚」RESULTS(3)；选择结果第 1 部「孤独摇滚！」",
+          "elapsedMs": 266,
+          "step": "SEARCH",
+          "verdict": "PASS"
+        },
+        {
+          "detail": "所有 1 条线路未播放通过，部分需要人工验证；请验证后重测",
+          "elapsedMs": 2574,
+          "step": "PLAY",
+          "verdict": "SUSPECT"
+        }
+      ],
+      "lineAttempts": [
+        {
+          "detail": "地址解析：需要人工验证，当前运行器没有验证界面",
+          "elapsedMs": 2272,
+          "episodeId": "17245",
+          "episodeLabel": "第1集 翻转孤独",
+          "episodeOrder": 0,
+          "firstFrame": false,
+          "lineId": "main",
+          "lineIndex": 0,
+          "lineLabel": "默认线路",
+          "progressMs": 0,
+          "status": "VERIFICATION_REQUIRED",
+          "videoHeight": 0,
+          "videoWidth": 0
+        }
+      ],
+      "verificationEvents": [
+        {
+          "attempt": 1,
+          "cartoonId": "ml1522",
+          "decision": "UNAVAILABLE",
+          "episodeId": "17245",
+          "keyword": null,
+          "lineId": "main",
+          "lineIndex": 0,
+          "requestedAt": 1791973245175,
+          "respondedAt": 1791973245175,
+          "retryOutcome": "NOT_RETRIED",
+          "searchPageKey": null,
+          "sourceKey": "heyanle.milimili",
+          "step": "PLAY",
+          "type": "WEB_VIEW",
+          "waitMs": 0
+        }
+      ],
+      "releaseApproved": false,
+      "limitation": "User has no account; authenticated playback unverified"
+    },
+    {
+      "key": "kazumi.mifun",
+      "sourcePath": "dev-extensions/kazumi-mifun.js",
+      "versionName": "1.1",
+      "versionCode": 10100,
+      "sourceSha256": "8048135c15412389421290bf8f242f51f39a655246b12874a1c13e29aaef2253",
+      "fixtureChecks": 182,
+      "deviceAcceptance": "SEARCH_PLAYABLE",
+      "deviceVerdict": "PASS",
+      "evidence": {
+        "path": "acceptance/evidence/2026-10-14/new-sites/final-sdk-device/kazumi.mifun/acceptance-20261014-102635-3e2f5d5e.json",
+        "sha256": "dd84c5367dad0ef12bb837f2497c18be268e3a4acf0b1cfb72420e2bfae33596"
+      },
+      "sourceBytesMatchEvidence": true,
+      "selection": {
+        "cartoonId": "14163",
+        "homePageLabel": null,
+        "keyword": "孤独摇滚",
+        "resultIndex": 0,
+        "route": "SEARCH_RESULT",
+        "title": "孤独摇滚！"
+      },
+      "steps": [
+        {
+          "detail": "首页页签「首页推荐」40 条内容",
+          "elapsedMs": 1797,
+          "step": "HOME",
+          "verdict": "PASS"
+        },
+        {
+          "detail": "「孤独摇滚」RESULTS(2)；选择结果第 1 部「孤独摇滚！」",
+          "elapsedMs": 467,
+          "step": "SEARCH",
+          "verdict": "PASS"
+        },
+        {
+          "detail": "搜索「孤独摇滚！」线路 1/4「特快云」第01集，首帧 1920x1080，推进 3096ms（已尝试 1 条线路）",
+          "elapsedMs": 8562,
+          "step": "PLAY",
+          "verdict": "PASS"
+        }
+      ],
+      "lineAttempts": [
+        {
+          "detail": "首帧已渲染，进度推进 3096ms",
+          "elapsedMs": 7946,
+          "episodeId": "14163-1-1",
+          "episodeLabel": "第01集",
+          "episodeOrder": 0,
+          "firstFrame": true,
+          "lineId": "1",
+          "lineIndex": 0,
+          "lineLabel": "特快云",
+          "progressMs": 3096,
+          "status": "PASS",
+          "videoHeight": 1080,
+          "videoWidth": 1920
+        }
+      ],
+      "verificationEvents": [],
+      "releaseApproved": true,
+      "limitation": null
+    },
+    {
+      "key": "kazumi.ciyuancheng",
+      "sourcePath": "dev-extensions/kazumi-ciyuancheng.js",
+      "versionName": "2.1",
+      "versionCode": 20100,
+      "sourceSha256": "a7b70b227034b7ee5d2a3fff403ac500cc1159e2b6d1cf3c22f2938d287a06c5",
+      "fixtureChecks": 67,
+      "deviceAcceptance": "MANUAL_VERIFICATION_REQUIRED",
+      "deviceVerdict": "SUSPECT",
+      "evidence": {
+        "path": "acceptance/evidence/2026-10-14/new-sites/final-sdk-device/kazumi.ciyuancheng/acceptance-20261014-102628-f1bff7eb.json",
+        "sha256": "d9202bebb61fc0a3ebfc04900b0118ea11a6dbeda8621fccef6f861894444ef9"
+      },
+      "sourceBytesMatchEvidence": true,
+      "selection": {
+        "cartoonId": "cyc-v2:3488",
+        "homePageLabel": null,
+        "keyword": "孤独摇滚",
+        "resultIndex": 0,
+        "route": "SEARCH_RESULT",
+        "title": "剧场总集篇孤独摇滚！ Re:"
+      },
+      "steps": [
+        {
+          "detail": "首页页签「TV番组」20 条内容",
+          "elapsedMs": 564,
+          "step": "HOME",
+          "verdict": "PASS"
+        },
+        {
+          "detail": "「孤独摇滚」RESULTS(2)；选择结果第 1 部「剧场总集篇孤独摇滚！ Re:」",
+          "elapsedMs": 176,
+          "step": "SEARCH",
+          "verdict": "PASS"
+        },
+        {
+          "detail": "所有 1 条线路未播放通过，部分需要人工验证；请验证后重测",
+          "elapsedMs": 540,
+          "step": "PLAY",
+          "verdict": "SUSPECT"
+        }
+      ],
+      "lineAttempts": [
+        {
+          "detail": "地址解析：需要人工验证，当前运行器没有验证界面",
+          "elapsedMs": 404,
+          "episodeId": "cyc-v2:3488:cychub:47335:1",
+          "episodeLabel": "Re:(前篇)",
+          "episodeOrder": 0,
+          "firstFrame": false,
+          "lineId": "cyc-v2:cychub",
+          "lineIndex": 0,
+          "lineLabel": "CYC_Main",
+          "progressMs": 0,
+          "status": "VERIFICATION_REQUIRED",
+          "videoHeight": 0,
+          "videoWidth": 0
+        }
+      ],
+      "verificationEvents": [
+        {
+          "attempt": 1,
+          "cartoonId": "cyc-v2:3488",
+          "decision": "UNAVAILABLE",
+          "episodeId": "cyc-v2:3488:cychub:47335:1",
+          "keyword": null,
+          "lineId": "cyc-v2:cychub",
+          "lineIndex": 0,
+          "requestedAt": 1791973593205,
+          "respondedAt": 1791973593205,
+          "retryOutcome": "NOT_RETRIED",
+          "searchPageKey": null,
+          "sourceKey": "kazumi.ciyuancheng",
+          "step": "PLAY",
+          "type": "WEB_VIEW",
+          "waitMs": 0
+        }
+      ],
+      "releaseApproved": false,
+      "limitation": "User has no account; authenticated playback unverified"
+    },
+    {
+      "key": "kazumi.lmm",
+      "sourcePath": "dev-extensions/kazumi-lmm.js",
+      "versionName": "2.2",
+      "versionCode": 20200,
+      "sourceSha256": "1b6448b326b8198b9c8c628afc5a01293a3787090e1ddbca05019723ef6af888",
+      "fixtureChecks": 42,
+      "deviceAcceptance": "SEARCH_PLAYABLE",
+      "deviceVerdict": "PASS",
+      "evidence": {
+        "path": "acceptance/evidence/2026-10-14/new-sites/lmm-final-device/acceptance-20261014-102731-d09cb404.json",
+        "sha256": "ede9f1bd125d24686a498ce27144a1f29d535982c22e0ae432190cba5a9cc85e"
+      },
+      "sourceBytesMatchEvidence": true,
+      "selection": {
+        "cartoonId": "lmm-v2:5304",
+        "homePageLabel": null,
+        "keyword": "孤独摇滚",
+        "resultIndex": 0,
+        "route": "SEARCH_RESULT",
+        "title": "孤独摇滚！"
+      },
+      "steps": [
+        {
+          "detail": "首页页签「精选推荐」12 条内容",
+          "elapsedMs": 2278,
+          "step": "HOME",
+          "verdict": "PASS"
+        },
+        {
+          "detail": "「孤独摇滚」RESULTS(1)；选择结果第 1 部「孤独摇滚！」",
+          "elapsedMs": 7684,
+          "step": "SEARCH",
+          "verdict": "PASS"
+        },
+        {
+          "detail": "搜索「孤独摇滚！」线路 1/2「dp云播」第01集，首帧 1920x1080，推进 3188ms（已尝试 1 条线路）",
+          "elapsedMs": 5303,
+          "step": "PLAY",
+          "verdict": "PASS"
+        }
+      ],
+      "lineAttempts": [
+        {
+          "detail": "首帧已渲染，进度推进 3188ms",
+          "elapsedMs": 4867,
+          "episodeId": "lmm-v2:5304:1:1",
+          "episodeLabel": "第01集",
+          "episodeOrder": 0,
+          "firstFrame": true,
+          "lineId": "lmm-v2:1",
+          "lineIndex": 0,
+          "lineLabel": "dp云播",
+          "progressMs": 3188,
+          "status": "PASS",
+          "videoHeight": 1080,
+          "videoWidth": 1920
+        }
+      ],
+      "verificationEvents": [
+        {
+          "attempt": 1,
+          "cartoonId": null,
+          "decision": "COMPLETED",
+          "episodeId": null,
+          "keyword": "孤独摇滚",
+          "lineId": null,
+          "lineIndex": null,
+          "requestedAt": 1791973664275,
+          "respondedAt": 1791973691276,
+          "retryOutcome": "SUCCEEDED",
+          "searchPageKey": 0,
+          "sourceKey": "kazumi.lmm",
+          "step": "SEARCH",
+          "type": "WEB_VIEW",
+          "waitMs": 27002
+        }
+      ],
+      "releaseApproved": true,
+      "limitation": null
+    }
+  ],
+  "history": [
+    {
+      "path": "acceptance/evidence/2026-10-14/new-sites/milimili/acceptance-20261014-085116-a62f773d.json",
+      "sha256": "48d127bb0e9484a63f7f2c3d3e8eb992a5d9c99682954c60ecae5c6e025a498e"
+    },
+    {
+      "path": "acceptance/evidence/2026-10-14/new-sites/ggl-beta/acceptance-20261014-091251-8d43e380.json",
+      "sha256": "ffd41587abf18e7032a175f7238246fd7dd2f2903da2f73865cc42bd6ae22adf"
+    },
+    {
+      "path": "acceptance/evidence/2026-10-14/new-sites/ggl-beta-retest/acceptance-20261014-092551-dcb787aa.json",
+      "sha256": "c8dcf1b98d15fafc7388225594df3129b39a71c78e48f737c12ff7d337649a5f"
+    },
+    {
+      "path": "acceptance/evidence/2026-10-14/new-sites/cycani/acceptance-20261014-092604-22d688c0.json",
+      "sha256": "106a9fb1b7a09437b9c8d9de57a256b5444d60af7c1e9e337d8079200a2cc8fc"
+    },
+    {
+      "path": "acceptance/evidence/2026-10-14/new-sites/mifun/acceptance-20261014-092611-fc683221.json",
+      "sha256": "d430c827d55b04960dabfef89e528be7d8499479c4d3fd4b6f4c458be9404667"
+    },
+    {
+      "path": "acceptance/evidence/2026-10-14/new-sites/final-device/heyanle.ggl.beta/acceptance-20261014-102022-265ecf9c.json",
+      "sha256": "74d4e2846dbaf735213cbcc4169b6a92764c99d8fd58ffaab75a8c538704cf8c"
+    },
+    {
+      "path": "acceptance/evidence/2026-10-14/new-sites/final-device/kazumi.ciyuancheng/acceptance-20261014-102047-181ec08f.json",
+      "sha256": "3390ee77289abe50eb7fc93bed0df144a316657b4ff0c45134ed7e3b8422409f"
+    }
+  ],
+  "tests": {
+    "sourceFixtureChecks": {
+      "heyanle.ggl.beta": 208,
+      "heyanle.milimili": 185,
+      "kazumi.mifun": 182,
+      "kazumi.ciyuancheng": 67,
+      "kazumi.lmm": 42
+    },
+    "sourceFixtureTotal": 684,
+    "repositoryUnitTests": 51,
+    "androidRunnerUnitTests": 7
+  },
+  "devCandidateCount": 86,
+  "devIndexEligibleCount": 82,
+  "deferred": [
+    {
+      "site": "xifan-next",
+      "state": "paused_by_user",
+      "reason": "Wait for a different network; local draft excluded from dev and this delivery"
+    },
+    {
+      "site": "silisili",
+      "state": "entry_pending_confirmation",
+      "reason": "Provided URL is a generic web directory; user has no alternate URL"
+    },
+    {
+      "site": "sbdl",
+      "state": "public_entry_blocked",
+      "reason": "Normal phone WebView reports site access blocked; not an interactive captcha"
+    },
+    {
+      "site": "omootv",
+      "state": "awaiting_stable_public_pages",
+      "reason": "Earlier homepage fragments exist, but bounded isolated homepage/search/detail loads after reconnection return blank documents; no complete adapter distributed"
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "auditDate": "2026-10-13",
+  "protocolVersion": "source-acceptance-v1",
+  "scope": "targeted manual-verification handoff on Xiaomi 14; two sources, not a new full inventory",
+  "device": {
+    "serial": "6a022def",
+    "manufacturer": "Xiaomi",
+    "marketName": "Xiaomi 14",
+    "model": "23127PN0CC",
+    "androidVersion": "16",
+    "apiLevel": 36,
+    "abi": "arm64-v8a"
+  },
+  "origin": "easybangumi_android/docs/source-audit/2026-10-13/xiaomi-14",
+  "originSummarySha256": "c9f2af4f738ac3e6ac1db9f2cdd2de374b869789cb4f032316bfc1f82c078307",
+  "archivedAt": "2026-10-13T05:59:41.551725+00:00",
+  "testedSources": 2,
+  "gateValidated": 2,
+  "approved": 0,
+  "releaseManifestChanged": false,
+  "appArtifacts": [
+    {
+      "path": "/Users/heyanle/Desktop/project/easybangumi_android/app/build/outputs/apk/normal/debug/app-normal-debug.apk",
+      "sha256": "7f2d433f93619983960eec17c0cf19d69a1fa62e489e4751bb650625b5b8be91",
+      "bytes": 66362238
+    },
+    {
+      "path": "/Users/heyanle/Desktop/project/easybangumi_android/app/build/outputs/apk/androidTest/normal/debug/app-normal-debug-androidTest.apk",
+      "sha256": "32e3c71a217eb598fb1f349353ad595fbbc4feee987843e929dc93c0345739cf",
+      "bytes": 1088460
+    }
+  ],
+  "tests": {
+    "androidUnit": 237,
+    "nativeUi": 9,
+    "rhinoVerificationBridge": 4,
+    "adbScript": 5
+  },
+  "compatibilityNote": "GGL manual resumption requires the Android WebViewProxyKtWrapper verification bridge fix in this audit build; maintainer must check supported app build before release approval.",
+  "candidates": [
+    {
+      "key": "heyanle.age",
+      "label": "Age动漫",
+      "acceptance": "SEARCH_PLAYABLE",
+      "sourcePath": "extensions/age.js",
+      "sourceSha256": "237eafa2cd0e33cb87c5b3515ffca99e07551ed5295f4924d28cb92336c03d0b",
+      "versionCode": 1,
+      "versionName": "1.0",
+      "finishedAt": "2026-10-13T05:57:14.061Z",
+      "evidenceFile": "acceptance/evidence/2026-10-13/xiaomi-14/age-final/acceptance-20261013-055656-4a0e85be.json",
+      "reportSha256": "8b1497ba4e40de5ccda20c3718d6230b496360a73355914776359d866bebf71f",
+      "gateValidated": true,
+      "approved": false,
+      "review": null,
+      "status": "pending"
+    },
+    {
+      "key": "heyanle.ggl",
+      "label": "GiriGiriLove",
+      "acceptance": "SEARCH_PLAYABLE",
+      "sourcePath": "extensions/girigirilove.js",
+      "sourceSha256": "496af7c3a5a6d3fdb5a32c36e2f998a418130c3a6f4d3c161e854c31ef49c5bd",
+      "versionCode": 7,
+      "versionName": "1.5",
+      "finishedAt": "2026-10-13T05:54:04.304Z",
+      "evidenceFile": "acceptance/evidence/2026-10-13/xiaomi-14/ggl-clean-manual/acceptance-20261013-055326-57155802.json",
+      "reportSha256": "d309d3c3893f44651813f8236102818f21782566fb3cf462e9a1644eee5d6d33",
+      "gateValidated": true,
+      "approved": false,
+      "review": null,
+      "status": "pending"
+    }
+  ],
+  "reports": [
+    {
+      "originRelativePath": "age-baseline/acceptance-20261013-052251-02c1f223.json",
+      "evidenceFile": "acceptance/evidence/2026-10-13/xiaomi-14/age-baseline/acceptance-20261013-052251-02c1f223.json",
+      "sha256": "1f2a787d11e05b0a8f6c279ec196c69a9cd2f3e509c704b5e58172ea98304ec5"
+    },
+    {
+      "originRelativePath": "age-final/acceptance-20261013-055656-4a0e85be.json",
+      "evidenceFile": "acceptance/evidence/2026-10-13/xiaomi-14/age-final/acceptance-20261013-055656-4a0e85be.json",
+      "sha256": "8b1497ba4e40de5ccda20c3718d6230b496360a73355914776359d866bebf71f"
+    },
+    {
+      "originRelativePath": "ggl-bridge-fixed/acceptance-20261013-055013-66c48657.json",
+      "evidenceFile": "acceptance/evidence/2026-10-13/xiaomi-14/ggl-bridge-fixed/acceptance-20261013-055013-66c48657.json",
+      "sha256": "b9b15efbf40b8f8ff4b3e9465a637a98fc4694b0f49dd044ea1b0d78e20aa58c"
+    },
+    {
+      "originRelativePath": "ggl-clean-manual/acceptance-20261013-055326-57155802.json",
+      "evidenceFile": "acceptance/evidence/2026-10-13/xiaomi-14/ggl-clean-manual/acceptance-20261013-055326-57155802.json",
+      "sha256": "d309d3c3893f44651813f8236102818f21782566fb3cf462e9a1644eee5d6d33"
+    },
+    {
+      "originRelativePath": "ggl-fullscreen/acceptance-20261013-054207-6fc36cf3.json",
+      "evidenceFile": "acceptance/evidence/2026-10-13/xiaomi-14/ggl-fullscreen/acceptance-20261013-054207-6fc36cf3.json",
+      "sha256": "1b0a77ede9aaf12a8622efba09e0af47bd0329ab17b97919cda600358569ef64"
+    },
+    {
+      "originRelativePath": "ggl-manual/acceptance-20261013-053047-2ffca1fe.json",
+      "evidenceFile": "acceptance/evidence/2026-10-13/xiaomi-14/ggl-manual/acceptance-20261013-053047-2ffca1fe.json",
+      "sha256": "274ca29929c8ebafffaf6c1e9750cbe67a1ff29f2306c06ed5d75d7869941780"
+    }
+  ]
+}

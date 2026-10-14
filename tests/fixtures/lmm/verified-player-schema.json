@@ -1,0 +1,27 @@
+{
+  "stage": "lmm-play",
+  "keys": [
+    "flag",
+    "encrypt",
+    "trysee",
+    "points",
+    "link",
+    "link_next",
+    "link_pre",
+    "url",
+    "url_next",
+    "from",
+    "server",
+    "note",
+    "id",
+    "sid",
+    "nid"
+  ],
+  "encrypt": 0,
+  "from": "dpmp4",
+  "id": "5304",
+  "sid": 1,
+  "nid": 1,
+  "urlExt": "mp4",
+  "urlKind": "http"
+}

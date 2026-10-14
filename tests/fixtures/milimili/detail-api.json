@@ -1,0 +1,129 @@
+{
+  "video": {
+    "shortId": "ml1522",
+    "title": "孤独摇滚！",
+    "thumbnailUrl": "https://img.milimili.moe/bgm/pic/cover/l/e2/e7/328609_2EHLJ.jpg",
+    "detailPath": "/bangumi/ml1522",
+    "summary": "合成测试简介：用于验证详情字段映射，不包含站点剧情文本。",
+    "bangumiMetadata": {
+      "tags": [
+        "音乐",
+        "轻百合",
+        "日常",
+        "乐队题材",
+        "漫画改",
+        "搞笑",
+        "百合",
+        "漫改",
+        "乐队",
+        "校园",
+        "青春",
+        "治愈",
+        "萌",
+        "少女乐队",
+        "社恐"
+      ],
+      "workType": "TV",
+      "releaseYear": 2022,
+      "bangumiScore": 8.4
+    }
+  },
+  "episodes": [
+    {
+      "ep": "17245",
+      "episodeOrder": 1,
+      "episodeLabel": "1",
+      "sortOrder": 1,
+      "status": "published",
+      "title": "合成分集标题1"
+    },
+    {
+      "ep": "17372",
+      "episodeOrder": 12,
+      "episodeLabel": "2",
+      "sortOrder": 2,
+      "status": "published",
+      "title": "合成分集标题2"
+    },
+    {
+      "ep": "17326",
+      "episodeOrder": 5,
+      "episodeLabel": "3",
+      "sortOrder": 3,
+      "status": "published",
+      "title": "合成分集标题3"
+    },
+    {
+      "ep": "17249",
+      "episodeOrder": 2,
+      "episodeLabel": "4",
+      "sortOrder": 4,
+      "status": "published",
+      "title": "合成分集标题4"
+    },
+    {
+      "ep": "17339",
+      "episodeOrder": 7,
+      "episodeLabel": "5",
+      "sortOrder": 5,
+      "status": "published",
+      "title": "合成分集标题5"
+    },
+    {
+      "ep": "17262",
+      "episodeOrder": 3,
+      "episodeLabel": "6",
+      "sortOrder": 6,
+      "status": "published",
+      "title": "合成分集标题6"
+    },
+    {
+      "ep": "17352",
+      "episodeOrder": 9,
+      "episodeLabel": "7",
+      "sortOrder": 7,
+      "status": "published",
+      "title": "合成分集标题7"
+    },
+    {
+      "ep": "17364",
+      "episodeOrder": 10,
+      "episodeLabel": "8",
+      "sortOrder": 8,
+      "status": "published",
+      "title": "合成分集标题8"
+    },
+    {
+      "ep": "17267",
+      "episodeOrder": 4,
+      "episodeLabel": "9",
+      "sortOrder": 9,
+      "status": "published",
+      "title": "合成分集标题9"
+    },
+    {
+      "ep": "17331",
+      "episodeOrder": 6,
+      "episodeLabel": "10",
+      "sortOrder": 10,
+      "status": "published",
+      "title": "合成分集标题10"
+    },
+    {
+      "ep": "17367",
+      "episodeOrder": 11,
+      "episodeLabel": "11",
+      "sortOrder": 11,
+      "status": "published",
+      "title": "合成分集标题11"
+    },
+    {
+      "ep": "17343",
+      "episodeOrder": 8,
+      "episodeLabel": "12",
+      "sortOrder": 12,
+      "status": "published",
+      "title": "合成分集标题12"
+    }
+  ]
+}

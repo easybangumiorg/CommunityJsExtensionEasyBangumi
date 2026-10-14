@@ -1,0 +1,121 @@
+{
+  "site": "https://www.lmm85.com",
+  "source_key": "kazumi.lmm",
+  "version_name": "2.2",
+  "version_code": 20200,
+  "adapter_sha256": "1b6448b326b8198b9c8c628afc5a01293a3787090e1ddbca05019723ef6af888",
+  "live_content_verified": "Verified normal phone fragments for home/search/tabs/episodes/player schema; full source pipeline acceptance still pending with Root",
+  "public_http_result": {
+    "home_status": 403,
+    "search_status": 403,
+    "title": "Just a moment..."
+  },
+  "fixtures_kind": "5 synthetic HTML fixtures plus sanitized verified phone fragments and explicit provenance; all media URLs replaced with reserved example-domain values in RAM-only test constructions",
+  "fixture_policy": "No plot body, account data, challenge token, actual media URL or media query signature retained. Invalid truncated logcat JSON skipped. Captured DOM wrappers are distinguished from reconstructed framing.",
+  "fixtures": [
+    {
+      "file": "challenge-synthetic.html",
+      "sha256": "7b9413daf5f56747580717d8a6dddf5809e7ed6f7547ca59722339b6c577956a",
+      "synthetic": true,
+      "sanitized": true
+    },
+    {
+      "file": "detail-synthetic.html",
+      "sha256": "8905bf827b2d9b4c0b7f954618cafa1dfad91e766ea146c179a3e4c12cc2f254",
+      "synthetic": true,
+      "sanitized": true
+    },
+    {
+      "file": "home-synthetic.html",
+      "sha256": "d55fca7cb0b4e863e763abaa7b0e2c046d735e250e2162b5bd2a5cdfb4c4b027",
+      "synthetic": true,
+      "sanitized": true
+    },
+    {
+      "file": "search-empty-synthetic.html",
+      "sha256": "3e5e9ea232d268a310f6a1cfe8fc2d64ee10aa1627105982e4df5ed3bbd8b28e",
+      "synthetic": true,
+      "sanitized": true
+    },
+    {
+      "file": "search-synthetic.html",
+      "sha256": "258e44aad447e2a435fcac3bc6d3124a2abe7fa96b9ba96ffa28024b7df5e71e",
+      "synthetic": true,
+      "sanitized": true
+    },
+    {
+      "file": "verified-detail-fragments.html",
+      "sha256": "4409bfacb7f31a273bab0ebae404a298d467f305efa6971e036c82b173173347",
+      "synthetic": false,
+      "sanitized": true
+    },
+    {
+      "file": "verified-fragment-provenance.json",
+      "sha256": "ebda39e00423084f131475adcb888eac245b90c136e137caeb7923f06a7126ec",
+      "synthetic": false,
+      "sanitized": true
+    },
+    {
+      "file": "verified-home-cards.html",
+      "sha256": "8e4cee11dff26f86891e6401ba207383cf6a8ca4776b417c74b1bf31299e89e3",
+      "synthetic": false,
+      "sanitized": true
+    },
+    {
+      "file": "verified-line-1.html",
+      "sha256": "9baf7b09c4e98f5e76f4411e275c0e4f0d02f4576d5654ec7e2c7e0e572ed2a6",
+      "synthetic": false,
+      "sanitized": true
+    },
+    {
+      "file": "verified-line-2.html",
+      "sha256": "1d106ff0a7bde4481c7e869a78b4466d6014f9aec0aacd0465d2523f375b72d4",
+      "synthetic": false,
+      "sanitized": true
+    },
+    {
+      "file": "verified-play-fragments.html",
+      "sha256": "e9f51f0fe87672f719794593f4a8cc38196fd98c6afe50f1ae573bf0dbb3eb08",
+      "synthetic": false,
+      "sanitized": true
+    },
+    {
+      "file": "verified-player-schema.json",
+      "sha256": "dd4d22d643149612c802cf5a837985e158ab80882252d0a363527c54c0d5e63e",
+      "synthetic": false,
+      "sanitized": true
+    },
+    {
+      "file": "verified-search-card.html",
+      "sha256": "d6fd8c932cdb780a4acf2b54917828971692959d268654f4b1c6ed6936769d08",
+      "synthetic": false,
+      "sanitized": true
+    },
+    {
+      "file": "verified-tabs.html",
+      "sha256": "8c0f5543d931107ade73d9327316eb7c8a3b98b57f79b4929c0ef08d5ed4172e",
+      "synthetic": false,
+      "sanitized": true
+    }
+  ],
+  "verification": {
+    "rhino_version": "1.7.15",
+    "jsoup_version": "1.16.1",
+    "contract_tests_passed": 42,
+    "verified_home_first": "5551 师兄啊师兄",
+    "verified_search_first": "5304 孤独摇滚！",
+    "verified_lines": [
+      "dp云播:12",
+      "聚合线路:12"
+    ],
+    "verified_player_schema": {
+      "id": "5304",
+      "sid": 1,
+      "nid": 1,
+      "encrypt": 0,
+      "from": "dpmp4",
+      "urlExt": "mp4"
+    },
+    "full_phone_acceptance": "pending Root"
+  }
+}

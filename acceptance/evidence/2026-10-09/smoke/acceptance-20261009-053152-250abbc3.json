@@ -1,0 +1,181 @@
+{
+  "schemaVersion": 1,
+  "protocolVersion": "source-acceptance-v1",
+  "generatedAt": "2026-10-09T05:32:48.836Z",
+  "context": {
+    "app": {
+      "buildType": "debug",
+      "gitCommit": "fed45da5fd0a508ec313fdb3f9054c687e724545",
+      "packageName": "com.heyanle.easybangumi4.debug",
+      "versionCode": 115,
+      "versionName": "6.1.3"
+    },
+    "device": {
+      "androidVersion": "16",
+      "apiLevel": 36,
+      "isPhysicalDevice": true,
+      "manufacturer": "meizu",
+      "model": "MEIZU 21",
+      "serial": "461QYGFJ222HD"
+    },
+    "network": "phone-network",
+    "repositoryEnvironment": "release-candidate"
+  },
+  "config": {
+    "keywords": [
+      "孤独摇滚",
+      "孤獨搖滾",
+      "ぼっち・ざ・ろっく！",
+      "Bocchi the Rock"
+    ],
+    "minimumProgressMs": 3000,
+    "playBudgetMs": 240000,
+    "playTimeoutMs": 60000,
+    "selected": [
+      "kazumi.baimao",
+      "kazumi.mxdm"
+    ],
+    "stepTimeoutMs": 25000,
+    "steps": [
+      "HOME",
+      "SEARCH",
+      "PLAY"
+    ]
+  },
+  "results": [
+    {
+      "key": "kazumi.baimao",
+      "label": "baimao",
+      "versionName": "1.0",
+      "versionCode": 10000,
+      "sourceSha256": "d07b1e2ddec213a138041232b293865cdf85e7b12f4e5a1cd54ffb330ce5fa2a",
+      "startedAt": "2026-10-09T05:31:59.625Z",
+      "finishedAt": "2026-10-09T05:32:16.618Z",
+      "verdict": "PASS",
+      "acceptance": "SEARCH_PLAYABLE",
+      "steps": [
+        {
+          "detail": "首页页签「首页推荐」40 条内容",
+          "elapsedMs": 3650,
+          "step": "HOME",
+          "verdict": "PASS"
+        },
+        {
+          "detail": "「孤独摇滚」RESULTS(3)；选择结果第 1 部「孤独摇滚！」",
+          "elapsedMs": 623,
+          "step": "SEARCH",
+          "verdict": "PASS"
+        },
+        {
+          "detail": "搜索「孤独摇滚！」线路 1/6「播放Ⅰ」第1集，首帧 1280x720，推进 3092ms（已尝试 1 条线路）",
+          "elapsedMs": 12716,
+          "step": "PLAY",
+          "verdict": "PASS"
+        }
+      ],
+      "searchAttempts": [
+        {
+          "detail": "「孤独摇滚」3 条",
+          "elapsedMs": 622,
+          "keyword": "孤独摇滚",
+          "resultCount": 3,
+          "status": "RESULTS"
+        }
+      ],
+      "selection": {
+        "cartoonId": "https%3A%2F%2Fwww.baimaodm.com%2F%2Fshow%2F328609.html|%E5%AD%A4%E7%8B%AC%E6%91%87%E6%BB%9A%EF%BC%81|https%3A%2F%2Fimg.bmmdmm.com%2Fpic%2F978afd69e3bd4060bda5c181279f654e.webp",
+        "homePageLabel": null,
+        "keyword": "孤独摇滚",
+        "resultIndex": 0,
+        "route": "SEARCH_RESULT",
+        "title": "孤独摇滚！"
+      },
+      "lineAttempts": [
+        {
+          "detail": "首帧已渲染，进度推进 3092ms",
+          "elapsedMs": 11943,
+          "episodeId": "https%3A%2F%2Fwww.baimaodm.com%2F%2Fplay%2F328609-0-0.html||",
+          "episodeLabel": "第1集",
+          "episodeOrder": 0,
+          "firstFrame": true,
+          "lineId": "0",
+          "lineIndex": 0,
+          "lineLabel": "播放Ⅰ",
+          "progressMs": 3092,
+          "status": "PASS",
+          "videoHeight": 720,
+          "videoWidth": 1280
+        }
+      ],
+      "playBudgetExhausted": false,
+      "minimumProgressMs": 3000
+    },
+    {
+      "key": "kazumi.mxdm",
+      "label": "MXdm",
+      "versionName": "2.3",
+      "versionCode": 20300,
+      "sourceSha256": "c7c5d41a575160e66dbb2805184f064c6c3b469f9a3e81e8f8c97adb665d29b6",
+      "startedAt": "2026-10-09T05:32:16.650Z",
+      "finishedAt": "2026-10-09T05:32:48.836Z",
+      "verdict": "FAIL",
+      "acceptance": "PLAYBACK_FAILED",
+      "steps": [
+        {
+          "detail": "首页页签「首页推荐」40 条内容",
+          "elapsedMs": 994,
+          "step": "HOME",
+          "verdict": "PASS"
+        },
+        {
+          "detail": "「孤独摇滚」RESULTS(5)；选择结果第 1 部「孤独摇滚(上)」",
+          "elapsedMs": 552,
+          "step": "SEARCH",
+          "verdict": "PASS"
+        },
+        {
+          "detail": "全部 1 条线路首集未通过：量子=ERROR",
+          "elapsedMs": 30638,
+          "step": "PLAY",
+          "verdict": "FAIL"
+        }
+      ],
+      "searchAttempts": [
+        {
+          "detail": "「孤独摇滚」5 条",
+          "elapsedMs": 552,
+          "keyword": "孤独摇滚",
+          "resultCount": 5,
+          "status": "RESULTS"
+        }
+      ],
+      "selection": {
+        "cartoonId": "https%3A%2F%2Fwww.dcc3.com%2F%2Fdetail%2F17065%2F|%E5%AD%A4%E7%8B%AC%E6%91%87%E6%BB%9A%28%E4%B8%8A%29|https%3A%2F%2Fimg.lzipic.com%2Fupload%2Fvod%2F20250428-1%2F57da14cb56c154e0286242780a394f9f.jpg",
+        "homePageLabel": null,
+        "keyword": "孤独摇滚",
+        "resultIndex": 0,
+        "route": "SEARCH_RESULT",
+        "title": "孤独摇滚(上)"
+      },
+      "lineAttempts": [
+        {
+          "detail": "地址解析：JavaScriptException：com.heyanle.easybangumi4.plugin.api.ParserException: 播放地址解析失败 (source kazumi.mxdm#433)",
+          "elapsedMs": 30320,
+          "episodeId": "https%3A%2F%2Fwww.dcc3.com%2F%2Fplay%2F17065-1-1%2F||",
+          "episodeLabel": "HD中字",
+          "episodeOrder": 0,
+          "firstFrame": false,
+          "lineId": "0",
+          "lineIndex": 0,
+          "lineLabel": "量子",
+          "progressMs": 0,
+          "status": "ERROR",
+          "videoHeight": 0,
+          "videoWidth": 0
+        }
+      ],
+      "playBudgetExhausted": false,
+      "minimumProgressMs": 3000
+    }
+  ]
+}

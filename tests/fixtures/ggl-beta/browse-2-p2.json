@@ -1,0 +1,151 @@
+{
+  "code": 1,
+  "msg": "获取成功",
+  "info": {
+    "offset": 20,
+    "limit": 20,
+    "total": 3148,
+    "rows": [
+      {
+        "vod_id": 27206,
+        "vod_name": "青之箱 第二季",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20261001-1/715359afe6e9de9902aa6fae3f51393e.webp",
+        "vod_remarks": "更新至02集 / 23點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27216,
+        "vod_name": "和没有信徒的女神大人一起攻略异世界",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20261001-1/9d812a8b481731719c530bc7904b2a4f.webp",
+        "vod_remarks": "更新至01集 / 23點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27168,
+        "vod_name": "转生贵族凭鉴定技能扭转人生 第三季",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260927-1/e5da8c9c2fb072e123598d0c9b542aaf.webp",
+        "vod_remarks": "更新至03集 / 23點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27215,
+        "vod_name": "弱气MAX的大小姐、居然接受了铁腕未婚夫的赌约",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20261001-1/bc2a0adfade26fcf7d33363637957076.webp",
+        "vod_remarks": "更新至02集 / 23點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27213,
+        "vod_name": "魔法姐妹露露与莉莉2",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20261001-1/e30c41d3cc1b0d99bfa08515c31bf6ec.webp",
+        "vod_remarks": "更新至02集 / 22:30",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27211,
+        "vod_name": "一觉醒来坐拥神装和飞船，我决定以买一套独门独户的房子为目标作为佣兵自由地活下去",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20261001-1/b5c0f0660d41f82b318023ff3221e02b.webp",
+        "vod_remarks": "更新至02集 / 23點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27212,
+        "vod_name": "大叔喜欢可爱小玩意",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20261001-1/e5657f7bb775f9f526a59f2e29b844f6.webp",
+        "vod_remarks": "更新至02集 / 22:00",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27207,
+        "vod_name": "青之芦苇 第二季",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20261001-1/21c2b677549e763564db8c310af714de.webp",
+        "vod_remarks": "更新至01集 / 01點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27234,
+        "vod_name": "神田川JET GIRLS",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20261011-1/027d980cc8aa8745a2d21061b3e5a9eb.webp",
+        "vod_remarks": "",
+        "vod_year": "2019"
+      },
+      {
+        "vod_id": 27208,
+        "vod_name": "夜樱家的大作战 第2季 Part 2",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20261001-1/77137bbf1fa4a9f973fbcc3785543b01.webp",
+        "vod_remarks": "更新至01集 / 23點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27209,
+        "vod_name": "钻石王牌 第四季 Part 2",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20261001-1/10c20c6252ffafb889e60fa8925081fc.webp",
+        "vod_remarks": "更新至01集 / 23點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27195,
+        "vod_name": "七叶树王国的七名骑士",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260930-1/e2e8e95d21549dc6e37d29c7e4301836.webp",
+        "vod_remarks": "更新至02集 / 01點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27205,
+        "vod_name": "借出去的魔力要用【分期还款】强制收回",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20261001-1/da6f26cc952165f4472b179e3b32edd1.webp",
+        "vod_remarks": "更新至02集 / 02點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27204,
+        "vod_name": "新 乱马1/2 第三季",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20261001-1/622767882a45c1afa0960d01046f938a.webp",
+        "vod_remarks": "更新至02集 / 01點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27203,
+        "vod_name": "学生会也有洞！",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20261001-1/1ab2f613721494629917bd575693ed2e.webp",
+        "vod_remarks": "更新至02集 / 01點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27202,
+        "vod_name": "魔法★探险家",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20261001-1/7e1cbe0a3802ece4d8f742f3b0833377.webp",
+        "vod_remarks": "更新至03集 / 01點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27200,
+        "vod_name": "至高之力",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260930-1/74c1d82e25085fb465c1524ca5ea1819.webp",
+        "vod_remarks": "更新至02集 / 23點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27198,
+        "vod_name": "黑色五叶草 第二季",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260930-1/95ca4eecc93925db20689d20a40a6830.webp",
+        "vod_remarks": "更新至02集 / 23點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27186,
+        "vod_name": "药屋少女的呢喃 第三季",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260929-1/e8426e1d3d104ab90445fa04a8e741e5.webp",
+        "vod_remarks": "更新至02集 / 23點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27167,
+        "vod_name": "野生的大魔王出现了！第二季",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260926-1/4b09d30d25ce6423f861d82e5802b843.webp",
+        "vod_remarks": "更新至03集 / 23點30分",
+        "vod_year": "2026"
+      }
+    ]
+  }
+}
