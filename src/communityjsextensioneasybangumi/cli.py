@@ -1,7 +1,7 @@
 
 import sys
 import argparse
-from .channel import DEFAULT_REPO, DEV_SOURCE_DIR, ChannelError, generate_channel
+from .channel import DEFAULT_REPO, DEV_SOURCE_DIR, ChannelError, generate_channel, check_channel_index
 from .parser_v2 import parse_extensions
 from .release_gate import build_release
 
@@ -48,6 +48,15 @@ def parse_args():
     channel_parser.add_argument(
         '--verify', action='store_true', help='对生成的所有 url 做一次可达性校验')
     channel_parser.set_defaults(func=run_channel)
+
+    check_parser = subparsers.add_parser('channel-check', help='校验 PR 中已提交的 dev 索引，不写回 main')
+    check_parser.add_argument('--source-dir', default=DEV_SOURCE_DIR)
+    check_parser.add_argument('--index', default='channel/dev/index.jsonl')
+    check_parser.add_argument('--repo', default=DEFAULT_REPO)
+    check_parser.add_argument('--verify', action='store_true', help='下载 raw 源并核对每个 SHA256')
+    check_parser.set_defaults(func=lambda args: check_channel_index(
+        source_dir=args.source_dir, index_path=args.index, repo=args.repo,
+        verify=args.verify, log=print))
 
     return parser.parse_args()
 

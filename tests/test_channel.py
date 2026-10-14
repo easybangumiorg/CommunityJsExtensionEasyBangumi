@@ -190,5 +190,62 @@ class DevChannelTest(TempWorkspaceTest):
         self.assertEqual(read_index(self.root / "channel" / "dev" / "index.jsonl"), [])
 
 
+class CommittedDevIndexTest(TempWorkspaceTest):
+    def prepare(self):
+        self.seed_dev()
+        self.generate(ref="a" * 40)
+        return self.root / "channel" / "dev" / "index.jsonl"
+
+    def test_exact_current_index_passes_without_mutation(self):
+        from communityjsextensioneasybangumi.channel import check_channel_index
+        path = self.prepare()
+        original = path.read_bytes()
+        self.assertEqual(check_channel_index(self.dev_dir, path), 0)
+        self.assertEqual(path.read_bytes(), original)
+
+    def test_changed_source_bytes_and_missing_rows_are_rejected(self):
+        from communityjsextensioneasybangumi.channel import check_channel_index
+        path = self.prepare()
+        with (self.dev_dir / "a.js").open("a") as file:
+            file.write("\n// changed")
+        self.assertEqual(check_channel_index(self.dev_dir, path), 1)
+        self.generate(ref="a" * 40)
+        rows = read_index(path)
+        path.write_text(json.dumps(rows[0]) + "\n")
+        self.assertEqual(check_channel_index(self.dev_dir, path), 1)
+
+    def test_unpinned_external_and_mixed_refs_are_rejected(self):
+        from communityjsextensioneasybangumi.channel import check_channel_index
+        path = self.prepare()
+        original = read_index(path)
+        for replacement in ("main", "b" * 40):
+            rows = json.loads(json.dumps(original))
+            rows[0]["url"] = rows[0]["url"].replace("a" * 40, replacement)
+            path.write_text("".join(json.dumps(row) + "\n" for row in rows))
+            self.assertEqual(check_channel_index(self.dev_dir, path), 1)
+        rows[0]["url"] = "https://example.com/source.js"
+        path.write_text("".join(json.dumps(row) + "\n" for row in rows))
+        self.assertEqual(check_channel_index(self.dev_dir, path), 1)
+
+    def test_empty_index_is_rejected_without_rewriting(self):
+        from communityjsextensioneasybangumi.channel import check_channel_index
+        path = self.prepare()
+        path.write_text("")
+        self.assertEqual(check_channel_index(self.dev_dir, path), 1)
+        self.assertEqual(path.read_text(), "")
+
+    def test_remote_hash_mismatch_is_rejected(self):
+        from unittest.mock import patch
+        from communityjsextensioneasybangumi.channel import check_channel_index
+        path = self.prepare()
+        class Response:
+            status = 200
+            def __enter__(self): return self
+            def __exit__(self, *args): return False
+            def read(self): return b"wrong remote source"
+        with patch("communityjsextensioneasybangumi.channel.urllib.request.urlopen", return_value=Response()):
+            self.assertEqual(check_channel_index(self.dev_dir, path, verify=True), 1)
+
+
 if __name__ == "__main__":
     unittest.main()

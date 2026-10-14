@@ -392,5 +392,11 @@
     }
   ],
   "deployment": null,
-  "preflight": "当前线上 16 个 key、版本和 JS SHA256 与 release-baseline.json 完全一致；46 单测通过。"
+  "preflight": "当前线上 16 个 key、版本和 JS SHA256 与 release-baseline.json 完全一致；46 单测通过。",
+  "devPublicationMode": "protected main: commit source first, generate SHA-pinned index in next commit of same PR; CI read-only verifies metadata/current bytes and raw SHA256; no bot push to main",
+  "tests": {
+    "sourceRepository": 51,
+    "devCommittedIndex": 80,
+    "releasePreview": 8
+  }
 }

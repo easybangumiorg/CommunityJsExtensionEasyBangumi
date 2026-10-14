@@ -24,6 +24,7 @@ from __future__ import annotations
 
 import json
 import hashlib
+import re
 import time
 import urllib.request
 from urllib.parse import quote
@@ -244,3 +245,51 @@ def generate_channel(
             return 1
 
     return 0
+
+
+def check_channel_index(
+    source_dir: str | Path = DEV_SOURCE_DIR,
+    index_path: str | Path = DEV_INDEX_REL_PATH,
+    *,
+    repo: str = DEFAULT_REPO,
+    verify: bool = False,
+    log: Optional[Logger] = None,
+) -> int:
+    """Validate a PR-committed index without writing protected main.
+
+    All URLs share one immutable source commit; current metadata and bytes must
+    match every row. Online verification checks the actual remote bytes as well.
+    """
+    log = log or (lambda _message: None)
+    try:
+        rows = [json.loads(line) for line in Path(index_path).read_text(encoding="utf-8").splitlines() if line.strip()]
+        if not rows or not all(isinstance(row, dict) for row in rows):
+            raise ChannelError("dev 索引必须包含非空条目")
+        prefix = f"{RAW_BASE}/{repo}/"
+        refs = set()
+        for row in rows:
+            url = row.get("url", "")
+            if not isinstance(url, str) or not url.startswith(prefix):
+                raise ChannelError("dev URL 必须属于当前仓库 GitHub raw")
+            ref = url[len(prefix):].split("/", 1)[0]
+            if not re.fullmatch(r"[0-9a-f]{40}", ref):
+                raise ChannelError("dev URL 必须固定到完整提交 SHA")
+            refs.add(ref)
+        if len(refs) != 1:
+            raise ChannelError("dev 索引必须使用同一个源提交")
+        ref = refs.pop()
+        expected = [build_entry(source, repo=repo, ref=ref) for source in scan_dir(source_dir)
+                    if exclusion_reason(source.meta) is None]
+        if rows != expected:
+            raise ChannelError("dev 索引与当前源的 key/版本/路径/hash 不一致，请重新生成并提交")
+        if verify:
+            for row in rows:
+                request = urllib.request.Request(row["url"], headers={"User-Agent": "ebjer-channel-check"})
+                with urllib.request.urlopen(request, timeout=20) as response:
+                    if response.status != 200 or hashlib.sha256(response.read()).hexdigest() != row["sha256"]:
+                        raise ChannelError(f"dev 远端字节与索引 hash 不一致: {row['key']}")
+        log(f"dev 索引校验通过：{len(rows)} 条，sourceRef={ref}，remoteBytes={verify}")
+        return 0
+    except (ChannelError, OSError, ValueError, TypeError, KeyError) as error:
+        log(f"error: {error}")
+        return 1

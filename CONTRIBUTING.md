@@ -11,7 +11,7 @@
 ## 源提交与晋级
 
 1. 新增或更新源放在 `dev-extensions/`，保持 `@key` 稳定；内容发生变化时增加 `@versionCode`，完善 `@label/@versionName/@libVersion`。当前客户端仅支持 `libVersion=15`。
-2. 运行 `uv run python -m unittest discover -s tests -v`，再用 `uv run ebjer channel --source-dir dev-extensions --to /tmp/easybangumi-dev-index --ref <提交 SHA>` 做离线元数据检查。PR 中尚未发布的文件不做 raw 网络可达性检查。
+2. 运行 `uv run python -m unittest discover -s tests -v`。先提交源代码，再以该完整提交 SHA 运行 `uv run ebjer channel --source-dir dev-extensions --to channel/dev --ref <源提交 SHA>`，把索引作为下一提交加入同一 PR。运行 `uv run ebjer channel-check` 核对当前字节；源提交推到远端后可加 `--verify` 检查 raw 字节。main 受 PR 保护，索引随 PR 合并上线，CI 不用 bot 直接回推 main。
 3. 在 Android 真机 dev 环境安装最终文件，用「源体检」按 `source-acceptance-v1` 执行首页、固定关键词搜索、首条结果或首页首项详情、逐线路真实播放器验收，导出 JSON 证据。没有首帧和至少 3 秒实际播放进度不能晋级。
 4. 把通过源的原字节复制到 `extensions/`；证据放入 `acceptance/evidence/`。在 `release-manifest.json` 登记 key、最终文件 SHA256、versionCode、证据相对路径及维护者复核，再把该源状态改为 `approved`。其它源保留 `pending` 或明确标为 `rejected`。
 5. 运行 `uv run ebjer release --check-only`；通过后运行 `uv run ebjer release --to /tmp/easybangumi-release-preview` 审核完整产物与源数量。新构建仅包含 `approved` 源，因此未通过的历史源会从新发布索引及文件目录移除；在 PR 中列清新增、更新、下架 key。

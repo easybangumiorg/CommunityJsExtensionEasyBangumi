@@ -6,6 +6,7 @@ on:
     paths:
       - 'extensions/**'
       - 'dev-extensions/**'
+      - 'channel/dev/**'
       - 'src/**'
       - 'tests/**'
       - 'pyproject.toml'
@@ -25,5 +26,5 @@ jobs:
           enable-cache: true
       - run: uv sync --locked --all-extras --dev
       - run: uv run python -m unittest discover -s tests -v
-      # PR 内的新源尚不在 GitHub raw 上，此阶段只做离线静态验证。
-      - run: uv run ebjer channel --source-dir dev-extensions --to /tmp/dev-index --ref "${GITHUB_SHA}"
+      # 索引必须与当前 PR 源字节匹配且固定 SHA；main 再检查公开 raw 字节。
+      - run: uv run ebjer channel-check --source-dir dev-extensions --index channel/dev/index.jsonl

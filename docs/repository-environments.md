@@ -12,7 +12,7 @@
 
 | 路径 | 用途 | 发布方式 |
 | --- | --- | --- |
-| `dev-extensions/**/*.js` | 现有源与新源候选，尚未保证可用 | `parse2dev` 生成 `channel/dev/index.jsonl`，JS 使用 GitHub raw 的提交 SHA |
+| `dev-extensions/**/*.js` | 现有源与新源候选，尚未保证可用 | 源提交后生成 `channel/dev/index.jsonl` 并纳入同一 PR，JS 使用 GitHub raw 的提交 SHA |
 | `extensions/**/*.js` | 准备进入正式环境的源文件 | 严格门禁按 `release-manifest.json` 选出 approved 文件 |
 | `release-manifest.json` | 源的验收状态、精确 hash、证据与复核 | 与源和证据一起提交；不能仅靠搬文件晋级 |
 | `release-baseline.json` | 2026-10-09 实际线上 16 源版本与字节快照 | 仅在正式发布后核验线上内容再刷新，用于检查升级版本递增 |
@@ -139,8 +139,10 @@ uv run ebjer release --to /tmp/easybangumi-release-preview
 ## CI 链路
 
 1. dev PR：标准库单测 + 离线索引构建。PR 新文件尚未进入公开 raw，不做无意义的网络校验。
-2. main 的 `dev-extensions/**`、`src/**` 或 dev 工作流变化：`parse2dev` 固定源提交 SHA，生成并 HEAD 检查 raw URL，再提交 `channel/dev/index.jsonl`。它不复制源、不写 website。
+2. main 受 PR 保护：先提交源，再按该完整源提交 SHA 生成 `channel/dev/index.jsonl` 并作为下一提交加入同一 PR。PR 用 `channel-check` 检查 key/版本/路径/hash 与 SHA 固定；合并后 `parse2dev` 再下载所有 raw 文件核对 SHA256。CI 只有 contents:read，不直接回推 main，不复制源、不写 website。
 3. release PR 或 main 的 `extensions/**`、清单、证据、解析器或发布工作流变化：单测 → 严格门禁 → 完整产物。PR 到此结束；main 或显式 dispatch 通过门禁后才签出 website 可写仓库。
 4. 将产物复制到 `easybangumiorg/website` 的 `src/public/repository/v2/`，提交并推送 website main，后续由 website 自身部署流程发布站点。源仓库脚本不会直接刷新 CDN；发布后必须验证最终公开索引和字节，再记录新的 baseline。
 
 本次只修改本地文件并验证，不提交、不推送，不触发上述真实发布步骤。
+
+2026-10-14 发布时发现 main 仓库规则要求 PR，直接推送被 GH013 拒绝；已改为源与固定父提交 SHA 索引进入同一 PR。未更改或绕过仓库保护规则。
