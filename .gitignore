@@ -13,3 +13,4 @@ wheels/
 repository/**
 website/**
 .vscode/**
+.DS_Store

@@ -1,0 +1,4286 @@
+{
+  "schemaVersion": 1,
+  "documentType": "analysis-intake-snapshot",
+  "preparedOn": "2026-10-14",
+  "generatedAt": "2026-10-14T07:57:26.703321+00:00",
+  "scope": "22 supplied rows; not a replacement for the full 84-source inventory",
+  "catalogImplemented": false,
+  "newAdaptersImplemented": false,
+  "releaseManifestChanged": false,
+  "sourceOfTruthProposal": "official source repository dev JS + existing evidence and manifest; snapshot below is derived",
+  "originUserTable": {
+    "rowCount": 22,
+    "sqrtMeaning": "user marked existing; not acceptance or approval",
+    "brokenMeaning": "reported failure; occurrence time unknown",
+    "groupInterpretation": "first five no-CN-animation claim; next five CN-animation claim; layout is ambiguous, all coverage claims unverified"
+  },
+  "entries": [
+    {
+      "intakeId": "intake-20261014-01",
+      "originalRow": 1,
+      "name": "稀饭动漫next",
+      "suppliedUrl": "https://next.xifanacg.com",
+      "reportedExisting": false,
+      "reportedBroken": false,
+      "reportedFailureOccurredAt": null,
+      "coverageClaim": {
+        "value": "无国漫",
+        "source": "inferred from supplied table grouping",
+        "verified": false
+      },
+      "classification": "independent_variant_candidate",
+      "relationAssessment": "no_exact_domain_match",
+      "candidateKeys": [
+        "heyanle.xifan",
+        "kazumi.xfdm",
+        "kazumi.xfdmneo"
+      ],
+      "confirmedSiteId": null,
+      "note": "next is not covered by dm/anime/dm1 old adapters; relationship remains to be investigated"
+    },
+    {
+      "intakeId": "intake-20261014-02",
+      "originalRow": 2,
+      "name": "次元城动漫",
+      "suppliedUrl": "https://www.cycani.org",
+      "reportedExisting": false,
+      "reportedBroken": false,
+      "reportedFailureOccurredAt": null,
+      "coverageClaim": {
+        "value": "无国漫",
+        "source": "inferred from supplied table grouping",
+        "verified": false
+      },
+      "classification": "reuse_repair",
+      "relationAssessment": "exact_domain",
+      "candidateKeys": [
+        "kazumi.ciyuancheng"
+      ],
+      "confirmedSiteId": null,
+      "note": "same declared host; legacy implementation lacks PageComponent and search returned EMPTY"
+    },
+    {
+      "intakeId": "intake-20261014-03",
+      "originalRow": 3,
+      "name": "ギリギリ愛beta",
+      "suppliedUrl": "https://beta.girigirilove.com",
+      "reportedExisting": false,
+      "reportedBroken": false,
+      "reportedFailureOccurredAt": null,
+      "coverageClaim": {
+        "value": "无国漫",
+        "source": "inferred from supplied table grouping",
+        "verified": false
+      },
+      "classification": "independent_variant_candidate",
+      "relationAssessment": "distinct_subdomain",
+      "candidateKeys": [
+        "heyanle.ggl"
+      ],
+      "confirmedSiteId": null,
+      "note": "10-13 passing evidence is for main ani.girigirilove.com, not beta"
+    },
+    {
+      "intakeId": "intake-20261014-04",
+      "originalRow": 4,
+      "name": "milimili",
+      "suppliedUrl": "https://milimili.moe",
+      "reportedExisting": false,
+      "reportedBroken": false,
+      "reportedFailureOccurredAt": null,
+      "coverageClaim": {
+        "value": "无国漫",
+        "source": "inferred from supplied table grouping",
+        "verified": false
+      },
+      "classification": "new_adapter_candidate",
+      "relationAssessment": "none",
+      "candidateKeys": [],
+      "confirmedSiteId": null,
+      "note": "Preserve implementation and exact historical evidence; regression rather than duplicate adapter"
+    },
+    {
+      "intakeId": "intake-20261014-05",
+      "originalRow": 5,
+      "name": "青空次元",
+      "suppliedUrl": "https://www.sorani.net",
+      "reportedExisting": true,
+      "reportedBroken": false,
+      "reportedFailureOccurredAt": null,
+      "coverageClaim": {
+        "value": "无国漫",
+        "source": "inferred from supplied table grouping",
+        "verified": false
+      },
+      "classification": "reuse_regression",
+      "relationAssessment": "exact_domain",
+      "candidateKeys": [
+        "kazumi.sorani"
+      ],
+      "confirmedSiteId": null,
+      "note": "Preserve implementation and exact historical evidence; regression rather than duplicate adapter"
+    },
+    {
+      "intakeId": "intake-20261014-06",
+      "originalRow": 6,
+      "name": "MiFun",
+      "suppliedUrl": "https://ios.mifun.org",
+      "reportedExisting": false,
+      "reportedBroken": false,
+      "reportedFailureOccurredAt": null,
+      "coverageClaim": {
+        "value": "有国漫",
+        "source": "inferred from supplied table grouping",
+        "verified": false
+      },
+      "classification": "verify_site_identity",
+      "relationAssessment": "distinct_domain",
+      "candidateKeys": [
+        "kazumi.mifun"
+      ],
+      "confirmedSiteId": null,
+      "note": "old mifun.tw vs proposed ios.mifun.org; identity and ID compatibility unknown"
+    },
+    {
+      "intakeId": "intake-20261014-07",
+      "originalRow": 7,
+      "name": "路漫漫",
+      "suppliedUrl": "https://www.lmmzx.com",
+      "reportedExisting": false,
+      "reportedBroken": false,
+      "reportedFailureOccurredAt": null,
+      "coverageClaim": {
+        "value": "有国漫",
+        "source": "inferred from supplied table grouping",
+        "verified": false
+      },
+      "classification": "verify_site_identity",
+      "relationAssessment": "distinct_domain",
+      "candidateKeys": [
+        "kazumi.lmm"
+      ],
+      "confirmedSiteId": null,
+      "note": "old lmm85.com vs proposed lmmzx.com; 10-13 GET is Loading with href.js"
+    },
+    {
+      "intakeId": "intake-20261014-08",
+      "originalRow": 8,
+      "name": "嘶哩嘶哩",
+      "suppliedUrl": "https://www.silisilifun.com",
+      "reportedExisting": false,
+      "reportedBroken": false,
+      "reportedFailureOccurredAt": null,
+      "coverageClaim": {
+        "value": "有国漫",
+        "source": "inferred from supplied table grouping",
+        "verified": false
+      },
+      "classification": "new_adapter_candidate",
+      "relationAssessment": "none",
+      "candidateKeys": [],
+      "confirmedSiteId": null,
+      "note": "public GET failed on 10-13; that is not proof of closure"
+    },
+    {
+      "intakeId": "intake-20261014-09",
+      "originalRow": 9,
+      "name": "omootv",
+      "suppliedUrl": "https://www.omofuns.com",
+      "reportedExisting": false,
+      "reportedBroken": false,
+      "reportedFailureOccurredAt": null,
+      "coverageClaim": {
+        "value": "有国漫",
+        "source": "inferred from supplied table grouping",
+        "verified": false
+      },
+      "classification": "verify_site_identity",
+      "relationAssessment": "similar_names_distinct_domains",
+      "candidateKeys": [
+        "jisoft.omofun",
+        "kazumi.omofunz",
+        "kazumi.omofun03"
+      ],
+      "confirmedSiteId": null,
+      "note": "similar names and distinct hosts; do not equate omofuns.com with omofun03.top or omofun.link"
+    },
+    {
+      "intakeId": "intake-20261014-10",
+      "originalRow": 10,
+      "name": "打驴动漫",
+      "suppliedUrl": "https://www.sbdl.cc",
+      "reportedExisting": false,
+      "reportedBroken": false,
+      "reportedFailureOccurredAt": null,
+      "coverageClaim": {
+        "value": "有国漫",
+        "source": "inferred from supplied table grouping",
+        "verified": false
+      },
+      "classification": "verify_site_identity",
+      "relationAssessment": "similar_name_distinct_domain",
+      "candidateKeys": [
+        "kazumi.dlma"
+      ],
+      "confirmedSiteId": null,
+      "note": "old dmla5.com vs sbdl.cc; 403 is not proof of permanent failure"
+    },
+    {
+      "intakeId": "intake-20261014-11",
+      "originalRow": 11,
+      "name": "age动漫",
+      "suppliedUrl": "https://www.agedm.io",
+      "reportedExisting": true,
+      "reportedBroken": false,
+      "reportedFailureOccurredAt": null,
+      "coverageClaim": {
+        "value": null,
+        "source": null,
+        "verified": false
+      },
+      "classification": "reuse_regression",
+      "relationAssessment": "exact_domain",
+      "candidateKeys": [
+        "heyanle.age"
+      ],
+      "confirmedSiteId": null,
+      "note": "Preserve implementation and exact historical evidence; regression rather than duplicate adapter"
+    },
+    {
+      "intakeId": "intake-20261014-12",
+      "originalRow": 12,
+      "name": "TvTFun",
+      "suppliedUrl": "https://www.tvtfun.net",
+      "reportedExisting": true,
+      "reportedBroken": false,
+      "reportedFailureOccurredAt": null,
+      "coverageClaim": {
+        "value": null,
+        "source": null,
+        "verified": false
+      },
+      "classification": "reuse_repair",
+      "relationAssessment": "exact_domain",
+      "candidateKeys": [
+        "kazumi.tvtfun"
+      ],
+      "confirmedSiteId": null,
+      "note": "existing adapter and HOME/SEARCH PASS, but all A/B/D first episodes timed out on 10-09"
+    },
+    {
+      "intakeId": "intake-20261014-13",
+      "originalRow": 13,
+      "name": "baimao",
+      "suppliedUrl": "https://www.baimaodm.com",
+      "reportedExisting": true,
+      "reportedBroken": false,
+      "reportedFailureOccurredAt": null,
+      "coverageClaim": {
+        "value": null,
+        "source": null,
+        "verified": false
+      },
+      "classification": "reuse_regression_verify_domain",
+      "relationAssessment": "exact_domain",
+      "candidateKeys": [
+        "kazumi.baimao"
+      ],
+      "confirmedSiteId": null,
+      "note": "10-13 redirect baimaodm.com to bmmdmm.com observed after 10-09 pass; verify identity and replay"
+    },
+    {
+      "intakeId": "intake-20261014-14",
+      "originalRow": 14,
+      "name": "mxdm",
+      "suppliedUrl": "https://www.dcc3.com",
+      "reportedExisting": true,
+      "reportedBroken": false,
+      "reportedFailureOccurredAt": null,
+      "coverageClaim": {
+        "value": null,
+        "source": null,
+        "verified": false
+      },
+      "classification": "reuse_regression",
+      "relationAssessment": "exact_domain",
+      "candidateKeys": [
+        "kazumi.mxdm"
+      ],
+      "confirmedSiteId": null,
+      "note": "Preserve implementation and exact historical evidence; regression rather than duplicate adapter"
+    },
+    {
+      "intakeId": "intake-20261014-15",
+      "originalRow": 15,
+      "name": "9ciyuan",
+      "suppliedUrl": null,
+      "reportedExisting": true,
+      "reportedBroken": false,
+      "reportedFailureOccurredAt": null,
+      "coverageClaim": {
+        "value": null,
+        "source": null,
+        "verified": false
+      },
+      "classification": "reuse_regression",
+      "relationAssessment": "exact_key",
+      "candidateKeys": [
+        "kazumi.9ciyuan"
+      ],
+      "confirmedSiteId": null,
+      "note": "Preserve implementation and exact historical evidence; regression rather than duplicate adapter"
+    },
+    {
+      "intakeId": "intake-20261014-16",
+      "originalRow": 16,
+      "name": "anime7",
+      "suppliedUrl": null,
+      "reportedExisting": true,
+      "reportedBroken": false,
+      "reportedFailureOccurredAt": null,
+      "coverageClaim": {
+        "value": null,
+        "source": null,
+        "verified": false
+      },
+      "classification": "reuse_regression",
+      "relationAssessment": "exact_key",
+      "candidateKeys": [
+        "kazumi.anime7"
+      ],
+      "confirmedSiteId": null,
+      "note": "Preserve implementation and exact historical evidence; regression rather than duplicate adapter"
+    },
+    {
+      "intakeId": "intake-20261014-17",
+      "originalRow": 17,
+      "name": "ant",
+      "suppliedUrl": null,
+      "reportedExisting": true,
+      "reportedBroken": false,
+      "reportedFailureOccurredAt": null,
+      "coverageClaim": {
+        "value": null,
+        "source": null,
+        "verified": false
+      },
+      "classification": "reuse_regression",
+      "relationAssessment": "exact_key",
+      "candidateKeys": [
+        "kazumi.ant"
+      ],
+      "confirmedSiteId": null,
+      "note": "Preserve implementation and exact historical evidence; regression rather than duplicate adapter"
+    },
+    {
+      "intakeId": "intake-20261014-18",
+      "originalRow": 18,
+      "name": "gpjda",
+      "suppliedUrl": null,
+      "reportedExisting": true,
+      "reportedBroken": false,
+      "reportedFailureOccurredAt": null,
+      "coverageClaim": {
+        "value": null,
+        "source": null,
+        "verified": false
+      },
+      "classification": "reuse_regression",
+      "relationAssessment": "exact_key",
+      "candidateKeys": [
+        "kazumi.gpjda"
+      ],
+      "confirmedSiteId": null,
+      "note": "Preserve implementation and exact historical evidence; regression rather than duplicate adapter"
+    },
+    {
+      "intakeId": "intake-20261014-19",
+      "originalRow": 19,
+      "name": "ylsp",
+      "suppliedUrl": null,
+      "reportedExisting": false,
+      "reportedBroken": true,
+      "reportedFailureOccurredAt": null,
+      "coverageClaim": {
+        "value": null,
+        "source": null,
+        "verified": false
+      },
+      "classification": "reuse_repair_disambiguate",
+      "relationAssessment": "label_alias_ambiguous",
+      "candidateKeys": [
+        "kazumi.ylsp",
+        "jisoft.ale"
+      ],
+      "confirmedSiteId": null,
+      "note": "keep kazumi.ylsp separate from legacy API12 jisoft.ale"
+    },
+    {
+      "intakeId": "intake-20261014-20",
+      "originalRow": 20,
+      "name": "omofun03",
+      "suppliedUrl": null,
+      "reportedExisting": false,
+      "reportedBroken": true,
+      "reportedFailureOccurredAt": null,
+      "coverageClaim": {
+        "value": null,
+        "source": null,
+        "verified": false
+      },
+      "classification": "reuse_repair",
+      "relationAssessment": "exact_key",
+      "candidateKeys": [
+        "kazumi.omofun03"
+      ],
+      "confirmedSiteId": null,
+      "note": "existing omofun03 failure does not establish failure of proposed omootv"
+    },
+    {
+      "intakeId": "intake-20261014-21",
+      "originalRow": 21,
+      "name": "7sefun",
+      "suppliedUrl": null,
+      "reportedExisting": false,
+      "reportedBroken": true,
+      "reportedFailureOccurredAt": null,
+      "coverageClaim": {
+        "value": null,
+        "source": null,
+        "verified": false
+      },
+      "classification": "reuse_retest_conflicting_claim",
+      "relationAssessment": "exact_key",
+      "candidateKeys": [
+        "kazumi.7sefun"
+      ],
+      "confirmedSiteId": null,
+      "note": "user report has unknown occurrence date; keep 10-09 PASS and request new regression"
+    },
+    {
+      "intakeId": "intake-20261014-22",
+      "originalRow": 22,
+      "name": "稀饭动漫",
+      "suppliedUrl": null,
+      "reportedExisting": false,
+      "reportedBroken": true,
+      "reportedFailureOccurredAt": null,
+      "coverageClaim": {
+        "value": null,
+        "source": null,
+        "verified": false
+      },
+      "classification": "reuse_repair_disambiguate",
+      "relationAssessment": "name_ambiguous",
+      "candidateKeys": [
+        "heyanle.xifan",
+        "kazumi.xfdm",
+        "kazumi.xfdmneo"
+      ],
+      "confirmedSiteId": null,
+      "note": "three historical keys/hosts remain separate; no confirmed next replacement"
+    }
+  ],
+  "adapterObservations": {
+    "heyanle.xifan": {
+      "artifacts": {
+        "android": {
+          "path": "inner_source/xifandm.js",
+          "sha256": "3cc8c71415a67eacfc750f6cb7c1495b8c1ac3d9e97bc6c78d387f65987a35ce",
+          "metadata": {
+            "key": "heyanle.xifan",
+            "label": "稀饭动漫",
+            "versionName": "1.1",
+            "versionCode": "2",
+            "libVersion": "15",
+            "cover": "https://dm.xifanacg.com/template/dsn2/static/img/fav.png"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 17,
+              "text": "var host = new SourcePreference.Edit(\"网页\", \"Host\", \"https://dm.xifanacg.com\");"
+            },
+            {
+              "line": 283,
+              "text": "return preferenceHelper.get(\"Host\", \"https://dm.xifanacg.com\");"
+            }
+          ]
+        },
+        "dev": {
+          "path": "dev-extensions/xifandm.js",
+          "sha256": "3cc8c71415a67eacfc750f6cb7c1495b8c1ac3d9e97bc6c78d387f65987a35ce",
+          "metadata": {
+            "key": "heyanle.xifan",
+            "label": "稀饭动漫",
+            "versionName": "1.1",
+            "versionCode": "2",
+            "libVersion": "15",
+            "cover": "https://dm.xifanacg.com/template/dsn2/static/img/fav.png"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 17,
+              "text": "var host = new SourcePreference.Edit(\"网页\", \"Host\", \"https://dm.xifanacg.com\");"
+            },
+            {
+              "line": 283,
+              "text": "return preferenceHelper.get(\"Host\", \"https://dm.xifanacg.com\");"
+            }
+          ]
+        },
+        "release": {
+          "path": "extensions/xifandm.js",
+          "sha256": "3cc8c71415a67eacfc750f6cb7c1495b8c1ac3d9e97bc6c78d387f65987a35ce",
+          "metadata": {
+            "key": "heyanle.xifan",
+            "label": "稀饭动漫",
+            "versionName": "1.1",
+            "versionCode": "2",
+            "libVersion": "15",
+            "cover": "https://dm.xifanacg.com/template/dsn2/static/img/fav.png"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 17,
+              "text": "var host = new SourcePreference.Edit(\"网页\", \"Host\", \"https://dm.xifanacg.com\");"
+            },
+            {
+              "line": 283,
+              "text": "return preferenceHelper.get(\"Host\", \"https://dm.xifanacg.com\");"
+            }
+          ]
+        }
+      },
+      "declaredHosts": [
+        "dm.xifanacg.com"
+      ],
+      "presentChannels": [
+        "android",
+        "dev",
+        "release"
+      ],
+      "hashesDiverge": false,
+      "directoryComparison": "all_three_identical",
+      "latestMatchingHistoricalEvidence": {
+        "originProject": "easybangumi_android",
+        "originRelativePath": "docs/source-audit/2026-10-09/isolated/heyanle.xifan/acceptance-20261009-054441-980b107c.json",
+        "reportSha256": "cfbb80344f8aff4ce34bedb1a54bea68354a119e3b66b03dd3665ec05d07690f",
+        "reportKeyLine": 46,
+        "archiveEquivalent": null,
+        "finishedAt": "2026-10-09T05:45:35.519Z",
+        "acceptance": "PLAYBACK_FAILED",
+        "sourceVersionName": "1.1",
+        "sourceVersionCode": 2,
+        "sourceSha256": "3cc8c71415a67eacfc750f6cb7c1495b8c1ac3d9e97bc6c78d387f65987a35ce",
+        "matchesObservedAndroidBytes": true,
+        "app": {
+          "buildType": "debug",
+          "gitCommit": "fed45da5fd0a508ec313fdb3f9054c687e724545",
+          "packageName": "com.heyanle.easybangumi4.debug",
+          "versionCode": 115,
+          "versionName": "6.1.3"
+        },
+        "device": {
+          "androidVersion": "16",
+          "apiLevel": 36,
+          "isPhysicalDevice": true,
+          "manufacturer": "meizu",
+          "model": "MEIZU 21",
+          "serial": "461QYGFJ222HD"
+        },
+        "steps": [
+          {
+            "detail": "超时：25s",
+            "elapsedMs": 25011,
+            "step": "HOME",
+            "verdict": "FAIL"
+          },
+          {
+            "detail": "「孤独摇滚」TIMEOUT(0)；搜索不可用，首页播放只能供诊断，不能自动准入",
+            "elapsedMs": 25007,
+            "step": "SEARCH",
+            "verdict": "FAIL"
+          },
+          {
+            "detail": "所有别名无可用结果且首页第 1 部不可用，无法定位播放样本",
+            "elapsedMs": 0,
+            "step": "PLAY",
+            "verdict": "FAIL"
+          }
+        ],
+        "coverageNote": "Applies to this exact adapter version/hash and tested run; not automatic coverage for a beta/next/new host"
+      },
+      "publicationSnapshot": {
+        "registered": true,
+        "status": "pending",
+        "review": null
+      }
+    },
+    "kazumi.xfdm": {
+      "artifacts": {
+        "android": {
+          "path": "inner_source/kazumi-xfdm.js",
+          "sha256": "d4178f56bd5c0bf89571806278556830389d31c5f5bfbd6dbeaaf684db0c60ad",
+          "metadata": {
+            "key": "kazumi.xfdm",
+            "label": "xfdm",
+            "versionName": "2.1",
+            "versionCode": "20100",
+            "libVersion": "15",
+            "cover": "https://anime.xifanacg.com/favicon.ico"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 13,
+              "text": "var DEFAULT_BASE_URL = \"https://anime.xifanacg.com/\";"
+            },
+            {
+              "line": 28,
+              "text": "res.add(new SourcePreference.Edit(\"网页\", \"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 257,
+              "text": "var oldRoot = normalizeRootUrl(DEFAULT_BASE_URL);"
+            },
+            {
+              "line": 265,
+              "text": "return normalizeRootUrl(preferenceHelper.get(\"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 271,
+              "text": "value = DEFAULT_BASE_URL;"
+            }
+          ]
+        },
+        "dev": {
+          "path": "dev-extensions/kazumi-xfdm.js",
+          "sha256": "d4178f56bd5c0bf89571806278556830389d31c5f5bfbd6dbeaaf684db0c60ad",
+          "metadata": {
+            "key": "kazumi.xfdm",
+            "label": "xfdm",
+            "versionName": "2.1",
+            "versionCode": "20100",
+            "libVersion": "15",
+            "cover": "https://anime.xifanacg.com/favicon.ico"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 13,
+              "text": "var DEFAULT_BASE_URL = \"https://anime.xifanacg.com/\";"
+            },
+            {
+              "line": 28,
+              "text": "res.add(new SourcePreference.Edit(\"网页\", \"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 257,
+              "text": "var oldRoot = normalizeRootUrl(DEFAULT_BASE_URL);"
+            },
+            {
+              "line": 265,
+              "text": "return normalizeRootUrl(preferenceHelper.get(\"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 271,
+              "text": "value = DEFAULT_BASE_URL;"
+            }
+          ]
+        }
+      },
+      "declaredHosts": [
+        "anime.xifanacg.com"
+      ],
+      "presentChannels": [
+        "android",
+        "dev"
+      ],
+      "hashesDiverge": false,
+      "directoryComparison": "release_missing_android_dev_identical",
+      "latestMatchingHistoricalEvidence": {
+        "originProject": "easybangumi_android",
+        "originRelativePath": "docs/source-audit/2026-10-09/isolated/kazumi.xfdm/acceptance-20261009-060205-a07d4cd6.json",
+        "reportSha256": "d2a7f5818eb884d5570baafd45534320984d128bddd869356a2cc9e01f3eaaa4",
+        "reportKeyLine": 46,
+        "archiveEquivalent": null,
+        "finishedAt": "2026-10-09T06:02:34.614Z",
+        "acceptance": "PLAYBACK_FAILED",
+        "sourceVersionName": "2.1",
+        "sourceVersionCode": 20100,
+        "sourceSha256": "d4178f56bd5c0bf89571806278556830389d31c5f5bfbd6dbeaaf684db0c60ad",
+        "matchesObservedAndroidBytes": true,
+        "app": {
+          "buildType": "debug",
+          "gitCommit": "fed45da5fd0a508ec313fdb3f9054c687e724545",
+          "packageName": "com.heyanle.easybangumi4.debug",
+          "versionCode": 115,
+          "versionName": "6.1.3"
+        },
+        "device": {
+          "androidVersion": "16",
+          "apiLevel": 36,
+          "isPhysicalDevice": true,
+          "manufacturer": "meizu",
+          "model": "MEIZU 21",
+          "serial": "461QYGFJ222HD"
+        },
+        "steps": [
+          {
+            "detail": "IllegalStateException：源没有提供 PageComponent",
+            "elapsedMs": 0,
+            "step": "HOME",
+            "verdict": "FAIL"
+          },
+          {
+            "detail": "「孤独摇滚」TIMEOUT(0)；搜索不可用，首页播放只能供诊断，不能自动准入",
+            "elapsedMs": 25009,
+            "step": "SEARCH",
+            "verdict": "FAIL"
+          },
+          {
+            "detail": "所有别名无可用结果且首页第 1 部不可用，无法定位播放样本",
+            "elapsedMs": 0,
+            "step": "PLAY",
+            "verdict": "FAIL"
+          }
+        ],
+        "coverageNote": "Applies to this exact adapter version/hash and tested run; not automatic coverage for a beta/next/new host"
+      },
+      "publicationSnapshot": {
+        "registered": false,
+        "status": "not_registered",
+        "review": null
+      }
+    },
+    "kazumi.xfdmneo": {
+      "artifacts": {
+        "android": {
+          "path": "inner_source/kazumi-xfdmneo.js",
+          "sha256": "f8ae79e2a9740d16bae51a40c871c4e5a002bdd0c6c8672a3c14ed2b935f3ce1",
+          "metadata": {
+            "key": "kazumi.xfdmneo",
+            "label": "xfdmneo",
+            "versionName": "1.1",
+            "versionCode": "10100",
+            "libVersion": "15",
+            "cover": "https://dm1.xfdm.pro/favicon.ico"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 13,
+              "text": "var DEFAULT_BASE_URL = \"https://dm1.xfdm.pro/\";"
+            },
+            {
+              "line": 28,
+              "text": "res.add(new SourcePreference.Edit(\"网页\", \"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 257,
+              "text": "var oldRoot = normalizeRootUrl(DEFAULT_BASE_URL);"
+            },
+            {
+              "line": 265,
+              "text": "return normalizeRootUrl(preferenceHelper.get(\"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 271,
+              "text": "value = DEFAULT_BASE_URL;"
+            }
+          ]
+        },
+        "dev": {
+          "path": "dev-extensions/kazumi-xfdmneo.js",
+          "sha256": "f8ae79e2a9740d16bae51a40c871c4e5a002bdd0c6c8672a3c14ed2b935f3ce1",
+          "metadata": {
+            "key": "kazumi.xfdmneo",
+            "label": "xfdmneo",
+            "versionName": "1.1",
+            "versionCode": "10100",
+            "libVersion": "15",
+            "cover": "https://dm1.xfdm.pro/favicon.ico"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 13,
+              "text": "var DEFAULT_BASE_URL = \"https://dm1.xfdm.pro/\";"
+            },
+            {
+              "line": 28,
+              "text": "res.add(new SourcePreference.Edit(\"网页\", \"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 257,
+              "text": "var oldRoot = normalizeRootUrl(DEFAULT_BASE_URL);"
+            },
+            {
+              "line": 265,
+              "text": "return normalizeRootUrl(preferenceHelper.get(\"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 271,
+              "text": "value = DEFAULT_BASE_URL;"
+            }
+          ]
+        }
+      },
+      "declaredHosts": [
+        "dm1.xfdm.pro"
+      ],
+      "presentChannels": [
+        "android",
+        "dev"
+      ],
+      "hashesDiverge": false,
+      "directoryComparison": "release_missing_android_dev_identical",
+      "latestMatchingHistoricalEvidence": {
+        "originProject": "easybangumi_android",
+        "originRelativePath": "docs/source-audit/2026-10-09/isolated/kazumi.xfdmneo/acceptance-20261009-060236-0342f1a9.json",
+        "reportSha256": "4fa375de08648e27c15cf79d630d664e863903b3c014430a652bf9e61a75e593",
+        "reportKeyLine": 46,
+        "archiveEquivalent": null,
+        "finishedAt": "2026-10-09T06:03:31.116Z",
+        "acceptance": "PLAYBACK_FAILED",
+        "sourceVersionName": "1.1",
+        "sourceVersionCode": 10100,
+        "sourceSha256": "f8ae79e2a9740d16bae51a40c871c4e5a002bdd0c6c8672a3c14ed2b935f3ce1",
+        "matchesObservedAndroidBytes": true,
+        "app": {
+          "buildType": "debug",
+          "gitCommit": "fed45da5fd0a508ec313fdb3f9054c687e724545",
+          "packageName": "com.heyanle.easybangumi4.debug",
+          "versionCode": 115,
+          "versionName": "6.1.3"
+        },
+        "device": {
+          "androidVersion": "16",
+          "apiLevel": 36,
+          "isPhysicalDevice": true,
+          "manufacturer": "meizu",
+          "model": "MEIZU 21",
+          "serial": "461QYGFJ222HD"
+        },
+        "steps": [
+          {
+            "detail": "IllegalStateException：源没有提供 PageComponent",
+            "elapsedMs": 1,
+            "step": "HOME",
+            "verdict": "FAIL"
+          },
+          {
+            "detail": "「孤独摇滚」RESULTS(3)；选择结果第 1 部「剧场总集篇孤独摇滚！ Re:Re:」",
+            "elapsedMs": 831,
+            "step": "SEARCH",
+            "verdict": "PASS"
+          },
+          {
+            "detail": "全部 2 条线路首集未通过：播放线路1=TIMEOUT，播放线路2=TIMEOUT",
+            "elapsedMs": 50388,
+            "step": "PLAY",
+            "verdict": "FAIL"
+          }
+        ],
+        "coverageNote": "Applies to this exact adapter version/hash and tested run; not automatic coverage for a beta/next/new host"
+      },
+      "publicationSnapshot": {
+        "registered": false,
+        "status": "not_registered",
+        "review": null
+      }
+    },
+    "kazumi.ciyuancheng": {
+      "artifacts": {
+        "android": {
+          "path": "inner_source/kazumi-ciyuancheng.js",
+          "sha256": "850f05d849f2b318ee6be1112004ea1206e41f948eec1b8ddb7b0a1d0fbc3def",
+          "metadata": {
+            "key": "kazumi.ciyuancheng",
+            "label": "ciyuancheng",
+            "versionName": "2.0",
+            "versionCode": "20000",
+            "libVersion": "15",
+            "cover": "https://www.cycani.org/favicon.ico"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 13,
+              "text": "var DEFAULT_BASE_URL = \"https://www.cycani.org/\";"
+            },
+            {
+              "line": 28,
+              "text": "res.add(new SourcePreference.Edit(\"网页\", \"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 257,
+              "text": "var oldRoot = normalizeRootUrl(DEFAULT_BASE_URL);"
+            },
+            {
+              "line": 265,
+              "text": "return normalizeRootUrl(preferenceHelper.get(\"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 271,
+              "text": "value = DEFAULT_BASE_URL;"
+            }
+          ]
+        },
+        "dev": {
+          "path": "dev-extensions/kazumi-ciyuancheng.js",
+          "sha256": "850f05d849f2b318ee6be1112004ea1206e41f948eec1b8ddb7b0a1d0fbc3def",
+          "metadata": {
+            "key": "kazumi.ciyuancheng",
+            "label": "ciyuancheng",
+            "versionName": "2.0",
+            "versionCode": "20000",
+            "libVersion": "15",
+            "cover": "https://www.cycani.org/favicon.ico"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 13,
+              "text": "var DEFAULT_BASE_URL = \"https://www.cycani.org/\";"
+            },
+            {
+              "line": 28,
+              "text": "res.add(new SourcePreference.Edit(\"网页\", \"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 257,
+              "text": "var oldRoot = normalizeRootUrl(DEFAULT_BASE_URL);"
+            },
+            {
+              "line": 265,
+              "text": "return normalizeRootUrl(preferenceHelper.get(\"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 271,
+              "text": "value = DEFAULT_BASE_URL;"
+            }
+          ]
+        }
+      },
+      "declaredHosts": [
+        "www.cycani.org"
+      ],
+      "presentChannels": [
+        "android",
+        "dev"
+      ],
+      "hashesDiverge": false,
+      "directoryComparison": "release_missing_android_dev_identical",
+      "latestMatchingHistoricalEvidence": {
+        "originProject": "easybangumi_android",
+        "originRelativePath": "docs/source-audit/2026-10-09/isolated/kazumi.ciyuancheng/acceptance-20261009-054737-9f0c4c73.json",
+        "reportSha256": "a651a30aa9d94b2136c5f77bf01040ddff6f677d95e87ef6abdb5f2039741233",
+        "reportKeyLine": 46,
+        "archiveEquivalent": null,
+        "finishedAt": "2026-10-09T05:47:42.488Z",
+        "acceptance": "PLAYBACK_FAILED",
+        "sourceVersionName": "2.0",
+        "sourceVersionCode": 20000,
+        "sourceSha256": "850f05d849f2b318ee6be1112004ea1206e41f948eec1b8ddb7b0a1d0fbc3def",
+        "matchesObservedAndroidBytes": true,
+        "app": {
+          "buildType": "debug",
+          "gitCommit": "fed45da5fd0a508ec313fdb3f9054c687e724545",
+          "packageName": "com.heyanle.easybangumi4.debug",
+          "versionCode": 115,
+          "versionName": "6.1.3"
+        },
+        "device": {
+          "androidVersion": "16",
+          "apiLevel": 36,
+          "isPhysicalDevice": true,
+          "manufacturer": "meizu",
+          "model": "MEIZU 21",
+          "serial": "461QYGFJ222HD"
+        },
+        "steps": [
+          {
+            "detail": "IllegalStateException：源没有提供 PageComponent",
+            "elapsedMs": 1,
+            "step": "HOME",
+            "verdict": "FAIL"
+          },
+          {
+            "detail": "「孤独摇滚」EMPTY(0) → 「孤獨搖滾」EMPTY(0) → 「ぼっち・ざ・ろっく！」EMPTY(0) → 「Bocchi the Rock」EMPTY(0)；标题未收录，播放阶段使用首页第 1 部，仍需人工审核",
+            "elapsedMs": 678,
+            "step": "SEARCH",
+            "verdict": "SUSPECT"
+          },
+          {
+            "detail": "所有别名无可用结果且首页第 1 部不可用，无法定位播放样本",
+            "elapsedMs": 0,
+            "step": "PLAY",
+            "verdict": "FAIL"
+          }
+        ],
+        "coverageNote": "Applies to this exact adapter version/hash and tested run; not automatic coverage for a beta/next/new host"
+      },
+      "publicationSnapshot": {
+        "registered": false,
+        "status": "not_registered",
+        "review": null
+      }
+    },
+    "heyanle.ggl": {
+      "artifacts": {
+        "android": {
+          "path": "inner_source/girigirilove.js",
+          "sha256": "496af7c3a5a6d3fdb5a32c36e2f998a418130c3a6f4d3c161e854c31ef49c5bd",
+          "metadata": {
+            "key": "heyanle.ggl",
+            "label": "GiriGiriLove",
+            "versionName": "1.5",
+            "versionCode": "7",
+            "libVersion": "15",
+            "cover": "https://ani.girigirilove.com/upload/site/20231121-1/fdd2694db66628a9deadd86e50aedd43.png"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 18,
+              "text": "var host = new SourcePreference.Edit(\"网页\", \"HostV2\", \"https://ani.girigirilove.com\");"
+            },
+            {
+              "line": 327,
+              "text": "return preferenceHelper.get(\"HostV2\", \"https://ani.girigirilove.com\");"
+            }
+          ]
+        },
+        "dev": {
+          "path": "dev-extensions/girigirilove.js",
+          "sha256": "496af7c3a5a6d3fdb5a32c36e2f998a418130c3a6f4d3c161e854c31ef49c5bd",
+          "metadata": {
+            "key": "heyanle.ggl",
+            "label": "GiriGiriLove",
+            "versionName": "1.5",
+            "versionCode": "7",
+            "libVersion": "15",
+            "cover": "https://ani.girigirilove.com/upload/site/20231121-1/fdd2694db66628a9deadd86e50aedd43.png"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 18,
+              "text": "var host = new SourcePreference.Edit(\"网页\", \"HostV2\", \"https://ani.girigirilove.com\");"
+            },
+            {
+              "line": 327,
+              "text": "return preferenceHelper.get(\"HostV2\", \"https://ani.girigirilove.com\");"
+            }
+          ]
+        },
+        "release": {
+          "path": "extensions/girigirilove.js",
+          "sha256": "496af7c3a5a6d3fdb5a32c36e2f998a418130c3a6f4d3c161e854c31ef49c5bd",
+          "metadata": {
+            "key": "heyanle.ggl",
+            "label": "GiriGiriLove",
+            "versionName": "1.5",
+            "versionCode": "7",
+            "libVersion": "15",
+            "cover": "https://ani.girigirilove.com/upload/site/20231121-1/fdd2694db66628a9deadd86e50aedd43.png"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 18,
+              "text": "var host = new SourcePreference.Edit(\"网页\", \"HostV2\", \"https://ani.girigirilove.com\");"
+            },
+            {
+              "line": 327,
+              "text": "return preferenceHelper.get(\"HostV2\", \"https://ani.girigirilove.com\");"
+            }
+          ]
+        }
+      },
+      "declaredHosts": [
+        "ani.girigirilove.com"
+      ],
+      "presentChannels": [
+        "android",
+        "dev",
+        "release"
+      ],
+      "hashesDiverge": false,
+      "directoryComparison": "all_three_identical",
+      "latestMatchingHistoricalEvidence": {
+        "originProject": "easybangumi_android",
+        "originRelativePath": "docs/source-audit/2026-10-13/xiaomi-14/ggl-clean-manual/acceptance-20261013-055326-57155802.json",
+        "reportSha256": "d309d3c3893f44651813f8236102818f21782566fb3cf462e9a1644eee5d6d33",
+        "reportKeyLine": 49,
+        "archiveEquivalent": "acceptance/evidence/2026-10-13/xiaomi-14/ggl-clean-manual/acceptance-20261013-055326-57155802.json",
+        "finishedAt": "2026-10-13T05:54:04.304Z",
+        "acceptance": "SEARCH_PLAYABLE",
+        "sourceVersionName": "1.5",
+        "sourceVersionCode": 7,
+        "sourceSha256": "496af7c3a5a6d3fdb5a32c36e2f998a418130c3a6f4d3c161e854c31ef49c5bd",
+        "matchesObservedAndroidBytes": true,
+        "app": {
+          "buildType": "debug",
+          "gitCommit": "fed45da5fd0a508ec313fdb3f9054c687e724545",
+          "packageName": "com.heyanle.easybangumi4.sourcelab",
+          "versionCode": 115,
+          "versionName": "6.1.3"
+        },
+        "device": {
+          "androidVersion": "16",
+          "apiLevel": 36,
+          "isPhysicalDevice": true,
+          "manufacturer": "Xiaomi",
+          "model": "23127PN0CC",
+          "serial": "6a022def"
+        },
+        "steps": [
+          {
+            "detail": "首页页签「日番」47 条内容",
+            "elapsedMs": 1821,
+            "step": "HOME",
+            "verdict": "PASS"
+          },
+          {
+            "detail": "「孤独摇滚」RESULTS(3)；选择结果第 1 部「孤獨搖滾總集篇」",
+            "elapsedMs": 2220,
+            "step": "SEARCH",
+            "verdict": "PASS"
+          },
+          {
+            "detail": "搜索「孤獨搖滾總集篇」线路 1/1「简中2」前篇，首帧 1920x1080，推进 3118ms（已尝试 1 条线路）",
+            "elapsedMs": 8734,
+            "step": "PLAY",
+            "verdict": "PASS"
+          }
+        ],
+        "coverageNote": "Applies to this exact adapter version/hash and tested run; not automatic coverage for a beta/next/new host"
+      },
+      "publicationSnapshot": {
+        "registered": true,
+        "status": "pending",
+        "review": null
+      }
+    },
+    "kazumi.sorani": {
+      "artifacts": {
+        "android": {
+          "path": "inner_source/kazumi-sorani.js",
+          "sha256": "a64f3e4c37dbb6540d0938bf46de85003084e4fb808bd9a82b3fa0af2bead914",
+          "metadata": {
+            "key": "kazumi.sorani",
+            "label": "sorani",
+            "versionName": "1.0",
+            "versionCode": "10000",
+            "libVersion": "15",
+            "cover": "https://www.sorani.net/favicon.ico"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 13,
+              "text": "var DEFAULT_BASE_URL = \"https://www.sorani.net/\";"
+            },
+            {
+              "line": 37,
+              "text": "res.add(new SourcePreference.Edit(\"网页\", \"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 642,
+              "text": "var oldRoot = normalizeRootUrl(DEFAULT_BASE_URL);"
+            },
+            {
+              "line": 650,
+              "text": "return normalizeRootUrl(preferenceHelper.get(\"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 656,
+              "text": "value = DEFAULT_BASE_URL;"
+            }
+          ]
+        },
+        "dev": {
+          "path": "dev-extensions/kazumi-sorani.js",
+          "sha256": "a64f3e4c37dbb6540d0938bf46de85003084e4fb808bd9a82b3fa0af2bead914",
+          "metadata": {
+            "key": "kazumi.sorani",
+            "label": "sorani",
+            "versionName": "1.0",
+            "versionCode": "10000",
+            "libVersion": "15",
+            "cover": "https://www.sorani.net/favicon.ico"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 13,
+              "text": "var DEFAULT_BASE_URL = \"https://www.sorani.net/\";"
+            },
+            {
+              "line": 37,
+              "text": "res.add(new SourcePreference.Edit(\"网页\", \"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 642,
+              "text": "var oldRoot = normalizeRootUrl(DEFAULT_BASE_URL);"
+            },
+            {
+              "line": 650,
+              "text": "return normalizeRootUrl(preferenceHelper.get(\"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 656,
+              "text": "value = DEFAULT_BASE_URL;"
+            }
+          ]
+        },
+        "release": {
+          "path": "extensions/kazumi-sorani.js",
+          "sha256": "a64f3e4c37dbb6540d0938bf46de85003084e4fb808bd9a82b3fa0af2bead914",
+          "metadata": {
+            "key": "kazumi.sorani",
+            "label": "sorani",
+            "versionName": "1.0",
+            "versionCode": "10000",
+            "libVersion": "15",
+            "cover": "https://www.sorani.net/favicon.ico"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 13,
+              "text": "var DEFAULT_BASE_URL = \"https://www.sorani.net/\";"
+            },
+            {
+              "line": 37,
+              "text": "res.add(new SourcePreference.Edit(\"网页\", \"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 642,
+              "text": "var oldRoot = normalizeRootUrl(DEFAULT_BASE_URL);"
+            },
+            {
+              "line": 650,
+              "text": "return normalizeRootUrl(preferenceHelper.get(\"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 656,
+              "text": "value = DEFAULT_BASE_URL;"
+            }
+          ]
+        }
+      },
+      "declaredHosts": [
+        "www.sorani.net"
+      ],
+      "presentChannels": [
+        "android",
+        "dev",
+        "release"
+      ],
+      "hashesDiverge": false,
+      "directoryComparison": "all_three_identical",
+      "latestMatchingHistoricalEvidence": {
+        "originProject": "easybangumi_android",
+        "originRelativePath": "docs/source-audit/2026-10-09/sorani-corrected-budget-confirm/acceptance-20261009-075309-a6344cb1.json",
+        "reportSha256": "856a7f4bd2139fbed5bffdb048767dd72b0d5a7cf19b3b75b25ab1ee4d5fdc7a",
+        "reportKeyLine": 47,
+        "archiveEquivalent": "acceptance/evidence/2026-10-09/sorani-corrected-budget-confirm/acceptance-20261009-075309-a6344cb1.json",
+        "finishedAt": "2026-10-09T07:53:56.426Z",
+        "acceptance": "SEARCH_PLAYABLE",
+        "sourceVersionName": "1.0",
+        "sourceVersionCode": 10000,
+        "sourceSha256": "a64f3e4c37dbb6540d0938bf46de85003084e4fb808bd9a82b3fa0af2bead914",
+        "matchesObservedAndroidBytes": true,
+        "app": {
+          "buildType": "debug",
+          "gitCommit": "fed45da5fd0a508ec313fdb3f9054c687e724545",
+          "packageName": "com.heyanle.easybangumi4.sourcelab",
+          "versionCode": 115,
+          "versionName": "6.1.3"
+        },
+        "device": {
+          "androidVersion": "16",
+          "apiLevel": 36,
+          "isPhysicalDevice": true,
+          "manufacturer": "meizu",
+          "model": "MEIZU 21",
+          "serial": "461QYGFJ222HD"
+        },
+        "steps": [
+          {
+            "detail": "首页页签「首页推荐」5 条内容",
+            "elapsedMs": 6759,
+            "step": "HOME",
+            "verdict": "PASS"
+          },
+          {
+            "detail": "「孤独摇滚」RESULTS(3)；选择结果第 1 部「剧场总集篇孤独摇滚！ Re:」",
+            "elapsedMs": 2060,
+            "step": "SEARCH",
+            "verdict": "PASS"
+          },
+          {
+            "detail": "搜索「剧场总集篇孤独摇滚！ Re:」线路 1/1「播放线路1」1080P，首帧 1920x1080，推进 3145ms（已尝试 1 条线路）",
+            "elapsedMs": 31552,
+            "step": "PLAY",
+            "verdict": "PASS"
+          }
+        ],
+        "coverageNote": "Applies to this exact adapter version/hash and tested run; not automatic coverage for a beta/next/new host"
+      },
+      "publicationSnapshot": {
+        "registered": true,
+        "status": "pending",
+        "review": null
+      }
+    },
+    "kazumi.mifun": {
+      "artifacts": {
+        "android": {
+          "path": "inner_source/kazumi-mifun.js",
+          "sha256": "a9ccb6d8deb9ec8b12ac94ec59025647ca4729627b865b23413e489a0b8160bb",
+          "metadata": {
+            "key": "kazumi.mifun",
+            "label": "mifun",
+            "versionName": "1.0",
+            "versionCode": "10000",
+            "libVersion": "15",
+            "cover": "https://mifun.tw/favicon.ico"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 13,
+              "text": "var DEFAULT_BASE_URL = \"https://mifun.tw/\";"
+            },
+            {
+              "line": 28,
+              "text": "res.add(new SourcePreference.Edit(\"网页\", \"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 257,
+              "text": "var oldRoot = normalizeRootUrl(DEFAULT_BASE_URL);"
+            },
+            {
+              "line": 265,
+              "text": "return normalizeRootUrl(preferenceHelper.get(\"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 271,
+              "text": "value = DEFAULT_BASE_URL;"
+            }
+          ]
+        },
+        "dev": {
+          "path": "dev-extensions/kazumi-mifun.js",
+          "sha256": "a9ccb6d8deb9ec8b12ac94ec59025647ca4729627b865b23413e489a0b8160bb",
+          "metadata": {
+            "key": "kazumi.mifun",
+            "label": "mifun",
+            "versionName": "1.0",
+            "versionCode": "10000",
+            "libVersion": "15",
+            "cover": "https://mifun.tw/favicon.ico"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 13,
+              "text": "var DEFAULT_BASE_URL = \"https://mifun.tw/\";"
+            },
+            {
+              "line": 28,
+              "text": "res.add(new SourcePreference.Edit(\"网页\", \"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 257,
+              "text": "var oldRoot = normalizeRootUrl(DEFAULT_BASE_URL);"
+            },
+            {
+              "line": 265,
+              "text": "return normalizeRootUrl(preferenceHelper.get(\"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 271,
+              "text": "value = DEFAULT_BASE_URL;"
+            }
+          ]
+        }
+      },
+      "declaredHosts": [
+        "mifun.tw"
+      ],
+      "presentChannels": [
+        "android",
+        "dev"
+      ],
+      "hashesDiverge": false,
+      "directoryComparison": "release_missing_android_dev_identical",
+      "latestMatchingHistoricalEvidence": {
+        "originProject": "easybangumi_android",
+        "originRelativePath": "docs/source-audit/2026-10-09/isolated/kazumi.mifun/acceptance-20261009-055519-68f98507.json",
+        "reportSha256": "af168766c1ba0f30794803d32d8a3f53b79f231dc4643cb5c6042da5be96404f",
+        "reportKeyLine": 46,
+        "archiveEquivalent": null,
+        "finishedAt": "2026-10-09T05:55:25.825Z",
+        "acceptance": "PLAYBACK_FAILED",
+        "sourceVersionName": "1.0",
+        "sourceVersionCode": 10000,
+        "sourceSha256": "a9ccb6d8deb9ec8b12ac94ec59025647ca4729627b865b23413e489a0b8160bb",
+        "matchesObservedAndroidBytes": true,
+        "app": {
+          "buildType": "debug",
+          "gitCommit": "fed45da5fd0a508ec313fdb3f9054c687e724545",
+          "packageName": "com.heyanle.easybangumi4.debug",
+          "versionCode": 115,
+          "versionName": "6.1.3"
+        },
+        "device": {
+          "androidVersion": "16",
+          "apiLevel": 36,
+          "isPhysicalDevice": true,
+          "manufacturer": "meizu",
+          "model": "MEIZU 21",
+          "serial": "461QYGFJ222HD"
+        },
+        "steps": [
+          {
+            "detail": "IllegalStateException：源没有提供 PageComponent",
+            "elapsedMs": 0,
+            "step": "HOME",
+            "verdict": "FAIL"
+          },
+          {
+            "detail": "「孤独摇滚」ERROR(0)；搜索不可用，首页播放只能供诊断，不能自动准入",
+            "elapsedMs": 447,
+            "step": "SEARCH",
+            "verdict": "FAIL"
+          },
+          {
+            "detail": "所有别名无可用结果且首页第 1 部不可用，无法定位播放样本",
+            "elapsedMs": 0,
+            "step": "PLAY",
+            "verdict": "FAIL"
+          }
+        ],
+        "coverageNote": "Applies to this exact adapter version/hash and tested run; not automatic coverage for a beta/next/new host"
+      },
+      "publicationSnapshot": {
+        "registered": false,
+        "status": "not_registered",
+        "review": null
+      }
+    },
+    "kazumi.lmm": {
+      "artifacts": {
+        "android": {
+          "path": "inner_source/kazumi-lmm.js",
+          "sha256": "5b1c3f119349c147ea086f36e26083cbab13ffe80b3fc9770c4d62e8ec71f12a",
+          "metadata": {
+            "key": "kazumi.lmm",
+            "label": "LMM",
+            "versionName": "2.1",
+            "versionCode": "20100",
+            "libVersion": "15",
+            "cover": "https://www.lmm85.com/favicon.ico"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 13,
+              "text": "var DEFAULT_BASE_URL = \"https://www.lmm85.com/\";"
+            },
+            {
+              "line": 28,
+              "text": "res.add(new SourcePreference.Edit(\"网页\", \"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 257,
+              "text": "var oldRoot = normalizeRootUrl(DEFAULT_BASE_URL);"
+            },
+            {
+              "line": 265,
+              "text": "return normalizeRootUrl(preferenceHelper.get(\"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 271,
+              "text": "value = DEFAULT_BASE_URL;"
+            }
+          ]
+        },
+        "dev": {
+          "path": "dev-extensions/kazumi-lmm.js",
+          "sha256": "5b1c3f119349c147ea086f36e26083cbab13ffe80b3fc9770c4d62e8ec71f12a",
+          "metadata": {
+            "key": "kazumi.lmm",
+            "label": "LMM",
+            "versionName": "2.1",
+            "versionCode": "20100",
+            "libVersion": "15",
+            "cover": "https://www.lmm85.com/favicon.ico"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 13,
+              "text": "var DEFAULT_BASE_URL = \"https://www.lmm85.com/\";"
+            },
+            {
+              "line": 28,
+              "text": "res.add(new SourcePreference.Edit(\"网页\", \"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 257,
+              "text": "var oldRoot = normalizeRootUrl(DEFAULT_BASE_URL);"
+            },
+            {
+              "line": 265,
+              "text": "return normalizeRootUrl(preferenceHelper.get(\"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 271,
+              "text": "value = DEFAULT_BASE_URL;"
+            }
+          ]
+        }
+      },
+      "declaredHosts": [
+        "www.lmm85.com"
+      ],
+      "presentChannels": [
+        "android",
+        "dev"
+      ],
+      "hashesDiverge": false,
+      "directoryComparison": "release_missing_android_dev_identical",
+      "latestMatchingHistoricalEvidence": {
+        "originProject": "easybangumi_android",
+        "originRelativePath": "docs/source-audit/2026-10-09/isolated/kazumi.lmm/acceptance-20261009-055421-69dc691e.json",
+        "reportSha256": "ddf5be87b4e0cf124fb689faa4908267dbeee9e9947a0bb383c16071b206822b",
+        "reportKeyLine": 46,
+        "archiveEquivalent": null,
+        "finishedAt": "2026-10-09T05:54:28.011Z",
+        "acceptance": "PLAYBACK_FAILED",
+        "sourceVersionName": "2.1",
+        "sourceVersionCode": 20100,
+        "sourceSha256": "5b1c3f119349c147ea086f36e26083cbab13ffe80b3fc9770c4d62e8ec71f12a",
+        "matchesObservedAndroidBytes": true,
+        "app": {
+          "buildType": "debug",
+          "gitCommit": "fed45da5fd0a508ec313fdb3f9054c687e724545",
+          "packageName": "com.heyanle.easybangumi4.debug",
+          "versionCode": 115,
+          "versionName": "6.1.3"
+        },
+        "device": {
+          "androidVersion": "16",
+          "apiLevel": 36,
+          "isPhysicalDevice": true,
+          "manufacturer": "meizu",
+          "model": "MEIZU 21",
+          "serial": "461QYGFJ222HD"
+        },
+        "steps": [
+          {
+            "detail": "IllegalStateException：源没有提供 PageComponent",
+            "elapsedMs": 1,
+            "step": "HOME",
+            "verdict": "FAIL"
+          },
+          {
+            "detail": "「孤独摇滚」EMPTY(0) → 「孤獨搖滾」EMPTY(0) → 「ぼっち・ざ・ろっく！」EMPTY(0) → 「Bocchi the Rock」EMPTY(0)；标题未收录，播放阶段使用首页第 1 部，仍需人工审核",
+            "elapsedMs": 2294,
+            "step": "SEARCH",
+            "verdict": "SUSPECT"
+          },
+          {
+            "detail": "所有别名无可用结果且首页第 1 部不可用，无法定位播放样本",
+            "elapsedMs": 0,
+            "step": "PLAY",
+            "verdict": "FAIL"
+          }
+        ],
+        "coverageNote": "Applies to this exact adapter version/hash and tested run; not automatic coverage for a beta/next/new host"
+      },
+      "publicationSnapshot": {
+        "registered": false,
+        "status": "not_registered",
+        "review": null
+      }
+    },
+    "jisoft.omofun": {
+      "artifacts": {
+        "android": {
+          "path": "inner_source/omofun.js",
+          "sha256": "987dd4a9b644520c8513bdede23d7c21abbc4cbfa1ce1dff99f69de57631abd1",
+          "metadata": {
+            "key": "jisoft.omofun",
+            "label": "oMo",
+            "versionName": "1.3",
+            "versionCode": "3",
+            "libVersion": "12",
+            "cover": "https://omofun.link/upload/mxprocms/20230707-1/49f4b8a7fd5cbf77ffcfa7a52e755675.gif"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 16,
+              "text": "var host = new SourcePreference.Edit(\"网页\", \"HostV2\", \"https://omofun.link\");"
+            },
+            {
+              "line": 294,
+              "text": "return preferenceHelper.get(\"HostV2\", \"https://omofun.link\");"
+            }
+          ]
+        },
+        "dev": {
+          "path": "dev-extensions/omofun.js",
+          "sha256": "987dd4a9b644520c8513bdede23d7c21abbc4cbfa1ce1dff99f69de57631abd1",
+          "metadata": {
+            "key": "jisoft.omofun",
+            "label": "oMo",
+            "versionName": "1.3",
+            "versionCode": "3",
+            "libVersion": "12",
+            "cover": "https://omofun.link/upload/mxprocms/20230707-1/49f4b8a7fd5cbf77ffcfa7a52e755675.gif"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 16,
+              "text": "var host = new SourcePreference.Edit(\"网页\", \"HostV2\", \"https://omofun.link\");"
+            },
+            {
+              "line": 294,
+              "text": "return preferenceHelper.get(\"HostV2\", \"https://omofun.link\");"
+            }
+          ]
+        },
+        "release": {
+          "path": "extensions/omofun.js",
+          "sha256": "56fcd10b387cbad732b71af7a025c5658d6b3da88acaba2d8cd1f99afd68598a",
+          "metadata": {
+            "key": "jisoft.omofun",
+            "label": "oMo",
+            "versionName": "1.3",
+            "versionCode": "3",
+            "libVersion": "12",
+            "cover": "https://omofun.link/upload/mxprocms/20230707-1/49f4b8a7fd5cbf77ffcfa7a52e755675.gif",
+            "blocked": "true"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 17,
+              "text": "var host = new SourcePreference.Edit(\"网页\", \"HostV2\", \"https://omofun.link\");"
+            },
+            {
+              "line": 295,
+              "text": "return preferenceHelper.get(\"HostV2\", \"https://omofun.link\");"
+            }
+          ]
+        }
+      },
+      "declaredHosts": [
+        "omofun.link"
+      ],
+      "presentChannels": [
+        "android",
+        "dev",
+        "release"
+      ],
+      "hashesDiverge": true,
+      "directoryComparison": "release_differs_android_dev_identical",
+      "latestMatchingHistoricalEvidence": {
+        "originProject": "easybangumi_android",
+        "originRelativePath": "docs/source-audit/2026-10-09/full/acceptance-20261009-053313-4763e1ed.json",
+        "reportSha256": "e2b60d97b0263b9443e57bcc075acb38ccec36b40d8a62d4bb1e3f4f578c93d4",
+        "reportKeyLine": 460,
+        "archiveEquivalent": "acceptance/evidence/2026-10-09/full/acceptance-20261009-053313-4763e1ed.json",
+        "finishedAt": "2026-10-09T05:37:53.030Z",
+        "acceptance": "PLAYBACK_FAILED",
+        "sourceVersionName": "1.3",
+        "sourceVersionCode": 3,
+        "sourceSha256": "987dd4a9b644520c8513bdede23d7c21abbc4cbfa1ce1dff99f69de57631abd1",
+        "matchesObservedAndroidBytes": true,
+        "app": {
+          "buildType": "debug",
+          "gitCommit": "fed45da5fd0a508ec313fdb3f9054c687e724545",
+          "packageName": "com.heyanle.easybangumi4.debug",
+          "versionCode": 115,
+          "versionName": "6.1.3"
+        },
+        "device": {
+          "androidVersion": "16",
+          "apiLevel": 36,
+          "isPhysicalDevice": true,
+          "manufacturer": "meizu",
+          "model": "MEIZU 21",
+          "serial": "461QYGFJ222HD"
+        },
+        "steps": [
+          {
+            "detail": "IllegalStateException：源没有提供 PageComponent",
+            "elapsedMs": 1,
+            "step": "HOME",
+            "verdict": "FAIL"
+          },
+          {
+            "detail": "「孤独摇滚」UNAVAILABLE(0)；搜索不可用，首页播放只能供诊断，不能自动准入",
+            "elapsedMs": 0,
+            "step": "SEARCH",
+            "verdict": "FAIL"
+          },
+          {
+            "detail": "所有别名无可用结果且首页第 1 部不可用，无法定位播放样本",
+            "elapsedMs": 0,
+            "step": "PLAY",
+            "verdict": "FAIL"
+          }
+        ],
+        "coverageNote": "Applies to this exact adapter version/hash and tested run; not automatic coverage for a beta/next/new host"
+      },
+      "publicationSnapshot": {
+        "registered": true,
+        "status": "pending",
+        "review": null
+      }
+    },
+    "kazumi.omofunz": {
+      "artifacts": {
+        "android": {
+          "path": "inner_source/kazumi-omofunz.js",
+          "sha256": "ef7cd79d34b56c614c92a9446c0c73dbec5ac616d8194114631280b619d3ae18",
+          "metadata": {
+            "key": "kazumi.omofunz",
+            "label": "omofunz",
+            "versionName": "1.0",
+            "versionCode": "10000",
+            "libVersion": "15",
+            "cover": "https://omofunz.com/favicon.ico"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 13,
+              "text": "var DEFAULT_BASE_URL = \"https://omofunz.com/\";"
+            },
+            {
+              "line": 28,
+              "text": "res.add(new SourcePreference.Edit(\"网页\", \"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 257,
+              "text": "var oldRoot = normalizeRootUrl(DEFAULT_BASE_URL);"
+            },
+            {
+              "line": 265,
+              "text": "return normalizeRootUrl(preferenceHelper.get(\"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 271,
+              "text": "value = DEFAULT_BASE_URL;"
+            }
+          ]
+        },
+        "dev": {
+          "path": "dev-extensions/kazumi-omofunz.js",
+          "sha256": "ef7cd79d34b56c614c92a9446c0c73dbec5ac616d8194114631280b619d3ae18",
+          "metadata": {
+            "key": "kazumi.omofunz",
+            "label": "omofunz",
+            "versionName": "1.0",
+            "versionCode": "10000",
+            "libVersion": "15",
+            "cover": "https://omofunz.com/favicon.ico"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 13,
+              "text": "var DEFAULT_BASE_URL = \"https://omofunz.com/\";"
+            },
+            {
+              "line": 28,
+              "text": "res.add(new SourcePreference.Edit(\"网页\", \"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 257,
+              "text": "var oldRoot = normalizeRootUrl(DEFAULT_BASE_URL);"
+            },
+            {
+              "line": 265,
+              "text": "return normalizeRootUrl(preferenceHelper.get(\"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 271,
+              "text": "value = DEFAULT_BASE_URL;"
+            }
+          ]
+        }
+      },
+      "declaredHosts": [
+        "omofunz.com"
+      ],
+      "presentChannels": [
+        "android",
+        "dev"
+      ],
+      "hashesDiverge": false,
+      "directoryComparison": "release_missing_android_dev_identical",
+      "latestMatchingHistoricalEvidence": {
+        "originProject": "easybangumi_android",
+        "originRelativePath": "docs/source-audit/2026-10-09/isolated/kazumi.omofunz/acceptance-20261009-055727-d3b039df.json",
+        "reportSha256": "c506a8fb6ebef345884c9ab82e919fa70aa7c578e3799c30afe54938620a1e85",
+        "reportKeyLine": 46,
+        "archiveEquivalent": null,
+        "finishedAt": "2026-10-09T05:57:51.264Z",
+        "acceptance": "PLAYBACK_FAILED",
+        "sourceVersionName": "1.0",
+        "sourceVersionCode": 10000,
+        "sourceSha256": "ef7cd79d34b56c614c92a9446c0c73dbec5ac616d8194114631280b619d3ae18",
+        "matchesObservedAndroidBytes": true,
+        "app": {
+          "buildType": "debug",
+          "gitCommit": "fed45da5fd0a508ec313fdb3f9054c687e724545",
+          "packageName": "com.heyanle.easybangumi4.debug",
+          "versionCode": 115,
+          "versionName": "6.1.3"
+        },
+        "device": {
+          "androidVersion": "16",
+          "apiLevel": 36,
+          "isPhysicalDevice": true,
+          "manufacturer": "meizu",
+          "model": "MEIZU 21",
+          "serial": "461QYGFJ222HD"
+        },
+        "steps": [
+          {
+            "detail": "IllegalStateException：源没有提供 PageComponent",
+            "elapsedMs": 1,
+            "step": "HOME",
+            "verdict": "FAIL"
+          },
+          {
+            "detail": "「孤独摇滚」ERROR(0)；搜索不可用，首页播放只能供诊断，不能自动准入",
+            "elapsedMs": 19724,
+            "step": "SEARCH",
+            "verdict": "FAIL"
+          },
+          {
+            "detail": "所有别名无可用结果且首页第 1 部不可用，无法定位播放样本",
+            "elapsedMs": 0,
+            "step": "PLAY",
+            "verdict": "FAIL"
+          }
+        ],
+        "coverageNote": "Applies to this exact adapter version/hash and tested run; not automatic coverage for a beta/next/new host"
+      },
+      "publicationSnapshot": {
+        "registered": false,
+        "status": "not_registered",
+        "review": null
+      }
+    },
+    "kazumi.omofun03": {
+      "artifacts": {
+        "android": {
+          "path": "inner_source/kazumi-omofun03.js",
+          "sha256": "ae032a31eb8b09c5c6b1d170df36a7485c9a2115f4bab0acd469ea19baa5d74e",
+          "metadata": {
+            "key": "kazumi.omofun03",
+            "label": "omofun03",
+            "versionName": "1.1",
+            "versionCode": "10100",
+            "libVersion": "15",
+            "cover": "https://omofun03.top/template/mxpro/mxtheme/images/favicon.png"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 13,
+              "text": "var DEFAULT_BASE_URL = \"https://omofun03.top/\";"
+            },
+            {
+              "line": 28,
+              "text": "res.add(new SourcePreference.Edit(\"网页\", \"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 563,
+              "text": "var oldRoot = normalizeRootUrl(DEFAULT_BASE_URL);"
+            },
+            {
+              "line": 571,
+              "text": "return normalizeRootUrl(preferenceHelper.get(\"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 577,
+              "text": "value = DEFAULT_BASE_URL;"
+            }
+          ]
+        },
+        "dev": {
+          "path": "dev-extensions/kazumi-omofun03.js",
+          "sha256": "ae032a31eb8b09c5c6b1d170df36a7485c9a2115f4bab0acd469ea19baa5d74e",
+          "metadata": {
+            "key": "kazumi.omofun03",
+            "label": "omofun03",
+            "versionName": "1.1",
+            "versionCode": "10100",
+            "libVersion": "15",
+            "cover": "https://omofun03.top/template/mxpro/mxtheme/images/favicon.png"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 13,
+              "text": "var DEFAULT_BASE_URL = \"https://omofun03.top/\";"
+            },
+            {
+              "line": 28,
+              "text": "res.add(new SourcePreference.Edit(\"网页\", \"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 563,
+              "text": "var oldRoot = normalizeRootUrl(DEFAULT_BASE_URL);"
+            },
+            {
+              "line": 571,
+              "text": "return normalizeRootUrl(preferenceHelper.get(\"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 577,
+              "text": "value = DEFAULT_BASE_URL;"
+            }
+          ]
+        },
+        "release": {
+          "path": "extensions/kazumi-omofun03.js",
+          "sha256": "ae032a31eb8b09c5c6b1d170df36a7485c9a2115f4bab0acd469ea19baa5d74e",
+          "metadata": {
+            "key": "kazumi.omofun03",
+            "label": "omofun03",
+            "versionName": "1.1",
+            "versionCode": "10100",
+            "libVersion": "15",
+            "cover": "https://omofun03.top/template/mxpro/mxtheme/images/favicon.png"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 13,
+              "text": "var DEFAULT_BASE_URL = \"https://omofun03.top/\";"
+            },
+            {
+              "line": 28,
+              "text": "res.add(new SourcePreference.Edit(\"网页\", \"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 563,
+              "text": "var oldRoot = normalizeRootUrl(DEFAULT_BASE_URL);"
+            },
+            {
+              "line": 571,
+              "text": "return normalizeRootUrl(preferenceHelper.get(\"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 577,
+              "text": "value = DEFAULT_BASE_URL;"
+            }
+          ]
+        }
+      },
+      "declaredHosts": [
+        "omofun03.top"
+      ],
+      "presentChannels": [
+        "android",
+        "dev",
+        "release"
+      ],
+      "hashesDiverge": false,
+      "directoryComparison": "all_three_identical",
+      "latestMatchingHistoricalEvidence": {
+        "originProject": "easybangumi_android",
+        "originRelativePath": "docs/source-audit/2026-10-09/isolated/kazumi.omofun03/acceptance-20261009-055719-ea0e1822.json",
+        "reportSha256": "fd39fa11da38593e61403fc6af34f2dd9e508d655b8a54939ba6cdae969c5b6a",
+        "reportKeyLine": 46,
+        "archiveEquivalent": null,
+        "finishedAt": "2026-10-09T05:57:26.247Z",
+        "acceptance": "PLAYBACK_FAILED",
+        "sourceVersionName": "1.1",
+        "sourceVersionCode": 10100,
+        "sourceSha256": "ae032a31eb8b09c5c6b1d170df36a7485c9a2115f4bab0acd469ea19baa5d74e",
+        "matchesObservedAndroidBytes": true,
+        "app": {
+          "buildType": "debug",
+          "gitCommit": "fed45da5fd0a508ec313fdb3f9054c687e724545",
+          "packageName": "com.heyanle.easybangumi4.debug",
+          "versionCode": 115,
+          "versionName": "6.1.3"
+        },
+        "device": {
+          "androidVersion": "16",
+          "apiLevel": 36,
+          "isPhysicalDevice": true,
+          "manufacturer": "meizu",
+          "model": "MEIZU 21",
+          "serial": "461QYGFJ222HD"
+        },
+        "steps": [
+          {
+            "detail": "首页页签「首页推荐」返回 0 条内容",
+            "elapsedMs": 1510,
+            "step": "HOME",
+            "verdict": "SUSPECT"
+          },
+          {
+            "detail": "「孤独摇滚」EMPTY(0) → 「孤獨搖滾」EMPTY(0) → 「ぼっち・ざ・ろっく！」EMPTY(0) → 「Bocchi the Rock」EMPTY(0)；标题未收录，播放阶段使用首页第 1 部，仍需人工审核",
+            "elapsedMs": 1472,
+            "step": "SEARCH",
+            "verdict": "SUSPECT"
+          },
+          {
+            "detail": "所有别名无可用结果且首页第 1 部不可用，无法定位播放样本",
+            "elapsedMs": 0,
+            "step": "PLAY",
+            "verdict": "FAIL"
+          }
+        ],
+        "coverageNote": "Applies to this exact adapter version/hash and tested run; not automatic coverage for a beta/next/new host"
+      },
+      "publicationSnapshot": {
+        "registered": true,
+        "status": "pending",
+        "review": null
+      }
+    },
+    "kazumi.dlma": {
+      "artifacts": {
+        "android": {
+          "path": "inner_source/kazumi-dlma.js",
+          "sha256": "2a88b9f6e838b9b87af7305ed9812d139b5e829e502284cef8d4936b75c4203a",
+          "metadata": {
+            "key": "kazumi.dlma",
+            "label": "dlma",
+            "versionName": "1.1",
+            "versionCode": "10100",
+            "libVersion": "15",
+            "cover": "https://www.dmla5.com/favicon.ico"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 13,
+              "text": "var DEFAULT_BASE_URL = \"https://www.dmla5.com/\";"
+            },
+            {
+              "line": 28,
+              "text": "res.add(new SourcePreference.Edit(\"网页\", \"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 257,
+              "text": "var oldRoot = normalizeRootUrl(DEFAULT_BASE_URL);"
+            },
+            {
+              "line": 265,
+              "text": "return normalizeRootUrl(preferenceHelper.get(\"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 271,
+              "text": "value = DEFAULT_BASE_URL;"
+            }
+          ]
+        },
+        "dev": {
+          "path": "dev-extensions/kazumi-dlma.js",
+          "sha256": "2a88b9f6e838b9b87af7305ed9812d139b5e829e502284cef8d4936b75c4203a",
+          "metadata": {
+            "key": "kazumi.dlma",
+            "label": "dlma",
+            "versionName": "1.1",
+            "versionCode": "10100",
+            "libVersion": "15",
+            "cover": "https://www.dmla5.com/favicon.ico"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 13,
+              "text": "var DEFAULT_BASE_URL = \"https://www.dmla5.com/\";"
+            },
+            {
+              "line": 28,
+              "text": "res.add(new SourcePreference.Edit(\"网页\", \"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 257,
+              "text": "var oldRoot = normalizeRootUrl(DEFAULT_BASE_URL);"
+            },
+            {
+              "line": 265,
+              "text": "return normalizeRootUrl(preferenceHelper.get(\"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 271,
+              "text": "value = DEFAULT_BASE_URL;"
+            }
+          ]
+        }
+      },
+      "declaredHosts": [
+        "www.dmla5.com"
+      ],
+      "presentChannels": [
+        "android",
+        "dev"
+      ],
+      "hashesDiverge": false,
+      "directoryComparison": "release_missing_android_dev_identical",
+      "latestMatchingHistoricalEvidence": {
+        "originProject": "easybangumi_android",
+        "originRelativePath": "docs/source-audit/2026-10-09/isolated/kazumi.dlma/acceptance-20261009-054802-7f4ad90a.json",
+        "reportSha256": "69585ce6e22059b52f27ee7947452120645d426fbc414eb0db4da04bb2d3f0e8",
+        "reportKeyLine": 46,
+        "archiveEquivalent": null,
+        "finishedAt": "2026-10-09T05:48:27.745Z",
+        "acceptance": "PLAYBACK_FAILED",
+        "sourceVersionName": "1.1",
+        "sourceVersionCode": 10100,
+        "sourceSha256": "2a88b9f6e838b9b87af7305ed9812d139b5e829e502284cef8d4936b75c4203a",
+        "matchesObservedAndroidBytes": true,
+        "app": {
+          "buildType": "debug",
+          "gitCommit": "fed45da5fd0a508ec313fdb3f9054c687e724545",
+          "packageName": "com.heyanle.easybangumi4.debug",
+          "versionCode": 115,
+          "versionName": "6.1.3"
+        },
+        "device": {
+          "androidVersion": "16",
+          "apiLevel": 36,
+          "isPhysicalDevice": true,
+          "manufacturer": "meizu",
+          "model": "MEIZU 21",
+          "serial": "461QYGFJ222HD"
+        },
+        "steps": [
+          {
+            "detail": "IllegalStateException：源没有提供 PageComponent",
+            "elapsedMs": 0,
+            "step": "HOME",
+            "verdict": "FAIL"
+          },
+          {
+            "detail": "「孤独摇滚」ERROR(0)；搜索不可用，首页播放只能供诊断，不能自动准入",
+            "elapsedMs": 19837,
+            "step": "SEARCH",
+            "verdict": "FAIL"
+          },
+          {
+            "detail": "所有别名无可用结果且首页第 1 部不可用，无法定位播放样本",
+            "elapsedMs": 0,
+            "step": "PLAY",
+            "verdict": "FAIL"
+          }
+        ],
+        "coverageNote": "Applies to this exact adapter version/hash and tested run; not automatic coverage for a beta/next/new host"
+      },
+      "publicationSnapshot": {
+        "registered": false,
+        "status": "not_registered",
+        "review": null
+      }
+    },
+    "heyanle.age": {
+      "artifacts": {
+        "android": {
+          "path": "inner_source/age.js",
+          "sha256": "237eafa2cd0e33cb87c5b3515ffca99e07551ed5295f4924d28cb92336c03d0b",
+          "metadata": {
+            "key": "heyanle.age",
+            "label": "Age动漫",
+            "versionName": "1.0",
+            "versionCode": "1",
+            "libVersion": "15",
+            "cover": "https://www.agedm.io/favicon.ico"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 18,
+              "text": "var host = new SourcePreference.Edit(\"网页\", \"Host\", \"www.agedm.io\");"
+            },
+            {
+              "line": 338,
+              "text": "return preferenceHelper.get(\"Host\", \"https://www.agedm.io\");"
+            }
+          ]
+        },
+        "dev": {
+          "path": "dev-extensions/age.js",
+          "sha256": "237eafa2cd0e33cb87c5b3515ffca99e07551ed5295f4924d28cb92336c03d0b",
+          "metadata": {
+            "key": "heyanle.age",
+            "label": "Age动漫",
+            "versionName": "1.0",
+            "versionCode": "1",
+            "libVersion": "15",
+            "cover": "https://www.agedm.io/favicon.ico"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 18,
+              "text": "var host = new SourcePreference.Edit(\"网页\", \"Host\", \"www.agedm.io\");"
+            },
+            {
+              "line": 338,
+              "text": "return preferenceHelper.get(\"Host\", \"https://www.agedm.io\");"
+            }
+          ]
+        },
+        "release": {
+          "path": "extensions/age.js",
+          "sha256": "237eafa2cd0e33cb87c5b3515ffca99e07551ed5295f4924d28cb92336c03d0b",
+          "metadata": {
+            "key": "heyanle.age",
+            "label": "Age动漫",
+            "versionName": "1.0",
+            "versionCode": "1",
+            "libVersion": "15",
+            "cover": "https://www.agedm.io/favicon.ico"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 18,
+              "text": "var host = new SourcePreference.Edit(\"网页\", \"Host\", \"www.agedm.io\");"
+            },
+            {
+              "line": 338,
+              "text": "return preferenceHelper.get(\"Host\", \"https://www.agedm.io\");"
+            }
+          ]
+        }
+      },
+      "declaredHosts": [
+        "www.agedm.io"
+      ],
+      "presentChannels": [
+        "android",
+        "dev",
+        "release"
+      ],
+      "hashesDiverge": false,
+      "directoryComparison": "all_three_identical",
+      "latestMatchingHistoricalEvidence": {
+        "originProject": "easybangumi_android",
+        "originRelativePath": "docs/source-audit/2026-10-13/xiaomi-14/age-final/acceptance-20261013-055656-4a0e85be.json",
+        "reportSha256": "8b1497ba4e40de5ccda20c3718d6230b496360a73355914776359d866bebf71f",
+        "reportKeyLine": 49,
+        "archiveEquivalent": "acceptance/evidence/2026-10-13/xiaomi-14/age-final/acceptance-20261013-055656-4a0e85be.json",
+        "finishedAt": "2026-10-13T05:57:14.061Z",
+        "acceptance": "SEARCH_PLAYABLE",
+        "sourceVersionName": "1.0",
+        "sourceVersionCode": 1,
+        "sourceSha256": "237eafa2cd0e33cb87c5b3515ffca99e07551ed5295f4924d28cb92336c03d0b",
+        "matchesObservedAndroidBytes": true,
+        "app": {
+          "buildType": "debug",
+          "gitCommit": "fed45da5fd0a508ec313fdb3f9054c687e724545",
+          "packageName": "com.heyanle.easybangumi4.sourcelab",
+          "versionCode": 115,
+          "versionName": "6.1.3"
+        },
+        "device": {
+          "androidVersion": "16",
+          "apiLevel": 36,
+          "isPhysicalDevice": true,
+          "manufacturer": "Xiaomi",
+          "model": "23127PN0CC",
+          "serial": "6a022def"
+        },
+        "steps": [
+          {
+            "detail": "首页页签「今日推荐」23 条内容",
+            "elapsedMs": 1866,
+            "step": "HOME",
+            "verdict": "PASS"
+          },
+          {
+            "detail": "「孤独摇滚」RESULTS(1)；选择结果第 1 部「孤独摇滚！」",
+            "elapsedMs": 588,
+            "step": "SEARCH",
+            "verdict": "PASS"
+          },
+          {
+            "detail": "搜索「孤独摇滚！」线路 1/2「VIP 西瓜」第01集，首帧 1920x1080，推进 3192ms（已尝试 1 条线路）",
+            "elapsedMs": 11387,
+            "step": "PLAY",
+            "verdict": "PASS"
+          }
+        ],
+        "coverageNote": "Applies to this exact adapter version/hash and tested run; not automatic coverage for a beta/next/new host"
+      },
+      "publicationSnapshot": {
+        "registered": true,
+        "status": "pending",
+        "review": null
+      }
+    },
+    "kazumi.tvtfun": {
+      "artifacts": {
+        "android": {
+          "path": "inner_source/kazumi-tvtfun.js",
+          "sha256": "3aab610f1b000ce3275235252589b51b6da7e960d45d31ddb926686aa0a7719e",
+          "metadata": {
+            "key": "kazumi.tvtfun",
+            "label": "TvTFun",
+            "versionName": "1.1",
+            "versionCode": "10100",
+            "libVersion": "15",
+            "cover": "https://www.tvtfun.net/favicon.ico"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 13,
+              "text": "var DEFAULT_BASE_URL = \"https://www.tvtfun.net/\";"
+            },
+            {
+              "line": 37,
+              "text": "res.add(new SourcePreference.Edit(\"网页\", \"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 642,
+              "text": "var oldRoot = normalizeRootUrl(DEFAULT_BASE_URL);"
+            },
+            {
+              "line": 650,
+              "text": "return normalizeRootUrl(preferenceHelper.get(\"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 656,
+              "text": "value = DEFAULT_BASE_URL;"
+            }
+          ]
+        },
+        "dev": {
+          "path": "dev-extensions/kazumi-tvtfun.js",
+          "sha256": "3aab610f1b000ce3275235252589b51b6da7e960d45d31ddb926686aa0a7719e",
+          "metadata": {
+            "key": "kazumi.tvtfun",
+            "label": "TvTFun",
+            "versionName": "1.1",
+            "versionCode": "10100",
+            "libVersion": "15",
+            "cover": "https://www.tvtfun.net/favicon.ico"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 13,
+              "text": "var DEFAULT_BASE_URL = \"https://www.tvtfun.net/\";"
+            },
+            {
+              "line": 37,
+              "text": "res.add(new SourcePreference.Edit(\"网页\", \"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 642,
+              "text": "var oldRoot = normalizeRootUrl(DEFAULT_BASE_URL);"
+            },
+            {
+              "line": 650,
+              "text": "return normalizeRootUrl(preferenceHelper.get(\"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 656,
+              "text": "value = DEFAULT_BASE_URL;"
+            }
+          ]
+        },
+        "release": {
+          "path": "extensions/kazumi-tvtfun.js",
+          "sha256": "3aab610f1b000ce3275235252589b51b6da7e960d45d31ddb926686aa0a7719e",
+          "metadata": {
+            "key": "kazumi.tvtfun",
+            "label": "TvTFun",
+            "versionName": "1.1",
+            "versionCode": "10100",
+            "libVersion": "15",
+            "cover": "https://www.tvtfun.net/favicon.ico"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 13,
+              "text": "var DEFAULT_BASE_URL = \"https://www.tvtfun.net/\";"
+            },
+            {
+              "line": 37,
+              "text": "res.add(new SourcePreference.Edit(\"网页\", \"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 642,
+              "text": "var oldRoot = normalizeRootUrl(DEFAULT_BASE_URL);"
+            },
+            {
+              "line": 650,
+              "text": "return normalizeRootUrl(preferenceHelper.get(\"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 656,
+              "text": "value = DEFAULT_BASE_URL;"
+            }
+          ]
+        }
+      },
+      "declaredHosts": [
+        "www.tvtfun.net"
+      ],
+      "presentChannels": [
+        "android",
+        "dev",
+        "release"
+      ],
+      "hashesDiverge": false,
+      "directoryComparison": "all_three_identical",
+      "latestMatchingHistoricalEvidence": {
+        "originProject": "easybangumi_android",
+        "originRelativePath": "docs/source-audit/2026-10-09/isolated/kazumi.tvtfun/acceptance-20261009-060038-68a55e86.json",
+        "reportSha256": "50e56ed59330799525fd3a76a658369107be2beaecaf704be7f8a92b220d172c",
+        "reportKeyLine": 46,
+        "archiveEquivalent": null,
+        "finishedAt": "2026-10-09T06:01:58.606Z",
+        "acceptance": "PLAYBACK_FAILED",
+        "sourceVersionName": "1.1",
+        "sourceVersionCode": 10100,
+        "sourceSha256": "3aab610f1b000ce3275235252589b51b6da7e960d45d31ddb926686aa0a7719e",
+        "matchesObservedAndroidBytes": true,
+        "app": {
+          "buildType": "debug",
+          "gitCommit": "fed45da5fd0a508ec313fdb3f9054c687e724545",
+          "packageName": "com.heyanle.easybangumi4.debug",
+          "versionCode": 115,
+          "versionName": "6.1.3"
+        },
+        "device": {
+          "androidVersion": "16",
+          "apiLevel": 36,
+          "isPhysicalDevice": true,
+          "manufacturer": "meizu",
+          "model": "MEIZU 21",
+          "serial": "461QYGFJ222HD"
+        },
+        "steps": [
+          {
+            "detail": "首页页签「首页推荐」34 条内容",
+            "elapsedMs": 915,
+            "step": "HOME",
+            "verdict": "PASS"
+          },
+          {
+            "detail": "「孤独摇滚」RESULTS(3)；选择结果第 1 部「孤独摇滚！」",
+            "elapsedMs": 87,
+            "step": "SEARCH",
+            "verdict": "PASS"
+          },
+          {
+            "detail": "全部 3 条线路首集未通过：线路A=TIMEOUT，线路B=TIMEOUT，线路D=TIMEOUT",
+            "elapsedMs": 75185,
+            "step": "PLAY",
+            "verdict": "FAIL"
+          }
+        ],
+        "coverageNote": "Applies to this exact adapter version/hash and tested run; not automatic coverage for a beta/next/new host"
+      },
+      "publicationSnapshot": {
+        "registered": true,
+        "status": "pending",
+        "review": null
+      }
+    },
+    "kazumi.baimao": {
+      "artifacts": {
+        "android": {
+          "path": "inner_source/kazumi-baimao.js",
+          "sha256": "d07b1e2ddec213a138041232b293865cdf85e7b12f4e5a1cd54ffb330ce5fa2a",
+          "metadata": {
+            "key": "kazumi.baimao",
+            "label": "baimao",
+            "versionName": "1.0",
+            "versionCode": "10000",
+            "libVersion": "15",
+            "cover": "https://www.bmmdm.com/hdst/hm_pic/favicon.ico"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 13,
+              "text": "var DEFAULT_BASE_URL = \"https://www.baimaodm.com/\";"
+            },
+            {
+              "line": 28,
+              "text": "res.add(new SourcePreference.Edit(\"网页\", \"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 530,
+              "text": "var oldRoot = normalizeRootUrl(DEFAULT_BASE_URL);"
+            },
+            {
+              "line": 538,
+              "text": "return normalizeRootUrl(preferenceHelper.get(\"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 544,
+              "text": "value = DEFAULT_BASE_URL;"
+            }
+          ]
+        },
+        "dev": {
+          "path": "dev-extensions/kazumi-baimao.js",
+          "sha256": "d07b1e2ddec213a138041232b293865cdf85e7b12f4e5a1cd54ffb330ce5fa2a",
+          "metadata": {
+            "key": "kazumi.baimao",
+            "label": "baimao",
+            "versionName": "1.0",
+            "versionCode": "10000",
+            "libVersion": "15",
+            "cover": "https://www.bmmdm.com/hdst/hm_pic/favicon.ico"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 13,
+              "text": "var DEFAULT_BASE_URL = \"https://www.baimaodm.com/\";"
+            },
+            {
+              "line": 28,
+              "text": "res.add(new SourcePreference.Edit(\"网页\", \"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 530,
+              "text": "var oldRoot = normalizeRootUrl(DEFAULT_BASE_URL);"
+            },
+            {
+              "line": 538,
+              "text": "return normalizeRootUrl(preferenceHelper.get(\"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 544,
+              "text": "value = DEFAULT_BASE_URL;"
+            }
+          ]
+        },
+        "release": {
+          "path": "extensions/kazumi-baimao.js",
+          "sha256": "d07b1e2ddec213a138041232b293865cdf85e7b12f4e5a1cd54ffb330ce5fa2a",
+          "metadata": {
+            "key": "kazumi.baimao",
+            "label": "baimao",
+            "versionName": "1.0",
+            "versionCode": "10000",
+            "libVersion": "15",
+            "cover": "https://www.bmmdm.com/hdst/hm_pic/favicon.ico"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 13,
+              "text": "var DEFAULT_BASE_URL = \"https://www.baimaodm.com/\";"
+            },
+            {
+              "line": 28,
+              "text": "res.add(new SourcePreference.Edit(\"网页\", \"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 530,
+              "text": "var oldRoot = normalizeRootUrl(DEFAULT_BASE_URL);"
+            },
+            {
+              "line": 538,
+              "text": "return normalizeRootUrl(preferenceHelper.get(\"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 544,
+              "text": "value = DEFAULT_BASE_URL;"
+            }
+          ]
+        }
+      },
+      "declaredHosts": [
+        "www.baimaodm.com"
+      ],
+      "presentChannels": [
+        "android",
+        "dev",
+        "release"
+      ],
+      "hashesDiverge": false,
+      "directoryComparison": "all_three_identical",
+      "latestMatchingHistoricalEvidence": {
+        "originProject": "easybangumi_android",
+        "originRelativePath": "docs/source-audit/2026-10-09/clean-package-verified/kazumi.baimao/acceptance-20261009-073502-db9beecb.json",
+        "reportSha256": "c3bbe4ed538d5abd0d0a6c06b27e95d1a96668e9e11b320872477ccbfe3bf8c2",
+        "reportKeyLine": 46,
+        "archiveEquivalent": "acceptance/evidence/2026-10-09/clean-package-verified/kazumi.baimao/acceptance-20261009-073502-db9beecb.json",
+        "finishedAt": "2026-10-09T07:35:25.850Z",
+        "acceptance": "SEARCH_PLAYABLE",
+        "sourceVersionName": "1.0",
+        "sourceVersionCode": 10000,
+        "sourceSha256": "d07b1e2ddec213a138041232b293865cdf85e7b12f4e5a1cd54ffb330ce5fa2a",
+        "matchesObservedAndroidBytes": true,
+        "app": {
+          "buildType": "debug",
+          "gitCommit": "fed45da5fd0a508ec313fdb3f9054c687e724545",
+          "packageName": "com.heyanle.easybangumi4.sourcelab",
+          "versionCode": 115,
+          "versionName": "6.1.3"
+        },
+        "device": {
+          "androidVersion": "16",
+          "apiLevel": 36,
+          "isPhysicalDevice": true,
+          "manufacturer": "meizu",
+          "model": "MEIZU 21",
+          "serial": "461QYGFJ222HD"
+        },
+        "steps": [
+          {
+            "detail": "首页页签「首页推荐」40 条内容",
+            "elapsedMs": 4051,
+            "step": "HOME",
+            "verdict": "PASS"
+          },
+          {
+            "detail": "「孤独摇滚」RESULTS(3)；选择结果第 1 部「孤独摇滚！」",
+            "elapsedMs": 1181,
+            "step": "SEARCH",
+            "verdict": "PASS"
+          },
+          {
+            "detail": "搜索「孤独摇滚！」线路 1/6「播放Ⅰ」第1集，首帧 1280x720，推进 3085ms（已尝试 1 条线路）",
+            "elapsedMs": 15062,
+            "step": "PLAY",
+            "verdict": "PASS"
+          }
+        ],
+        "coverageNote": "Applies to this exact adapter version/hash and tested run; not automatic coverage for a beta/next/new host"
+      },
+      "publicationSnapshot": {
+        "registered": true,
+        "status": "pending",
+        "review": null
+      }
+    },
+    "kazumi.mxdm": {
+      "artifacts": {
+        "android": {
+          "path": "inner_source/kazumi-mxdm.js",
+          "sha256": "c7c5d41a575160e66dbb2805184f064c6c3b469f9a3e81e8f8c97adb665d29b6",
+          "metadata": {
+            "key": "kazumi.mxdm",
+            "label": "MXdm",
+            "versionName": "2.3",
+            "versionCode": "20300",
+            "libVersion": "15",
+            "cover": "https://www.dcc3.com/favicon.ico"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 13,
+              "text": "var DEFAULT_BASE_URL = \"https://www.dcc3.com/\";"
+            },
+            {
+              "line": 28,
+              "text": "res.add(new SourcePreference.Edit(\"网页\", \"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 563,
+              "text": "var oldRoot = normalizeRootUrl(DEFAULT_BASE_URL);"
+            },
+            {
+              "line": 571,
+              "text": "return normalizeRootUrl(preferenceHelper.get(\"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 577,
+              "text": "value = DEFAULT_BASE_URL;"
+            }
+          ]
+        },
+        "dev": {
+          "path": "dev-extensions/kazumi-mxdm.js",
+          "sha256": "c7c5d41a575160e66dbb2805184f064c6c3b469f9a3e81e8f8c97adb665d29b6",
+          "metadata": {
+            "key": "kazumi.mxdm",
+            "label": "MXdm",
+            "versionName": "2.3",
+            "versionCode": "20300",
+            "libVersion": "15",
+            "cover": "https://www.dcc3.com/favicon.ico"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 13,
+              "text": "var DEFAULT_BASE_URL = \"https://www.dcc3.com/\";"
+            },
+            {
+              "line": 28,
+              "text": "res.add(new SourcePreference.Edit(\"网页\", \"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 563,
+              "text": "var oldRoot = normalizeRootUrl(DEFAULT_BASE_URL);"
+            },
+            {
+              "line": 571,
+              "text": "return normalizeRootUrl(preferenceHelper.get(\"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 577,
+              "text": "value = DEFAULT_BASE_URL;"
+            }
+          ]
+        },
+        "release": {
+          "path": "extensions/kazumi-mxdm.js",
+          "sha256": "c7c5d41a575160e66dbb2805184f064c6c3b469f9a3e81e8f8c97adb665d29b6",
+          "metadata": {
+            "key": "kazumi.mxdm",
+            "label": "MXdm",
+            "versionName": "2.3",
+            "versionCode": "20300",
+            "libVersion": "15",
+            "cover": "https://www.dcc3.com/favicon.ico"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 13,
+              "text": "var DEFAULT_BASE_URL = \"https://www.dcc3.com/\";"
+            },
+            {
+              "line": 28,
+              "text": "res.add(new SourcePreference.Edit(\"网页\", \"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 563,
+              "text": "var oldRoot = normalizeRootUrl(DEFAULT_BASE_URL);"
+            },
+            {
+              "line": 571,
+              "text": "return normalizeRootUrl(preferenceHelper.get(\"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 577,
+              "text": "value = DEFAULT_BASE_URL;"
+            }
+          ]
+        }
+      },
+      "declaredHosts": [
+        "www.dcc3.com"
+      ],
+      "presentChannels": [
+        "android",
+        "dev",
+        "release"
+      ],
+      "hashesDiverge": false,
+      "directoryComparison": "all_three_identical",
+      "latestMatchingHistoricalEvidence": {
+        "originProject": "easybangumi_android",
+        "originRelativePath": "docs/source-audit/2026-10-09/clean-package-verified/kazumi.mxdm/acceptance-20261009-073556-33a98f32.json",
+        "reportSha256": "aeadc594f41a67f6e4b2be63c95c5d772bb53fcb75f8a481febf4278506caf3d",
+        "reportKeyLine": 46,
+        "archiveEquivalent": "acceptance/evidence/2026-10-09/clean-package-verified/kazumi.mxdm/acceptance-20261009-073556-33a98f32.json",
+        "finishedAt": "2026-10-09T07:36:08.553Z",
+        "acceptance": "SEARCH_PLAYABLE",
+        "sourceVersionName": "2.3",
+        "sourceVersionCode": 20300,
+        "sourceSha256": "c7c5d41a575160e66dbb2805184f064c6c3b469f9a3e81e8f8c97adb665d29b6",
+        "matchesObservedAndroidBytes": true,
+        "app": {
+          "buildType": "debug",
+          "gitCommit": "fed45da5fd0a508ec313fdb3f9054c687e724545",
+          "packageName": "com.heyanle.easybangumi4.sourcelab",
+          "versionCode": 115,
+          "versionName": "6.1.3"
+        },
+        "device": {
+          "androidVersion": "16",
+          "apiLevel": 36,
+          "isPhysicalDevice": true,
+          "manufacturer": "meizu",
+          "model": "MEIZU 21",
+          "serial": "461QYGFJ222HD"
+        },
+        "steps": [
+          {
+            "detail": "首页页签「首页推荐」40 条内容",
+            "elapsedMs": 2212,
+            "step": "HOME",
+            "verdict": "PASS"
+          },
+          {
+            "detail": "「孤独摇滚」RESULTS(5)；选择结果第 1 部「孤独摇滚(上)」",
+            "elapsedMs": 675,
+            "step": "SEARCH",
+            "verdict": "PASS"
+          },
+          {
+            "detail": "搜索「孤独摇滚(上)」线路 1/1「量子」HD中字，首帧 1080x606，推进 3178ms（已尝试 1 条线路）",
+            "elapsedMs": 6435,
+            "step": "PLAY",
+            "verdict": "PASS"
+          }
+        ],
+        "coverageNote": "Applies to this exact adapter version/hash and tested run; not automatic coverage for a beta/next/new host"
+      },
+      "publicationSnapshot": {
+        "registered": true,
+        "status": "pending",
+        "review": null
+      }
+    },
+    "kazumi.9ciyuan": {
+      "artifacts": {
+        "android": {
+          "path": "inner_source/kazumi-9ciyuan.js",
+          "sha256": "b4c886296f0cfc64f6ff41c555ba326e50d19ca6f0ee699c6be66f48c920fdf9",
+          "metadata": {
+            "key": "kazumi.9ciyuan",
+            "label": "9ciyuan",
+            "versionName": "1.3",
+            "versionCode": "10300",
+            "libVersion": "15",
+            "cover": "https://www.jcydm1.com/favicon.ico"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 13,
+              "text": "var DEFAULT_BASE_URL = \"https://www.jcydm1.com/\";"
+            },
+            {
+              "line": 28,
+              "text": "res.add(new SourcePreference.Edit(\"网页\", \"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 552,
+              "text": "var oldRoot = normalizeRootUrl(DEFAULT_BASE_URL);"
+            },
+            {
+              "line": 560,
+              "text": "return normalizeRootUrl(preferenceHelper.get(\"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 566,
+              "text": "value = DEFAULT_BASE_URL;"
+            }
+          ]
+        },
+        "dev": {
+          "path": "dev-extensions/kazumi-9ciyuan.js",
+          "sha256": "b4c886296f0cfc64f6ff41c555ba326e50d19ca6f0ee699c6be66f48c920fdf9",
+          "metadata": {
+            "key": "kazumi.9ciyuan",
+            "label": "9ciyuan",
+            "versionName": "1.3",
+            "versionCode": "10300",
+            "libVersion": "15",
+            "cover": "https://www.jcydm1.com/favicon.ico"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 13,
+              "text": "var DEFAULT_BASE_URL = \"https://www.jcydm1.com/\";"
+            },
+            {
+              "line": 28,
+              "text": "res.add(new SourcePreference.Edit(\"网页\", \"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 552,
+              "text": "var oldRoot = normalizeRootUrl(DEFAULT_BASE_URL);"
+            },
+            {
+              "line": 560,
+              "text": "return normalizeRootUrl(preferenceHelper.get(\"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 566,
+              "text": "value = DEFAULT_BASE_URL;"
+            }
+          ]
+        },
+        "release": {
+          "path": "extensions/kazumi-9ciyuan.js",
+          "sha256": "b4c886296f0cfc64f6ff41c555ba326e50d19ca6f0ee699c6be66f48c920fdf9",
+          "metadata": {
+            "key": "kazumi.9ciyuan",
+            "label": "9ciyuan",
+            "versionName": "1.3",
+            "versionCode": "10300",
+            "libVersion": "15",
+            "cover": "https://www.jcydm1.com/favicon.ico"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 13,
+              "text": "var DEFAULT_BASE_URL = \"https://www.jcydm1.com/\";"
+            },
+            {
+              "line": 28,
+              "text": "res.add(new SourcePreference.Edit(\"网页\", \"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 552,
+              "text": "var oldRoot = normalizeRootUrl(DEFAULT_BASE_URL);"
+            },
+            {
+              "line": 560,
+              "text": "return normalizeRootUrl(preferenceHelper.get(\"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 566,
+              "text": "value = DEFAULT_BASE_URL;"
+            }
+          ]
+        }
+      },
+      "declaredHosts": [
+        "www.jcydm1.com"
+      ],
+      "presentChannels": [
+        "android",
+        "dev",
+        "release"
+      ],
+      "hashesDiverge": false,
+      "directoryComparison": "all_three_identical",
+      "latestMatchingHistoricalEvidence": {
+        "originProject": "easybangumi_android",
+        "originRelativePath": "docs/source-audit/2026-10-09/clean-package-verified/kazumi.9ciyuan/acceptance-20261009-073339-eea6f92c.json",
+        "reportSha256": "c2ed153f81e011c547907f1dc30bd7b74130a93eff587a40f28bc802e8616690",
+        "reportKeyLine": 46,
+        "archiveEquivalent": "acceptance/evidence/2026-10-09/clean-package-verified/kazumi.9ciyuan/acceptance-20261009-073339-eea6f92c.json",
+        "finishedAt": "2026-10-09T07:34:25.287Z",
+        "acceptance": "SEARCH_PLAYABLE",
+        "sourceVersionName": "1.3",
+        "sourceVersionCode": 10300,
+        "sourceSha256": "b4c886296f0cfc64f6ff41c555ba326e50d19ca6f0ee699c6be66f48c920fdf9",
+        "matchesObservedAndroidBytes": true,
+        "app": {
+          "buildType": "debug",
+          "gitCommit": "fed45da5fd0a508ec313fdb3f9054c687e724545",
+          "packageName": "com.heyanle.easybangumi4.sourcelab",
+          "versionCode": 115,
+          "versionName": "6.1.3"
+        },
+        "device": {
+          "androidVersion": "16",
+          "apiLevel": 36,
+          "isPhysicalDevice": true,
+          "manufacturer": "meizu",
+          "model": "MEIZU 21",
+          "serial": "461QYGFJ222HD"
+        },
+        "steps": [
+          {
+            "detail": "首页页签「首页推荐」32 条内容",
+            "elapsedMs": 1292,
+            "step": "HOME",
+            "verdict": "PASS"
+          },
+          {
+            "detail": "「孤独摇滚」RESULTS(4)；选择结果第 1 部「孤独摇滚(上)」",
+            "elapsedMs": 1147,
+            "step": "SEARCH",
+            "verdict": "PASS"
+          },
+          {
+            "detail": "搜索「孤独摇滚(上)」线路 2/2「线路4」HD中字，首帧 1080x606，推进 3160ms（已尝试 2 条线路）",
+            "elapsedMs": 39692,
+            "step": "PLAY",
+            "verdict": "PASS"
+          }
+        ],
+        "coverageNote": "Applies to this exact adapter version/hash and tested run; not automatic coverage for a beta/next/new host"
+      },
+      "publicationSnapshot": {
+        "registered": true,
+        "status": "pending",
+        "review": null
+      }
+    },
+    "kazumi.anime7": {
+      "artifacts": {
+        "android": {
+          "path": "inner_source/kazumi-anime7.js",
+          "sha256": "57aced2e24c15a67be06910b00209401949a400a850228191e115d7d7ed67993",
+          "metadata": {
+            "key": "kazumi.anime7",
+            "label": "anime7",
+            "versionName": "1.0",
+            "versionCode": "10000",
+            "libVersion": "15",
+            "cover": "https://ani7.b-cdn.net/upload/logo/icon.png"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 13,
+              "text": "var DEFAULT_BASE_URL = \"https://anime7.top/\";"
+            },
+            {
+              "line": 28,
+              "text": "res.add(new SourcePreference.Edit(\"网页\", \"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 533,
+              "text": "var oldRoot = normalizeRootUrl(DEFAULT_BASE_URL);"
+            },
+            {
+              "line": 541,
+              "text": "return normalizeRootUrl(preferenceHelper.get(\"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 547,
+              "text": "value = DEFAULT_BASE_URL;"
+            }
+          ]
+        },
+        "dev": {
+          "path": "dev-extensions/kazumi-anime7.js",
+          "sha256": "57aced2e24c15a67be06910b00209401949a400a850228191e115d7d7ed67993",
+          "metadata": {
+            "key": "kazumi.anime7",
+            "label": "anime7",
+            "versionName": "1.0",
+            "versionCode": "10000",
+            "libVersion": "15",
+            "cover": "https://ani7.b-cdn.net/upload/logo/icon.png"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 13,
+              "text": "var DEFAULT_BASE_URL = \"https://anime7.top/\";"
+            },
+            {
+              "line": 28,
+              "text": "res.add(new SourcePreference.Edit(\"网页\", \"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 533,
+              "text": "var oldRoot = normalizeRootUrl(DEFAULT_BASE_URL);"
+            },
+            {
+              "line": 541,
+              "text": "return normalizeRootUrl(preferenceHelper.get(\"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 547,
+              "text": "value = DEFAULT_BASE_URL;"
+            }
+          ]
+        },
+        "release": {
+          "path": "extensions/kazumi-anime7.js",
+          "sha256": "57aced2e24c15a67be06910b00209401949a400a850228191e115d7d7ed67993",
+          "metadata": {
+            "key": "kazumi.anime7",
+            "label": "anime7",
+            "versionName": "1.0",
+            "versionCode": "10000",
+            "libVersion": "15",
+            "cover": "https://ani7.b-cdn.net/upload/logo/icon.png"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 13,
+              "text": "var DEFAULT_BASE_URL = \"https://anime7.top/\";"
+            },
+            {
+              "line": 28,
+              "text": "res.add(new SourcePreference.Edit(\"网页\", \"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 533,
+              "text": "var oldRoot = normalizeRootUrl(DEFAULT_BASE_URL);"
+            },
+            {
+              "line": 541,
+              "text": "return normalizeRootUrl(preferenceHelper.get(\"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 547,
+              "text": "value = DEFAULT_BASE_URL;"
+            }
+          ]
+        }
+      },
+      "declaredHosts": [
+        "anime7.top"
+      ],
+      "presentChannels": [
+        "android",
+        "dev",
+        "release"
+      ],
+      "hashesDiverge": false,
+      "directoryComparison": "all_three_identical",
+      "latestMatchingHistoricalEvidence": {
+        "originProject": "easybangumi_android",
+        "originRelativePath": "docs/source-audit/2026-10-09/clean-package-verified/kazumi.anime7/acceptance-20261009-073426-908c34da.json",
+        "reportSha256": "ec2a66be05e5f992f66250b655a1e73e6b10578ac4a3f2f7c3ec4b5ed469ff1a",
+        "reportKeyLine": 46,
+        "archiveEquivalent": "acceptance/evidence/2026-10-09/clean-package-verified/kazumi.anime7/acceptance-20261009-073426-908c34da.json",
+        "finishedAt": "2026-10-09T07:34:43.122Z",
+        "acceptance": "SEARCH_PLAYABLE",
+        "sourceVersionName": "1.0",
+        "sourceVersionCode": 10000,
+        "sourceSha256": "57aced2e24c15a67be06910b00209401949a400a850228191e115d7d7ed67993",
+        "matchesObservedAndroidBytes": true,
+        "app": {
+          "buildType": "debug",
+          "gitCommit": "fed45da5fd0a508ec313fdb3f9054c687e724545",
+          "packageName": "com.heyanle.easybangumi4.sourcelab",
+          "versionCode": 115,
+          "versionName": "6.1.3"
+        },
+        "device": {
+          "androidVersion": "16",
+          "apiLevel": 36,
+          "isPhysicalDevice": true,
+          "manufacturer": "meizu",
+          "model": "MEIZU 21",
+          "serial": "461QYGFJ222HD"
+        },
+        "steps": [
+          {
+            "detail": "首页页签「首页推荐」40 条内容",
+            "elapsedMs": 1500,
+            "step": "HOME",
+            "verdict": "PASS"
+          },
+          {
+            "detail": "「孤独摇滚」RESULTS(3)；选择结果第 1 部「孤独摇滚(上)」",
+            "elapsedMs": 331,
+            "step": "SEARCH",
+            "verdict": "PASS"
+          },
+          {
+            "detail": "搜索「孤独摇滚(上)」线路 1/1「線路1」HD中字，首帧 1920x1080，推进 3029ms（已尝试 1 条线路）",
+            "elapsedMs": 11625,
+            "step": "PLAY",
+            "verdict": "PASS"
+          }
+        ],
+        "coverageNote": "Applies to this exact adapter version/hash and tested run; not automatic coverage for a beta/next/new host"
+      },
+      "publicationSnapshot": {
+        "registered": true,
+        "status": "pending",
+        "review": null
+      }
+    },
+    "kazumi.ant": {
+      "artifacts": {
+        "android": {
+          "path": "inner_source/kazumi-ant.js",
+          "sha256": "8d6df3755f6c448e5fc33f9fe33eb42a82fc9ad144bec24001a5939c1806117b",
+          "metadata": {
+            "key": "kazumi.ant",
+            "label": "ant",
+            "versionName": "0.0.2",
+            "versionCode": "2",
+            "libVersion": "15",
+            "cover": "default"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 13,
+              "text": "var DEFAULT_BASE_URL = \"https://www.mayi520.org/\";"
+            },
+            {
+              "line": 28,
+              "text": "res.add(new SourcePreference.Edit(\"网页\", \"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 537,
+              "text": "var oldRoot = normalizeRootUrl(DEFAULT_BASE_URL);"
+            },
+            {
+              "line": 545,
+              "text": "return normalizeRootUrl(preferenceHelper.get(\"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 551,
+              "text": "value = DEFAULT_BASE_URL;"
+            }
+          ]
+        },
+        "dev": {
+          "path": "dev-extensions/kazumi-ant.js",
+          "sha256": "8d6df3755f6c448e5fc33f9fe33eb42a82fc9ad144bec24001a5939c1806117b",
+          "metadata": {
+            "key": "kazumi.ant",
+            "label": "ant",
+            "versionName": "0.0.2",
+            "versionCode": "2",
+            "libVersion": "15",
+            "cover": "default"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 13,
+              "text": "var DEFAULT_BASE_URL = \"https://www.mayi520.org/\";"
+            },
+            {
+              "line": 28,
+              "text": "res.add(new SourcePreference.Edit(\"网页\", \"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 537,
+              "text": "var oldRoot = normalizeRootUrl(DEFAULT_BASE_URL);"
+            },
+            {
+              "line": 545,
+              "text": "return normalizeRootUrl(preferenceHelper.get(\"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 551,
+              "text": "value = DEFAULT_BASE_URL;"
+            }
+          ]
+        },
+        "release": {
+          "path": "extensions/kazumi-ant.js",
+          "sha256": "8d6df3755f6c448e5fc33f9fe33eb42a82fc9ad144bec24001a5939c1806117b",
+          "metadata": {
+            "key": "kazumi.ant",
+            "label": "ant",
+            "versionName": "0.0.2",
+            "versionCode": "2",
+            "libVersion": "15",
+            "cover": "default"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 13,
+              "text": "var DEFAULT_BASE_URL = \"https://www.mayi520.org/\";"
+            },
+            {
+              "line": 28,
+              "text": "res.add(new SourcePreference.Edit(\"网页\", \"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 537,
+              "text": "var oldRoot = normalizeRootUrl(DEFAULT_BASE_URL);"
+            },
+            {
+              "line": 545,
+              "text": "return normalizeRootUrl(preferenceHelper.get(\"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 551,
+              "text": "value = DEFAULT_BASE_URL;"
+            }
+          ]
+        }
+      },
+      "declaredHosts": [
+        "www.mayi520.org"
+      ],
+      "presentChannels": [
+        "android",
+        "dev",
+        "release"
+      ],
+      "hashesDiverge": false,
+      "directoryComparison": "all_three_identical",
+      "latestMatchingHistoricalEvidence": {
+        "originProject": "easybangumi_android",
+        "originRelativePath": "docs/source-audit/2026-10-09/clean-package-verified/kazumi.ant/acceptance-20261009-073444-7d44e888.json",
+        "reportSha256": "837a9430e782fdb659737eb72ecff1e835c1a5c6f7fb7d88804b631fec6b5ad3",
+        "reportKeyLine": 46,
+        "archiveEquivalent": "acceptance/evidence/2026-10-09/clean-package-verified/kazumi.ant/acceptance-20261009-073444-7d44e888.json",
+        "finishedAt": "2026-10-09T07:35:01.336Z",
+        "acceptance": "SEARCH_PLAYABLE",
+        "sourceVersionName": "0.0.2",
+        "sourceVersionCode": 2,
+        "sourceSha256": "8d6df3755f6c448e5fc33f9fe33eb42a82fc9ad144bec24001a5939c1806117b",
+        "matchesObservedAndroidBytes": true,
+        "app": {
+          "buildType": "debug",
+          "gitCommit": "fed45da5fd0a508ec313fdb3f9054c687e724545",
+          "packageName": "com.heyanle.easybangumi4.sourcelab",
+          "versionCode": 115,
+          "versionName": "6.1.3"
+        },
+        "device": {
+          "androidVersion": "16",
+          "apiLevel": 36,
+          "isPhysicalDevice": true,
+          "manufacturer": "meizu",
+          "model": "MEIZU 21",
+          "serial": "461QYGFJ222HD"
+        },
+        "steps": [
+          {
+            "detail": "首页页签「首页推荐」40 条内容",
+            "elapsedMs": 2387,
+            "step": "HOME",
+            "verdict": "PASS"
+          },
+          {
+            "detail": "「孤独摇滚」RESULTS(3)；选择结果第 1 部「孤独摇滚(上) 剧场总集篇」",
+            "elapsedMs": 2634,
+            "step": "SEARCH",
+            "verdict": "PASS"
+          },
+          {
+            "detail": "搜索「孤独摇滚(上) 剧场总集篇」线路 1/4「播放线路1」正片，首帧 1920x1080，推进 3167ms（已尝试 1 条线路）",
+            "elapsedMs": 8905,
+            "step": "PLAY",
+            "verdict": "PASS"
+          }
+        ],
+        "coverageNote": "Applies to this exact adapter version/hash and tested run; not automatic coverage for a beta/next/new host"
+      },
+      "publicationSnapshot": {
+        "registered": true,
+        "status": "pending",
+        "review": null
+      }
+    },
+    "kazumi.gpjda": {
+      "artifacts": {
+        "android": {
+          "path": "inner_source/kazumi-gpjda.js",
+          "sha256": "d7c25a43df78ce859d8f4ccdd2fe7f9b484684dd5d1f990b129df316d13cf9c7",
+          "metadata": {
+            "key": "kazumi.gpjda",
+            "label": "gpjda",
+            "versionName": "1.0",
+            "versionCode": "10000",
+            "libVersion": "15",
+            "cover": "https://www.gpjda.com/favicon.ico"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 13,
+              "text": "var DEFAULT_BASE_URL = \"https://www.gpjda.com/\";"
+            },
+            {
+              "line": 28,
+              "text": "res.add(new SourcePreference.Edit(\"网页\", \"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 496,
+              "text": "var oldRoot = normalizeRootUrl(DEFAULT_BASE_URL);"
+            },
+            {
+              "line": 504,
+              "text": "return normalizeRootUrl(preferenceHelper.get(\"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 510,
+              "text": "value = DEFAULT_BASE_URL;"
+            }
+          ]
+        },
+        "dev": {
+          "path": "dev-extensions/kazumi-gpjda.js",
+          "sha256": "d7c25a43df78ce859d8f4ccdd2fe7f9b484684dd5d1f990b129df316d13cf9c7",
+          "metadata": {
+            "key": "kazumi.gpjda",
+            "label": "gpjda",
+            "versionName": "1.0",
+            "versionCode": "10000",
+            "libVersion": "15",
+            "cover": "https://www.gpjda.com/favicon.ico"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 13,
+              "text": "var DEFAULT_BASE_URL = \"https://www.gpjda.com/\";"
+            },
+            {
+              "line": 28,
+              "text": "res.add(new SourcePreference.Edit(\"网页\", \"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 496,
+              "text": "var oldRoot = normalizeRootUrl(DEFAULT_BASE_URL);"
+            },
+            {
+              "line": 504,
+              "text": "return normalizeRootUrl(preferenceHelper.get(\"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 510,
+              "text": "value = DEFAULT_BASE_URL;"
+            }
+          ]
+        },
+        "release": {
+          "path": "extensions/kazumi-gpjda.js",
+          "sha256": "d7c25a43df78ce859d8f4ccdd2fe7f9b484684dd5d1f990b129df316d13cf9c7",
+          "metadata": {
+            "key": "kazumi.gpjda",
+            "label": "gpjda",
+            "versionName": "1.0",
+            "versionCode": "10000",
+            "libVersion": "15",
+            "cover": "https://www.gpjda.com/favicon.ico"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 13,
+              "text": "var DEFAULT_BASE_URL = \"https://www.gpjda.com/\";"
+            },
+            {
+              "line": 28,
+              "text": "res.add(new SourcePreference.Edit(\"网页\", \"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 496,
+              "text": "var oldRoot = normalizeRootUrl(DEFAULT_BASE_URL);"
+            },
+            {
+              "line": 504,
+              "text": "return normalizeRootUrl(preferenceHelper.get(\"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 510,
+              "text": "value = DEFAULT_BASE_URL;"
+            }
+          ]
+        }
+      },
+      "declaredHosts": [
+        "www.gpjda.com"
+      ],
+      "presentChannels": [
+        "android",
+        "dev",
+        "release"
+      ],
+      "hashesDiverge": false,
+      "directoryComparison": "all_three_identical",
+      "latestMatchingHistoricalEvidence": {
+        "originProject": "easybangumi_android",
+        "originRelativePath": "docs/source-audit/2026-10-09/clean-package-verified/kazumi.gpjda/acceptance-20261009-073527-cd300882.json",
+        "reportSha256": "e50426c580a26d1aca0abfc6d84ef29a64bb8b5793b36712c7b6791bad82e517",
+        "reportKeyLine": 46,
+        "archiveEquivalent": "acceptance/evidence/2026-10-09/clean-package-verified/kazumi.gpjda/acceptance-20261009-073527-cd300882.json",
+        "finishedAt": "2026-10-09T07:35:54.846Z",
+        "acceptance": "SEARCH_PLAYABLE",
+        "sourceVersionName": "1.0",
+        "sourceVersionCode": 10000,
+        "sourceSha256": "d7c25a43df78ce859d8f4ccdd2fe7f9b484684dd5d1f990b129df316d13cf9c7",
+        "matchesObservedAndroidBytes": true,
+        "app": {
+          "buildType": "debug",
+          "gitCommit": "fed45da5fd0a508ec313fdb3f9054c687e724545",
+          "packageName": "com.heyanle.easybangumi4.sourcelab",
+          "versionCode": 115,
+          "versionName": "6.1.3"
+        },
+        "device": {
+          "androidVersion": "16",
+          "apiLevel": 36,
+          "isPhysicalDevice": true,
+          "manufacturer": "meizu",
+          "model": "MEIZU 21",
+          "serial": "461QYGFJ222HD"
+        },
+        "steps": [
+          {
+            "detail": "首页页签「首页推荐」40 条内容",
+            "elapsedMs": 1910,
+            "step": "HOME",
+            "verdict": "PASS"
+          },
+          {
+            "detail": "「孤独摇滚」RESULTS(3)；选择结果第 1 部「孤独摇滚！」",
+            "elapsedMs": 1174,
+            "step": "SEARCH",
+            "verdict": "PASS"
+          },
+          {
+            "detail": "搜索「孤独摇滚！」线路 1/2「播放线路1」第01集，首帧 1080x606，推进 3148ms（已尝试 1 条线路）",
+            "elapsedMs": 21410,
+            "step": "PLAY",
+            "verdict": "PASS"
+          }
+        ],
+        "coverageNote": "Applies to this exact adapter version/hash and tested run; not automatic coverage for a beta/next/new host"
+      },
+      "publicationSnapshot": {
+        "registered": true,
+        "status": "pending",
+        "review": null
+      }
+    },
+    "kazumi.ylsp": {
+      "artifacts": {
+        "android": {
+          "path": "inner_source/kazumi-ylsp.js",
+          "sha256": "b7f41e2e0ac2fb872a4a6e5afb7e1016ceab7d5610dd20f26d87620ed8b056e6",
+          "metadata": {
+            "key": "kazumi.ylsp",
+            "label": "ylsp",
+            "versionName": "1.1",
+            "versionCode": "10100",
+            "libVersion": "15",
+            "cover": "https://www.ylys.cc/favicon.ico"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 13,
+              "text": "var DEFAULT_BASE_URL = \"https://www.ylys.cc/\";"
+            },
+            {
+              "line": 28,
+              "text": "res.add(new SourcePreference.Edit(\"网页\", \"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 563,
+              "text": "var oldRoot = normalizeRootUrl(DEFAULT_BASE_URL);"
+            },
+            {
+              "line": 571,
+              "text": "return normalizeRootUrl(preferenceHelper.get(\"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 577,
+              "text": "value = DEFAULT_BASE_URL;"
+            }
+          ]
+        },
+        "dev": {
+          "path": "dev-extensions/kazumi-ylsp.js",
+          "sha256": "b7f41e2e0ac2fb872a4a6e5afb7e1016ceab7d5610dd20f26d87620ed8b056e6",
+          "metadata": {
+            "key": "kazumi.ylsp",
+            "label": "ylsp",
+            "versionName": "1.1",
+            "versionCode": "10100",
+            "libVersion": "15",
+            "cover": "https://www.ylys.cc/favicon.ico"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 13,
+              "text": "var DEFAULT_BASE_URL = \"https://www.ylys.cc/\";"
+            },
+            {
+              "line": 28,
+              "text": "res.add(new SourcePreference.Edit(\"网页\", \"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 563,
+              "text": "var oldRoot = normalizeRootUrl(DEFAULT_BASE_URL);"
+            },
+            {
+              "line": 571,
+              "text": "return normalizeRootUrl(preferenceHelper.get(\"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 577,
+              "text": "value = DEFAULT_BASE_URL;"
+            }
+          ]
+        },
+        "release": {
+          "path": "extensions/kazumi-ylsp.js",
+          "sha256": "b7f41e2e0ac2fb872a4a6e5afb7e1016ceab7d5610dd20f26d87620ed8b056e6",
+          "metadata": {
+            "key": "kazumi.ylsp",
+            "label": "ylsp",
+            "versionName": "1.1",
+            "versionCode": "10100",
+            "libVersion": "15",
+            "cover": "https://www.ylys.cc/favicon.ico"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 13,
+              "text": "var DEFAULT_BASE_URL = \"https://www.ylys.cc/\";"
+            },
+            {
+              "line": 28,
+              "text": "res.add(new SourcePreference.Edit(\"网页\", \"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 563,
+              "text": "var oldRoot = normalizeRootUrl(DEFAULT_BASE_URL);"
+            },
+            {
+              "line": 571,
+              "text": "return normalizeRootUrl(preferenceHelper.get(\"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 577,
+              "text": "value = DEFAULT_BASE_URL;"
+            }
+          ]
+        }
+      },
+      "declaredHosts": [
+        "www.ylys.cc"
+      ],
+      "presentChannels": [
+        "android",
+        "dev",
+        "release"
+      ],
+      "hashesDiverge": false,
+      "directoryComparison": "all_three_identical",
+      "latestMatchingHistoricalEvidence": {
+        "originProject": "easybangumi_android",
+        "originRelativePath": "docs/source-audit/2026-10-09/isolated/kazumi.ylsp/acceptance-20261009-060435-0aa2177a.json",
+        "reportSha256": "ef89919cb1b8b37df31cc3164b23d6747be84deb6bde157a23aaab8dcd740f86",
+        "reportKeyLine": 46,
+        "archiveEquivalent": null,
+        "finishedAt": "2026-10-09T06:05:28.615Z",
+        "acceptance": "PLAYBACK_FAILED",
+        "sourceVersionName": "1.1",
+        "sourceVersionCode": 10100,
+        "sourceSha256": "b7f41e2e0ac2fb872a4a6e5afb7e1016ceab7d5610dd20f26d87620ed8b056e6",
+        "matchesObservedAndroidBytes": true,
+        "app": {
+          "buildType": "debug",
+          "gitCommit": "fed45da5fd0a508ec313fdb3f9054c687e724545",
+          "packageName": "com.heyanle.easybangumi4.debug",
+          "versionCode": 115,
+          "versionName": "6.1.3"
+        },
+        "device": {
+          "androidVersion": "16",
+          "apiLevel": 36,
+          "isPhysicalDevice": true,
+          "manufacturer": "meizu",
+          "model": "MEIZU 21",
+          "serial": "461QYGFJ222HD"
+        },
+        "steps": [
+          {
+            "detail": "JavaScriptException：com.heyanle.easybangumi4.plugin.api.ParserException: 请求失败: 522 (source kazumi.ylsp#517)",
+            "elapsedMs": 23508,
+            "step": "HOME",
+            "verdict": "FAIL"
+          },
+          {
+            "detail": "「孤独摇滚」TIMEOUT(0)；搜索不可用，首页播放只能供诊断，不能自动准入",
+            "elapsedMs": 25014,
+            "step": "SEARCH",
+            "verdict": "FAIL"
+          },
+          {
+            "detail": "所有别名无可用结果且首页第 1 部不可用，无法定位播放样本",
+            "elapsedMs": 0,
+            "step": "PLAY",
+            "verdict": "FAIL"
+          }
+        ],
+        "coverageNote": "Applies to this exact adapter version/hash and tested run; not automatic coverage for a beta/next/new host"
+      },
+      "publicationSnapshot": {
+        "registered": true,
+        "status": "pending",
+        "review": null
+      }
+    },
+    "jisoft.ale": {
+      "artifacts": {
+        "android": {
+          "path": "inner_source/le.js",
+          "sha256": "00c7c0cb21bc8c9a336120d523118bef32cff10a591f5791493dd085cb5235da",
+          "metadata": {
+            "key": "jisoft.ale",
+            "label": "永乐视频",
+            "versionName": "1.0",
+            "versionCode": "1",
+            "libVersion": "12",
+            "cover": "https://ylsp.tv/logo.png"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 16,
+              "text": "var host = new SourcePreference.Edit(\"网页\", \"HostV2\", \"https://ylsp.tv\");"
+            },
+            {
+              "line": 327,
+              "text": "return preferenceHelper.get(\"HostV2\", \"https://ylsp.tv\");"
+            }
+          ]
+        },
+        "dev": {
+          "path": "dev-extensions/le.js",
+          "sha256": "00c7c0cb21bc8c9a336120d523118bef32cff10a591f5791493dd085cb5235da",
+          "metadata": {
+            "key": "jisoft.ale",
+            "label": "永乐视频",
+            "versionName": "1.0",
+            "versionCode": "1",
+            "libVersion": "12",
+            "cover": "https://ylsp.tv/logo.png"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 16,
+              "text": "var host = new SourcePreference.Edit(\"网页\", \"HostV2\", \"https://ylsp.tv\");"
+            },
+            {
+              "line": 327,
+              "text": "return preferenceHelper.get(\"HostV2\", \"https://ylsp.tv\");"
+            }
+          ]
+        },
+        "release": {
+          "path": "extensions/le.js",
+          "sha256": "f86d70900529ffe5108f1508f8d52011028d47ecacced2a424f10920211e8295",
+          "metadata": {
+            "key": "jisoft.ale",
+            "label": "永乐视频",
+            "versionName": "1.0",
+            "versionCode": "1",
+            "libVersion": "12",
+            "cover": "https://ylsp.tv/logo.png",
+            "blocked": "true"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 17,
+              "text": "var host = new SourcePreference.Edit(\"网页\", \"HostV2\", \"https://ylsp.tv\");"
+            },
+            {
+              "line": 328,
+              "text": "return preferenceHelper.get(\"HostV2\", \"https://ylsp.tv\");"
+            }
+          ]
+        }
+      },
+      "declaredHosts": [
+        "ylsp.tv"
+      ],
+      "presentChannels": [
+        "android",
+        "dev",
+        "release"
+      ],
+      "hashesDiverge": true,
+      "directoryComparison": "release_differs_android_dev_identical",
+      "latestMatchingHistoricalEvidence": {
+        "originProject": "easybangumi_android",
+        "originRelativePath": "docs/source-audit/2026-10-09/full/acceptance-20261009-053313-4763e1ed.json",
+        "reportSha256": "e2b60d97b0263b9443e57bcc075acb38ccec36b40d8a62d4bb1e3f4f578c93d4",
+        "reportKeyLine": 416,
+        "archiveEquivalent": "acceptance/evidence/2026-10-09/full/acceptance-20261009-053313-4763e1ed.json",
+        "finishedAt": "2026-10-09T05:37:52.980Z",
+        "acceptance": "PLAYBACK_FAILED",
+        "sourceVersionName": "1.0",
+        "sourceVersionCode": 1,
+        "sourceSha256": "00c7c0cb21bc8c9a336120d523118bef32cff10a591f5791493dd085cb5235da",
+        "matchesObservedAndroidBytes": true,
+        "app": {
+          "buildType": "debug",
+          "gitCommit": "fed45da5fd0a508ec313fdb3f9054c687e724545",
+          "packageName": "com.heyanle.easybangumi4.debug",
+          "versionCode": 115,
+          "versionName": "6.1.3"
+        },
+        "device": {
+          "androidVersion": "16",
+          "apiLevel": 36,
+          "isPhysicalDevice": true,
+          "manufacturer": "meizu",
+          "model": "MEIZU 21",
+          "serial": "461QYGFJ222HD"
+        },
+        "steps": [
+          {
+            "detail": "IllegalStateException：源没有提供 PageComponent",
+            "elapsedMs": 1,
+            "step": "HOME",
+            "verdict": "FAIL"
+          },
+          {
+            "detail": "「孤独摇滚」UNAVAILABLE(0)；搜索不可用，首页播放只能供诊断，不能自动准入",
+            "elapsedMs": 0,
+            "step": "SEARCH",
+            "verdict": "FAIL"
+          },
+          {
+            "detail": "所有别名无可用结果且首页第 1 部不可用，无法定位播放样本",
+            "elapsedMs": 0,
+            "step": "PLAY",
+            "verdict": "FAIL"
+          }
+        ],
+        "coverageNote": "Applies to this exact adapter version/hash and tested run; not automatic coverage for a beta/next/new host"
+      },
+      "publicationSnapshot": {
+        "registered": true,
+        "status": "pending",
+        "review": null
+      }
+    },
+    "kazumi.7sefun": {
+      "artifacts": {
+        "android": {
+          "path": "inner_source/kazumi-7sefun.js",
+          "sha256": "45822ddf4e093a79a010fd3b2495ea005f38ec3516dc716f921e234b8ae5b966",
+          "metadata": {
+            "key": "kazumi.7sefun",
+            "label": "7sefun",
+            "versionName": "1.2",
+            "versionCode": "10200",
+            "libVersion": "15",
+            "cover": "https://www.7sefun.top/favicon.ico"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 13,
+              "text": "var DEFAULT_BASE_URL = \"https://www.7sefun.top/\";"
+            },
+            {
+              "line": 28,
+              "text": "res.add(new SourcePreference.Edit(\"网页\", \"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 496,
+              "text": "var oldRoot = normalizeRootUrl(DEFAULT_BASE_URL);"
+            },
+            {
+              "line": 504,
+              "text": "return normalizeRootUrl(preferenceHelper.get(\"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 510,
+              "text": "value = DEFAULT_BASE_URL;"
+            }
+          ]
+        },
+        "dev": {
+          "path": "dev-extensions/kazumi-7sefun.js",
+          "sha256": "45822ddf4e093a79a010fd3b2495ea005f38ec3516dc716f921e234b8ae5b966",
+          "metadata": {
+            "key": "kazumi.7sefun",
+            "label": "7sefun",
+            "versionName": "1.2",
+            "versionCode": "10200",
+            "libVersion": "15",
+            "cover": "https://www.7sefun.top/favicon.ico"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 13,
+              "text": "var DEFAULT_BASE_URL = \"https://www.7sefun.top/\";"
+            },
+            {
+              "line": 28,
+              "text": "res.add(new SourcePreference.Edit(\"网页\", \"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 496,
+              "text": "var oldRoot = normalizeRootUrl(DEFAULT_BASE_URL);"
+            },
+            {
+              "line": 504,
+              "text": "return normalizeRootUrl(preferenceHelper.get(\"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 510,
+              "text": "value = DEFAULT_BASE_URL;"
+            }
+          ]
+        },
+        "release": {
+          "path": "extensions/kazumi-7sefun.js",
+          "sha256": "45822ddf4e093a79a010fd3b2495ea005f38ec3516dc716f921e234b8ae5b966",
+          "metadata": {
+            "key": "kazumi.7sefun",
+            "label": "7sefun",
+            "versionName": "1.2",
+            "versionCode": "10200",
+            "libVersion": "15",
+            "cover": "https://www.7sefun.top/favicon.ico"
+          },
+          "declaredDomainLines": [
+            {
+              "line": 13,
+              "text": "var DEFAULT_BASE_URL = \"https://www.7sefun.top/\";"
+            },
+            {
+              "line": 28,
+              "text": "res.add(new SourcePreference.Edit(\"网页\", \"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 496,
+              "text": "var oldRoot = normalizeRootUrl(DEFAULT_BASE_URL);"
+            },
+            {
+              "line": 504,
+              "text": "return normalizeRootUrl(preferenceHelper.get(\"Host\", DEFAULT_BASE_URL));"
+            },
+            {
+              "line": 510,
+              "text": "value = DEFAULT_BASE_URL;"
+            }
+          ]
+        }
+      },
+      "declaredHosts": [
+        "www.7sefun.top"
+      ],
+      "presentChannels": [
+        "android",
+        "dev",
+        "release"
+      ],
+      "hashesDiverge": false,
+      "directoryComparison": "all_three_identical",
+      "latestMatchingHistoricalEvidence": {
+        "originProject": "easybangumi_android",
+        "originRelativePath": "docs/source-audit/2026-10-09/clean-package-verified/kazumi.7sefun/acceptance-20261009-073323-9a969390.json",
+        "reportSha256": "c77e8f38ca8cddf8f22950a0f17c050700e7a832035e4728b369aaab3a3b17a2",
+        "reportKeyLine": 46,
+        "archiveEquivalent": "acceptance/evidence/2026-10-09/clean-package-verified/kazumi.7sefun/acceptance-20261009-073323-9a969390.json",
+        "finishedAt": "2026-10-09T07:33:37.830Z",
+        "acceptance": "SEARCH_PLAYABLE",
+        "sourceVersionName": "1.2",
+        "sourceVersionCode": 10200,
+        "sourceSha256": "45822ddf4e093a79a010fd3b2495ea005f38ec3516dc716f921e234b8ae5b966",
+        "matchesObservedAndroidBytes": true,
+        "app": {
+          "buildType": "debug",
+          "gitCommit": "fed45da5fd0a508ec313fdb3f9054c687e724545",
+          "packageName": "com.heyanle.easybangumi4.sourcelab",
+          "versionCode": 115,
+          "versionName": "6.1.3"
+        },
+        "device": {
+          "androidVersion": "16",
+          "apiLevel": 36,
+          "isPhysicalDevice": true,
+          "manufacturer": "meizu",
+          "model": "MEIZU 21",
+          "serial": "461QYGFJ222HD"
+        },
+        "steps": [
+          {
+            "detail": "首页页签「首页推荐」32 条内容",
+            "elapsedMs": 1195,
+            "step": "HOME",
+            "verdict": "PASS"
+          },
+          {
+            "detail": "「孤独摇滚」RESULTS(1)；选择结果第 1 部「孤独摇滚！」",
+            "elapsedMs": 419,
+            "step": "SEARCH",
+            "verdict": "PASS"
+          },
+          {
+            "detail": "搜索「孤独摇滚！」线路 1/1「播放线路1」第01集，首帧 1920x1080，推进 3161ms（已尝试 1 条线路）",
+            "elapsedMs": 9017,
+            "step": "PLAY",
+            "verdict": "PASS"
+          }
+        ],
+        "coverageNote": "Applies to this exact adapter version/hash and tested run; not automatic coverage for a beta/next/new host"
+      },
+      "publicationSnapshot": {
+        "registered": true,
+        "status": "pending",
+        "review": null
+      }
+    }
+  },
+  "siteObservations": [
+    {
+      "requestedUrl": "https://next.xifanacg.com",
+      "checkedAt": "2026-10-13T06:06:30.669617+00:00",
+      "method": "public HTTP GET; no cookies, credentials, challenge solving or playback",
+      "status": 200,
+      "finalUrl": "https://next.xifanacg.com",
+      "contentType": "text/html; charset=utf-8",
+      "sampleBytes": 262144,
+      "title": "稀饭动漫 Next",
+      "scripts": [
+        "https://next.xifanacg.com/_next/static/chunks/05gwtcqd9f~p5.js",
+        "https://next.xifanacg.com/_next/static/chunks/0qvpd_bm74bwc.js",
+        "https://next.xifanacg.com/_next/static/chunks/0md887lr8_wfy.js",
+        "https://next.xifanacg.com/_next/static/chunks/0l~6yljnuba59.js",
+        "https://next.xifanacg.com/_next/static/chunks/turbopack-04my_so~b4j2z.js",
+        "https://next.xifanacg.com/_next/static/chunks/0rcvclj2yqps~.js",
+        "https://next.xifanacg.com/_next/static/chunks/11p_u98xlewhc.js",
+        "https://next.xifanacg.com/_next/static/chunks/05ficjp7rgu64.js",
+        "https://next.xifanacg.com/_next/static/chunks/0c9ot.yk5pg3s.js",
+        "https://next.xifanacg.com/_next/static/chunks/01tlhq.ehye-3.js",
+        "https://next.xifanacg.com/_next/static/chunks/0hczo87qi7jn..js",
+        "https://next.xifanacg.com/_next/static/chunks/0czjfzgthnorr.js",
+        "https://next.xifanacg.com/_next/static/chunks/05pvawgvkihwy.js",
+        "https://next.xifanacg.com/_next/static/chunks/0~nmiff_1cmwx.js",
+        "https://next.xifanacg.com/_next/static/chunks/0aualmw.bp442.js"
+      ],
+      "rootIds": [
+        "main",
+        "S:e",
+        "S:f",
+        "S:10",
+        "S:2",
+        "S:11",
+        "S:d",
+        "S:1",
+        "S:4",
+        "S:5"
+      ],
+      "hasSearchForm": false,
+      "elapsedMs": 3677
+    },
+    {
+      "requestedUrl": "https://www.cycani.org",
+      "checkedAt": "2026-10-13T06:06:30.670475+00:00",
+      "method": "public HTTP GET; no cookies, credentials, challenge solving or playback",
+      "status": 200,
+      "finalUrl": "https://www.cycani.org",
+      "contentType": "text/html",
+      "sampleBytes": 2013,
+      "title": "次元城动画 - 在这里，探索全新追番体验",
+      "scripts": [
+        "https://www.googletagmanager.com/gtag/js?id=G-40VZ4KD83H",
+        "https://www.cycani.org/assets/index-BysvtvH-.js"
+      ],
+      "rootIds": [
+        "root"
+      ],
+      "hasSearchForm": false,
+      "elapsedMs": 1489
+    },
+    {
+      "requestedUrl": "https://beta.girigirilove.com",
+      "checkedAt": "2026-10-13T06:06:30.670667+00:00",
+      "method": "public HTTP GET; no cookies, credentials, challenge solving or playback",
+      "status": 200,
+      "finalUrl": "https://beta.girigirilove.com",
+      "contentType": "text/html",
+      "sampleBytes": 4549,
+      "title": "ギリギリ爱 · GiriGiri",
+      "scripts": [
+        "https://beta.girigirilove.com/assets/index-FTujx58n.js",
+        "https://www.googletagmanager.com/gtag/js?id=G-B2C22CJL17",
+        "https://static.cloudflareinsights.com/beacon.min.js/v4bc70e2c01a94c73b74392e4234840661791215815920"
+      ],
+      "rootIds": [
+        "app"
+      ],
+      "hasSearchForm": false,
+      "elapsedMs": 947
+    },
+    {
+      "requestedUrl": "https://milimili.moe",
+      "checkedAt": "2026-10-13T06:06:30.670846+00:00",
+      "method": "public HTTP GET; no cookies, credentials, challenge solving or playback",
+      "status": 200,
+      "finalUrl": "https://milimili.moe",
+      "contentType": "text/html;charset=utf-8",
+      "sampleBytes": 212769,
+      "title": "MiliMili - 免费动漫在线观看网站 · 新番番剧全集高清弹幕",
+      "scripts": [
+        "https://01a0e4b7-14ff-7b83-b857-0358f30edd42.spst2.com/ustat.js",
+        "https://milimili.moe/stats/script.js",
+        "https://milimili.moe/_nuxt/DaGz57yh.js"
+      ],
+      "rootIds": [
+        "__nuxt",
+        "feed",
+        "teleports"
+      ],
+      "hasSearchForm": true,
+      "elapsedMs": 2051
+    },
+    {
+      "requestedUrl": "https://www.sorani.net",
+      "checkedAt": "2026-10-13T06:06:31.618699+00:00",
+      "method": "public HTTP GET; no cookies, credentials, challenge solving or playback",
+      "status": 200,
+      "finalUrl": "https://www.sorani.net",
+      "contentType": "text/html",
+      "sampleBytes": 262144,
+      "title": "青空次元 - 悠于青空之上~",
+      "scripts": [],
+      "rootIds": [
+        "appShell",
+        "page",
+        "page-content"
+      ],
+      "hasSearchForm": false,
+      "elapsedMs": 2614
+    },
+    {
+      "requestedUrl": "https://ios.mifun.org",
+      "checkedAt": "2026-10-13T06:06:32.159525+00:00",
+      "method": "public HTTP GET; no cookies, credentials, challenge solving or playback",
+      "status": 200,
+      "finalUrl": "https://ios.mifun.org",
+      "contentType": "text/html;charset=utf-8",
+      "sampleBytes": 217017,
+      "title": "MiFun",
+      "scripts": [
+        "https://ios.mifun.org/statics/js/jquery.min.js",
+        "https://ios.mifun.org/statics/js/conch.set.js?v=",
+        "https://ios.mifun.org/statics/js/conch.vip.js?v=",
+        "https://ios.mifun.org/static/js/home.js",
+        "https://ios.mifun.org/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js",
+        "https://ios.mifun.org/statics/js/set/strantext.js",
+        "https://static.cloudflareinsights.com/beacon.min.js/v4bc70e2c01a94c73b74392e4234840661791215815920"
+      ],
+      "rootIds": [
+        "conch-header",
+        "conch-banner",
+        "conch-content",
+        "conch-footer"
+      ],
+      "hasSearchForm": true,
+      "elapsedMs": 3550
+    },
+    {
+      "requestedUrl": "https://www.lmmzx.com",
+      "checkedAt": "2026-10-13T06:06:32.722346+00:00",
+      "method": "public HTTP GET; no cookies, credentials, challenge solving or playback",
+      "status": 200,
+      "finalUrl": "https://www.lmmzx.com",
+      "contentType": "text/html",
+      "sampleBytes": 220,
+      "title": "Loading",
+      "scripts": [
+        "https://www.lmmzx.com/href.js"
+      ],
+      "rootIds": [],
+      "hasSearchForm": false,
+      "elapsedMs": 1961
+    },
+    {
+      "requestedUrl": "https://www.silisilifun.com",
+      "checkedAt": "2026-10-13T06:06:34.233610+00:00",
+      "method": "public HTTP GET; no cookies, credentials, challenge solving or playback",
+      "status": null,
+      "errorType": "URLError",
+      "error": "<urlopen error _ssl.c:1112: The handshake operation timed out>",
+      "elapsedMs": 12687
+    },
+    {
+      "requestedUrl": "https://www.omofuns.com",
+      "checkedAt": "2026-10-13T06:06:34.347715+00:00",
+      "method": "public HTTP GET; no cookies, credentials, challenge solving or playback",
+      "status": 200,
+      "finalUrl": "https://www.omofuns.com",
+      "contentType": "text/html;charset=utf-8",
+      "sampleBytes": 104802,
+      "title": "OmoFun动漫-一个免费的动漫分享门户",
+      "scripts": [
+        "https://s6.cfhls.top/1/player/js/jquery/3.3.1/jquery.min.js",
+        "https://s6.cfhls.top/1/template/the4/statics/js/index.js",
+        "https://www.omofuns.com/template/the4/statics/js/stui_default.js",
+        "https://s6.cfhls.top/1/player/js/jquery-cookie/1.4.1/jquery.cookie.min.js",
+        "https://s6.cfhls.top/1/player/js/jquery.lazyload/1.9.1/jquery.lazyload.min.js",
+        "https://www.omofuns.com/template/the4/statics/js/home.js",
+        "https://www.omofuns.com/template/the4/statics/js/pv.js",
+        "https://www.omofuns.com/template/the4/statics/js/common.js",
+        "https://www.googletagmanager.com/gtag/js?id=G-8JCZ6DPVZK"
+      ],
+      "rootIds": [],
+      "hasSearchForm": true,
+      "elapsedMs": 2580
+    },
+    {
+      "requestedUrl": "https://www.sbdl.cc",
+      "checkedAt": "2026-10-13T06:06:34.683525+00:00",
+      "method": "public HTTP GET; no cookies, credentials, challenge solving or playback",
+      "status": 403,
+      "errorType": "HTTPError",
+      "elapsedMs": 1545
+    },
+    {
+      "requestedUrl": "https://www.agedm.io",
+      "checkedAt": "2026-10-13T06:06:35.710039+00:00",
+      "method": "public HTTP GET; no cookies, credentials, challenge solving or playback",
+      "status": 200,
+      "finalUrl": "https://www.agedm.io",
+      "contentType": "text/html; charset=UTF-8",
+      "sampleBytes": 141513,
+      "title": "AGE动漫 - 在线动漫观看",
+      "scripts": [
+        "https://xcdn.khfed.com:8443/age/statics/js/app.js?v=2026082402",
+        "https://p3-tt.byteimg.com/obj/tos-cn-i-jcdsk5yqko/dada6f36b8474129a4467037fac9f24d?.js",
+        "https://s0.pstatp.com/cdn/expire-10-y/jquery/2.1.4/jquery.min.js",
+        "https://s0.pstatp.com/cdn/expire-10-y/jquery.lazyload/1.9.1/jquery.lazyload.min.js",
+        "https://xcdn.khfed.com:8443/age/statics/js/foot.js?v=2026082402",
+        "https://xcdn.khfed.com:8443/age/statics/js/notice.js?v=2026082402"
+      ],
+      "rootIds": [
+        "loginModal",
+        "input-repassword-group",
+        "notice_box",
+        "week-1-pane",
+        "week-2-pane",
+        "week-3-pane",
+        "week-4-pane",
+        "week-5-pane",
+        "week-6-pane",
+        "week-0-pane"
+      ],
+      "hasSearchForm": true,
+      "elapsedMs": 902
+    },
+    {
+      "requestedUrl": "https://www.tvtfun.net",
+      "checkedAt": "2026-10-13T06:06:36.228831+00:00",
+      "method": "public HTTP GET; no cookies, credentials, challenge solving or playback",
+      "status": 200,
+      "finalUrl": "https://www.tvtfun.net",
+      "contentType": "text/html; charset=utf-8",
+      "sampleBytes": 201026,
+      "title": "TvTFun - 番剧自由，从这里开始",
+      "scripts": [
+        "https://www.tvtfun.net/_next/static/chunks/944340ec0b402608.js",
+        "https://www.tvtfun.net/_next/static/chunks/deca3d247ed2b915.js",
+        "https://www.tvtfun.net/_next/static/chunks/609e216a76dd7d13.js",
+        "https://www.tvtfun.net/_next/static/chunks/7252dba3ebc1198d.js",
+        "https://www.tvtfun.net/_next/static/chunks/3ca5f4ff1ef9411e.js",
+        "https://www.tvtfun.net/_next/static/chunks/turbopack-b706e2dec99b1809.js",
+        "https://www.tvtfun.net/_next/static/chunks/47b638855b599fe4.js",
+        "https://www.tvtfun.net/_next/static/chunks/3909888684119c8a.js",
+        "https://www.tvtfun.net/_next/static/chunks/d96d3900914a109e.js",
+        "https://www.tvtfun.net/_next/static/chunks/c82f6e9b343c9e9f.js",
+        "https://www.tvtfun.net/_next/static/chunks/6ded11ddf9987cb1.js",
+        "https://www.tvtfun.net/_next/static/chunks/dd0664a1abf4c5e2.js",
+        "https://www.tvtfun.net/_next/static/chunks/3b0f9f03b77bfcd2.js",
+        "https://www.tvtfun.net/_next/static/chunks/66dc6b4b4256fb8a.js",
+        "https://www.tvtfun.net/_next/static/chunks/1802079ec9d01a49.js"
+      ],
+      "rootIds": [],
+      "hasSearchForm": false,
+      "elapsedMs": 2241
+    },
+    {
+      "requestedUrl": "https://www.baimaodm.com",
+      "checkedAt": "2026-10-13T06:06:36.612813+00:00",
+      "method": "public HTTP GET; no cookies, credentials, challenge solving or playback",
+      "status": 200,
+      "finalUrl": "https://www.bmmdmm.com/",
+      "contentType": "text/html; charset=utf-8",
+      "sampleBytes": 75876,
+      "title": "黑猫动漫－专注动漫的门户网站",
+      "scripts": [
+        "https://www.bmmdmm.com/hdst/jquery/1.12.4/jquery.min.js?ver=186155",
+        "https://www.bmmdmm.com/hdst/hm_js/jquery.foucs.js",
+        "https://www.bmmdmm.com/hdst/hm_js/history.js?ver=186155",
+        "https://www.bmmdmm.com/hdst/js/pck.js?ver=186155",
+        "https://www.bmmdmm.com/hdst/hm_js/changes.js"
+      ],
+      "rootIds": [
+        "List_top_0",
+        "friendlink_hid"
+      ],
+      "hasSearchForm": true,
+      "elapsedMs": 6097
+    },
+    {
+      "requestedUrl": "https://www.dcc3.com",
+      "checkedAt": "2026-10-13T06:06:36.928046+00:00",
+      "method": "public HTTP GET; no cookies, credentials, challenge solving or playback",
+      "status": 200,
+      "finalUrl": "https://www.dcc3.com",
+      "contentType": "text/html; charset=UTF-8",
+      "sampleBytes": 35301,
+      "title": "MX动漫-最新最全动漫免费在线观看",
+      "scripts": [
+        "https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js",
+        "https://www.dcc3.com/webjs/conch.js"
+      ],
+      "rootIds": [
+        "header",
+        "search",
+        "nav",
+        "footer"
+      ],
+      "hasSearchForm": true,
+      "elapsedMs": 4459
+    }
+  ]
+}

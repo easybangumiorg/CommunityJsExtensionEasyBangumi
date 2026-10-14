@@ -1,11 +1,13 @@
+from __future__ import annotations
+
 import os
 import re
 import json
 import shutil
 from dataclasses import dataclass, field
 from pathlib import Path
-from glob import glob
 from typing import Optional
+import tempfile
 
 
 DEFAULT_COVER = "https://easybangumi.org/icons/logo-025x.webp"
@@ -23,6 +25,8 @@ class ExtensionMeta:
     versionName: str
     url: Optional[str] = None
     cover: Optional[str] = None
+    # libVersion 目前不写入 release 索引（to_dict 保持不变），仅供通道索引复用
+    lib_version: Optional[int] = None
     blocked: bool = field(default=False)
 
     def __post_init__(self):
@@ -38,6 +42,7 @@ class ExtensionMeta:
         return self.blocked
 
     def to_dict(self):
+        # 注意：release 索引的字段集合已冻结，不要在此追加字段（通道索引另见 channel.py）
         return {
             'key': self.key,
             'url': self.url,
@@ -49,14 +54,25 @@ class ExtensionMeta:
 
     @classmethod
     def from_dict(cls, data: dict[str, str]) -> 'ExtensionMeta':
-        assert data.get('key'), "Key is required"
+        for name in ('key', 'label', 'versionCode', 'versionName'):
+            if not data.get(name):
+                raise ValueError(f"@{name} is required")
+        if not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9._-]*', data['key']):
+            raise ValueError("@key must be a safe filename identifier")
+        if int(data['versionCode']) < 1:
+            raise ValueError("@versionCode must be positive")
+        if data.get('blocked', '').lower() not in ('', 'true', 'false'):
+            raise ValueError("@blocked must be true or false")
+        lib_version = data.get('libVersion')
         return cls(
             key=data['key'],
             label=data.get('label', data['key']),
             versionCode=int(data.get('versionCode', '0')),
             versionName=data.get('versionName', '0.0'),
             cover=data.get('cover', DEFAULT_COVER),
-            blocked=data.get('blocked', False),
+            lib_version=int(lib_version) if lib_version else None,
+            # 严格比较，避免 @blocked false 被当成真值
+            blocked=str(data.get('blocked', '')).strip().lower() == 'true',
         )
 
 
@@ -64,64 +80,66 @@ def parse_single_extension(lines: list[str]) -> ExtensionMeta:
     meta: dict[str, str] = {}
     pattern = re.compile(r'^//\s*@(\w+)\s+(.*)$')
     for line in lines:
+        if not line.startswith('//'):
+            break
         match = pattern.match(line)
         if not match:
-            break
+            continue
         key, value = match.group(1), match.group(2).strip()
+        if key in meta:
+            raise ValueError(f"Duplicate metadata @{key}")
         meta[key] = value
     return ExtensionMeta.from_dict(meta)
 
 
 def parse_extensions(from_dir: Optional[str] | Path, to_dir: Optional[str] | Path) -> int:
-    # 处理输入输出目录
-    if from_dir is None:
-        from_dir = os.getcwd()
-    if to_dir is None:
-        to_dir = REPOSITORY_FOLDER
-    from_dir = Path(from_dir).absolute()
-    to_dir = Path(to_dir).absolute()
-    index_file = to_dir / INDEX_FILE
+    """Compatibility formatter. Official publication must use ``ebjer release``.
 
-    if not os.path.exists(from_dir):
-        print(f"Source folder does not exist: {from_dir}")
-        return -1
-    if not os.path.exists(to_dir):
-        os.makedirs(to_dir)
-    else:
-        # 删了重新创建
-        shutil.rmtree(to_dir)
-        to_dir.mkdir(parents=True, exist_ok=True)
-
-    # 查找所有 JS 文件
-    files = glob(str(from_dir / '**/*.js'), recursive=True)
-    print(f"Found {len(files)} files in {from_dir}")
-
-    # 解析所有扩展
-    extensions = []
-    for file_path in files:
-        relative_file_path = os.path.relpath(file_path, from_dir)
-        with open(file_path, 'r', encoding='utf-8') as f:
-            lines = f.readlines()
-        try:
-            extension = parse_single_extension(lines)
-            extensions.append(extension)
-            shutil.copyfile(file_path, to_dir / extension.name)
-            print(f"Processed {relative_file_path}")
-        except AssertionError as e:
-            print(f"Error parsing {relative_file_path}: {e}")
-            continue
-        except Exception:
-            import traceback
-            print(f"Error parsing {relative_file_path}:")
-            traceback.print_exc()
-            continue
-
-    # 写入索引文件, 过滤掉被屏蔽的扩展
-    if os.path.exists(index_file):
-        os.remove(index_file)
-    with open(index_file, 'w', encoding='utf-8') as f:
-        for ext in extensions:
-            if not ext.is_blocked:
-                f.write(json.dumps(ext.to_dict(), ensure_ascii=False) + '\n')
-
-    return 0
+    Validate everything before replacing output. Errors and duplicate keys fail the
+    whole build; blocked sources are neither indexed nor copied.
+    """
+    from_dir = Path(from_dir or os.getcwd()).resolve()
+    target = Path(to_dir or REPOSITORY_FOLDER)
+    to_dir = target.resolve()
+    try:
+        if not from_dir.is_dir():
+            raise ValueError(f"Source folder does not exist: {from_dir}")
+        if target.is_symlink() or to_dir == Path.cwd().resolve():
+            raise ValueError("Unsafe output directory")
+        if from_dir == to_dir or from_dir in to_dir.parents or to_dir in from_dir.parents:
+            raise ValueError("Source and output directories must not overlap")
+        if to_dir.exists() and any(
+            p.is_dir() or p.is_symlink() or (p.suffix != '.js' and p.name != INDEX_FILE)
+            for p in to_dir.iterdir()
+        ):
+            raise ValueError("Output directory contains files not generated by this parser")
+        sources = []
+        seen = set()
+        for path in sorted(from_dir.rglob('*.js')):
+            if path.is_symlink():
+                raise ValueError(f"Source symlink is not allowed: {path}")
+            meta = parse_single_extension(path.read_text(encoding='utf-8').splitlines())
+            if meta.key in seen:
+                raise ValueError(f"Duplicate @key: {meta.key}")
+            seen.add(meta.key)
+            if not meta.is_blocked:
+                sources.append((meta, path))
+        if not sources:
+            raise ValueError("No unblocked sources; refuse to replace repository with an empty index")
+        to_dir.parent.mkdir(parents=True, exist_ok=True)
+        with tempfile.TemporaryDirectory(prefix='.ebjer-', dir=to_dir.parent) as temp:
+            output = Path(temp) / 'output'
+            output.mkdir()
+            entries = []
+            for meta, path in sorted(sources, key=lambda pair: pair[0].key):
+                shutil.copyfile(path, output / meta.name)
+                entries.append(json.dumps(meta.to_dict(), ensure_ascii=False))
+            (output / INDEX_FILE).write_text('\n'.join(entries) + '\n', encoding='utf-8')
+            if to_dir.exists():
+                shutil.rmtree(to_dir)
+            output.rename(to_dir)
+        print(f"Packaged {len(sources)} sources into {to_dir}")
+        return 0
+    except (OSError, ValueError, AssertionError) as error:
+        print(f"error: {error}")
+        return 1

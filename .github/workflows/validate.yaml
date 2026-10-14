@@ -1,0 +1,29 @@
+name: validate-source-repository
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'extensions/**'
+      - 'dev-extensions/**'
+      - 'src/**'
+      - 'tests/**'
+      - 'pyproject.toml'
+      - 'uv.lock'
+      - '.github/workflows/**'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+      - run: uv sync --locked --all-extras --dev
+      - run: uv run python -m unittest discover -s tests -v
+      # PR 内的新源尚不在 GitHub raw 上，此阶段只做离线静态验证。
+      - run: uv run ebjer channel --source-dir dev-extensions --to /tmp/dev-index --ref "${GITHUB_SHA}"

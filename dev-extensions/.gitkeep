@@ -1,0 +1,3 @@
+# 该文件仅用于让 dev-extensions/ 目录存在于仓库中。
+# 把测试用的 .js 源放进本目录，dev 通道流水线会自动生成 channel/dev/index.jsonl。
+# 源稳定后，把文件复制到 extensions/ 即触发 release 通道。

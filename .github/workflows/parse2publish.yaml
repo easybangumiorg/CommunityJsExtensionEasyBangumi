@@ -6,29 +6,35 @@ on:
     branches: [main]
     paths:
       - 'extensions/**'
-  # pull_request:
-  #   branches: [main]
+      - 'release-manifest.json'
+      - 'release-baseline.json'
+      - 'acceptance/evidence/**'
+      - 'src/**'
+      - '.github/workflows/parse2publish.yaml'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'extensions/**'
+      - 'release-manifest.json'
+      - 'release-baseline.json'
+      - 'acceptance/evidence/**'
+      - 'src/**'
+      - '.github/workflows/parse2publish.yaml'
 
 permissions:
-  contents: write
+  contents: read
+
+concurrency:
+  group: release-repository-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
   main:
-    concurrency: ci-${{ github.ref }}
     runs-on: ubuntu-latest
     steps:
       # 签出当前仓库
       - name: Checkout code
         uses: actions/checkout@v4
-
-      # 签出Website仓库
-      - name: Checkout website repo
-        uses: actions/checkout@v4
-        with:
-          repository: easybangumiorg/website
-          path: website
-          token: ${{ secrets.TOKEN }}
-          ref: main
 
       # 安装依赖
       - name: Install uv
@@ -39,12 +45,26 @@ jobs:
       - name: Install the project
         run: uv sync --locked --all-extras --dev
 
-      # 运行解析器
-      - name: Run parser
-        run: uv run ebjer parse --from "extensions" --to "repository/v2"
+      - name: Run unit tests
+        run: uv run python -m unittest discover -s tests -v
+
+      # 没有准入源、证据过期或 hash 不一致都会中止；不得部署空仓库。
+      - name: Check device evidence and package approved sources
+        run: uv run ebjer release --source-dir extensions --manifest release-manifest.json --to repository/v2 --max-age-days 7
+
+      # PR 只验证产物；严格验收成功后才签出可写 website 仓库。
+      - name: Checkout website repo
+        if: github.event_name != 'pull_request'
+        uses: actions/checkout@v4
+        with:
+          repository: easybangumiorg/website
+          path: website
+          token: ${{ secrets.TOKEN }}
+          ref: main
 
       # 部署文件
       - name: Deploy files
+        if: github.event_name != 'pull_request'
         run: |
           rm -rf website/src/public/repository/v2/ || true
           mkdir -p website/src/public/repository/v2/
@@ -52,6 +72,7 @@ jobs:
         
       # 创建提交并推送
       - name: Commit and push changes
+        if: github.event_name != 'pull_request'
         run: |
           cd website
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"

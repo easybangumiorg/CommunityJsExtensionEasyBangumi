@@ -1,0 +1,65 @@
+name: parse2dev
+
+# 生成 dev 通道索引：只监听 dev-extensions/，只产一份 jsonl，提交回本仓库。
+# release 通道独立：文件晋级还必须提交与源 hash 一致的真机证据及准入清单。
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'dev-extensions/**'
+      - 'src/**'
+      - '.github/workflows/parse2dev.yaml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# 串行化，避免两次运行同时推 main 造成非快进失败
+concurrency:
+  group: dev-channel-publish
+  cancel-in-progress: false
+
+jobs:
+  dev:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - name: Install the project
+        run: uv sync --locked --all-extras --dev
+
+      # 源文件此时已在仓库里（本工作流由 dev-extensions/** 的 push 触发），
+      # 所以可以直接对生成的 url 做可达性校验
+      - name: Generate dev channel index
+        run: |
+          source_ref=$(git rev-parse HEAD)
+          uv run ebjer channel \
+            --source-dir dev-extensions \
+            --source-path dev-extensions \
+            --to channel/dev \
+            --repo "${GITHUB_REPOSITORY}" \
+            --ref "$source_ref" \
+            --verify
+
+      - name: Commit dev channel index
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add channel/
+          if git diff --cached --quiet; then
+            echo "dev 索引无变化，跳过提交"
+            exit 0
+          fi
+          git commit -m "chore: update dev channel index [skip ci]"
+          git pull --rebase origin main
+          git push origin HEAD:main

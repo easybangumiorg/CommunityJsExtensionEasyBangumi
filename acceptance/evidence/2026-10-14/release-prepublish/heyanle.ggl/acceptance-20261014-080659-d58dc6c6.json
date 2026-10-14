@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "protocolVersion": "source-acceptance-v1",
+  "generatedAt": "2026-10-14T08:07:34.957Z",
+  "context": {
+    "app": {
+      "buildType": "debug",
+      "gitCommit": "fed45da5fd0a508ec313fdb3f9054c687e724545",
+      "packageName": "com.heyanle.easybangumi4.sourcelab",
+      "versionCode": 115,
+      "versionName": "6.1.3"
+    },
+    "device": {
+      "androidVersion": "16",
+      "apiLevel": 36,
+      "isPhysicalDevice": true,
+      "manufacturer": "Xiaomi",
+      "model": "23127PN0CC",
+      "serial": "10.135.231.77:41645"
+    },
+    "network": "same-LAN-WiFi-ADB",
+    "repositoryEnvironment": "dev"
+  },
+  "config": {
+    "keywords": [
+      "孤独摇滚",
+      "孤獨搖滾",
+      "ぼっち・ざ・ろっく！",
+      "Bocchi the Rock"
+    ],
+    "manualTimeoutMs": 600000,
+    "maxManualAttempts": 3,
+    "minimumProgressMs": 3000,
+    "playBudgetMs": 240000,
+    "playInfoTimeoutMs": 45000,
+    "playTimeoutMs": 60000,
+    "selected": [
+      "heyanle.ggl"
+    ],
+    "stepTimeoutMs": 25000,
+    "steps": [
+      "HOME",
+      "SEARCH",
+      "PLAY"
+    ]
+  },
+  "results": [
+    {
+      "key": "heyanle.ggl",
+      "label": "GiriGiriLove",
+      "versionName": "1.5",
+      "versionCode": 7,
+      "sourceSha256": "496af7c3a5a6d3fdb5a32c36e2f998a418130c3a6f4d3c161e854c31ef49c5bd",
+      "startedAt": "2026-10-14T08:07:01.960Z",
+      "finishedAt": "2026-10-14T08:07:34.957Z",
+      "verdict": "PASS",
+      "acceptance": "SEARCH_PLAYABLE",
+      "steps": [
+        {
+          "detail": "首页页签「日番」47 条内容",
+          "elapsedMs": 1971,
+          "step": "HOME",
+          "verdict": "PASS"
+        },
+        {
+          "detail": "「孤独摇滚」RESULTS(3)；选择结果第 1 部「孤獨搖滾總集篇」",
+          "elapsedMs": 1663,
+          "step": "SEARCH",
+          "verdict": "PASS"
+        },
+        {
+          "detail": "搜索「孤獨搖滾總集篇」线路 1/1「简中2」前篇，首帧 1920x1080，推进 3076ms（已尝试 1 条线路）",
+          "elapsedMs": 8146,
+          "step": "PLAY",
+          "verdict": "PASS"
+        }
+      ],
+      "searchAttempts": [
+        {
+          "detail": "「孤独摇滚」3 条",
+          "elapsedMs": 1660,
+          "keyword": "孤独摇滚",
+          "pageKey": 0,
+          "resultCount": 3,
+          "status": "RESULTS"
+        }
+      ],
+      "selection": {
+        "cartoonId": "GV26538",
+        "homePageLabel": null,
+        "keyword": "孤独摇滚",
+        "resultIndex": 0,
+        "route": "SEARCH_RESULT",
+        "title": "孤獨搖滾總集篇"
+      },
+      "lineAttempts": [
+        {
+          "detail": "首帧已渲染，进度推进 3076ms",
+          "elapsedMs": 7661,
+          "episodeId": "1",
+          "episodeLabel": "前篇",
+          "episodeOrder": 0,
+          "firstFrame": true,
+          "lineId": "1",
+          "lineIndex": 0,
+          "lineLabel": "简中2",
+          "progressMs": 3076,
+          "status": "PASS",
+          "videoHeight": 1080,
+          "videoWidth": 1920
+        }
+      ],
+      "playBudgetExhausted": false,
+      "minimumProgressMs": 3000,
+      "totalLineCount": 1,
+      "verificationEvents": [
+        {
+          "attempt": 1,
+          "cartoonId": null,
+          "decision": "COMPLETED",
+          "episodeId": null,
+          "keyword": "孤独摇滚",
+          "lineId": null,
+          "lineIndex": null,
+          "requestedAt": 1791965225560,
+          "respondedAt": 1791965246775,
+          "retryOutcome": "SUCCEEDED",
+          "searchPageKey": 0,
+          "sourceKey": "heyanle.ggl",
+          "step": "SEARCH",
+          "type": "WEB_VIEW",
+          "waitMs": 21215
+        }
+      ],
+      "manualWaitMs": 21215
+    }
+  ]
+}

@@ -1,0 +1,1011 @@
+{
+  "schemaVersion": 1,
+  "protocolVersion": "source-acceptance-v1",
+  "generatedAt": "2026-10-09T05:38:34.509Z",
+  "context": {
+    "app": {
+      "buildType": "debug",
+      "gitCommit": "fed45da5fd0a508ec313fdb3f9054c687e724545",
+      "packageName": "com.heyanle.easybangumi4.debug",
+      "versionCode": 115,
+      "versionName": "6.1.3"
+    },
+    "device": {
+      "androidVersion": "16",
+      "apiLevel": 36,
+      "isPhysicalDevice": true,
+      "manufacturer": "meizu",
+      "model": "MEIZU 21",
+      "serial": "461QYGFJ222HD"
+    },
+    "network": "phone-network",
+    "repositoryEnvironment": "dev"
+  },
+  "config": {
+    "keywords": [
+      "孤独摇滚",
+      "孤獨搖滾",
+      "ぼっち・ざ・ろっく！",
+      "Bocchi the Rock"
+    ],
+    "minimumProgressMs": 3000,
+    "playBudgetMs": 240000,
+    "playTimeoutMs": 60000,
+    "selected": [
+      "ayala.jellyfin",
+      "heyanle.age",
+      "heyanle.ggl",
+      "kazumi.1ani",
+      "kazumi.233dm",
+      "kazumi.295yhw",
+      "kazumi.7sefun",
+      "kazumi.80tv",
+      "kazumi.9ciyuan",
+      "kazumi.aafun",
+      "kazumi.akianime",
+      "kazumi.anfuns",
+      "kazumi.anime7",
+      "kazumi.ant",
+      "kazumi.aowu",
+      "kazumi.baimao",
+      "kazumi.bf",
+      "kazumi.bobodm",
+      "kazumi.brovod",
+      "kazumi.ciyuancheng",
+      "kazumi.clicli",
+      "kazumi.cyfz",
+      "kazumi.dlma",
+      "kazumi.dm84",
+      "kazumi.dmand",
+      "kazumi.dmghg",
+      "kazumi.dms",
+      "kazumi.eacg",
+      "kazumi.enlie",
+      "kazumi.fantuan",
+      "kazumi.fcdm",
+      "kazumi.ffdm",
+      "kazumi.fqdm",
+      "kazumi.gpjda",
+      "kazumi.gugu3",
+      "kazumi.hfkzm",
+      "kazumi.hzdm",
+      "kazumi.if",
+      "kazumi.jzsdm",
+      "kazumi.k8dm",
+      "kazumi.kimani",
+      "kazumi.libvio",
+      "kazumi.lmm",
+      "kazumi.mandao",
+      "kazumi.mcy",
+      "kazumi.mengfan",
+      "kazumi.mgnacg",
+      "kazumi.mifun",
+      "kazumi.mitang",
+      "kazumi.mitaodm",
+      "kazumi.moefan",
+      "kazumi.mt",
+      "kazumi.mutefun",
+      "kazumi.mwcy",
+      "kazumi.mxdm",
+      "kazumi.nekodm",
+      "kazumi.nt",
+      "kazumi.nyafun",
+      "kazumi.omofun03",
+      "kazumi.omofunz",
+      "kazumi.pekolove",
+      "kazumi.qdm",
+      "kazumi.qifun",
+      "kazumi.qimi",
+      "kazumi.qkan9",
+      "kazumi.skr",
+      "kazumi.sorani",
+      "kazumi.tt776b",
+      "kazumi.tvtfun",
+      "kazumi.wydm",
+      "kazumi.xfdm",
+      "kazumi.xfdmneo",
+      "kazumi.xiaobao",
+      "kazumi.xiapidm",
+      "kazumi.xigua",
+      "kazumi.yinghua",
+      "kazumi.yishijie",
+      "kazumi.ylsp",
+      "kazumi.ziyedm",
+      "kazumi.zkk79",
+      "jisoft.ale",
+      "jisoft.omofun",
+      "heyanle.xifan",
+      "heyanle.yhw"
+    ],
+    "stepTimeoutMs": 25000,
+    "steps": [
+      "HOME",
+      "SEARCH",
+      "PLAY"
+    ]
+  },
+  "results": [
+    {
+      "key": "ayala.jellyfin",
+      "label": "Easy Jellyfin Beta",
+      "versionName": "1.7",
+      "versionCode": 8,
+      "sourceSha256": "fe729150dade90db51bf906d2ff66372b70bf6b2c4a7d54aa21a7f463ea851d0",
+      "startedAt": "2026-10-09T05:33:20.921Z",
+      "finishedAt": "2026-10-09T05:33:20.922Z",
+      "verdict": "FAIL",
+      "acceptance": "PLAYBACK_FAILED",
+      "steps": [
+        {
+          "detail": "IllegalStateException：源没有提供 PageComponent",
+          "elapsedMs": 1,
+          "step": "HOME",
+          "verdict": "FAIL"
+        },
+        {
+          "detail": "「孤独摇滚」UNAVAILABLE(0)；搜索不可用，首页播放只能供诊断，不能自动准入",
+          "elapsedMs": 0,
+          "step": "SEARCH",
+          "verdict": "FAIL"
+        },
+        {
+          "detail": "所有别名无可用结果且首页第 1 部不可用，无法定位播放样本",
+          "elapsedMs": 0,
+          "step": "PLAY",
+          "verdict": "FAIL"
+        }
+      ],
+      "searchAttempts": [
+        {
+          "detail": "源没有提供 SearchComponent",
+          "elapsedMs": 0,
+          "keyword": "孤独摇滚",
+          "resultCount": 0,
+          "status": "UNAVAILABLE"
+        }
+      ],
+      "selection": null,
+      "lineAttempts": [],
+      "playBudgetExhausted": false,
+      "minimumProgressMs": 3000
+    },
+    {
+      "key": "heyanle.age",
+      "label": "Age动漫",
+      "versionName": "1.0",
+      "versionCode": 1,
+      "sourceSha256": "237eafa2cd0e33cb87c5b3515ffca99e07551ed5295f4924d28cb92336c03d0b",
+      "startedAt": "2026-10-09T05:33:20.942Z",
+      "finishedAt": "2026-10-09T05:33:33.436Z",
+      "verdict": "PASS",
+      "acceptance": "SEARCH_PLAYABLE",
+      "steps": [
+        {
+          "detail": "首页页签「今日推荐」23 条内容",
+          "elapsedMs": 1488,
+          "step": "HOME",
+          "verdict": "PASS"
+        },
+        {
+          "detail": "「孤独摇滚」RESULTS(1)；选择结果第 1 部「孤独摇滚！」",
+          "elapsedMs": 505,
+          "step": "SEARCH",
+          "verdict": "PASS"
+        },
+        {
+          "detail": "搜索「孤独摇滚！」线路 1/2「VIP 西瓜」第01集，首帧 1920x1080，推进 3123ms（已尝试 1 条线路）",
+          "elapsedMs": 10500,
+          "step": "PLAY",
+          "verdict": "PASS"
+        }
+      ],
+      "searchAttempts": [
+        {
+          "detail": "「孤独摇滚」1 条",
+          "elapsedMs": 504,
+          "keyword": "孤独摇滚",
+          "resultCount": 1,
+          "status": "RESULTS"
+        }
+      ],
+      "selection": {
+        "cartoonId": "20220121",
+        "homePageLabel": null,
+        "keyword": "孤独摇滚",
+        "resultIndex": 0,
+        "route": "SEARCH_RESULT",
+        "title": "孤独摇滚！"
+      },
+      "lineAttempts": [
+        {
+          "detail": "首帧已渲染，进度推进 3123ms",
+          "elapsedMs": 9918,
+          "episodeId": "1",
+          "episodeLabel": "第01集",
+          "episodeOrder": 0,
+          "firstFrame": true,
+          "lineId": "1",
+          "lineIndex": 0,
+          "lineLabel": "VIP 西瓜",
+          "progressMs": 3123,
+          "status": "PASS",
+          "videoHeight": 1080,
+          "videoWidth": 1920
+        }
+      ],
+      "playBudgetExhausted": false,
+      "minimumProgressMs": 3000
+    },
+    {
+      "key": "heyanle.ggl",
+      "label": "GiriGiriLove",
+      "versionName": "1.5",
+      "versionCode": 7,
+      "sourceSha256": "496af7c3a5a6d3fdb5a32c36e2f998a418130c3a6f4d3c161e854c31ef49c5bd",
+      "startedAt": "2026-10-09T05:33:33.476Z",
+      "finishedAt": "2026-10-09T05:33:52.807Z",
+      "verdict": "SUSPECT",
+      "acceptance": "HOME_PLAYABLE_SEARCH_EMPTY",
+      "steps": [
+        {
+          "detail": "首页页签「日番」47 条内容",
+          "elapsedMs": 1806,
+          "step": "HOME",
+          "verdict": "PASS"
+        },
+        {
+          "detail": "「孤独摇滚」EMPTY(0) → 「孤獨搖滾」EMPTY(0) → 「ぼっち・ざ・ろっく！」EMPTY(0) → 「Bocchi the Rock」EMPTY(0)；标题未收录，播放阶段使用首页第 1 部，仍需人工审核",
+          "elapsedMs": 7447,
+          "step": "SEARCH",
+          "verdict": "SUSPECT"
+        },
+        {
+          "detail": "首页回退「冰之城墙 第2季」线路 1/2「繁中2」01，首帧 1920x1080，推进 3134ms（已尝试 1 条线路）",
+          "elapsedMs": 10075,
+          "step": "PLAY",
+          "verdict": "PASS"
+        }
+      ],
+      "searchAttempts": [
+        {
+          "detail": "「孤独摇滚」0 条",
+          "elapsedMs": 5071,
+          "keyword": "孤独摇滚",
+          "resultCount": 0,
+          "status": "EMPTY"
+        },
+        {
+          "detail": "「孤獨搖滾」0 条",
+          "elapsedMs": 696,
+          "keyword": "孤獨搖滾",
+          "resultCount": 0,
+          "status": "EMPTY"
+        },
+        {
+          "detail": "「ぼっち・ざ・ろっく！」0 条",
+          "elapsedMs": 544,
+          "keyword": "ぼっち・ざ・ろっく！",
+          "resultCount": 0,
+          "status": "EMPTY"
+        },
+        {
+          "detail": "「Bocchi the Rock」0 条",
+          "elapsedMs": 1136,
+          "keyword": "Bocchi the Rock",
+          "resultCount": 0,
+          "status": "EMPTY"
+        }
+      ],
+      "selection": {
+        "cartoonId": "GV27180",
+        "homePageLabel": "日番",
+        "keyword": null,
+        "resultIndex": 0,
+        "route": "HOME_FALLBACK",
+        "title": "冰之城墙 第2季"
+      },
+      "lineAttempts": [
+        {
+          "detail": "首帧已渲染，进度推进 3134ms",
+          "elapsedMs": 9353,
+          "episodeId": "1",
+          "episodeLabel": "01",
+          "episodeOrder": 0,
+          "firstFrame": true,
+          "lineId": "1",
+          "lineIndex": 0,
+          "lineLabel": "繁中2",
+          "progressMs": 3134,
+          "status": "PASS",
+          "videoHeight": 1080,
+          "videoWidth": 1920
+        }
+      ],
+      "playBudgetExhausted": false,
+      "minimumProgressMs": 3000
+    },
+    {
+      "key": "heyanle.xifan",
+      "label": "稀饭动漫",
+      "versionName": "1.1",
+      "versionCode": 2,
+      "sourceSha256": "3cc8c71415a67eacfc750f6cb7c1495b8c1ac3d9e97bc6c78d387f65987a35ce",
+      "startedAt": "2026-10-09T05:33:52.825Z",
+      "finishedAt": "2026-10-09T05:37:52.883Z",
+      "verdict": "FAIL",
+      "acceptance": "PLAYBACK_FAILED",
+      "steps": [
+        {
+          "detail": "WrappedException：Wrapped java.io.InterruptedIOException: timeout (source heyanle.xifan#75)",
+          "elapsedMs": 120026,
+          "step": "HOME",
+          "verdict": "FAIL"
+        },
+        {
+          "detail": "「孤独摇滚」ERROR(0)；搜索不可用，首页播放只能供诊断，不能自动准入",
+          "elapsedMs": 120028,
+          "step": "SEARCH",
+          "verdict": "FAIL"
+        },
+        {
+          "detail": "所有别名无可用结果且首页第 1 部不可用，无法定位播放样本",
+          "elapsedMs": 0,
+          "step": "PLAY",
+          "verdict": "FAIL"
+        }
+      ],
+      "searchAttempts": [
+        {
+          "detail": "WrappedException：Wrapped java.io.InterruptedIOException: timeout (source heyanle.xifan#276)",
+          "elapsedMs": 120026,
+          "keyword": "孤独摇滚",
+          "resultCount": 0,
+          "status": "ERROR"
+        }
+      ],
+      "selection": null,
+      "lineAttempts": [],
+      "playBudgetExhausted": false,
+      "minimumProgressMs": 3000
+    },
+    {
+      "key": "heyanle.yhw",
+      "label": "樱花动漫",
+      "versionName": "1.0",
+      "versionCode": 1,
+      "sourceSha256": "7fb6c88d294ed40cdd984f741f3ed8bd13ca67c7a428d9ac6471212e2e9b0885",
+      "startedAt": "2026-10-09T05:37:52.931Z",
+      "finishedAt": "2026-10-09T05:37:52.934Z",
+      "verdict": "FAIL",
+      "acceptance": "PLAYBACK_FAILED",
+      "steps": [
+        {
+          "detail": "IllegalStateException：源没有提供 PageComponent",
+          "elapsedMs": 3,
+          "step": "HOME",
+          "verdict": "FAIL"
+        },
+        {
+          "detail": "「孤独摇滚」UNAVAILABLE(0)；搜索不可用，首页播放只能供诊断，不能自动准入",
+          "elapsedMs": 0,
+          "step": "SEARCH",
+          "verdict": "FAIL"
+        },
+        {
+          "detail": "所有别名无可用结果且首页第 1 部不可用，无法定位播放样本",
+          "elapsedMs": 0,
+          "step": "PLAY",
+          "verdict": "FAIL"
+        }
+      ],
+      "searchAttempts": [
+        {
+          "detail": "源没有提供 SearchComponent",
+          "elapsedMs": 0,
+          "keyword": "孤独摇滚",
+          "resultCount": 0,
+          "status": "UNAVAILABLE"
+        }
+      ],
+      "selection": null,
+      "lineAttempts": [],
+      "playBudgetExhausted": false,
+      "minimumProgressMs": 3000
+    },
+    {
+      "key": "jisoft.ale",
+      "label": "永乐视频",
+      "versionName": "1.0",
+      "versionCode": 1,
+      "sourceSha256": "00c7c0cb21bc8c9a336120d523118bef32cff10a591f5791493dd085cb5235da",
+      "startedAt": "2026-10-09T05:37:52.979Z",
+      "finishedAt": "2026-10-09T05:37:52.980Z",
+      "verdict": "FAIL",
+      "acceptance": "PLAYBACK_FAILED",
+      "steps": [
+        {
+          "detail": "IllegalStateException：源没有提供 PageComponent",
+          "elapsedMs": 1,
+          "step": "HOME",
+          "verdict": "FAIL"
+        },
+        {
+          "detail": "「孤独摇滚」UNAVAILABLE(0)；搜索不可用，首页播放只能供诊断，不能自动准入",
+          "elapsedMs": 0,
+          "step": "SEARCH",
+          "verdict": "FAIL"
+        },
+        {
+          "detail": "所有别名无可用结果且首页第 1 部不可用，无法定位播放样本",
+          "elapsedMs": 0,
+          "step": "PLAY",
+          "verdict": "FAIL"
+        }
+      ],
+      "searchAttempts": [
+        {
+          "detail": "源没有提供 SearchComponent",
+          "elapsedMs": 0,
+          "keyword": "孤独摇滚",
+          "resultCount": 0,
+          "status": "UNAVAILABLE"
+        }
+      ],
+      "selection": null,
+      "lineAttempts": [],
+      "playBudgetExhausted": false,
+      "minimumProgressMs": 3000
+    },
+    {
+      "key": "jisoft.omofun",
+      "label": "oMo",
+      "versionName": "1.3",
+      "versionCode": 3,
+      "sourceSha256": "987dd4a9b644520c8513bdede23d7c21abbc4cbfa1ce1dff99f69de57631abd1",
+      "startedAt": "2026-10-09T05:37:53.029Z",
+      "finishedAt": "2026-10-09T05:37:53.030Z",
+      "verdict": "FAIL",
+      "acceptance": "PLAYBACK_FAILED",
+      "steps": [
+        {
+          "detail": "IllegalStateException：源没有提供 PageComponent",
+          "elapsedMs": 1,
+          "step": "HOME",
+          "verdict": "FAIL"
+        },
+        {
+          "detail": "「孤独摇滚」UNAVAILABLE(0)；搜索不可用，首页播放只能供诊断，不能自动准入",
+          "elapsedMs": 0,
+          "step": "SEARCH",
+          "verdict": "FAIL"
+        },
+        {
+          "detail": "所有别名无可用结果且首页第 1 部不可用，无法定位播放样本",
+          "elapsedMs": 0,
+          "step": "PLAY",
+          "verdict": "FAIL"
+        }
+      ],
+      "searchAttempts": [
+        {
+          "detail": "源没有提供 SearchComponent",
+          "elapsedMs": 0,
+          "keyword": "孤独摇滚",
+          "resultCount": 0,
+          "status": "UNAVAILABLE"
+        }
+      ],
+      "selection": null,
+      "lineAttempts": [],
+      "playBudgetExhausted": false,
+      "minimumProgressMs": 3000
+    },
+    {
+      "key": "kazumi.1ani",
+      "label": "1ANI",
+      "versionName": "1.4",
+      "versionCode": 10400,
+      "sourceSha256": "8228d0ec86eac95c00b6609a2fa0f864261f58badf6d4ff85ec94ed94140e41a",
+      "startedAt": "2026-10-09T05:37:53.080Z",
+      "finishedAt": "2026-10-09T05:37:53.663Z",
+      "verdict": "FAIL",
+      "acceptance": "PLAYBACK_FAILED",
+      "steps": [
+        {
+          "detail": "IllegalStateException：源没有提供 PageComponent",
+          "elapsedMs": 1,
+          "step": "HOME",
+          "verdict": "FAIL"
+        },
+        {
+          "detail": "「孤独摇滚」ERROR(0)；搜索不可用，首页播放只能供诊断，不能自动准入",
+          "elapsedMs": 580,
+          "step": "SEARCH",
+          "verdict": "FAIL"
+        },
+        {
+          "detail": "所有别名无可用结果且首页第 1 部不可用，无法定位播放样本",
+          "elapsedMs": 0,
+          "step": "PLAY",
+          "verdict": "FAIL"
+        }
+      ],
+      "searchAttempts": [
+        {
+          "detail": "WrappedException：Wrapped java.net.UnknownHostException: Unable to resolve host \"anime.d1dm.xyz\": No address associated with hostname (source kazumi.1ani#208)",
+          "elapsedMs": 579,
+          "keyword": "孤独摇滚",
+          "resultCount": 0,
+          "status": "ERROR"
+        }
+      ],
+      "selection": null,
+      "lineAttempts": [],
+      "playBudgetExhausted": false,
+      "minimumProgressMs": 3000
+    },
+    {
+      "key": "kazumi.233dm",
+      "label": "233dm",
+      "versionName": "1.0",
+      "versionCode": 10000,
+      "sourceSha256": "9ba2b6fd7f79a6e8dc2603eb110e5782b3f399756e9ea953a4f9c8e8861601e4",
+      "startedAt": "2026-10-09T05:37:53.713Z",
+      "finishedAt": "2026-10-09T05:37:54.331Z",
+      "verdict": "FAIL",
+      "acceptance": "PLAYBACK_FAILED",
+      "steps": [
+        {
+          "detail": "IllegalStateException：源没有提供 PageComponent",
+          "elapsedMs": 1,
+          "step": "HOME",
+          "verdict": "FAIL"
+        },
+        {
+          "detail": "「孤独摇滚」ERROR(0)；搜索不可用，首页播放只能供诊断，不能自动准入",
+          "elapsedMs": 614,
+          "step": "SEARCH",
+          "verdict": "FAIL"
+        },
+        {
+          "detail": "所有别名无可用结果且首页第 1 部不可用，无法定位播放样本",
+          "elapsedMs": 0,
+          "step": "PLAY",
+          "verdict": "FAIL"
+        }
+      ],
+      "searchAttempts": [
+        {
+          "detail": "WrappedException：Wrapped java.net.ConnectException: Failed to connect to www.233dm.cc/103.135.33.180:443 (source kazumi.233dm#208)",
+          "elapsedMs": 614,
+          "keyword": "孤独摇滚",
+          "resultCount": 0,
+          "status": "ERROR"
+        }
+      ],
+      "selection": null,
+      "lineAttempts": [],
+      "playBudgetExhausted": false,
+      "minimumProgressMs": 3000
+    },
+    {
+      "key": "kazumi.295yhw",
+      "label": "295yhw",
+      "versionName": "1.0",
+      "versionCode": 10000,
+      "sourceSha256": "77c36119fdf5720b4d48c0e360cdf39aac996b1f42220e965c0163e40a0d2a73",
+      "startedAt": "2026-10-09T05:37:54.376Z",
+      "finishedAt": "2026-10-09T05:37:54.697Z",
+      "verdict": "FAIL",
+      "acceptance": "PLAYBACK_FAILED",
+      "steps": [
+        {
+          "detail": "IllegalStateException：源没有提供 PageComponent",
+          "elapsedMs": 1,
+          "step": "HOME",
+          "verdict": "FAIL"
+        },
+        {
+          "detail": "「孤独摇滚」ERROR(0)；搜索不可用，首页播放只能供诊断，不能自动准入",
+          "elapsedMs": 317,
+          "step": "SEARCH",
+          "verdict": "FAIL"
+        },
+        {
+          "detail": "所有别名无可用结果且首页第 1 部不可用，无法定位播放样本",
+          "elapsedMs": 0,
+          "step": "PLAY",
+          "verdict": "FAIL"
+        }
+      ],
+      "searchAttempts": [
+        {
+          "detail": "WrappedException：Wrapped javax.net.ssl.SSLException: Unable to parse TLS packet header (source kazumi.295yhw#208)",
+          "elapsedMs": 317,
+          "keyword": "孤独摇滚",
+          "resultCount": 0,
+          "status": "ERROR"
+        }
+      ],
+      "selection": null,
+      "lineAttempts": [],
+      "playBudgetExhausted": false,
+      "minimumProgressMs": 3000
+    },
+    {
+      "key": "kazumi.7sefun",
+      "label": "7sefun",
+      "versionName": "1.2",
+      "versionCode": 10200,
+      "sourceSha256": "45822ddf4e093a79a010fd3b2495ea005f38ec3516dc716f921e234b8ae5b966",
+      "startedAt": "2026-10-09T05:37:54.742Z",
+      "finishedAt": "2026-10-09T05:38:02.527Z",
+      "verdict": "PASS",
+      "acceptance": "SEARCH_PLAYABLE",
+      "steps": [
+        {
+          "detail": "首页页签「首页推荐」32 条内容",
+          "elapsedMs": 1311,
+          "step": "HOME",
+          "verdict": "PASS"
+        },
+        {
+          "detail": "「孤独摇滚」RESULTS(1)；选择结果第 1 部「孤独摇滚！」",
+          "elapsedMs": 363,
+          "step": "SEARCH",
+          "verdict": "PASS"
+        },
+        {
+          "detail": "搜索「孤独摇滚！」线路 1/1「播放线路1」第01集，首帧 1920x1080，推进 3058ms（已尝试 1 条线路）",
+          "elapsedMs": 6107,
+          "step": "PLAY",
+          "verdict": "PASS"
+        }
+      ],
+      "searchAttempts": [
+        {
+          "detail": "「孤独摇滚」1 条",
+          "elapsedMs": 363,
+          "keyword": "孤独摇滚",
+          "resultCount": 1,
+          "status": "RESULTS"
+        }
+      ],
+      "selection": {
+        "cartoonId": "https%3A%2F%2Fwww.7sefun.top%2F%2Fvoddetail%2F29530.html|%E5%AD%A4%E7%8B%AC%E6%91%87%E6%BB%9A%EF%BC%81|http%3A%2F%2Fp.qpic.cn%2Fmusic_cover%2FPiajxSqBRaEKia1eoHwIziaXrAdmbNMt62FtXrBAxHXs1XBCHv2Uzicib3g%2F600",
+        "homePageLabel": null,
+        "keyword": "孤独摇滚",
+        "resultIndex": 0,
+        "route": "SEARCH_RESULT",
+        "title": "孤独摇滚！"
+      },
+      "lineAttempts": [
+        {
+          "detail": "首帧已渲染，进度推进 3058ms",
+          "elapsedMs": 5722,
+          "episodeId": "https%3A%2F%2Fwww.7sefun.top%2F%2Fvodplay%2F29530-1-1.html||",
+          "episodeLabel": "第01集",
+          "episodeOrder": 0,
+          "firstFrame": true,
+          "lineId": "0",
+          "lineIndex": 0,
+          "lineLabel": "播放线路1",
+          "progressMs": 3058,
+          "status": "PASS",
+          "videoHeight": 1080,
+          "videoWidth": 1920
+        }
+      ],
+      "playBudgetExhausted": false,
+      "minimumProgressMs": 3000
+    },
+    {
+      "key": "kazumi.80tv",
+      "label": "80tv",
+      "versionName": "1.0",
+      "versionCode": 10000,
+      "sourceSha256": "bee44bbe423428b28289bbbd237d0a234b5bd28590415dc7e366f54a594affc4",
+      "startedAt": "2026-10-09T05:38:02.587Z",
+      "finishedAt": "2026-10-09T05:38:05.539Z",
+      "verdict": "FAIL",
+      "acceptance": "PLAYBACK_FAILED",
+      "steps": [
+        {
+          "detail": "IllegalStateException：源没有提供 PageComponent",
+          "elapsedMs": 1,
+          "step": "HOME",
+          "verdict": "FAIL"
+        },
+        {
+          "detail": "「孤独摇滚」EMPTY(0) → 「孤獨搖滾」EMPTY(0) → 「ぼっち・ざ・ろっく！」EMPTY(0) → 「Bocchi the Rock」EMPTY(0)；标题未收录，播放阶段使用首页第 1 部，仍需人工审核",
+          "elapsedMs": 2949,
+          "step": "SEARCH",
+          "verdict": "SUSPECT"
+        },
+        {
+          "detail": "所有别名无可用结果且首页第 1 部不可用，无法定位播放样本",
+          "elapsedMs": 0,
+          "step": "PLAY",
+          "verdict": "FAIL"
+        }
+      ],
+      "searchAttempts": [
+        {
+          "detail": "「孤独摇滚」0 条",
+          "elapsedMs": 1318,
+          "keyword": "孤独摇滚",
+          "resultCount": 0,
+          "status": "EMPTY"
+        },
+        {
+          "detail": "「孤獨搖滾」0 条",
+          "elapsedMs": 533,
+          "keyword": "孤獨搖滾",
+          "resultCount": 0,
+          "status": "EMPTY"
+        },
+        {
+          "detail": "「ぼっち・ざ・ろっく！」0 条",
+          "elapsedMs": 452,
+          "keyword": "ぼっち・ざ・ろっく！",
+          "resultCount": 0,
+          "status": "EMPTY"
+        },
+        {
+          "detail": "「Bocchi the Rock」0 条",
+          "elapsedMs": 645,
+          "keyword": "Bocchi the Rock",
+          "resultCount": 0,
+          "status": "EMPTY"
+        }
+      ],
+      "selection": null,
+      "lineAttempts": [],
+      "playBudgetExhausted": false,
+      "minimumProgressMs": 3000
+    },
+    {
+      "key": "kazumi.9ciyuan",
+      "label": "9ciyuan",
+      "versionName": "1.3",
+      "versionCode": 10300,
+      "sourceSha256": "b4c886296f0cfc64f6ff41c555ba326e50d19ca6f0ee699c6be66f48c920fdf9",
+      "startedAt": "2026-10-09T05:38:05.589Z",
+      "finishedAt": "2026-10-09T05:38:22.407Z",
+      "verdict": "PASS",
+      "acceptance": "SEARCH_PLAYABLE",
+      "steps": [
+        {
+          "detail": "首页页签「首页推荐」32 条内容",
+          "elapsedMs": 1187,
+          "step": "HOME",
+          "verdict": "PASS"
+        },
+        {
+          "detail": "「孤独摇滚」RESULTS(4)；选择结果第 1 部「孤独摇滚(上)」",
+          "elapsedMs": 1084,
+          "step": "SEARCH",
+          "verdict": "PASS"
+        },
+        {
+          "detail": "搜索「孤独摇滚(上)」线路 1/2「囧动漫」HD中字，首帧 1920x1080，推进 3053ms（已尝试 1 条线路）",
+          "elapsedMs": 14545,
+          "step": "PLAY",
+          "verdict": "PASS"
+        }
+      ],
+      "searchAttempts": [
+        {
+          "detail": "「孤独摇滚」4 条",
+          "elapsedMs": 1084,
+          "keyword": "孤独摇滚",
+          "resultCount": 4,
+          "status": "RESULTS"
+        }
+      ],
+      "selection": {
+        "cartoonId": "https%3A%2F%2Fwww.jcydm1.com%2F%2Findex.php%2Fvod%2Fdetail%2Fid%2F19118.html|%E5%AD%A4%E7%8B%AC%E6%91%87%E6%BB%9A%28%E4%B8%8A%29|https%3A%2F%2Fimg.lzipic.com%2Fupload%2Fvod%2F20250428-1%2F57da14cb56c154e0286242780a394f9f.jpg",
+        "homePageLabel": null,
+        "keyword": "孤独摇滚",
+        "resultIndex": 0,
+        "route": "SEARCH_RESULT",
+        "title": "孤独摇滚(上)"
+      },
+      "lineAttempts": [
+        {
+          "detail": "首帧已渲染，进度推进 3053ms",
+          "elapsedMs": 13876,
+          "episodeId": "https%3A%2F%2Fwww.jcydm1.com%2F%2Findex.php%2Fvod%2Fplay%2Fid%2F19118%2Fsid%2F2%2Fnid%2F1.html||",
+          "episodeLabel": "HD中字",
+          "episodeOrder": 0,
+          "firstFrame": true,
+          "lineId": "0",
+          "lineIndex": 0,
+          "lineLabel": "囧动漫",
+          "progressMs": 3053,
+          "status": "PASS",
+          "videoHeight": 1080,
+          "videoWidth": 1920
+        }
+      ],
+      "playBudgetExhausted": false,
+      "minimumProgressMs": 3000
+    },
+    {
+      "key": "kazumi.aafun",
+      "label": "aafun",
+      "versionName": "1.0",
+      "versionCode": 10000,
+      "sourceSha256": "a87eb932e45e102513da543b896fd13c813a2fda6c06c3ae82710f86fca58471",
+      "startedAt": "2026-10-09T05:38:22.448Z",
+      "finishedAt": "2026-10-09T05:38:22.912Z",
+      "verdict": "FAIL",
+      "acceptance": "PLAYBACK_FAILED",
+      "steps": [
+        {
+          "detail": "IllegalStateException：源没有提供 PageComponent",
+          "elapsedMs": 1,
+          "step": "HOME",
+          "verdict": "FAIL"
+        },
+        {
+          "detail": "「孤独摇滚」EMPTY(0) → 「孤獨搖滾」EMPTY(0) → 「ぼっち・ざ・ろっく！」EMPTY(0) → 「Bocchi the Rock」EMPTY(0)；标题未收录，播放阶段使用首页第 1 部，仍需人工审核",
+          "elapsedMs": 459,
+          "step": "SEARCH",
+          "verdict": "SUSPECT"
+        },
+        {
+          "detail": "所有别名无可用结果且首页第 1 部不可用，无法定位播放样本",
+          "elapsedMs": 0,
+          "step": "PLAY",
+          "verdict": "FAIL"
+        }
+      ],
+      "searchAttempts": [
+        {
+          "detail": "「孤独摇滚」0 条",
+          "elapsedMs": 335,
+          "keyword": "孤独摇滚",
+          "resultCount": 0,
+          "status": "EMPTY"
+        },
+        {
+          "detail": "「孤獨搖滾」0 条",
+          "elapsedMs": 48,
+          "keyword": "孤獨搖滾",
+          "resultCount": 0,
+          "status": "EMPTY"
+        },
+        {
+          "detail": "「ぼっち・ざ・ろっく！」0 条",
+          "elapsedMs": 36,
+          "keyword": "ぼっち・ざ・ろっく！",
+          "resultCount": 0,
+          "status": "EMPTY"
+        },
+        {
+          "detail": "「Bocchi the Rock」0 条",
+          "elapsedMs": 40,
+          "keyword": "Bocchi the Rock",
+          "resultCount": 0,
+          "status": "EMPTY"
+        }
+      ],
+      "selection": null,
+      "lineAttempts": [],
+      "playBudgetExhausted": false,
+      "minimumProgressMs": 3000
+    },
+    {
+      "key": "kazumi.akianime",
+      "label": "akianime",
+      "versionName": "1.3",
+      "versionCode": 10300,
+      "sourceSha256": "ff198b4f9659770f8fd9fdb5243bfcd4563840e51b731c78c494d5a2c0bc730a",
+      "startedAt": "2026-10-09T05:38:22.954Z",
+      "finishedAt": "2026-10-09T05:38:30.571Z",
+      "verdict": "FAIL",
+      "acceptance": "PLAYBACK_FAILED",
+      "steps": [
+        {
+          "detail": "IllegalStateException：源没有提供 PageComponent",
+          "elapsedMs": 2,
+          "step": "HOME",
+          "verdict": "FAIL"
+        },
+        {
+          "detail": "「孤独摇滚」RESULTS(4)；选择结果第 1 部「孤独摇滚！」",
+          "elapsedMs": 738,
+          "step": "SEARCH",
+          "verdict": "PASS"
+        },
+        {
+          "detail": "搜索「孤独摇滚！」线路 1/3「播放线路1」01，首帧 1920x1080，推进 3070ms（已尝试 1 条线路）",
+          "elapsedMs": 6875,
+          "step": "PLAY",
+          "verdict": "PASS"
+        }
+      ],
+      "searchAttempts": [
+        {
+          "detail": "「孤独摇滚」4 条",
+          "elapsedMs": 738,
+          "keyword": "孤独摇滚",
+          "resultCount": 4,
+          "status": "RESULTS"
+        }
+      ],
+      "selection": {
+        "cartoonId": "https%3A%2F%2Fwww.akianime.cc%2F%2Fbgmplay%2F4RDDDE-1-1.html|%E5%AD%A4%E7%8B%AC%E6%91%87%E6%BB%9A%EF%BC%81|https%3A%2F%2Fwww.akianime.cc%2F%2Fupload%2Fvod%2F20240824-1%2F10f1576007f43fcc54b30865ce23d67f.webp",
+        "homePageLabel": null,
+        "keyword": "孤独摇滚",
+        "resultIndex": 0,
+        "route": "SEARCH_RESULT",
+        "title": "孤独摇滚！"
+      },
+      "lineAttempts": [
+        {
+          "detail": "首帧已渲染，进度推进 3070ms",
+          "elapsedMs": 6378,
+          "episodeId": "https%3A%2F%2Fwww.akianime.cc%2F%2Fbgmplay%2F4RDDDE-5-1.html||",
+          "episodeLabel": "01",
+          "episodeOrder": 0,
+          "firstFrame": true,
+          "lineId": "0",
+          "lineIndex": 0,
+          "lineLabel": "播放线路1",
+          "progressMs": 3070,
+          "status": "PASS",
+          "videoHeight": 1080,
+          "videoWidth": 1920
+        }
+      ],
+      "playBudgetExhausted": false,
+      "minimumProgressMs": 3000
+    },
+    {
+      "key": "kazumi.anfuns",
+      "label": "AnFuns",
+      "versionName": "0.1",
+      "versionCode": 100,
+      "sourceSha256": "b1596fe6b3a1227b87952eb60abd8cfd96f4e1afde5a0208b63f43850486d0b6",
+      "startedAt": "2026-10-09T05:38:30.598Z",
+      "finishedAt": "2026-10-09T05:38:34.508Z",
+      "verdict": "FAIL",
+      "acceptance": "PLAYBACK_FAILED",
+      "steps": [
+        {
+          "detail": "IllegalStateException：源没有提供 PageComponent",
+          "elapsedMs": 0,
+          "step": "HOME",
+          "verdict": "FAIL"
+        },
+        {
+          "detail": "「孤独摇滚」ERROR(0)；搜索不可用，首页播放只能供诊断，不能自动准入",
+          "elapsedMs": 3908,
+          "step": "SEARCH",
+          "verdict": "FAIL"
+        },
+        {
+          "detail": "所有别名无可用结果且首页第 1 部不可用，无法定位播放样本",
+          "elapsedMs": 0,
+          "step": "PLAY",
+          "verdict": "FAIL"
+        }
+      ],
+      "searchAttempts": [
+        {
+          "detail": "WrappedException：Wrapped java.io.IOException: unexpected end of stream on [url] (source kazumi.anfuns#208)",
+          "elapsedMs": 3908,
+          "keyword": "孤独摇滚",
+          "resultCount": 0,
+          "status": "ERROR"
+        }
+      ],
+      "selection": null,
+      "lineAttempts": [],
+      "playBudgetExhausted": false,
+      "minimumProgressMs": 3000
+    }
+  ]
+}

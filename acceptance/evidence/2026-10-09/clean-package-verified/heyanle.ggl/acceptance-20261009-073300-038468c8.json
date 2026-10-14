@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "protocolVersion": "source-acceptance-v1",
+  "generatedAt": "2026-10-09T07:33:22.317Z",
+  "context": {
+    "app": {
+      "buildType": "debug",
+      "gitCommit": "fed45da5fd0a508ec313fdb3f9054c687e724545",
+      "packageName": "com.heyanle.easybangumi4.sourcelab",
+      "versionCode": 115,
+      "versionName": "6.1.3"
+    },
+    "device": {
+      "androidVersion": "16",
+      "apiLevel": 36,
+      "isPhysicalDevice": true,
+      "manufacturer": "meizu",
+      "model": "MEIZU 21",
+      "serial": "461QYGFJ222HD"
+    },
+    "network": "phone-network",
+    "repositoryEnvironment": "dev"
+  },
+  "config": {
+    "keywords": [
+      "孤独摇滚",
+      "孤獨搖滾",
+      "ぼっち・ざ・ろっく！",
+      "Bocchi the Rock"
+    ],
+    "minimumProgressMs": 3000,
+    "playBudgetMs": 240000,
+    "playTimeoutMs": 60000,
+    "selected": [
+      "heyanle.ggl"
+    ],
+    "stepTimeoutMs": 25000,
+    "steps": [
+      "HOME",
+      "SEARCH",
+      "PLAY"
+    ]
+  },
+  "results": [
+    {
+      "key": "heyanle.ggl",
+      "label": "GiriGiriLove",
+      "versionName": "1.5",
+      "versionCode": 7,
+      "sourceSha256": "496af7c3a5a6d3fdb5a32c36e2f998a418130c3a6f4d3c161e854c31ef49c5bd",
+      "startedAt": "2026-10-09T07:33:04.732Z",
+      "finishedAt": "2026-10-09T07:33:22.316Z",
+      "verdict": "SUSPECT",
+      "acceptance": "HOME_PLAYABLE_SEARCH_UNAVAILABLE",
+      "steps": [
+        {
+          "detail": "首页页签「日番」47 条内容",
+          "elapsedMs": 2549,
+          "step": "HOME",
+          "verdict": "PASS"
+        },
+        {
+          "detail": "「孤独摇滚」VERIFICATION_REQUIRED(0)；搜索不可用，首页播放只能供诊断，不能自动准入",
+          "elapsedMs": 5325,
+          "step": "SEARCH",
+          "verdict": "SUSPECT"
+        },
+        {
+          "detail": "首页回退「冰之城墙 第2季」线路 1/2「繁中2」01，首帧 1920x1080，推进 3183ms（已尝试 1 条线路）",
+          "elapsedMs": 9706,
+          "step": "PLAY",
+          "verdict": "PASS"
+        }
+      ],
+      "searchAttempts": [
+        {
+          "detail": "需要人工验证：ParserException：need web check",
+          "elapsedMs": 5324,
+          "keyword": "孤独摇滚",
+          "resultCount": 0,
+          "status": "VERIFICATION_REQUIRED"
+        }
+      ],
+      "selection": {
+        "cartoonId": "GV27180",
+        "homePageLabel": "日番",
+        "keyword": null,
+        "resultIndex": 0,
+        "route": "HOME_FALLBACK",
+        "title": "冰之城墙 第2季"
+      },
+      "lineAttempts": [
+        {
+          "detail": "首帧已渲染，进度推进 3183ms",
+          "elapsedMs": 8882,
+          "episodeId": "1",
+          "episodeLabel": "01",
+          "episodeOrder": 0,
+          "firstFrame": true,
+          "lineId": "1",
+          "lineIndex": 0,
+          "lineLabel": "繁中2",
+          "progressMs": 3183,
+          "status": "PASS",
+          "videoHeight": 1080,
+          "videoWidth": 1920
+        }
+      ],
+      "playBudgetExhausted": false,
+      "minimumProgressMs": 3000,
+      "totalLineCount": 2
+    }
+  ]
+}

@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "protocolVersion": "source-acceptance-v1",
+  "sources": [
+    {
+      "key": "ayala.jellyfin",
+      "status": "pending",
+      "sourceSha256": "b6ebb3ef391be8285601508dc716519ccab0218aa80eac5ee71d4ee18a334c6a",
+      "versionCode": 8,
+      "evidenceFile": null,
+      "review": null,
+      "note": "libVersion 11 不在客户端支持范围 15..15"
+    },
+    {
+      "key": "heyanle.age",
+      "status": "approved",
+      "sourceSha256": "237eafa2cd0e33cb87c5b3515ffca99e07551ed5295f4924d28cb92336c03d0b",
+      "versionCode": 1,
+      "evidenceFile": "acceptance/evidence/2026-10-14/release-prepublish/heyanle.age/acceptance-20261014-080636-01581dc5.json",
+      "review": {
+        "reviewer": "Codex (heyanle 授权的仓库发布执行者)",
+        "reviewedAt": "2026-10-14T08:19:28.332138+00:00",
+        "comment": "依据用户于 2026-10-14 明确授权发布现有 release/dev 仓库，Codex 复核本次小米 14 真机原始 JSON、最终源 hash/版本、首页、固定顺序搜索第一部、逐线路首集、真实首帧及至少 3000ms 播放进度，严格 gate 通过。此记录是用户整体发布授权与 Codex 证据复核，未声称用户逐源审阅原件或画面。"
+      },
+      "note": "2026-10-14 发布前使用最终原字节在小米 14 重新验证通过；历史失败/反馈与报告保留。本轮只发布源仓库，不发布 Android APK。"
+    },
+    {
+      "key": "heyanle.ggl",
+      "status": "pending",
+      "sourceSha256": "496af7c3a5a6d3fdb5a32c36e2f998a418130c3a6f4d3c161e854c31ef49c5bd",
+      "versionCode": 7,
+      "evidenceFile": "acceptance/evidence/2026-10-14/release-prepublish/heyanle.ggl/acceptance-20261014-080659-d58dc6c6.json",
+      "review": null,
+      "note": "2026-10-14 QA 真机 SEARCH_PLAYABLE 原件已归档，但验证码接力依赖当前 Android 未发布 WebView 桥修复；尚未证明公开 APK 兼容，继续 dev，不以 QA 包通过替代正式客户端兼容证明。10-09 搜索验证阻断与 10-13 接力历史均保留。"
+    },
+    {
+      "key": "heyanle.xifan",
+      "status": "pending",
+      "sourceSha256": "3cc8c71415a67eacfc750f6cb7c1495b8c1ac3d9e97bc6c78d387f65987a35ce",
+      "versionCode": 2,
+      "evidenceFile": null,
+      "review": null,
+      "note": "历史发布状态不等于当前真机验收通过；等待 source-acceptance-v1 真机证据与维护者复核"
+    },
+    {
+      "key": "heyanle.yhw",
+      "status": "pending",
+      "sourceSha256": "7fb6c88d294ed40cdd984f741f3ed8bd13ca67c7a428d9ac6471212e2e9b0885",
+      "versionCode": 1,
+      "evidenceFile": null,
+      "review": null,
+      "note": "libVersion 13 不在客户端支持范围 15..15"
+    },
+    {
+      "key": "jisoft.ale",
+      "status": "pending",
+      "sourceSha256": "f86d70900529ffe5108f1508f8d52011028d47ecacced2a424f10920211e8295",
+      "versionCode": 1,
+      "evidenceFile": null,
+      "review": null,
+      "note": "@blocked 已屏蔽"
+    },
+    {
+      "key": "jisoft.omofun",
+      "status": "pending",
+      "sourceSha256": "56fcd10b387cbad732b71af7a025c5658d6b3da88acaba2d8cd1f99afd68598a",
+      "versionCode": 3,
+      "evidenceFile": null,
+      "review": null,
+      "note": "@blocked 已屏蔽"
+    },
+    {
+      "key": "kazumi.7sefun",
+      "status": "approved",
+      "sourceSha256": "45822ddf4e093a79a010fd3b2495ea005f38ec3516dc716f921e234b8ae5b966",
+      "versionCode": 10200,
+      "evidenceFile": "acceptance/evidence/2026-10-14/release-prepublish/kazumi.7sefun/acceptance-20261014-080736-5a6942e0.json",
+      "review": {
+        "reviewer": "Codex (heyanle 授权的仓库发布执行者)",
+        "reviewedAt": "2026-10-14T08:19:28.332138+00:00",
+        "comment": "依据用户于 2026-10-14 明确授权发布现有 release/dev 仓库，Codex 复核本次小米 14 真机原始 JSON、最终源 hash/版本、首页、固定顺序搜索第一部、逐线路首集、真实首帧及至少 3000ms 播放进度，严格 gate 通过。此记录是用户整体发布授权与 Codex 证据复核，未声称用户逐源审阅原件或画面。"
+      },
+      "note": "2026-10-14 发布前使用最终原字节在小米 14 重新验证通过；历史失败/反馈与报告保留。本轮只发布源仓库，不发布 Android APK。"
+    },
+    {
+      "key": "kazumi.9ciyuan",
+      "status": "approved",
+      "sourceSha256": "b4c886296f0cfc64f6ff41c555ba326e50d19ca6f0ee699c6be66f48c920fdf9",
+      "versionCode": 10300,
+      "evidenceFile": "acceptance/evidence/2026-10-14/release-prepublish/kazumi.9ciyuan/acceptance-20261014-080750-26c15a09.json",
+      "review": {
+        "reviewer": "Codex (heyanle 授权的仓库发布执行者)",
+        "reviewedAt": "2026-10-14T08:19:28.332138+00:00",
+        "comment": "依据用户于 2026-10-14 明确授权发布现有 release/dev 仓库，Codex 复核本次小米 14 真机原始 JSON、最终源 hash/版本、首页、固定顺序搜索第一部、逐线路首集、真实首帧及至少 3000ms 播放进度，严格 gate 通过。此记录是用户整体发布授权与 Codex 证据复核，未声称用户逐源审阅原件或画面。"
+      },
+      "note": "2026-10-14 发布前使用最终原字节在小米 14 重新验证通过；历史失败/反馈与报告保留。本轮只发布源仓库，不发布 Android APK。"
+    },
+    {
+      "key": "kazumi.anime7",
+      "status": "approved",
+      "sourceSha256": "57aced2e24c15a67be06910b00209401949a400a850228191e115d7d7ed67993",
+      "versionCode": 10000,
+      "evidenceFile": "acceptance/evidence/2026-10-14/release-prepublish/kazumi.anime7/acceptance-20261014-080808-154c2ad4.json",
+      "review": {
+        "reviewer": "Codex (heyanle 授权的仓库发布执行者)",
+        "reviewedAt": "2026-10-14T08:19:28.332138+00:00",
+        "comment": "依据用户于 2026-10-14 明确授权发布现有 release/dev 仓库，Codex 复核本次小米 14 真机原始 JSON、最终源 hash/版本、首页、固定顺序搜索第一部、逐线路首集、真实首帧及至少 3000ms 播放进度，严格 gate 通过。此记录是用户整体发布授权与 Codex 证据复核，未声称用户逐源审阅原件或画面。"
+      },
+      "note": "2026-10-14 发布前使用最终原字节在小米 14 重新验证通过；历史失败/反馈与报告保留。本轮只发布源仓库，不发布 Android APK。"
+    },
+    {
+      "key": "kazumi.ant",
+      "status": "approved",
+      "sourceSha256": "8d6df3755f6c448e5fc33f9fe33eb42a82fc9ad144bec24001a5939c1806117b",
+      "versionCode": 2,
+      "evidenceFile": "acceptance/evidence/2026-10-14/release-prepublish/kazumi.ant/acceptance-20261014-080826-2d4f5a40.json",
+      "review": {
+        "reviewer": "Codex (heyanle 授权的仓库发布执行者)",
+        "reviewedAt": "2026-10-14T08:19:28.332138+00:00",
+        "comment": "依据用户于 2026-10-14 明确授权发布现有 release/dev 仓库，Codex 复核本次小米 14 真机原始 JSON、最终源 hash/版本、首页、固定顺序搜索第一部、逐线路首集、真实首帧及至少 3000ms 播放进度，严格 gate 通过。此记录是用户整体发布授权与 Codex 证据复核，未声称用户逐源审阅原件或画面。"
+      },
+      "note": "2026-10-14 发布前使用最终原字节在小米 14 重新验证通过；历史失败/反馈与报告保留。本轮只发布源仓库，不发布 Android APK。"
+    },
+    {
+      "key": "kazumi.baimao",
+      "status": "approved",
+      "sourceSha256": "d07b1e2ddec213a138041232b293865cdf85e7b12f4e5a1cd54ffb330ce5fa2a",
+      "versionCode": 10000,
+      "evidenceFile": "acceptance/evidence/2026-10-14/release-prepublish/kazumi.baimao/acceptance-20261014-080848-ff517ca7.json",
+      "review": {
+        "reviewer": "Codex (heyanle 授权的仓库发布执行者)",
+        "reviewedAt": "2026-10-14T08:19:28.332138+00:00",
+        "comment": "依据用户于 2026-10-14 明确授权发布现有 release/dev 仓库，Codex 复核本次小米 14 真机原始 JSON、最终源 hash/版本、首页、固定顺序搜索第一部、逐线路首集、真实首帧及至少 3000ms 播放进度，严格 gate 通过。此记录是用户整体发布授权与 Codex 证据复核，未声称用户逐源审阅原件或画面。"
+      },
+      "note": "2026-10-14 发布前使用最终原字节在小米 14 重新验证通过；历史失败/反馈与报告保留。本轮只发布源仓库，不发布 Android APK。"
+    },
+    {
+      "key": "kazumi.gpjda",
+      "status": "pending",
+      "sourceSha256": "d7c25a43df78ce859d8f4ccdd2fe7f9b484684dd5d1f990b129df316d13cf9c7",
+      "versionCode": 10000,
+      "evidenceFile": "acceptance/evidence/2026-10-14/release-prepublish/kazumi.gpjda/acceptance-20261014-080911-6d93e092.json",
+      "review": null,
+      "note": "2026-10-14 最新原件 HOME_PLAYABLE_SEARCH_UNAVAILABLE：首词搜索 HTTP503，首页首项播放仅供诊断，不满足 release；10-09 历史成功保留，不选择旧 PASS 覆盖本次失败。继续 dev 修复。"
+    },
+    {
+      "key": "kazumi.mxdm",
+      "status": "approved",
+      "sourceSha256": "c7c5d41a575160e66dbb2805184f064c6c3b469f9a3e81e8f8c97adb665d29b6",
+      "versionCode": 20300,
+      "evidenceFile": "acceptance/evidence/2026-10-14/release-prepublish/kazumi.mxdm/acceptance-20261014-080931-0b69e7a7.json",
+      "review": {
+        "reviewer": "Codex (heyanle 授权的仓库发布执行者)",
+        "reviewedAt": "2026-10-14T08:19:28.332138+00:00",
+        "comment": "依据用户于 2026-10-14 明确授权发布现有 release/dev 仓库，Codex 复核本次小米 14 真机原始 JSON、最终源 hash/版本、首页、固定顺序搜索第一部、逐线路首集、真实首帧及至少 3000ms 播放进度，严格 gate 通过。此记录是用户整体发布授权与 Codex 证据复核，未声称用户逐源审阅原件或画面。"
+      },
+      "note": "2026-10-14 发布前使用最终原字节在小米 14 重新验证通过；历史失败/反馈与报告保留。本轮只发布源仓库，不发布 Android APK。"
+    },
+    {
+      "key": "kazumi.omofun03",
+      "status": "pending",
+      "sourceSha256": "ae032a31eb8b09c5c6b1d170df36a7485c9a2115f4bab0acd469ea19baa5d74e",
+      "versionCode": 10100,
+      "evidenceFile": null,
+      "review": null,
+      "note": "历史发布状态不等于当前真机验收通过；等待 source-acceptance-v1 真机证据与维护者复核"
+    },
+    {
+      "key": "kazumi.sorani",
+      "status": "approved",
+      "sourceSha256": "a64f3e4c37dbb6540d0938bf46de85003084e4fb808bd9a82b3fa0af2bead914",
+      "versionCode": 10000,
+      "evidenceFile": "acceptance/evidence/2026-10-14/release-prepublish/kazumi.sorani/acceptance-20261014-080945-0e494635.json",
+      "review": {
+        "reviewer": "Codex (heyanle 授权的仓库发布执行者)",
+        "reviewedAt": "2026-10-14T08:19:28.332138+00:00",
+        "comment": "依据用户于 2026-10-14 明确授权发布现有 release/dev 仓库，Codex 复核本次小米 14 真机原始 JSON、最终源 hash/版本、首页、固定顺序搜索第一部、逐线路首集、真实首帧及至少 3000ms 播放进度，严格 gate 通过。此记录是用户整体发布授权与 Codex 证据复核，未声称用户逐源审阅原件或画面。"
+      },
+      "note": "2026-10-14 发布前使用最终原字节在小米 14 重新验证通过；历史失败/反馈与报告保留。本轮只发布源仓库，不发布 Android APK。"
+    },
+    {
+      "key": "kazumi.tvtfun",
+      "status": "pending",
+      "sourceSha256": "3aab610f1b000ce3275235252589b51b6da7e960d45d31ddb926686aa0a7719e",
+      "versionCode": 10100,
+      "evidenceFile": null,
+      "review": null,
+      "note": "历史发布状态不等于当前真机验收通过；等待 source-acceptance-v1 真机证据与维护者复核"
+    },
+    {
+      "key": "kazumi.ylsp",
+      "status": "pending",
+      "sourceSha256": "b7f41e2e0ac2fb872a4a6e5afb7e1016ceab7d5610dd20f26d87620ed8b056e6",
+      "versionCode": 10100,
+      "evidenceFile": null,
+      "review": null,
+      "note": "历史发布状态不等于当前真机验收通过；等待 source-acceptance-v1 真机证据与维护者复核"
+    }
+  ]
+}

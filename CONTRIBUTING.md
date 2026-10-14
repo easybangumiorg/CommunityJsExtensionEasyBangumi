@@ -8,6 +8,17 @@
 
 [API参考](https://easybangumi.org/docs/js-extension-utils)
 
+## 源提交与晋级
+
+1. 新增或更新源放在 `dev-extensions/`，保持 `@key` 稳定；内容发生变化时增加 `@versionCode`，完善 `@label/@versionName/@libVersion`。当前客户端仅支持 `libVersion=15`。
+2. 运行 `uv run python -m unittest discover -s tests -v`，再用 `uv run ebjer channel --source-dir dev-extensions --to /tmp/easybangumi-dev-index --ref <提交 SHA>` 做离线元数据检查。PR 中尚未发布的文件不做 raw 网络可达性检查。
+3. 在 Android 真机 dev 环境安装最终文件，用「源体检」按 `source-acceptance-v1` 执行首页、固定关键词搜索、首条结果或首页首项详情、逐线路真实播放器验收，导出 JSON 证据。没有首帧和至少 3 秒实际播放进度不能晋级。
+4. 把通过源的原字节复制到 `extensions/`；证据放入 `acceptance/evidence/`。在 `release-manifest.json` 登记 key、最终文件 SHA256、versionCode、证据相对路径及维护者复核，再把该源状态改为 `approved`。其它源保留 `pending` 或明确标为 `rejected`。
+5. 运行 `uv run ebjer release --check-only`；通过后运行 `uv run ebjer release --to /tmp/easybangumi-release-preview` 审核完整产物与源数量。新构建仅包含 `approved` 源，因此未通过的历史源会从新发布索引及文件目录移除；在 PR 中列清新增、更新、下架 key。
+6. 合并至 main 后 CI 再次验证并发布。只有线上索引和文件校验完成后才更新 `release-baseline.json`；这个快照记录实际发布字节，不代表真机通过。
+
+完整的判定规则、当前候选清单及 CI 链路见[仓库环境与发布流程](docs/repository-environments.md)。
+
 ## 开源许可
 
 本仓库的开源许可分为两个部分：仓库核心代码的许可和社区贡献插件的许可。
