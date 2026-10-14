@@ -9,7 +9,7 @@
     "releaseApprovalAdded": true,
     "promotionRecord": "acceptance/release-promotion-2026-10-14.json"
   },
-  "clientCompatibility": "Dedicated .sourcelab build includes manual-verification bridge fixes; compatibility with a published normal client still requires separate review before release promotion",
+  "clientCompatibility": "Dedicated .sourcelab build includes verification bridge fixes. GGL/LMM captcha resumption requires that client capability; older published APK compatibility remains unverified. User requested the passed sources together in release, with this requirement retained in the promotion record.",
   "deviceIdentity": {
     "physicalSerial": "6a022def",
     "mappingEvidence": "acceptance/evidence/2026-10-14/new-sites/wireless-device.json",
