@@ -5,8 +5,9 @@
   "baseCommit": "696188e",
   "distribution": {
     "environment": "dev",
-    "state": "prepared; official deployment awaits user-managed PR",
-    "releaseApprovalAdded": false
+    "state": "dev retained; three passed candidates also approved for release; deployment awaits user-managed PR",
+    "releaseApprovalAdded": true,
+    "promotionRecord": "acceptance/release-promotion-2026-10-14.json"
   },
   "clientCompatibility": "Dedicated .sourcelab build includes manual-verification bridge fixes; compatibility with a published normal client still requires separate review before release promotion",
   "deviceIdentity": {
@@ -76,7 +77,7 @@
         }
       ],
       "verificationEvents": [],
-      "releaseApproved": false,
+      "releaseApproved": true,
       "limitation": null
     },
     {
@@ -220,7 +221,7 @@
         }
       ],
       "verificationEvents": [],
-      "releaseApproved": false,
+      "releaseApproved": true,
       "limitation": null
     },
     {
@@ -382,7 +383,7 @@
           "waitMs": 27002
         }
       ],
-      "releaseApproved": false,
+      "releaseApproved": true,
       "limitation": null
     }
   ],

@@ -398,5 +398,6 @@
     "sourceRepository": 51,
     "devCommittedIndex": 80,
     "releasePreview": 8
-  }
+  },
+  "supersededBy": "acceptance/release-promotion-2026-10-14.json"
 }

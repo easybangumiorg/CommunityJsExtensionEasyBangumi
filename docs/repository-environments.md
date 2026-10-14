@@ -1,6 +1,10 @@
 # 官方源仓库环境与晋级流程
 
-## 2026-10-14 本次发布
+## 2026-10-14 最新晋级补充
+
+用户要求已通过项一起加入 release，当前批准 12 条、dev 收录 82 条。原先 8 条继续保留，本次加入 GGL 正式版、GGL Beta、MiFun 和路漫漫。全部最终 hash/版本及真实播放器证据通过 gate；验证码客户端能力限制保留在说明中，旧公开 APK 未经兼容验证。详见[最新晋级记录](release-promotion-2026-10-14.md)。main 尚未合并，baseline 仍保留实际线上快照。
+
+## 2026-10-14 早期发布准备（已补充）
 
 本次以小米 14 新的 10 份原始证据重新复核。release 准备发布 8 条：`heyanle.age`、`kazumi.7sefun`、`kazumi.9ciyuan`、`kazumi.anime7`、`kazumi.ant`、`kazumi.baimao`、`kazumi.mxdm`、`kazumi.sorani`。dev 的 84 候选中 80 条通过 API/元数据静态收录，dev 收录不表示播放通过。
 

@@ -26,12 +26,32 @@
     },
     {
       "key": "heyanle.ggl",
-      "status": "pending",
+      "status": "approved",
       "sourceSha256": "496af7c3a5a6d3fdb5a32c36e2f998a418130c3a6f4d3c161e854c31ef49c5bd",
       "versionCode": 7,
       "evidenceFile": "acceptance/evidence/2026-10-14/release-prepublish/heyanle.ggl/acceptance-20261014-080659-d58dc6c6.json",
-      "review": null,
-      "note": "2026-10-14 QA 真机 SEARCH_PLAYABLE 原件已归档，但验证码接力依赖当前 Android 未发布 WebView 桥修复；尚未证明公开 APK 兼容，继续 dev，不以 QA 包通过替代正式客户端兼容证明。10-09 搜索验证阻断与 10-13 接力历史均保留。"
+      "review": {
+        "reviewer": "Codex (heyanle 授权的仓库维护执行者)",
+        "reviewedAt": "2026-10-14T10:50:49.037686+00:00",
+        "comment": "用户在已获知12个真机通过源及验证码客户端限制后明确要求“已经通过的放到 release 吧，一起加进去”。Codex 复核最终源字节/版本、首页、固定搜索第一部、逐线路首集、真实首帧与至少3000ms推进，现有严格门禁通过；未声称用户逐源审阅原件。 此源验证码重试依赖支持同步WebProxy验证回调的客户端；验收包包含该修复，旧公开客户端兼容性未核实。该能力要求随本次授权保留说明，不伪造旧客户端通过记录。"
+      },
+      "note": "2026-10-14 按用户要求，与既有8个通过源一同纳入release；原字节复制自dev，原始真机证据保留。源仓库发布不涉及Android APK版本或Tag。 验证码重试需要包含验证桥修复的客户端；旧客户端未验证。",
+      "requiredClientCapabilities": [
+        "manual-verification-webproxy-wrapper"
+      ]
+    },
+    {
+      "key": "heyanle.ggl.beta",
+      "status": "approved",
+      "sourceSha256": "f7734b546d88b18161863bf2045d2f359120564a437133aeb5846158c4972748",
+      "versionCode": 1,
+      "evidenceFile": "acceptance/evidence/2026-10-14/new-sites/final-sdk-device/heyanle.ggl.beta/acceptance-20261014-102615-4ab07cfc.json",
+      "review": {
+        "reviewer": "Codex (heyanle 授权的仓库维护执行者)",
+        "reviewedAt": "2026-10-14T10:50:49.037686+00:00",
+        "comment": "用户在已获知12个真机通过源及验证码客户端限制后明确要求“已经通过的放到 release 吧，一起加进去”。Codex 复核最终源字节/版本、首页、固定搜索第一部、逐线路首集、真实首帧与至少3000ms推进，现有严格门禁通过；未声称用户逐源审阅原件。"
+      },
+      "note": "2026-10-14 按用户要求，与既有8个通过源一同纳入release；原字节复制自dev，原始真机证据保留。源仓库发布不涉及Android APK版本或Tag。"
     },
     {
       "key": "heyanle.xifan",
@@ -142,6 +162,35 @@
       "evidenceFile": "acceptance/evidence/2026-10-14/release-prepublish/kazumi.gpjda/acceptance-20261014-080911-6d93e092.json",
       "review": null,
       "note": "2026-10-14 最新原件 HOME_PLAYABLE_SEARCH_UNAVAILABLE：首词搜索 HTTP503，首页首项播放仅供诊断，不满足 release；10-09 历史成功保留，不选择旧 PASS 覆盖本次失败。继续 dev 修复。"
+    },
+    {
+      "key": "kazumi.lmm",
+      "status": "approved",
+      "sourceSha256": "1b6448b326b8198b9c8c628afc5a01293a3787090e1ddbca05019723ef6af888",
+      "versionCode": 20200,
+      "evidenceFile": "acceptance/evidence/2026-10-14/new-sites/lmm-final-device/acceptance-20261014-102731-d09cb404.json",
+      "review": {
+        "reviewer": "Codex (heyanle 授权的仓库维护执行者)",
+        "reviewedAt": "2026-10-14T10:50:49.037686+00:00",
+        "comment": "用户在已获知12个真机通过源及验证码客户端限制后明确要求“已经通过的放到 release 吧，一起加进去”。Codex 复核最终源字节/版本、首页、固定搜索第一部、逐线路首集、真实首帧与至少3000ms推进，现有严格门禁通过；未声称用户逐源审阅原件。 此源验证码重试依赖支持同步WebProxy验证回调的客户端；验收包包含该修复，旧公开客户端兼容性未核实。该能力要求随本次授权保留说明，不伪造旧客户端通过记录。"
+      },
+      "note": "2026-10-14 按用户要求，与既有8个通过源一同纳入release；原字节复制自dev，原始真机证据保留。源仓库发布不涉及Android APK版本或Tag。 验证码重试需要包含验证桥修复的客户端；旧客户端未验证。",
+      "requiredClientCapabilities": [
+        "manual-verification-webproxy-wrapper"
+      ]
+    },
+    {
+      "key": "kazumi.mifun",
+      "status": "approved",
+      "sourceSha256": "8048135c15412389421290bf8f242f51f39a655246b12874a1c13e29aaef2253",
+      "versionCode": 10100,
+      "evidenceFile": "acceptance/evidence/2026-10-14/new-sites/final-sdk-device/kazumi.mifun/acceptance-20261014-102635-3e2f5d5e.json",
+      "review": {
+        "reviewer": "Codex (heyanle 授权的仓库维护执行者)",
+        "reviewedAt": "2026-10-14T10:50:49.037686+00:00",
+        "comment": "用户在已获知12个真机通过源及验证码客户端限制后明确要求“已经通过的放到 release 吧，一起加进去”。Codex 复核最终源字节/版本、首页、固定搜索第一部、逐线路首集、真实首帧与至少3000ms推进，现有严格门禁通过；未声称用户逐源审阅原件。"
+      },
+      "note": "2026-10-14 按用户要求，与既有8个通过源一同纳入release；原字节复制自dev，原始真机证据保留。源仓库发布不涉及Android APK版本或Tag。"
     },
     {
       "key": "kazumi.mxdm",

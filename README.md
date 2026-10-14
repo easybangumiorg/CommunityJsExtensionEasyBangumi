@@ -2,13 +2,13 @@
 
 纯纯看番社区 JS 源仓库
 
-## 当前新源开发（2026-10-14）
+## 当前发布准备（2026-10-14）
 
-既有 release/dev 发布 PR 已按用户要求暂缓，本轮未合并 main。新开发分支 `feat/new-site-adapters` 新增 GGL Beta、MiliMili，更新 MiFun、次元城和路漫漫，统一留在 dev。三个源已完成最终字节真机播放；两个源因暂无账号保留登录后待验证。684 项源解析与运行时检查、51 项仓库单测通过。当前候选 86 项，API15 可收录 82 项；索引待本分支合入后成为官方入口内容。详见[实现与验收记录](docs/new-source-adapters-2026-10-14.md)。
+按用户最新要求，将全部 12 个真机通过源一同纳入 release：AGE、GGL 正式版、GGL Beta、7sefun、9ciyuan、anime7、ant、baimao、路漫漫、MiFun、mxdm、青空次元。12 份精确字节证据通过严格 gate，51 项仓库单测通过，打包预览包含 12 个 JS 与一份索引。GGL 正式版和路漫漫的验证码重试需要含验证桥修复的客户端，旧公开客户端尚未核实兼容性。
 
-## 2026-10-14 发布准备
+需求分支 `feat/new-site-adapters` 同时保留 dev 的 82 个 API15 条目。次元城和 MiliMili 因暂无账号留在 dev，gpjda 因搜索 HTTP503 留在 dev。main 尚未合并，线上未由本次工作更新。详见[本次晋级与差异](docs/release-promotion-2026-10-14.md)、[精确批准记录](acceptance/release-promotion-2026-10-14.json)和[新源实现与验收](docs/new-source-adapters-2026-10-14.md)。
 
-本轮按既定门禁发布：release 从 16 条收敛为 8 条最新真机通过的源，dev 保留 84 个候选中的 80 个 API 15 可安装条目。GiriGiriLove 因公开客户端兼容性未核实、gpjda 因本次搜索 HTTP503 继续留在 dev；其它未通过与旧 API 源不进入 release。发布授权、精确字节与新旧差异见[本次发布记录](acceptance/publication-2026-10-14.json)。以下 10 月 9 日状态为历史记录。
+早期 8 条 release / 80 条 dev 的准备记录保留在[原发布记录](acceptance/publication-2026-10-14.json)，其当前清单由本次 12 条 / 82 条补充替代；下文 10 月 9 日状态为历史记录。
 
 ## 官方仓库环境
 

@@ -1,0 +1,572 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-14",
+  "state": "prepared; awaits user-managed PR merge and CI deployment",
+  "authorizedBy": "heyanle",
+  "authorization": "已经通过的放到 release 吧，一起加进去",
+  "reviewedAt": "2026-10-14T10:50:49.037686+00:00",
+  "branch": "feat/new-site-adapters",
+  "preparedReleaseBefore": [
+    "heyanle.age",
+    "kazumi.7sefun",
+    "kazumi.9ciyuan",
+    "kazumi.anime7",
+    "kazumi.ant",
+    "kazumi.baimao",
+    "kazumi.mxdm",
+    "kazumi.sorani"
+  ],
+  "releaseApproved": [
+    "heyanle.age",
+    "heyanle.ggl",
+    "heyanle.ggl.beta",
+    "kazumi.7sefun",
+    "kazumi.9ciyuan",
+    "kazumi.anime7",
+    "kazumi.ant",
+    "kazumi.baimao",
+    "kazumi.lmm",
+    "kazumi.mifun",
+    "kazumi.mxdm",
+    "kazumi.sorani"
+  ],
+  "newlyApproved": [
+    "heyanle.ggl",
+    "heyanle.ggl.beta",
+    "kazumi.lmm",
+    "kazumi.mifun"
+  ],
+  "releaseCount": 12,
+  "releaseBaselineKeys": [
+    "ayala.jellyfin",
+    "heyanle.age",
+    "heyanle.ggl",
+    "heyanle.xifan",
+    "heyanle.yhw",
+    "kazumi.7sefun",
+    "kazumi.9ciyuan",
+    "kazumi.anime7",
+    "kazumi.ant",
+    "kazumi.baimao",
+    "kazumi.gpjda",
+    "kazumi.mxdm",
+    "kazumi.omofun03",
+    "kazumi.sorani",
+    "kazumi.tvtfun",
+    "kazumi.ylsp"
+  ],
+  "releaseAdded": [
+    "heyanle.ggl.beta",
+    "kazumi.lmm",
+    "kazumi.mifun"
+  ],
+  "releaseRemoved": [
+    "ayala.jellyfin",
+    "heyanle.xifan",
+    "heyanle.yhw",
+    "kazumi.gpjda",
+    "kazumi.omofun03",
+    "kazumi.tvtfun",
+    "kazumi.ylsp"
+  ],
+  "devIndexCount": 82,
+  "previousAdmissionRecords": {
+    "heyanle.ggl": {
+      "key": "heyanle.ggl",
+      "status": "pending",
+      "sourceSha256": "496af7c3a5a6d3fdb5a32c36e2f998a418130c3a6f4d3c161e854c31ef49c5bd",
+      "versionCode": 7,
+      "evidenceFile": "acceptance/evidence/2026-10-14/release-prepublish/heyanle.ggl/acceptance-20261014-080659-d58dc6c6.json",
+      "review": null,
+      "note": "2026-10-14 QA 真机 SEARCH_PLAYABLE 原件已归档，但验证码接力依赖当前 Android 未发布 WebView 桥修复；尚未证明公开 APK 兼容，继续 dev，不以 QA 包通过替代正式客户端兼容证明。10-09 搜索验证阻断与 10-13 接力历史均保留。"
+    },
+    "heyanle.ggl.beta": null,
+    "kazumi.lmm": null,
+    "kazumi.mifun": null
+  },
+  "reports": [
+    {
+      "key": "heyanle.age",
+      "label": "Age动漫",
+      "versionName": "1.0",
+      "versionCode": 1,
+      "sourcePath": "extensions/age.js",
+      "devSourcePath": "dev-extensions/age.js",
+      "sourceSha256": "237eafa2cd0e33cb87c5b3515ffca99e07551ed5295f4924d28cb92336c03d0b",
+      "evidenceFile": "acceptance/evidence/2026-10-14/release-prepublish/heyanle.age/acceptance-20261014-080636-01581dc5.json",
+      "evidenceSha256": "4afbcb920a36628a1c3fd411a1b79d49d26cc901bf7f352ef700bf7c40b0c7b4",
+      "acceptance": "SEARCH_PLAYABLE",
+      "selection": {
+        "cartoonId": "20220121",
+        "homePageLabel": null,
+        "keyword": "孤独摇滚",
+        "resultIndex": 0,
+        "route": "SEARCH_RESULT",
+        "title": "孤独摇滚！"
+      },
+      "lineAttempts": [
+        {
+          "detail": "首帧已渲染，进度推进 3017ms",
+          "elapsedMs": 13511,
+          "episodeId": "1",
+          "episodeLabel": "第01集",
+          "episodeOrder": 0,
+          "firstFrame": true,
+          "lineId": "1",
+          "lineIndex": 0,
+          "lineLabel": "VIP 西瓜",
+          "progressMs": 3017,
+          "status": "PASS",
+          "videoHeight": 1080,
+          "videoWidth": 1920
+        }
+      ],
+      "requiredClientCapabilities": []
+    },
+    {
+      "key": "heyanle.ggl",
+      "label": "GiriGiriLove",
+      "versionName": "1.5",
+      "versionCode": 7,
+      "sourcePath": "extensions/girigirilove.js",
+      "devSourcePath": "dev-extensions/girigirilove.js",
+      "sourceSha256": "496af7c3a5a6d3fdb5a32c36e2f998a418130c3a6f4d3c161e854c31ef49c5bd",
+      "evidenceFile": "acceptance/evidence/2026-10-14/release-prepublish/heyanle.ggl/acceptance-20261014-080659-d58dc6c6.json",
+      "evidenceSha256": "f9145bd25b14b78381cd2c1be1a7a579e87286651e62ea4edf8c55430d99d29b",
+      "acceptance": "SEARCH_PLAYABLE",
+      "selection": {
+        "cartoonId": "GV26538",
+        "homePageLabel": null,
+        "keyword": "孤独摇滚",
+        "resultIndex": 0,
+        "route": "SEARCH_RESULT",
+        "title": "孤獨搖滾總集篇"
+      },
+      "lineAttempts": [
+        {
+          "detail": "首帧已渲染，进度推进 3076ms",
+          "elapsedMs": 7661,
+          "episodeId": "1",
+          "episodeLabel": "前篇",
+          "episodeOrder": 0,
+          "firstFrame": true,
+          "lineId": "1",
+          "lineIndex": 0,
+          "lineLabel": "简中2",
+          "progressMs": 3076,
+          "status": "PASS",
+          "videoHeight": 1080,
+          "videoWidth": 1920
+        }
+      ],
+      "requiredClientCapabilities": [
+        "manual-verification-webproxy-wrapper"
+      ]
+    },
+    {
+      "key": "heyanle.ggl.beta",
+      "label": "GiriGiriLove Beta",
+      "versionName": "1.0",
+      "versionCode": 1,
+      "sourcePath": "extensions/girigirilove-beta.js",
+      "devSourcePath": "dev-extensions/girigirilove-beta.js",
+      "sourceSha256": "f7734b546d88b18161863bf2045d2f359120564a437133aeb5846158c4972748",
+      "evidenceFile": "acceptance/evidence/2026-10-14/new-sites/final-sdk-device/heyanle.ggl.beta/acceptance-20261014-102615-4ab07cfc.json",
+      "evidenceSha256": "18531ec36a8b8357f7ffec5c465119ce4d02bff2615de0f6d852df11e5e05b82",
+      "acceptance": "SEARCH_PLAYABLE",
+      "selection": {
+        "cartoonId": "26538",
+        "homePageLabel": null,
+        "keyword": "孤独摇滚",
+        "resultIndex": 0,
+        "route": "SEARCH_RESULT",
+        "title": "孤独摇滚总集篇"
+      },
+      "lineAttempts": [
+        {
+          "detail": "首帧已渲染，进度推进 3105ms",
+          "elapsedMs": 5615,
+          "episodeId": "0",
+          "episodeLabel": "前篇",
+          "episodeOrder": 0,
+          "firstFrame": true,
+          "lineId": "0",
+          "lineIndex": 0,
+          "lineLabel": "chs",
+          "progressMs": 3105,
+          "status": "PASS",
+          "videoHeight": 1080,
+          "videoWidth": 1920
+        }
+      ],
+      "requiredClientCapabilities": []
+    },
+    {
+      "key": "kazumi.7sefun",
+      "label": "7sefun",
+      "versionName": "1.2",
+      "versionCode": 10200,
+      "sourcePath": "extensions/kazumi-7sefun.js",
+      "devSourcePath": "dev-extensions/kazumi-7sefun.js",
+      "sourceSha256": "45822ddf4e093a79a010fd3b2495ea005f38ec3516dc716f921e234b8ae5b966",
+      "evidenceFile": "acceptance/evidence/2026-10-14/release-prepublish/kazumi.7sefun/acceptance-20261014-080736-5a6942e0.json",
+      "evidenceSha256": "64136fb3904e0aa6ce281ba38bc0eb9bb9a72d334e015413871bedcf073dc39f",
+      "acceptance": "SEARCH_PLAYABLE",
+      "selection": {
+        "cartoonId": "https%3A%2F%2Fwww.7sefun.top%2F%2Fvoddetail%2F29530.html|%E5%AD%A4%E7%8B%AC%E6%91%87%E6%BB%9A%EF%BC%81|http%3A%2F%2Fp.qpic.cn%2Fmusic_cover%2FPiajxSqBRaEKia1eoHwIziaXrAdmbNMt62FtXrBAxHXs1XBCHv2Uzicib3g%2F600",
+        "homePageLabel": null,
+        "keyword": "孤独摇滚",
+        "resultIndex": 0,
+        "route": "SEARCH_RESULT",
+        "title": "孤独摇滚！"
+      },
+      "lineAttempts": [
+        {
+          "detail": "首帧已渲染，进度推进 3100ms",
+          "elapsedMs": 7252,
+          "episodeId": "https%3A%2F%2Fwww.7sefun.top%2F%2Fvodplay%2F29530-1-1.html||",
+          "episodeLabel": "第01集",
+          "episodeOrder": 0,
+          "firstFrame": true,
+          "lineId": "0",
+          "lineIndex": 0,
+          "lineLabel": "播放线路1",
+          "progressMs": 3100,
+          "status": "PASS",
+          "videoHeight": 1080,
+          "videoWidth": 1920
+        }
+      ],
+      "requiredClientCapabilities": []
+    },
+    {
+      "key": "kazumi.9ciyuan",
+      "label": "9ciyuan",
+      "versionName": "1.3",
+      "versionCode": 10300,
+      "sourcePath": "extensions/kazumi-9ciyuan.js",
+      "devSourcePath": "dev-extensions/kazumi-9ciyuan.js",
+      "sourceSha256": "b4c886296f0cfc64f6ff41c555ba326e50d19ca6f0ee699c6be66f48c920fdf9",
+      "evidenceFile": "acceptance/evidence/2026-10-14/release-prepublish/kazumi.9ciyuan/acceptance-20261014-080750-26c15a09.json",
+      "evidenceSha256": "d80c220c3debe8e994d0d9640ee74907e906f42a9ae4aad7b67cc63831dcdeb4",
+      "acceptance": "SEARCH_PLAYABLE",
+      "selection": {
+        "cartoonId": "https%3A%2F%2Fwww.jcydm1.com%2F%2Findex.php%2Fvod%2Fdetail%2Fid%2F19118.html|%E5%AD%A4%E7%8B%AC%E6%91%87%E6%BB%9A%28%E4%B8%8A%29|https%3A%2F%2Fimg.lzipic.com%2Fupload%2Fvod%2F20250428-1%2F57da14cb56c154e0286242780a394f9f.jpg",
+        "homePageLabel": null,
+        "keyword": "孤独摇滚",
+        "resultIndex": 0,
+        "route": "SEARCH_RESULT",
+        "title": "孤独摇滚(上)"
+      },
+      "lineAttempts": [
+        {
+          "detail": "首帧已渲染，进度推进 3105ms",
+          "elapsedMs": 10506,
+          "episodeId": "https%3A%2F%2Fwww.jcydm1.com%2F%2Findex.php%2Fvod%2Fplay%2Fid%2F19118%2Fsid%2F2%2Fnid%2F1.html||",
+          "episodeLabel": "HD中字",
+          "episodeOrder": 0,
+          "firstFrame": true,
+          "lineId": "0",
+          "lineIndex": 0,
+          "lineLabel": "囧动漫",
+          "progressMs": 3105,
+          "status": "PASS",
+          "videoHeight": 1080,
+          "videoWidth": 1920
+        }
+      ],
+      "requiredClientCapabilities": []
+    },
+    {
+      "key": "kazumi.anime7",
+      "label": "anime7",
+      "versionName": "1.0",
+      "versionCode": 10000,
+      "sourcePath": "extensions/kazumi-anime7.js",
+      "devSourcePath": "dev-extensions/kazumi-anime7.js",
+      "sourceSha256": "57aced2e24c15a67be06910b00209401949a400a850228191e115d7d7ed67993",
+      "evidenceFile": "acceptance/evidence/2026-10-14/release-prepublish/kazumi.anime7/acceptance-20261014-080808-154c2ad4.json",
+      "evidenceSha256": "25a7a2f7482abfadacbee1586a4a3576dc48cee42e8e49b9cf18e5ac98e7a376",
+      "acceptance": "SEARCH_PLAYABLE",
+      "selection": {
+        "cartoonId": "https%3A%2F%2Fanime7.top%2F%2Fvod-detail%2F8965%2F|%E5%AD%A4%E7%8B%AC%E6%91%87%E6%BB%9A%28%E4%B8%8A%29|https%3A%2F%2Fani7.b-cdn.net%2Fupload%2Fvod%2F20250922-1%2F91061e4ac48b67e2e013d7224c726f24.jpg",
+        "homePageLabel": null,
+        "keyword": "孤独摇滚",
+        "resultIndex": 0,
+        "route": "SEARCH_RESULT",
+        "title": "孤独摇滚(上)"
+      },
+      "lineAttempts": [
+        {
+          "detail": "首帧已渲染，进度推进 3103ms",
+          "elapsedMs": 9884,
+          "episodeId": "https%3A%2F%2Fanime7.top%2F%2Fvod-play%2F8965-1-1%2F||",
+          "episodeLabel": "HD中字",
+          "episodeOrder": 0,
+          "firstFrame": true,
+          "lineId": "0",
+          "lineIndex": 0,
+          "lineLabel": "線路1",
+          "progressMs": 3103,
+          "status": "PASS",
+          "videoHeight": 1080,
+          "videoWidth": 1920
+        }
+      ],
+      "requiredClientCapabilities": []
+    },
+    {
+      "key": "kazumi.ant",
+      "label": "ant",
+      "versionName": "0.0.2",
+      "versionCode": 2,
+      "sourcePath": "extensions/kazumi-ant.js",
+      "devSourcePath": "dev-extensions/kazumi-ant.js",
+      "sourceSha256": "8d6df3755f6c448e5fc33f9fe33eb42a82fc9ad144bec24001a5939c1806117b",
+      "evidenceFile": "acceptance/evidence/2026-10-14/release-prepublish/kazumi.ant/acceptance-20261014-080826-2d4f5a40.json",
+      "evidenceSha256": "3e6cad549bdedc6784b6dcb419f1b52a6b09b2b97d0efd941ceb879cf7efca58",
+      "acceptance": "SEARCH_PLAYABLE",
+      "selection": {
+        "cartoonId": "https%3A%2F%2Fwww.mayi520.org%2F%2Fvoddetail%2F239583.html|%E5%AD%A4%E7%8B%AC%E6%91%87%E6%BB%9A%28%E4%B8%8A%29+%E5%89%A7%E5%9C%BA%E6%80%BB%E9%9B%86%E7%AF%87|https%3A%2F%2Fcdn.aqdstatic.com%3A966%2Fposeidon%2Fupload%2Fvod%2F2025-04%2F174485772472985586.jpg",
+        "homePageLabel": null,
+        "keyword": "孤独摇滚",
+        "resultIndex": 0,
+        "route": "SEARCH_RESULT",
+        "title": "孤独摇滚(上) 剧场总集篇"
+      },
+      "lineAttempts": [
+        {
+          "detail": "首帧已渲染，进度推进 3018ms",
+          "elapsedMs": 9413,
+          "episodeId": "https%3A%2F%2Fwww.mayi520.org%2F%2Fvodplay%2F239583-1-1.html||",
+          "episodeLabel": "正片",
+          "episodeOrder": 0,
+          "firstFrame": true,
+          "lineId": "0",
+          "lineIndex": 0,
+          "lineLabel": "播放线路1",
+          "progressMs": 3018,
+          "status": "PASS",
+          "videoHeight": 1080,
+          "videoWidth": 1920
+        }
+      ],
+      "requiredClientCapabilities": []
+    },
+    {
+      "key": "kazumi.baimao",
+      "label": "baimao",
+      "versionName": "1.0",
+      "versionCode": 10000,
+      "sourcePath": "extensions/kazumi-baimao.js",
+      "devSourcePath": "dev-extensions/kazumi-baimao.js",
+      "sourceSha256": "d07b1e2ddec213a138041232b293865cdf85e7b12f4e5a1cd54ffb330ce5fa2a",
+      "evidenceFile": "acceptance/evidence/2026-10-14/release-prepublish/kazumi.baimao/acceptance-20261014-080848-ff517ca7.json",
+      "evidenceSha256": "5ca6ad4fc82a35e7dfc761fe196feab1b7f2f598ff9a5edd5fb82d9511e50bc1",
+      "acceptance": "SEARCH_PLAYABLE",
+      "selection": {
+        "cartoonId": "https%3A%2F%2Fwww.baimaodm.com%2F%2Fshow%2F328609.html|%E5%AD%A4%E7%8B%AC%E6%91%87%E6%BB%9A%EF%BC%81|https%3A%2F%2Fimg.bmmdmm.com%2Fpic%2F978afd69e3bd4060bda5c181279f654e.webp",
+        "homePageLabel": null,
+        "keyword": "孤独摇滚",
+        "resultIndex": 0,
+        "route": "SEARCH_RESULT",
+        "title": "孤独摇滚！"
+      },
+      "lineAttempts": [
+        {
+          "detail": "首帧已渲染，进度推进 3065ms",
+          "elapsedMs": 12248,
+          "episodeId": "https%3A%2F%2Fwww.baimaodm.com%2F%2Fplay%2F328609-0-0.html||",
+          "episodeLabel": "第1集",
+          "episodeOrder": 0,
+          "firstFrame": true,
+          "lineId": "0",
+          "lineIndex": 0,
+          "lineLabel": "播放Ⅰ",
+          "progressMs": 3065,
+          "status": "PASS",
+          "videoHeight": 720,
+          "videoWidth": 1280
+        }
+      ],
+      "requiredClientCapabilities": []
+    },
+    {
+      "key": "kazumi.lmm",
+      "label": "LMM",
+      "versionName": "2.2",
+      "versionCode": 20200,
+      "sourcePath": "extensions/kazumi-lmm.js",
+      "devSourcePath": "dev-extensions/kazumi-lmm.js",
+      "sourceSha256": "1b6448b326b8198b9c8c628afc5a01293a3787090e1ddbca05019723ef6af888",
+      "evidenceFile": "acceptance/evidence/2026-10-14/new-sites/lmm-final-device/acceptance-20261014-102731-d09cb404.json",
+      "evidenceSha256": "ede9f1bd125d24686a498ce27144a1f29d535982c22e0ae432190cba5a9cc85e",
+      "acceptance": "SEARCH_PLAYABLE",
+      "selection": {
+        "cartoonId": "lmm-v2:5304",
+        "homePageLabel": null,
+        "keyword": "孤独摇滚",
+        "resultIndex": 0,
+        "route": "SEARCH_RESULT",
+        "title": "孤独摇滚！"
+      },
+      "lineAttempts": [
+        {
+          "detail": "首帧已渲染，进度推进 3188ms",
+          "elapsedMs": 4867,
+          "episodeId": "lmm-v2:5304:1:1",
+          "episodeLabel": "第01集",
+          "episodeOrder": 0,
+          "firstFrame": true,
+          "lineId": "lmm-v2:1",
+          "lineIndex": 0,
+          "lineLabel": "dp云播",
+          "progressMs": 3188,
+          "status": "PASS",
+          "videoHeight": 1080,
+          "videoWidth": 1920
+        }
+      ],
+      "requiredClientCapabilities": [
+        "manual-verification-webproxy-wrapper"
+      ]
+    },
+    {
+      "key": "kazumi.mifun",
+      "label": "MiFun",
+      "versionName": "1.1",
+      "versionCode": 10100,
+      "sourcePath": "extensions/kazumi-mifun.js",
+      "devSourcePath": "dev-extensions/kazumi-mifun.js",
+      "sourceSha256": "8048135c15412389421290bf8f242f51f39a655246b12874a1c13e29aaef2253",
+      "evidenceFile": "acceptance/evidence/2026-10-14/new-sites/final-sdk-device/kazumi.mifun/acceptance-20261014-102635-3e2f5d5e.json",
+      "evidenceSha256": "dd84c5367dad0ef12bb837f2497c18be268e3a4acf0b1cfb72420e2bfae33596",
+      "acceptance": "SEARCH_PLAYABLE",
+      "selection": {
+        "cartoonId": "14163",
+        "homePageLabel": null,
+        "keyword": "孤独摇滚",
+        "resultIndex": 0,
+        "route": "SEARCH_RESULT",
+        "title": "孤独摇滚！"
+      },
+      "lineAttempts": [
+        {
+          "detail": "首帧已渲染，进度推进 3096ms",
+          "elapsedMs": 7946,
+          "episodeId": "14163-1-1",
+          "episodeLabel": "第01集",
+          "episodeOrder": 0,
+          "firstFrame": true,
+          "lineId": "1",
+          "lineIndex": 0,
+          "lineLabel": "特快云",
+          "progressMs": 3096,
+          "status": "PASS",
+          "videoHeight": 1080,
+          "videoWidth": 1920
+        }
+      ],
+      "requiredClientCapabilities": []
+    },
+    {
+      "key": "kazumi.mxdm",
+      "label": "MXdm",
+      "versionName": "2.3",
+      "versionCode": 20300,
+      "sourcePath": "extensions/kazumi-mxdm.js",
+      "devSourcePath": "dev-extensions/kazumi-mxdm.js",
+      "sourceSha256": "c7c5d41a575160e66dbb2805184f064c6c3b469f9a3e81e8f8c97adb665d29b6",
+      "evidenceFile": "acceptance/evidence/2026-10-14/release-prepublish/kazumi.mxdm/acceptance-20261014-080931-0b69e7a7.json",
+      "evidenceSha256": "07f897c45983da7054946fc45b742aa62573fd8a1edb07005991b078050387c0",
+      "acceptance": "SEARCH_PLAYABLE",
+      "selection": {
+        "cartoonId": "https%3A%2F%2Fwww.dcc3.com%2F%2Fdetail%2F17065%2F|%E5%AD%A4%E7%8B%AC%E6%91%87%E6%BB%9A%28%E4%B8%8A%29|https%3A%2F%2Fimg.lzipic.com%2Fupload%2Fvod%2F20250428-1%2F57da14cb56c154e0286242780a394f9f.jpg",
+        "homePageLabel": null,
+        "keyword": "孤独摇滚",
+        "resultIndex": 0,
+        "route": "SEARCH_RESULT",
+        "title": "孤独摇滚(上)"
+      },
+      "lineAttempts": [
+        {
+          "detail": "首帧已渲染，进度推进 3100ms",
+          "elapsedMs": 6698,
+          "episodeId": "https%3A%2F%2Fwww.dcc3.com%2F%2Fplay%2F17065-1-1%2F||",
+          "episodeLabel": "HD中字",
+          "episodeOrder": 0,
+          "firstFrame": true,
+          "lineId": "0",
+          "lineIndex": 0,
+          "lineLabel": "量子",
+          "progressMs": 3100,
+          "status": "PASS",
+          "videoHeight": 606,
+          "videoWidth": 1080
+        }
+      ],
+      "requiredClientCapabilities": []
+    },
+    {
+      "key": "kazumi.sorani",
+      "label": "sorani",
+      "versionName": "1.0",
+      "versionCode": 10000,
+      "sourcePath": "extensions/kazumi-sorani.js",
+      "devSourcePath": "dev-extensions/kazumi-sorani.js",
+      "sourceSha256": "a64f3e4c37dbb6540d0938bf46de85003084e4fb808bd9a82b3fa0af2bead914",
+      "evidenceFile": "acceptance/evidence/2026-10-14/release-prepublish/kazumi.sorani/acceptance-20261014-080945-0e494635.json",
+      "evidenceSha256": "d7660e7dd1b8e0be30c715d64c646d0e5445cbd12401761d4c010fca5fc662d5",
+      "acceptance": "SEARCH_PLAYABLE",
+      "selection": {
+        "cartoonId": "1641|%E5%89%A7%E5%9C%BA%E6%80%BB%E9%9B%86%E7%AF%87%E5%AD%A4%E7%8B%AC%E6%91%87%E6%BB%9A%EF%BC%81+Re%3A|https%3A%2F%2Fimg.sorani.net%2Fmedia-thumbs%2Fw480%2Fbangumi-video-cover%2F2026%2F05%2F628eb6f184b02c178bce13f4683b32522529d7d51f91c7fcc0a8edc49d923875.webp",
+        "homePageLabel": null,
+        "keyword": "孤独摇滚",
+        "resultIndex": 0,
+        "route": "SEARCH_RESULT",
+        "title": "剧场总集篇孤独摇滚！ Re:"
+      },
+      "lineAttempts": [
+        {
+          "detail": "首帧已渲染，进度推进 3176ms",
+          "elapsedMs": 14583,
+          "episodeId": "https%3A%2F%2Fwww.sorani.net%2Fanime%2Fmal%2F1641%2Fepisode%2F1.0||",
+          "episodeLabel": "1080P",
+          "episodeOrder": 0,
+          "firstFrame": true,
+          "lineId": "0",
+          "lineIndex": 0,
+          "lineLabel": "播放线路1",
+          "progressMs": 3176,
+          "status": "PASS",
+          "videoHeight": 1080,
+          "videoWidth": 1920
+        }
+      ],
+      "requiredClientCapabilities": []
+    }
+  ],
+  "clientCompatibility": {
+    "requiredFeature": "manual-verification-webproxy-wrapper",
+    "sources": [
+      "heyanle.ggl",
+      "kazumi.lmm"
+    ],
+    "testedClient": "Dedicated .sourcelab build with verification bridge fix",
+    "olderPublishedClient": "not verified",
+    "note": "User request follows the explicit client compatibility limitation in the preceding response. No unsupported app version number is invented; capability is documented rather than claimed verified on older clients."
+  },
+  "deviceMetadataNote": "Early reports use the wireless ADB endpoint as serial; original JSON retained. Verified physical-device mapping is in acceptance/evidence/2026-10-14/new-sites/wireless-device.json. New final reports record physical serial correctly.",
+  "baselineUpdated": false,
+  "deployment": null,
+  "validation": {
+    "repositoryUnitTests": 51,
+    "releaseGateSources": 12,
+    "releasePreviewSources": 12,
+    "previewDirectory": "/private/tmp/release-promotion-20261014/repository/v2",
+    "indexSha256": "469418bcb284a69339b2d93b731ea70db47d03536e67cfb2b203547878204da9",
+    "sourceBytesMatchDevAndEvidence": true,
+    "devIndexSources": 82,
+    "devIndexUnchanged": true
+  }
+}

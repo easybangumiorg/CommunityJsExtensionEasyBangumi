@@ -1,6 +1,6 @@
 # 2026-10-14 新源实现与验收
 
-本批在 `feat/new-site-adapters` 开发，基于既有环境准备分支 `feat/channel-dev` 的 `696188e`。既有 release/dev 的合并发布由用户暂缓，本记录不表示线上仓库已经更新。新增与改版均先进入 dev；本批不新增任何 release 审批，不修改正式客户端内置源。
+本批在 `feat/new-site-adapters` 开发，基于既有环境准备分支 `feat/channel-dev` 的 `696188e`。新增与改版先进入 dev；随后用户要求已通过源一起纳入 release，GGL Beta、MiFun、路漫漫已随既有通过项晋级，见[补充记录](release-promotion-2026-10-14.md)。main 尚未合并，本记录不表示线上已经更新；正式 Android 客户端内置源未改动。
 
 ## 已实现的五项
 
@@ -56,4 +56,4 @@ Omoo 计划独立 key `heyanle.omootv`，不改旧 `jisoft.omofun` / `kazumi.omo
 
 离线检查使用 [统一入口](../tools/source-tests/README.md)：GGL Beta 208 断言、MiFun 182 断言、MiliMili 185 断言、次元城 67 用例及 Rhino 验证、路漫漫 42 用例，共 684 项解析与运行时检查。路漫漫已覆盖实际首页、固定搜索、两线各 12 集及首集，未把未取证的多页搜索行为声称为实测通过。仓库通道/门禁 51 项单测通过。本批 2 个新 key、3 个现有 key 更新，dev 候选由 84 增至 86，API15 收录由 80 增至 82，旧 API 4 项继续排除。
 
-源文件先单独提交，再以该完整提交 SHA 生成 `channel/dev/index.jsonl`，校验索引元数据、当前字节与 raw 字节一致。索引随 PR 合入，CI 只读验证；受保护的 main 不由脚本直接推送。用户暂缓的既有发布分支保持原状，新源仍待用户后续处理 PR 后才进入官方 dev。release 晋级另走既有证据、最终 hash、兼容客户端和维护者复核门禁。
+源文件先单独提交，再以该完整提交 SHA 生成 `channel/dev/index.jsonl`，校验索引元数据、当前字节与 raw 字节一致。索引随 PR 合入，CI 只读验证；受保护的 main 不由脚本直接推送。用户暂缓的既有发布分支保持原状，当前 12 条 release 和 82 条 dev 待用户后续处理同一需求分支 PR 后进入官方入口。release 晋级另走既有证据、最终 hash、兼容客户端和维护者复核门禁。
