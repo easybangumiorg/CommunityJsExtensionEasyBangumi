@@ -1,0 +1,26 @@
+{
+  "connectedAt": "2026-10-14T07:48:21.695435+00:00",
+  "transport": "wireless-debugging",
+  "adbTarget": "10.135.231.77:41645",
+  "device": {
+    "manufacturer": "Xiaomi",
+    "model": "23127PN0CC",
+    "marketName": "Xiaomi 14",
+    "serial": "6a022def",
+    "androidVersion": "16",
+    "apiLevel": "36"
+  },
+  "dedicatedPackages": [
+    "package:com.heyanle.easybangumi4.sourcelab",
+    "package:com.heyanle.easybangumi4.sourcelab.test"
+  ],
+  "reconnections": [
+    {
+      "connectedAt": "2026-10-14T10:13:40.787310+00:00",
+      "adbTarget": "10.135.231.77:45693",
+      "verifiedPhysicalSerial": "6a022def",
+      "screenState": "Awake; keyguard showing=false",
+      "discoveredService": "adb-6a022def-9T1hRV _adb-tls-connect._tcp"
+    }
+  ]
+}

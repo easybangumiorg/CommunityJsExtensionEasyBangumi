@@ -1,0 +1,151 @@
+{
+  "code": 1,
+  "msg": "获取成功",
+  "info": {
+    "offset": 0,
+    "limit": 20,
+    "total": 77,
+    "rows": [
+      {
+        "vod_id": 27158,
+        "vod_name": "我们都是超能力者！电影版",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260816-1/9d3044e70b63aded49729b580c306d19.webp",
+        "vod_remarks": "",
+        "vod_year": "2015"
+      },
+      {
+        "vod_id": 27157,
+        "vod_name": "我们都是超能者",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260816-1/c31cb4de7967bb53f4412296c298fe7d.webp",
+        "vod_remarks": "",
+        "vod_year": "2013"
+      },
+      {
+        "vod_id": 27156,
+        "vod_name": "怪奇物语 第五季",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260816-1/7f4c04d20ecccf8df1dfdd4f395b71de.webp",
+        "vod_remarks": "",
+        "vod_year": "2025"
+      },
+      {
+        "vod_id": 27155,
+        "vod_name": "怪奇物语 第四季",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260816-1/d5bd9bc4f1685ee088ee347e862f12b6.webp",
+        "vod_remarks": "",
+        "vod_year": "2022"
+      },
+      {
+        "vod_id": 27154,
+        "vod_name": "怪奇物语 第三季",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260816-1/93855c11fe2c7c85bbfbd4ebc03115fc.webp",
+        "vod_remarks": "",
+        "vod_year": "2019"
+      },
+      {
+        "vod_id": 27153,
+        "vod_name": "怪奇物语 第二季",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260816-1/ac000da2991ae0119b2e0296050b7928.webp",
+        "vod_remarks": "",
+        "vod_year": "2017"
+      },
+      {
+        "vod_id": 27152,
+        "vod_name": "怪奇物语 第一季",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260816-1/8837fe6ff3e53894d9278896eac7176a.webp",
+        "vod_remarks": "",
+        "vod_year": "2016"
+      },
+      {
+        "vod_id": 27150,
+        "vod_name": "辉夜大小姐想让我告白：天才们的恋爱头脑战 完结篇",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260809-1/69481f63df238e98be916e1ea7637cc4.webp",
+        "vod_remarks": "支持杜比视界 建议佩戴耳机",
+        "vod_year": "2021"
+      },
+      {
+        "vod_id": 27149,
+        "vod_name": "辉夜大小姐想让我告白：天才们的恋爱头脑战",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260809-1/f2c35ae0551bd5fb43263392e530afbd.webp",
+        "vod_remarks": "支持杜比视界 建议佩戴耳机",
+        "vod_year": "2019"
+      },
+      {
+        "vod_id": 27073,
+        "vod_name": "更衣人偶坠入爱河 真人版",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260617-1/6d20ef7bb53c1d59716553d5843b5638.webp",
+        "vod_remarks": "",
+        "vod_year": "2024"
+      },
+      {
+        "vod_id": 27060,
+        "vod_name": "远古入侵：新世界",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260505-1/fba8d6b94bc292c30f5937bdf0d65b1b.webp",
+        "vod_remarks": "",
+        "vod_year": "2012"
+      },
+      {
+        "vod_id": 27059,
+        "vod_name": "远古入侵 第五季",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260505-1/1e7be6cd53823670466ddbe0ad64ce4f.webp",
+        "vod_remarks": "",
+        "vod_year": "2011"
+      },
+      {
+        "vod_id": 27058,
+        "vod_name": "远古入侵 第四季",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260505-1/c47841135ee220fb20a91671e3dc243a.webp",
+        "vod_remarks": "",
+        "vod_year": "2011"
+      },
+      {
+        "vod_id": 27057,
+        "vod_name": "远古入侵 第三季",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260505-1/9b47acb71b40f83f753b278dac3dfd01.webp",
+        "vod_remarks": "",
+        "vod_year": "2009"
+      },
+      {
+        "vod_id": 27056,
+        "vod_name": "远古入侵 第二季",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260505-1/c14e728059f5ffb163764ab5d5afd10d.webp",
+        "vod_remarks": "",
+        "vod_year": "2008"
+      },
+      {
+        "vod_id": 27055,
+        "vod_name": "远古入侵 第一季",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260505-1/7c849cef4a50ba7a718991007b2fc94a.webp",
+        "vod_remarks": "",
+        "vod_year": "2007"
+      },
+      {
+        "vod_id": 26979,
+        "vod_name": "恐龙时代：你不知道的故事",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260402-1/ff67569ce6c5107ba3ca8f767f224202.webp",
+        "vod_remarks": "",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 26930,
+        "vod_name": "如龙 Powered by 日本统一",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260309-1/9aeb86d3e07bdec71af1560a1410bd31.webp",
+        "vod_remarks": "",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 26917,
+        "vod_name": "异世界居酒屋阿信 第三季～皇帝与欧利亚的公主篇～",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260201-1/99bb39a7ad563c0a7f7dcd582390aaa0.webp",
+        "vod_remarks": "",
+        "vod_year": "2023"
+      },
+      {
+        "vod_id": 26916,
+        "vod_name": "异世界居酒屋阿信 第二季～魔女与大主教篇～",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260201-1/656584beb9ab72f4799c6192a16e04a2.webp",
+        "vod_remarks": "",
+        "vod_year": "2022"
+      }
+    ]
+  }
+}

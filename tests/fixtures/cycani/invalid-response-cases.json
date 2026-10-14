@@ -1,0 +1,94 @@
+{
+  "synthetic": true,
+  "description": "Malformed successful search responses must fail rather than become empty results.",
+  "cases": [
+    {
+      "name": "empty body",
+      "raw": ""
+    },
+    {
+      "name": "bare empty envelope",
+      "raw": "{}"
+    },
+    {
+      "name": "null envelope",
+      "raw": "null"
+    },
+    {
+      "name": "empty envelope array",
+      "raw": "[]"
+    },
+    {
+      "name": "success envelope without data",
+      "raw": "{\"code\":0,\"msg\":\"\"}"
+    },
+    {
+      "name": "null success code",
+      "raw": "{\"code\":null,\"data\":{\"list\":[],\"pager\":{\"page\":1,\"page_size\":24,\"total\":0}}}"
+    },
+    {
+      "name": "string success code",
+      "raw": "{\"code\":\"0\",\"data\":{\"list\":[],\"pager\":{\"page\":1,\"page_size\":24,\"total\":0}}}"
+    },
+    {
+      "name": "null data",
+      "raw": "{\"code\":0,\"msg\":\"\",\"data\":null}"
+    },
+    {
+      "name": "empty data object",
+      "raw": "{\"code\":0,\"msg\":\"\",\"data\":{}}"
+    },
+    {
+      "name": "untyped data array",
+      "raw": "{\"code\":0,\"msg\":\"\",\"data\":[]}"
+    },
+    {
+      "name": "null list",
+      "raw": "{\"code\":0,\"msg\":\"\",\"data\":{\"list\":null,\"pager\":{\"page\":1,\"page_size\":24,\"total\":0}}}"
+    },
+    {
+      "name": "object list",
+      "raw": "{\"code\":0,\"msg\":\"\",\"data\":{\"list\":{},\"pager\":{\"page\":1,\"page_size\":24,\"total\":0}}}"
+    },
+    {
+      "name": "missing pager",
+      "raw": "{\"code\":0,\"msg\":\"\",\"data\":{\"list\":[]}}"
+    },
+    {
+      "name": "empty pager",
+      "raw": "{\"code\":0,\"msg\":\"\",\"data\":{\"list\":[],\"pager\":{}}}"
+    },
+    {
+      "name": "string total",
+      "raw": "{\"code\":0,\"msg\":\"\",\"data\":{\"list\":[],\"pager\":{\"page\":1,\"page_size\":24,\"total\":\"0\"}}}"
+    },
+    {
+      "name": "zero page",
+      "raw": "{\"code\":0,\"msg\":\"\",\"data\":{\"list\":[],\"pager\":{\"page\":0,\"page_size\":24,\"total\":0}}}"
+    },
+    {
+      "name": "zero page size",
+      "raw": "{\"code\":0,\"msg\":\"\",\"data\":{\"list\":[],\"pager\":{\"page\":1,\"page_size\":0,\"total\":0}}}"
+    },
+    {
+      "name": "negative total",
+      "raw": "{\"code\":0,\"msg\":\"\",\"data\":{\"list\":[],\"pager\":{\"page\":1,\"page_size\":24,\"total\":-1}}}"
+    },
+    {
+      "name": "fractional total",
+      "raw": "{\"code\":0,\"msg\":\"\",\"data\":{\"list\":[],\"pager\":{\"page\":1,\"page_size\":24,\"total\":0.5}}}"
+    },
+    {
+      "name": "missing video fields",
+      "raw": "{\"code\":0,\"msg\":\"\",\"data\":{\"list\":[{}],\"pager\":{\"page\":1,\"page_size\":24,\"total\":1}}}"
+    },
+    {
+      "name": "empty page despite positive total",
+      "raw": "{\"code\":0,\"msg\":\"\",\"data\":{\"list\":[],\"pager\":{\"page\":1,\"page_size\":24,\"total\":1}}}"
+    },
+    {
+      "name": "boolean video ID",
+      "raw": "{\"code\":0,\"msg\":\"\",\"data\":{\"list\":[{\"video_id\":true,\"title\":\"synthetic invalid ID\"}],\"pager\":{\"page\":1,\"page_size\":24,\"total\":1}}}"
+    }
+  ]
+}

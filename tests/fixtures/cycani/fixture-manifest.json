@@ -1,0 +1,143 @@
+{
+  "site": "https://www.cycani.org",
+  "collected_at": "2026-10-14T09:03:10.771302+00:00",
+  "source_key": "kazumi.ciyuancheng",
+  "version_name": "2.1",
+  "version_code": 20100,
+  "public_unauthenticated_only": true,
+  "authentication_result": {
+    "api_code": 401,
+    "section_id": 51496,
+    "first_home_video_id": 3870,
+    "login_playback_verified": false
+  },
+  "fixtures": [
+    {
+      "file": "recommend.json",
+      "path": "/api/index/recommend",
+      "api_code": 0,
+      "sha256": "4a9aff34a512677ea879e804a69778a9da1c733cca936f2a401aa8d56b76ca7f",
+      "sanitized": true
+    },
+    {
+      "file": "zones.json",
+      "path": "/api/video-zones",
+      "api_code": 0,
+      "sha256": "b2ac12fd18cc58c2d2f106ef490f807f6749f2910d4487a7bddf8cf9e94c7269",
+      "sanitized": true
+    },
+    {
+      "file": "search.json",
+      "path": "/api/videos/search?q=孤独摇滚&page=1&page_size=24",
+      "api_code": 0,
+      "sha256": "de4b9110ee5201ec7d6e7e221f99a7a73630f8aff6025c7d4451e4b50ea22752",
+      "sanitized": true
+    },
+    {
+      "file": "weekday.json",
+      "path": "/api/index/weekday",
+      "api_code": 0,
+      "sha256": "d8d30122f536ca39950fad4feef2509c817b02e48e1d45e6d6e72e7a7998f689",
+      "sanitized": true
+    },
+    {
+      "file": "category-1.json",
+      "path": "/api/videos?page=1&page_size=24&zone_id=1&order_by=update_time",
+      "api_code": 0,
+      "sha256": "07ffe4e61f0fb682221ebd423d0f8806455ad9a7ccf31254a578e0d4e3241946",
+      "sanitized": true
+    },
+    {
+      "file": "play-unauthenticated.json",
+      "path": "/api/v2/sections/51496/play-url",
+      "api_code": 401,
+      "sha256": "1abb7b9057db0db10a81f9fe244abfe8e0801c5e2c2e8fda2e9ad97369e4e80e",
+      "sanitized": true
+    },
+    {
+      "file": "sections-3870-size2-page1.json",
+      "path": "/api/videos/3870/sections?player_code=cychub&page=1&page_size=2",
+      "api_code": 0,
+      "sha256": "7620f225f846e127da2c465475b002f673abd555b0e850b41668410af1bc3c37",
+      "sanitized": true
+    },
+    {
+      "file": "sections-3870-size2-page2.json",
+      "path": "/api/videos/3870/sections?player_code=cychub&page=2&page_size=2",
+      "api_code": 0,
+      "sha256": "98b6116cc990d832801220fd56599d064166e65f735fbbc3156d8edb1f3a2f4c",
+      "sanitized": true
+    },
+    {
+      "file": "detail-3870.json",
+      "path": "/api/videos/3870",
+      "api_code": 0,
+      "sha256": "b9715b617160e55b86e14a91d5a7d746c9cc41e3b935c8af1eb7adccfce09520",
+      "sanitized": true
+    },
+    {
+      "file": "sections-3870-0.json",
+      "path": "/api/videos/3870/sections?player_code=cychub&page=1&page_size=100",
+      "api_code": 0,
+      "sha256": "df75c7e88fd66674c1d98d8608b966de3f40cbce77fe3d4ec384adfc974713f3",
+      "sanitized": true
+    },
+    {
+      "file": "detail-3488.json",
+      "path": "/api/videos/3488",
+      "api_code": 0,
+      "sha256": "17d3e4212bb905902dd2c30aa2f4975225a21bf4d3c1c9876b546e83c7c758f3",
+      "sanitized": true
+    },
+    {
+      "file": "sections-3488-0.json",
+      "path": "/api/videos/3488/sections?player_code=cychub&page=1&page_size=100",
+      "api_code": 0,
+      "sha256": "5f606b4eea764dccc1eace8c2c73b21fdf0bfb6fa1b64cb0142fc1cf245e6e51",
+      "sanitized": true
+    },
+    {
+      "file": "detail-2109.json",
+      "path": "/api/videos/2109",
+      "api_code": 0,
+      "sha256": "f000cdf9a299bf0dadcf43726486b7bc8c9fe488b3c55718fef3ae95d78cf6e4",
+      "sanitized": true
+    },
+    {
+      "file": "sections-2109-0.json",
+      "path": "/api/videos/2109/sections?player_code=cychub&page=1&page_size=100",
+      "api_code": 0,
+      "sha256": "7406ceab7041f4a00a4019cce26566228075a2d9eb13fad265153a6879ffde68",
+      "sanitized": true
+    },
+    {
+      "file": "invalid-response-cases.json",
+      "path": "synthetic malformed HTTP 200 search responses",
+      "api_code": null,
+      "sha256": "45a004f4c262b33f9526552b78a27cf4001c60279d3e92da773bf1c163128ee8",
+      "sanitized": true,
+      "synthetic": true
+    }
+  ],
+  "synthetic_cases": [
+    "Host normalisation and invalid schemes",
+    "Search and section pagination metadata",
+    "Section stable order and empty lines",
+    "Ambiguous exact-title legacy migration",
+    "Browser callback route and source matching",
+    "Reserved example-domain media URLs in RAM-only mocks"
+  ],
+  "fixture_policy": {
+    "descriptions": "replaced recursively with short synthetic text",
+    "file_url": "removed recursively",
+    "signed_media": "no actual media URLs retained",
+    "names_ids_pager_order": "retained for adapter contract tests"
+  },
+  "adapter_sha256": "a7b70b227034b7ee5d2a3fff403ac500cc1159e2b6d1cf3c22f2938d287a06c5",
+  "verification": {
+    "fixture_tests": 67,
+    "rhino_version": "1.7.15",
+    "java_uri_host_tests": "passed",
+    "scope": "source changes only in temporary delivery directory; no new phone or live playback claim"
+  }
+}

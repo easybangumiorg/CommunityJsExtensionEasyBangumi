@@ -1,0 +1,17 @@
+{
+  "code": 1,
+  "msg": "获取成功",
+  "info": {
+    "vod_id": 26538,
+    "vod_name": "孤独摇滚总集篇",
+    "vod_pic": "upload/vod/20250417-1/bab60d9e2670110e4c00186618755d9a.webp",
+    "vod_pic_thumb": "upload/vod/20250417-1/bab60d9e2670110e4c00186618755d9a.webp",
+    "vod_remarks": "",
+    "vod_year": "2024",
+    "vod_class": "音乐,运动,热血",
+    "vod_isend": 0,
+    "vod_content": "<p>合成简介，仅用于验证 HTML 清理。</p>",
+    "vod_play_from": "chs",
+    "vod_play_url": "前篇$https://media.invalid/ggl-beta/26538/0/0.m3u8#后篇$https://media.invalid/ggl-beta/26538/0/1.m3u8"
+  }
+}

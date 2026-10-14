@@ -1,0 +1,151 @@
+{
+  "code": 1,
+  "msg": "获取成功",
+  "info": {
+    "offset": 0,
+    "limit": 20,
+    "total": 3148,
+    "rows": [
+      {
+        "vod_id": 27170,
+        "vod_name": "黑暗机器",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260928-1/a71d4f88f85ef35eeb8a764f6771c244.webp",
+        "vod_remarks": "更新至01集 / 23點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27230,
+        "vod_name": "弹珠汽水瓶里的千岁同学 Part 2",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20261003-1/021e9edc34d6d611081373861bc39466.webp",
+        "vod_remarks": "更新至13.5集 / 23點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27169,
+        "vod_name": "被流放的开挂魔术师讴歌随心所欲第二人生",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260928-1/81bb62a4e06b6c4cac57dea42b9f815c.webp",
+        "vod_remarks": "更新至02集 / 00點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27196,
+        "vod_name": "幻想水浒传",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260930-1/ef7d24724894acf411217277eaa591e1.webp",
+        "vod_remarks": "更新至02集 / 20:00",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27229,
+        "vod_name": "超巡！超条前辈",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20261003-1/50102f3fd0cde2ee1d9693ade44b80cb.webp",
+        "vod_remarks": "更新至02集 / 23點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27231,
+        "vod_name": "战斗之魂［Re］绝界之空",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20261006-1/45cfb7a1edf3cee5f1ef0337199af5e2.webp",
+        "vod_remarks": "更新至02集 / 23點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27228,
+        "vod_name": "冷淡的佐藤同学只对我撒娇",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20261003-1/d07dea2e273a7af5ac34b88584b3cd5f.webp",
+        "vod_remarks": "更新至02集 / 22點00分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27227,
+        "vod_name": "乱世千金倪亚‧利斯顿转生为娇弱千金的弑神武人华丽无双录",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20261003-1/f0251a0ad9e2939d477dbdf8e191cbe6.webp",
+        "vod_remarks": "更新至02集 / 21點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27224,
+        "vod_name": "罗梅莉亚战记",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20261003-1/a2fb0294294242d74157cde2aab8c097.webp",
+        "vod_remarks": "更新至02集 / 23點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27225,
+        "vod_name": "魔法少女育成计划restart",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20261003-1/48f0c23a65ded46e47c1f2c492e7247c.webp",
+        "vod_remarks": "更新至02集 / 02點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27214,
+        "vod_name": "战车椅子",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20261001-1/4867eca23972cafc60f04edc22b94ec4.webp",
+        "vod_remarks": "更新至02集 / 00點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27223,
+        "vod_name": "PSYREN 决战游戏",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20261003-1/26caecaf8ee547dd17b0e1b588ed3db9.webp",
+        "vod_remarks": "更新至02集 / 23點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27235,
+        "vod_name": "七龙珠超：比鲁斯",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20261012-1/00a8e4738180dc7d293cf331d1048e6f.webp",
+        "vod_remarks": "更新至01集 / 23點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27222,
+        "vod_name": "转生成哥布林有问题吗？",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20261003-1/f5cffdbaf583e794507b77767f2d07b4.webp",
+        "vod_remarks": "更新至03集 / 22點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 26922,
+        "vod_name": "名侦探光之美少女！",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260209-1/91c0c18641a737d1b10fc532fc278154.jpg",
+        "vod_remarks": "更新至37集 / 23點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27233,
+        "vod_name": "黑暗召唤师在地下恋爱中",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20261008-1/a02afa6eec2e60e98cbb8598b67a5981.webp",
+        "vod_remarks": "更新至02集 / 23點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27221,
+        "vod_name": "你好、我是受心上人所托来做恋爱药的魔女。",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20261003-1/fffff42b694e838bfd034ec23b4cfd58.webp",
+        "vod_remarks": "更新至02集 / 22點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27218,
+        "vod_name": "杀手旅店 第2期",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20261001-1/ce78f1402069872cb0bfe40f6b2cb193.webp",
+        "vod_remarks": "更新至02集 / 00點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27220,
+        "vod_name": "来自远方",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20261003-1/e78e1b35ebd8eb8d798c59bd9e075557.webp",
+        "vod_remarks": "更新至02集 / 00點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27193,
+        "vod_name": "东京复仇者 三天战争篇",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260930-1/cf837b8fa4071eda9316a67e618b8a2d.webp",
+        "vod_remarks": "更新至02集 / 23點30分",
+        "vod_year": "2026"
+      }
+    ]
+  }
+}
