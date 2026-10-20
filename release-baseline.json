@@ -1,13 +1,8 @@
 {
   "schemaVersion": 1,
   "repositoryIndexUrl": "https://easybangumi.org/repository/v2/index.jsonl",
-  "observedOn": "2026-10-09",
+  "observedOn": "2026-10-20",
   "sources": [
-    {
-      "key": "ayala.jellyfin",
-      "versionCode": 8,
-      "sourceSha256": "b6ebb3ef391be8285601508dc716519ccab0218aa80eac5ee71d4ee18a334c6a"
-    },
     {
       "key": "heyanle.age",
       "versionCode": 1,
@@ -19,14 +14,9 @@
       "sourceSha256": "496af7c3a5a6d3fdb5a32c36e2f998a418130c3a6f4d3c161e854c31ef49c5bd"
     },
     {
-      "key": "heyanle.xifan",
-      "versionCode": 2,
-      "sourceSha256": "3cc8c71415a67eacfc750f6cb7c1495b8c1ac3d9e97bc6c78d387f65987a35ce"
-    },
-    {
-      "key": "heyanle.yhw",
+      "key": "heyanle.ggl.beta",
       "versionCode": 1,
-      "sourceSha256": "7fb6c88d294ed40cdd984f741f3ed8bd13ca67c7a428d9ac6471212e2e9b0885"
+      "sourceSha256": "f7734b546d88b18161863bf2045d2f359120564a437133aeb5846158c4972748"
     },
     {
       "key": "kazumi.7sefun",
@@ -54,9 +44,14 @@
       "sourceSha256": "d07b1e2ddec213a138041232b293865cdf85e7b12f4e5a1cd54ffb330ce5fa2a"
     },
     {
-      "key": "kazumi.gpjda",
-      "versionCode": 10000,
-      "sourceSha256": "d7c25a43df78ce859d8f4ccdd2fe7f9b484684dd5d1f990b129df316d13cf9c7"
+      "key": "kazumi.lmm",
+      "versionCode": 20200,
+      "sourceSha256": "1b6448b326b8198b9c8c628afc5a01293a3787090e1ddbca05019723ef6af888"
+    },
+    {
+      "key": "kazumi.mifun",
+      "versionCode": 10100,
+      "sourceSha256": "8048135c15412389421290bf8f242f51f39a655246b12874a1c13e29aaef2253"
     },
     {
       "key": "kazumi.mxdm",
@@ -64,27 +59,27 @@
       "sourceSha256": "c7c5d41a575160e66dbb2805184f064c6c3b469f9a3e81e8f8c97adb665d29b6"
     },
     {
-      "key": "kazumi.omofun03",
-      "versionCode": 10100,
-      "sourceSha256": "ae032a31eb8b09c5c6b1d170df36a7485c9a2115f4bab0acd469ea19baa5d74e"
-    },
-    {
       "key": "kazumi.sorani",
       "versionCode": 10000,
       "sourceSha256": "a64f3e4c37dbb6540d0938bf46de85003084e4fb808bd9a82b3fa0af2bead914"
-    },
-    {
-      "key": "kazumi.tvtfun",
-      "versionCode": 10100,
-      "sourceSha256": "3aab610f1b000ce3275235252589b51b6da7e960d45d31ddb926686aa0a7719e"
-    },
-    {
-      "key": "kazumi.ylsp",
-      "versionCode": 10100,
-      "sourceSha256": "b7f41e2e0ac2fb872a4a6e5afb7e1016ceab7d5610dd20f26d87620ed8b056e6"
     }
   ],
   "legacyArtifacts": [
+    {
+      "key": "ayala.jellyfin",
+      "versionCode": 8,
+      "sourceSha256": "b6ebb3ef391be8285601508dc716519ccab0218aa80eac5ee71d4ee18a334c6a"
+    },
+    {
+      "key": "heyanle.xifan",
+      "versionCode": 2,
+      "sourceSha256": "3cc8c71415a67eacfc750f6cb7c1495b8c1ac3d9e97bc6c78d387f65987a35ce"
+    },
+    {
+      "key": "heyanle.yhw",
+      "versionCode": 1,
+      "sourceSha256": "7fb6c88d294ed40cdd984f741f3ed8bd13ca67c7a428d9ac6471212e2e9b0885"
+    },
     {
       "key": "jisoft.ale",
       "versionCode": 1,
@@ -96,6 +91,26 @@
       "versionCode": 3,
       "sourceSha256": "56fcd10b387cbad732b71af7a025c5658d6b3da88acaba2d8cd1f99afd68598a",
       "origin": "local extensions snapshot; blocked and absent from published index"
+    },
+    {
+      "key": "kazumi.gpjda",
+      "versionCode": 10000,
+      "sourceSha256": "d7c25a43df78ce859d8f4ccdd2fe7f9b484684dd5d1f990b129df316d13cf9c7"
+    },
+    {
+      "key": "kazumi.omofun03",
+      "versionCode": 10100,
+      "sourceSha256": "ae032a31eb8b09c5c6b1d170df36a7485c9a2115f4bab0acd469ea19baa5d74e"
+    },
+    {
+      "key": "kazumi.tvtfun",
+      "versionCode": 10100,
+      "sourceSha256": "3aab610f1b000ce3275235252589b51b6da7e960d45d31ddb926686aa0a7719e"
+    },
+    {
+      "key": "kazumi.ylsp",
+      "versionCode": 10100,
+      "sourceSha256": "b7f41e2e0ac2fb872a4a6e5afb7e1016ceab7d5610dd20f26d87620ed8b056e6"
     }
   ]
 }
