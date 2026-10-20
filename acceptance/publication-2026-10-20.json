@@ -66,14 +66,20 @@
       "sourceSha256": "398245c1858699dfbbe88424b9924c4d6f9c6e7210aab78e4193e922a2948be4",
       "evidenceFile": "acceptance/evidence/2026-10-20/kazumi.mxdm/acceptance-20261020-044123-2969b156.json",
       "versionName": "2.3.1"
+    },
+    {
+      "key": "kazumi.sorani",
+      "versionCode": 10000,
+      "sourceSha256": "a64f3e4c37dbb6540d0938bf46de85003084e4fb808bd9a82b3fa0af2bead914",
+      "evidenceFile": "acceptance/evidence/2026-10-14/release-prepublish/kazumi.sorani/acceptance-20261014-080945-0e494635.json",
+      "versionName": "1.0"
     }
   ],
   "removedFromPreviousRelease": [
     "heyanle.ggl",
-    "kazumi.lmm",
-    "kazumi.sorani"
+    "kazumi.lmm"
   ],
-  "reason": "GGL/LMM 10-17 仍需验证；sorani 10-20 搜索与详情超时，首页首项变为客户端下载页。不用旧 PASS 覆盖新失败。",
+  "reason": "GGL/LMM 10-17仍需验证；sorani按用户说明保留现网精确版本，不因本轮内网超时下架。",
   "unchangedSourcesEvidenceDate": "2026-10-17",
   "updatedSourcesEvidenceDate": "2026-10-20",
   "androidRelease": false,
@@ -88,5 +94,7 @@
       "packageName": "com.heyanle.easybangumi4.sourcelab.test",
       "sha256": "753064370f73addf3b19915bfb0d2c7f7c063873b5f0af145ecb68245028400f"
     }
-  ]
+  ],
+  "authorizationClarification": "用户：我现在在内网，只要之前我在家里跑过的都算跑过。",
+  "soraniEvidenceBoundary": "release沿用现网1.0/10000字节，对应10-14原件；10-17家中带Tab修改文件通过作为补充，10-20内网新版超时独立留档，dev新版不等于本次release文件。"
 }
