@@ -1,5 +1,9 @@
 # Community EasyBangumi Js Extension
 
+## 2026-10-20 当前发布准备
+
+本批准备 9 个完整通过源，7 个含首页 Tab 修正并递增版本；GGL 正式源与 LMM 因验证阻断、sorani 因最新超时退回 dev，其他受限项继续 dev。详见[精确清单与验收](docs/release-promotion-2026-10-20.md)。通过 PR 合并并核验线上字节后才视为部署完成；以下日期段落为历史记录。
+
 纯纯看番社区 JS 源仓库
 
 ## 当前发布准备（2026-10-14）

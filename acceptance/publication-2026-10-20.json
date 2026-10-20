@@ -1,0 +1,92 @@
+{
+  "date": "2026-10-20",
+  "status": "validated-awaiting-publication",
+  "authorization": "用户：把目前能用的先发布到 release",
+  "reviewer": "Codex，用户授权的发布执行者；不声称用户逐项审阅原件",
+  "sources": [
+    {
+      "key": "heyanle.age",
+      "versionCode": 1,
+      "sourceSha256": "237eafa2cd0e33cb87c5b3515ffca99e07551ed5295f4924d28cb92336c03d0b",
+      "evidenceFile": "acceptance/evidence/2026-10-17/pilot/heyanle.age/acceptance-20261017-090930-8dbd1b2a.json",
+      "versionName": "1.0"
+    },
+    {
+      "key": "heyanle.ggl.beta",
+      "versionCode": 1,
+      "sourceSha256": "f7734b546d88b18161863bf2045d2f359120564a437133aeb5846158c4972748",
+      "evidenceFile": "acceptance/evidence/2026-10-17/remaining/heyanle.ggl.beta/acceptance-20261017-091930-a81df8f6.json",
+      "versionName": "1.0"
+    },
+    {
+      "key": "kazumi.7sefun",
+      "versionCode": 10201,
+      "sourceSha256": "a70a3122402577494e5c9f1f459acf022e7e27d33aa5654bea82027b051c8c62",
+      "evidenceFile": "acceptance/evidence/2026-10-20/kazumi.7sefun/acceptance-20261020-043926-d331112c.json",
+      "versionName": "1.2.1"
+    },
+    {
+      "key": "kazumi.9ciyuan",
+      "versionCode": 10301,
+      "sourceSha256": "a1d2eb0cebcc43ddf9d5e14acfd154e0232cbe7392fd80bcf02372adc5ff1e14",
+      "evidenceFile": "acceptance/evidence/2026-10-20/kazumi.9ciyuan/acceptance-20261020-043944-4135921b.json",
+      "versionName": "1.3.1"
+    },
+    {
+      "key": "kazumi.anime7",
+      "versionCode": 10001,
+      "sourceSha256": "73801c425db53e3d6ac9b2e8755e7b21a5c9b300ff5ceffe6a9db06d8e17d1b5",
+      "evidenceFile": "acceptance/evidence/2026-10-20/kazumi.anime7/acceptance-20261020-044002-c021288a.json",
+      "versionName": "1.0.1"
+    },
+    {
+      "key": "kazumi.ant",
+      "versionCode": 3,
+      "sourceSha256": "daf3b2ba2814ddbcad3b47847a5a552ed600ef4c03ab9ba9cf2c5bbd8d6d882f",
+      "evidenceFile": "acceptance/evidence/2026-10-20/kazumi.ant/acceptance-20261020-044021-f2954309.json",
+      "versionName": "0.0.3"
+    },
+    {
+      "key": "kazumi.baimao",
+      "versionCode": 10001,
+      "sourceSha256": "59a45686c64f258b52c81e64f9dc8c926cc2460427943619f3fad55d5727d4ed",
+      "evidenceFile": "acceptance/evidence/2026-10-20/kazumi.baimao/acceptance-20261020-044041-9459690b.json",
+      "versionName": "1.0.1"
+    },
+    {
+      "key": "kazumi.mifun",
+      "versionCode": 10101,
+      "sourceSha256": "cb260511ceee317353cf2f9f1759edd827bb001274cda9a744b89ea79d247976",
+      "evidenceFile": "acceptance/evidence/2026-10-20/kazumi.mifun/acceptance-20261020-044104-15c8b3f3.json",
+      "versionName": "1.1.1"
+    },
+    {
+      "key": "kazumi.mxdm",
+      "versionCode": 20301,
+      "sourceSha256": "398245c1858699dfbbe88424b9924c4d6f9c6e7210aab78e4193e922a2948be4",
+      "evidenceFile": "acceptance/evidence/2026-10-20/kazumi.mxdm/acceptance-20261020-044123-2969b156.json",
+      "versionName": "2.3.1"
+    }
+  ],
+  "removedFromPreviousRelease": [
+    "heyanle.ggl",
+    "kazumi.lmm",
+    "kazumi.sorani"
+  ],
+  "reason": "GGL/LMM 10-17 仍需验证；sorani 10-20 搜索与详情超时，首页首项变为客户端下载页。不用旧 PASS 覆盖新失败。",
+  "unchangedSourcesEvidenceDate": "2026-10-17",
+  "updatedSourcesEvidenceDate": "2026-10-20",
+  "androidRelease": false,
+  "buildArtifacts": [
+    {
+      "path": "/Users/heyanle/Desktop/project/easybangumi_android/app/build/outputs/apk/normal/debug/app-normal-debug.apk",
+      "packageName": "com.heyanle.easybangumi4.sourcelab",
+      "sha256": "c0e68b39b9344cc88021064c8a09bbe1d5e996af107e44b0e289245ba3407cf1"
+    },
+    {
+      "path": "/Users/heyanle/Desktop/project/easybangumi_android/app/build/outputs/apk/androidTest/normal/debug/app-normal-debug-androidTest.apk",
+      "packageName": "com.heyanle.easybangumi4.sourcelab.test",
+      "sha256": "753064370f73addf3b19915bfb0d2c7f7c063873b5f0af145ecb68245028400f"
+    }
+  ]
+}

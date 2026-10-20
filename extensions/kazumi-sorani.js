@@ -1,7 +1,7 @@
 // @key kazumi.sorani
 // @label sorani
-// @versionName 1.0
-// @versionCode 10000
+// @versionName 1.0.1
+// @versionCode 10001
 // @libVersion 15
 // @cover https://www.sorani.net/favicon.ico
 
@@ -39,9 +39,7 @@ function PreferenceComponent_getPreference() {
 }
 
 function PageComponent_getMainTabs() {
-    var res = new ArrayList();
-    res.add(new MainTab("首页推荐", MainTab.MAIN_TAB_WITH_COVER));
-    return res;
+    return new NonLabelMainTab(MainTab.MAIN_TAB_WITH_COVER);
 }
 
 function PageComponent_getSubTabs(mainTab) {

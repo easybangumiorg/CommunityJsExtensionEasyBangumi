@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "protocolVersion": "source-acceptance-v1",
+  "generatedAt": "2026-10-20T04:42:35.169Z",
+  "context": {
+    "app": {
+      "buildType": "debug",
+      "gitCommit": "fed45da5fd0a508ec313fdb3f9054c687e724545",
+      "packageName": "com.heyanle.easybangumi4.sourcelab",
+      "versionCode": 115,
+      "versionName": "6.1.3"
+    },
+    "device": {
+      "androidVersion": "16",
+      "apiLevel": 36,
+      "isPhysicalDevice": true,
+      "manufacturer": "Xiaomi",
+      "model": "23127PN0CC",
+      "serial": "6a022def"
+    },
+    "network": "WiFi 10.135.231.0/24 Xiaomi14; Android global HTTP proxy unset",
+    "repositoryEnvironment": "dev"
+  },
+  "config": {
+    "keywords": [
+      "孤独摇滚",
+      "孤獨搖滾",
+      "ぼっち・ざ・ろっく！",
+      "Bocchi the Rock"
+    ],
+    "manualTimeoutMs": 600000,
+    "maxManualAttempts": 3,
+    "minimumProgressMs": 3000,
+    "playBudgetMs": 240000,
+    "playInfoTimeoutMs": 45000,
+    "playTimeoutMs": 60000,
+    "selected": [
+      "kazumi.sorani"
+    ],
+    "stepTimeoutMs": 25000,
+    "steps": [
+      "HOME",
+      "SEARCH",
+      "PLAY"
+    ]
+  },
+  "results": [
+    {
+      "key": "kazumi.sorani",
+      "label": "sorani",
+      "versionName": "1.0.1",
+      "versionCode": 10001,
+      "sourceSha256": "2c3a5cd6ccc5ff28a7bfa3f9e78aa17bedd7bb48976a560077f8d66dc9d12551",
+      "startedAt": "2026-10-20T04:41:40.789Z",
+      "finishedAt": "2026-10-20T04:42:35.167Z",
+      "verdict": "FAIL",
+      "acceptance": "PLAYBACK_FAILED",
+      "steps": [
+        {
+          "detail": "首页页签「」5 条内容",
+          "elapsedMs": 4355,
+          "failureKind": null,
+          "step": "HOME",
+          "verdict": "PASS"
+        },
+        {
+          "detail": "「孤独摇滚」TIMEOUT(0)；搜索不可用，首页播放只能供诊断，不能自动准入",
+          "elapsedMs": 25008,
+          "failureKind": "TIMEOUT",
+          "step": "SEARCH",
+          "verdict": "FAIL"
+        },
+        {
+          "detail": "详情：超时：25s",
+          "elapsedMs": 25010,
+          "failureKind": "TIMEOUT",
+          "step": "PLAY",
+          "verdict": "FAIL"
+        }
+      ],
+      "searchAttempts": [
+        {
+          "detail": "超时：25s",
+          "elapsedMs": 25007,
+          "failureKind": "TIMEOUT",
+          "keyword": "孤独摇滚",
+          "pageKey": 0,
+          "resultCount": 0,
+          "status": "TIMEOUT"
+        }
+      ],
+      "selection": {
+        "cartoonId": "https%3A%2F%2Fwww.sorani.org|%E8%AE%BF%E9%97%AE%E5%AE%A2%E6%88%B7%E7%AB%AF%E4%B8%8B%E8%BD%BD%E9%A1%B5|https%3A%2F%2Fapi.sorani.cc%2Fsorani-cms%2Fuploads%2Fgeneral%2F2026%2F03%2Fgeneral_20260329_055717_230142.png",
+        "homePageLabel": "",
+        "keyword": null,
+        "resultIndex": 0,
+        "route": "HOME_FALLBACK",
+        "title": "访问客户端下载页"
+      },
+      "lineAttempts": [],
+      "playBudgetExhausted": false,
+      "minimumProgressMs": 3000,
+      "totalLineCount": 0,
+      "verificationEvents": [],
+      "manualWaitMs": 0
+    }
+  ]
+}
