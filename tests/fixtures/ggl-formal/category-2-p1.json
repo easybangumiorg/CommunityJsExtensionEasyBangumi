@@ -1,0 +1,151 @@
+{
+  "code": 1,
+  "msg": "获取成功",
+  "info": {
+    "offset": 0,
+    "limit": 20,
+    "total": 3147,
+    "rows": [
+      {
+        "vod_id": 27205,
+        "vod_name": "借出去的魔力要用【分期还款】强制收回",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20261001-1/da6f26cc952165f4472b179e3b32edd1.webp",
+        "vod_remarks": "更新至04集 / 02點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 26922,
+        "vod_name": "名侦探光之美少女！",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260209-1/91c0c18641a737d1b10fc532fc278154.jpg",
+        "vod_remarks": "更新至39集 / 23點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27200,
+        "vod_name": "至高之力",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260930-1/74c1d82e25085fb465c1524ca5ea1819.webp",
+        "vod_remarks": "更新至04集 / 23點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27203,
+        "vod_name": "学生会也有洞！",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20261001-1/1ab2f613721494629917bd575693ed2e.webp",
+        "vod_remarks": "更新至04集 / 01點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27198,
+        "vod_name": "黑色五叶草 第二季",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260930-1/95ca4eecc93925db20689d20a40a6830.webp",
+        "vod_remarks": "更新至04集 / 23點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27202,
+        "vod_name": "魔法★探险家",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20261001-1/7e1cbe0a3802ece4d8f742f3b0833377.webp",
+        "vod_remarks": "更新至05集 / 01點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27167,
+        "vod_name": "野生的大魔王出现了！第二季",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260926-1/4b09d30d25ce6423f861d82e5802b843.webp",
+        "vod_remarks": "更新至05集 / 23點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27197,
+        "vod_name": "转生了的大圣女，拼死隐瞒自己身为圣女",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260930-1/78fdbc337607ed42165032ec373778b1.webp",
+        "vod_remarks": "更新至05集 / 22點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27194,
+        "vod_name": "朱色的面具",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260930-1/e543a807ad3ee3dcbe63ccebd5a7398e.webp",
+        "vod_remarks": "更新至03集 / 22點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 5217,
+        "vod_name": "大家集合！ Falcom学园 第二季",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20261024-1/681e121072191222c786390079d3f385.webp",
+        "vod_remarks": "完结",
+        "vod_year": "2014"
+      },
+      {
+        "vod_id": 5216,
+        "vod_name": "大家集合！ Falcom学园",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20261024-1/47d4bec7461181cdeddfe055f5161486.webp",
+        "vod_remarks": "完结",
+        "vod_year": "2014"
+      },
+      {
+        "vod_id": 27185,
+        "vod_name": "某暗部的少女共栖",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260929-1/ac587da5c24d81c9e5dd9de857a475d3.webp",
+        "vod_remarks": "更新至03集 / 00點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27187,
+        "vod_name": "桃源暗鬼 ～日光・华严之泷篇～",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260929-1/041dfd3e08dd5bc568c735247bae0686.webp",
+        "vod_remarks": "更新至04集 / 01點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27188,
+        "vod_name": "萤火虫之婚",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260929-1/beb073a785efadc126b3ee0aeae2eaaf.webp",
+        "vod_remarks": "更新至03集 / 00點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27219,
+        "vod_name": "青蛙军曹☆",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20261003-1/39abcb46f7c261dbd0699eac2af3b457.webp",
+        "vod_remarks": "更新至04集 / 23點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27186,
+        "vod_name": "药屋少女的呢喃 第三季",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260929-1/e8426e1d3d104ab90445fa04a8e741e5.webp",
+        "vod_remarks": "更新至04集 / 23點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27180,
+        "vod_name": "冰之城墙 第2季",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260929-1/886fca620d01e79b5ea56be1189de3d1.webp",
+        "vod_remarks": "更新至04集 / 23點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27117,
+        "vod_name": "我家的弟弟们真是让您费心了",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260702-1/771583b139fb9a1c88cded35206e8b66.webp",
+        "vod_remarks": "更新至16集 / 0點0分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 26868,
+        "vod_name": "JOJO的奇妙冒险 飙马野郎",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20251230-1/f0c084066e3398f6a0d5357a71a18f54.webp",
+        "vod_remarks": "更新至06集 / 23點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27183,
+        "vod_name": "冰剑的魔术师将要统一世界 第二季",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260929-1/f3153f6d0b218600f795ba5887010326.webp",
+        "vod_remarks": "更新至03集 / 01點30分",
+        "vod_year": "2026"
+      }
+    ]
+  }
+}

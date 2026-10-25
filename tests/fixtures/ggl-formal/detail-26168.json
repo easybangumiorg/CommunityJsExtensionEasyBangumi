@@ -1,0 +1,17 @@
+{
+  "code": 1,
+  "msg": "获取成功",
+  "info": {
+    "vod_id": 26168,
+    "vod_name": "LIVE STAGE 孤独摇滚 舞台剧",
+    "vod_pic": "upload/vod/20240902-1/2f39ec183be572efa1eb05cb6e22a579.webp",
+    "vod_pic_thumb": "upload/vod/20240902-1/2f39ec183be572efa1eb05cb6e22a579.webp",
+    "vod_remarks": "",
+    "vod_year": "2023",
+    "vod_class": "其他",
+    "vod_isend": 0,
+    "vod_content": "<p>合成简介，仅用于验证 HTML 清理。</p>",
+    "vod_play_from": "chs",
+    "vod_play_url": "1080P$https://media.invalid/formal/26168/0/0.m3u8"
+  }
+}

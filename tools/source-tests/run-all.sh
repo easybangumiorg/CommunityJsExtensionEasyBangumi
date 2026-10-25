@@ -24,6 +24,7 @@ if [[ ! -f "$RHINO_JAR" || ! -f ${JSOUP_JAR:-} ]]; then
     exit 2
 fi
 "$tools_dir/ggl-beta/run-ggl-beta-fixtures.sh" "$android_root" dev-extensions/girigirilove-beta.js tests/fixtures/ggl-beta
+"$tools_dir/ggl-formal/run-ggl-formal-fixtures.sh" "$android_root" dev-extensions/girigirilove.js tests/fixtures/ggl-formal
 "$tools_dir/mifun/run-fixtures.sh" "$android_root" dev-extensions/kazumi-mifun.js tests/fixtures/mifun
 "$tools_dir/milimili/run-milimili-fixtures.sh" "$android_root" dev-extensions/milimili.js tests/fixtures/milimili
 python3 "$tools_dir/cycani/verify_cycani.py" --android-root "$android_root" --source dev-extensions/kazumi-ciyuancheng.js --fixtures tests/fixtures/cycani

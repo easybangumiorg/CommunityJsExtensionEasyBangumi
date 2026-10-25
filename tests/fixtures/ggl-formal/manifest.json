@@ -1,0 +1,161 @@
+{
+  "captured_at": "2026-10-25T07:13:17.775402+00:00",
+  "site": "https://ani.girigirilove.com",
+  "api_origin": "https://m3u8.girigirilove.com",
+  "api_path": "/api.php",
+  "page_contracts": [
+    {
+      "url": "https://ani.girigirilove.com/assets/BrowsePage-CdOn3rVc.js",
+      "sha256": "870495770e4bb93239151bcd030bf6dbbfc10ea0d272f1555d2d8d3a1f2d658a",
+      "bytes": 6067
+    },
+    {
+      "url": "https://ani.girigirilove.com/assets/CollectionDetailPage-khF7ErB3.js",
+      "sha256": "7abd0b11682a7c029db72742572b69170343fef5742e69fc9822f7aafd6c79a8",
+      "bytes": 2654
+    },
+    {
+      "url": "https://ani.girigirilove.com/assets/DetailPage-ObqeRCrO.js",
+      "sha256": "f1941dd1f8b15ba3f79277fdd988939494f48b97973252433b6cb0d9b6a07b7a",
+      "bytes": 21871
+    },
+    {
+      "url": "https://ani.girigirilove.com/assets/HomePage-D0VbS6dN.js",
+      "sha256": "443afd84858819a15d3bf7cb4a5f91b0605a35226ac613246e05d0d575973232",
+      "bytes": 12652
+    },
+    {
+      "url": "https://ani.girigirilove.com/assets/PlayerPage-RjE_twmb.js",
+      "sha256": "de1fba55184dc782892c5053c7f70ff8311e346455773158487207c826bc7f87",
+      "bytes": 356780
+    },
+    {
+      "url": "https://ani.girigirilove.com/assets/RelatedSection-CRlAuBn9.js",
+      "sha256": "72fddcbcb724cd055e8a53cf0fd3604e59710fcb771ee389c0b5aa4d1e54e926",
+      "bytes": 7978
+    },
+    {
+      "url": "https://ani.girigirilove.com/assets/SearchPage-KQInoR5x.js",
+      "sha256": "75990623f654774107f2dd09160422d47703745ff362f9b92f718d34a8092075",
+      "bytes": 2927
+    },
+    {
+      "url": "https://ani.girigirilove.com/assets/api-KAzGFvB_.js",
+      "sha256": "62b09842c13c83b431767e8b9cbd4e84117400cc3ef172928d9fb4514428ee14",
+      "bytes": 2062
+    },
+    {
+      "url": "https://ani.girigirilove.com/assets/classPrivateMethodInitSpec-BUWqX6K3.js",
+      "sha256": "9abd7cc329b8efeb28e38ced980827fc69cf0d87100a3f5a3cdfaa3fc304125a",
+      "bytes": 8979
+    },
+    {
+      "url": "https://ani.girigirilove.com/assets/client-EH5oUj5z.js",
+      "sha256": "3d3c7fa261f2f7ccc7498a6a93832e97e51e7d2f29f9fe239b274e74859c696f",
+      "bytes": 109983
+    },
+    {
+      "url": "https://ani.girigirilove.com/assets/defineProperty-BbfpZ9Tg.js",
+      "sha256": "c2ae68c1ad7462e777ccd4e1e3f84b3bc07ab81458f0dd0ea042a9e1b4d23afb",
+      "bytes": 707
+    },
+    {
+      "url": "https://ani.girigirilove.com/assets/event-C2_SSQHm.js",
+      "sha256": "3ac8a50d0a84fea1263248f49eabcc960b242a1ef19b5e29ba3ee546c408ee1b",
+      "bytes": 1213
+    },
+    {
+      "url": "https://ani.girigirilove.com/assets/index-BnDI2k5c.js",
+      "sha256": "2e85c319cec1ea262e9c0f466925ada1c964fa36e84e6df639b886cbdd9ce4c0",
+      "bytes": 1604952
+    },
+    {
+      "url": "https://ani.girigirilove.com/assets/link-DUDGlsHR.js",
+      "sha256": "14ef1320e5c73d9671bb9e5abb2c52231c4aa0383c6528aae7b71289ac7ef822",
+      "bytes": 59454
+    },
+    {
+      "url": "https://ani.girigirilove.com/assets/normalize-DeEUDmld.js",
+      "sha256": "6fa63487069ce539155f217dc9a4deb3b334837e45306a14cdb4a50cacea97fc",
+      "bytes": 165
+    },
+    {
+      "url": "https://ani.girigirilove.com/assets/portrait-BKrHL8Bg.js",
+      "sha256": "7e9b4c06abbea1de5f197b88922af1351a8fa5d8ef8f1914fa6f8938c03d5296",
+      "bytes": 3593
+    },
+    {
+      "url": "https://ani.girigirilove.com/assets/useBaseQuery-BoIgPy_C.js",
+      "sha256": "a27d6a9aef794d3c134b59827375e1cf32bd57d2b8c81f0717dbf3deb1f01fed",
+      "bytes": 17131
+    },
+    {
+      "url": "https://ani.girigirilove.com/assets/useMatch-k5-1XTp1.js",
+      "sha256": "74aad98bdbd915391b26bf4a8a3507f82957f8dc5d6e91561121670a8383474b",
+      "bytes": 808
+    },
+    {
+      "url": "https://ani.girigirilove.com/assets/useOnMount-GX2VyO0s.js",
+      "sha256": "ac4ae046c7281e6497691418588b675524b3adc01f523eca218d62610697b624",
+      "bytes": 170
+    },
+    {
+      "url": "https://ani.girigirilove.com/assets/useOpenChangeComplete-3wx5U63J.js",
+      "sha256": "86e57aa0c3a2ad2172b06a20a434e660f095bf157f247f8b75da9f5b0f52fcf9",
+      "bytes": 7099
+    },
+    {
+      "url": "https://ani.girigirilove.com/assets/useTimeout-DVpDstOw.js",
+      "sha256": "c4172fae29933853d19150b570a003c6515bafc19e00b52325445e8ec4a4bb6e",
+      "bytes": 551
+    },
+    {
+      "url": "https://ani.girigirilove.com/assets/vod-normalize-BV1iBSDX.js",
+      "sha256": "26ff6c4c00103bfa691d8de5cddf23f0f944b6b50912a4d8dc673819ca87c4a6",
+      "bytes": 2459
+    },
+    {
+      "url": "https://ani.girigirilove.com/assets/with-selector-D-tPdjJV.js",
+      "sha256": "29b24a74903b8c51dbf8f18e9e7af34d0ead0f77ae4b75a76ad1516ca259d0be",
+      "bytes": 1648
+    }
+  ],
+  "source_key": "heyanle.ggl",
+  "source_version": "1.6",
+  "source_version_code": 8,
+  "legacy_urls": [
+    {
+      "path": "/GV26538/",
+      "http_status": 200,
+      "body_bytes": 4892,
+      "redirects": [],
+      "is_only_vite_shell": true
+    },
+    {
+      "path": "/playGV26538-1-1/",
+      "http_status": 200,
+      "body_bytes": 4892,
+      "redirects": [],
+      "is_only_vite_shell": true
+    },
+    {
+      "path": "/GV1091/",
+      "http_status": 200,
+      "body_bytes": 4892,
+      "redirects": [],
+      "is_only_vite_shell": true
+    },
+    {
+      "path": "/playGV1091-1-1/",
+      "http_status": 200,
+      "body_bytes": 4892,
+      "redirects": [],
+      "is_only_vite_shell": true
+    }
+  ],
+  "legacy_policy": "No verified generic GV-to-numeric or old one-based line/episode mapping. Keep key but require old favorites to be searched and linked again. No app storage access.",
+  "fixture_policy": "Only public title/ID/cover/status metadata retained. Story descriptions and every media URL replaced with synthetic data. No account, cookies, JWT, password, signature or session storage used or saved.",
+  "adapter_sha256": "f668a60f2b0d16d6d25388b93bbba9bec211303b6a9a1713ee20c4e71630f3d7",
+  "rhino_assertions": 253,
+  "mocked_requests": 48
+}

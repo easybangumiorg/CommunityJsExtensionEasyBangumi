@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "protocolVersion": "source-acceptance-v1",
+  "generatedAt": "2026-10-25T06:42:34.333Z",
+  "context": {
+    "app": {
+      "buildType": "debug",
+      "gitCommit": "b687c2a7dc507ddd6259829eaa7d09f2bda60866",
+      "packageName": "com.heyanle.easybangumi4.sourcelab",
+      "versionCode": 115,
+      "versionName": "6.1.3"
+    },
+    "device": {
+      "androidVersion": "16",
+      "apiLevel": 36,
+      "isPhysicalDevice": true,
+      "manufacturer": "meizu",
+      "model": "MEIZU 21",
+      "serial": "461QYGFJ222HD"
+    },
+    "network": "current-LAN-WiFi-ADB-meizu21",
+    "repositoryEnvironment": "dev"
+  },
+  "config": {
+    "keywords": [
+      "孤独摇滚",
+      "孤獨搖滾",
+      "ぼっち・ざ・ろっく！",
+      "Bocchi the Rock"
+    ],
+    "manualTimeoutMs": 600000,
+    "maxManualAttempts": 3,
+    "minimumProgressMs": 3000,
+    "playBudgetMs": 240000,
+    "playInfoTimeoutMs": 45000,
+    "playTimeoutMs": 60000,
+    "selected": [
+      "heyanle.ggl"
+    ],
+    "stepTimeoutMs": 25000,
+    "steps": [
+      "HOME",
+      "SEARCH",
+      "PLAY"
+    ]
+  },
+  "results": [
+    {
+      "key": "heyanle.ggl",
+      "label": "GiriGiriLove",
+      "versionName": "1.5",
+      "versionCode": 7,
+      "sourceSha256": "496af7c3a5a6d3fdb5a32c36e2f998a418130c3a6f4d3c161e854c31ef49c5bd",
+      "startedAt": "2026-10-25T06:42:27.181Z",
+      "finishedAt": "2026-10-25T06:42:34.332Z",
+      "verdict": "FAIL",
+      "acceptance": "PLAYBACK_FAILED",
+      "steps": [
+        {
+          "detail": "首页页签「日番」返回 0 条内容",
+          "elapsedMs": 1377,
+          "failureKind": null,
+          "step": "HOME",
+          "verdict": "SUSPECT"
+        },
+        {
+          "detail": "「孤独摇滚」EMPTY(0) → 「孤獨搖滾」EMPTY(0) → 「ぼっち・ざ・ろっく！」EMPTY(0) → 「Bocchi the Rock」EMPTY(0)；标题未收录，播放阶段使用首页第 1 部，仍需人工审核",
+          "elapsedMs": 5771,
+          "failureKind": null,
+          "step": "SEARCH",
+          "verdict": "SUSPECT"
+        },
+        {
+          "detail": "所有别名无可用结果且首页第 1 部不可用，无法定位播放样本",
+          "elapsedMs": 0,
+          "failureKind": null,
+          "step": "PLAY",
+          "verdict": "FAIL"
+        }
+      ],
+      "searchAttempts": [
+        {
+          "detail": "「孤独摇滚」0 条",
+          "elapsedMs": 5122,
+          "failureKind": null,
+          "keyword": "孤独摇滚",
+          "pageKey": 0,
+          "resultCount": 0,
+          "status": "EMPTY"
+        },
+        {
+          "detail": "「孤獨搖滾」0 条",
+          "elapsedMs": 467,
+          "failureKind": null,
+          "keyword": "孤獨搖滾",
+          "pageKey": 0,
+          "resultCount": 0,
+          "status": "EMPTY"
+        },
+        {
+          "detail": "「ぼっち・ざ・ろっく！」0 条",
+          "elapsedMs": 114,
+          "failureKind": null,
+          "keyword": "ぼっち・ざ・ろっく！",
+          "pageKey": 0,
+          "resultCount": 0,
+          "status": "EMPTY"
+        },
+        {
+          "detail": "「Bocchi the Rock」0 条",
+          "elapsedMs": 66,
+          "failureKind": null,
+          "keyword": "Bocchi the Rock",
+          "pageKey": 0,
+          "resultCount": 0,
+          "status": "EMPTY"
+        }
+      ],
+      "selection": null,
+      "lineAttempts": [],
+      "playBudgetExhausted": false,
+      "minimumProgressMs": 3000,
+      "totalLineCount": 0,
+      "verificationEvents": [],
+      "manualWaitMs": 0
+    }
+  ]
+}

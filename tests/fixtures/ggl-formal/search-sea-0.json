@@ -1,0 +1,179 @@
+{
+  "code": 1,
+  "msg": "获取成功",
+  "info": {
+    "offset": 0,
+    "limit": 24,
+    "total": 74,
+    "rows": [
+      {
+        "vod_id": 26661,
+        "vod_name": "怪兽8号 第二季",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20250703-1/c81c51aeb2549e241369d4a00f534413.webp",
+        "vod_remarks": "更新至SP04集 / 23點30分",
+        "vod_year": "2025"
+      },
+      {
+        "vod_id": 27100,
+        "vod_name": "碧蓝之海 第三季",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260630-1/0615c7b9d4bbc6d59abc098909d794d0.webp",
+        "vod_remarks": "完结",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 26553,
+        "vod_name": "击浪青春",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20250506-1/d4ef9b7238fa74db35bf7fc4d26022e8.webp",
+        "vod_remarks": "支持杜比视界 建议佩戴耳机",
+        "vod_year": "2024"
+      },
+      {
+        "vod_id": 27079,
+        "vod_name": "关于我转生变成史莱姆这档事 苍海之泪篇",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260626-1/ed2a05954ed8de459f0018cecc5a409c.webp",
+        "vod_remarks": "",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27025,
+        "vod_name": "和班上第二可爱的女孩成为朋友",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260405-1/aaf4bfff7a945df27655d333c5a7cc14.webp",
+        "vod_remarks": "已完结",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 1456,
+        "vod_name": "兽兵卫忍风帖：龙宝玉篇",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260608-1/f68b4114f90d5e08875356991933fd0c.webp",
+        "vod_remarks": "已完结",
+        "vod_year": "2003"
+      },
+      {
+        "vod_id": 26787,
+        "vod_name": "蓝色管弦乐 第二季",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20251006-1/9121cd76b1633d085b9dbfb67cc0780d.webp",
+        "vod_remarks": "已完结",
+        "vod_year": "2025"
+      },
+      {
+        "vod_id": 26663,
+        "vod_name": "费马的料理",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20250703-1/0f56b06bfd50e7f38f06af45ea507019.webp",
+        "vod_remarks": "已完结",
+        "vod_year": "2025"
+      },
+      {
+        "vod_id": 26626,
+        "vod_name": "碧蓝之海 第二季",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20250701-1/975b8323b42530abe6022c96637ff253.webp",
+        "vod_remarks": "已完结",
+        "vod_year": "2025"
+      },
+      {
+        "vod_id": 26728,
+        "vod_name": "海底娇娃蓝华 ZERO",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20250913-1/05b4fd51e583c548ba22c00a73dacf4e.webp",
+        "vod_remarks": "",
+        "vod_year": "2009"
+      },
+      {
+        "vod_id": 26727,
+        "vod_name": "海底娇娃蓝华：处女任务",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20250913-1/04ac9beb6309a4a86df9c33c92c4d285.webp",
+        "vod_remarks": "",
+        "vod_year": "2007"
+      },
+      {
+        "vod_id": 26726,
+        "vod_name": "海底娇娃蓝华 AIKa",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20250913-1/6c1d8e8d40b0b83fce93a33f112afdee.webp",
+        "vod_remarks": "",
+        "vod_year": "2000至90年代"
+      },
+      {
+        "vod_id": 26709,
+        "vod_name": "机动警察",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20250822-1/cd32e4eba6050111e336ab0731125892.webp",
+        "vod_remarks": "",
+        "vod_year": "2000至90年代"
+      },
+      {
+        "vod_id": 4715,
+        "vod_name": "咎狗之血",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20250623-1/f69a5b3fa5035933aaa22dfde3b47d17.webp",
+        "vod_remarks": "已完结",
+        "vod_year": "2010"
+      },
+      {
+        "vod_id": 5252,
+        "vod_name": "幻海奇情",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20250618-1/647df6b15e0a51f91cd8c9998a387639.webp",
+        "vod_remarks": "已完结",
+        "vod_year": "2019"
+      },
+      {
+        "vod_id": 26566,
+        "vod_name": "大雪海的凯纳 星球的信者",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20250515-1/0a1f90357066537268354e103acb72ab.webp",
+        "vod_remarks": "",
+        "vod_year": "2023"
+      },
+      {
+        "vod_id": 26565,
+        "vod_name": "大雪海的凯纳",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20250515-1/1b1b981a2c7d47ff7ed71975b0eedd74.webp",
+        "vod_remarks": "",
+        "vod_year": "2023"
+      },
+      {
+        "vod_id": 26532,
+        "vod_name": "银河英雄传说 我的征途是星辰大海",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20250411-1/1608cfdf424e1729cf502cf9da4700a2.webp",
+        "vod_remarks": "",
+        "vod_year": "2000至90年代"
+      },
+      {
+        "vod_id": 26496,
+        "vod_name": "月出之战",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20250328-1/6b9ddf6837d26f4a921bf71a0c310ab6.webp",
+        "vod_remarks": "已完结",
+        "vod_year": "2025"
+      },
+      {
+        "vod_id": 1215,
+        "vod_name": "蓝海少女 第二季",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20250105-1/390a6916164c8c71bb973820f999a53f.webp",
+        "vod_remarks": "已完结",
+        "vod_year": "2018"
+      },
+      {
+        "vod_id": 1201,
+        "vod_name": "蓝海少女",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20250105-1/08d4789173b501e49c7b8286511126f9.webp",
+        "vod_remarks": "已完结",
+        "vod_year": "2016"
+      },
+      {
+        "vod_id": 26403,
+        "vod_name": "勇猛宇宙海贼：亚空间之深渊",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20250105-1/d2be04d51b6a1df4fc1139e79e6b2976.webp",
+        "vod_remarks": "支持杜比视界 建议佩戴耳机",
+        "vod_year": "2014"
+      },
+      {
+        "vod_id": 26402,
+        "vod_name": "暴力宇宙海贼",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20250105-1/a2a02960f2b493381792656a3a753f61.webp",
+        "vod_remarks": "",
+        "vod_year": "2012"
+      },
+      {
+        "vod_id": 26332,
+        "vod_name": "风都侦探剧场版：假面骑士颅骨的肖像",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20241221-1/f2fca4589b3337b3e9e10f7f1faaaa67.webp",
+        "vod_remarks": "支持杜比视界 建议佩戴耳机",
+        "vod_year": "2024"
+      }
+    ]
+  }
+}

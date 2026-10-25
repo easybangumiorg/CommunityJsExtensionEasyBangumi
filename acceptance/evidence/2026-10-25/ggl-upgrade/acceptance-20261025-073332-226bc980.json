@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "protocolVersion": "source-acceptance-v1",
+  "generatedAt": "2026-10-25T07:33:45.523Z",
+  "context": {
+    "app": {
+      "buildType": "debug",
+      "gitCommit": "b687c2a7dc507ddd6259829eaa7d09f2bda60866",
+      "packageName": "com.heyanle.easybangumi4.sourcelab",
+      "versionCode": 115,
+      "versionName": "6.1.3"
+    },
+    "device": {
+      "androidVersion": "16",
+      "apiLevel": 36,
+      "isPhysicalDevice": true,
+      "manufacturer": "meizu",
+      "model": "MEIZU 21",
+      "serial": "461QYGFJ222HD"
+    },
+    "network": "current-LAN-WiFi-ADB-meizu21",
+    "repositoryEnvironment": "dev"
+  },
+  "config": {
+    "keywords": [
+      "孤独摇滚",
+      "孤獨搖滾",
+      "ぼっち・ざ・ろっく！",
+      "Bocchi the Rock"
+    ],
+    "manualTimeoutMs": 600000,
+    "maxManualAttempts": 3,
+    "minimumProgressMs": 3000,
+    "playBudgetMs": 240000,
+    "playInfoTimeoutMs": 45000,
+    "playTimeoutMs": 60000,
+    "selected": [
+      "heyanle.ggl"
+    ],
+    "stepTimeoutMs": 25000,
+    "steps": [
+      "HOME",
+      "SEARCH",
+      "PLAY"
+    ]
+  },
+  "results": [
+    {
+      "key": "heyanle.ggl",
+      "label": "GiriGiriLove",
+      "versionName": "1.6",
+      "versionCode": 8,
+      "sourceSha256": "f668a60f2b0d16d6d25388b93bbba9bec211303b6a9a1713ee20c4e71630f3d7",
+      "startedAt": "2026-10-25T07:33:36.475Z",
+      "finishedAt": "2026-10-25T07:33:45.523Z",
+      "verdict": "PASS",
+      "acceptance": "SEARCH_PLAYABLE",
+      "steps": [
+        {
+          "detail": "首页页签「日番」20 条内容",
+          "elapsedMs": 1821,
+          "failureKind": null,
+          "step": "HOME",
+          "verdict": "PASS"
+        },
+        {
+          "detail": "「孤独摇滚」RESULTS(3)；选择结果第 1 部「孤独摇滚总集篇」",
+          "elapsedMs": 394,
+          "failureKind": null,
+          "step": "SEARCH",
+          "verdict": "PASS"
+        },
+        {
+          "detail": "搜索「孤独摇滚总集篇」线路 1/1「chs」前篇，首帧 1920x1080，推进 3113ms（已尝试 1 条线路）",
+          "elapsedMs": 6830,
+          "failureKind": null,
+          "step": "PLAY",
+          "verdict": "PASS"
+        }
+      ],
+      "searchAttempts": [
+        {
+          "detail": "「孤独摇滚」3 条",
+          "elapsedMs": 394,
+          "failureKind": null,
+          "keyword": "孤独摇滚",
+          "pageKey": 0,
+          "resultCount": 3,
+          "status": "RESULTS"
+        }
+      ],
+      "selection": {
+        "cartoonId": "ggl-v2:26538",
+        "homePageLabel": null,
+        "keyword": "孤独摇滚",
+        "resultIndex": 0,
+        "route": "SEARCH_RESULT",
+        "title": "孤独摇滚总集篇"
+      },
+      "lineAttempts": [
+        {
+          "detail": "首帧已渲染，进度推进 3113ms",
+          "elapsedMs": 6510,
+          "episodeId": "ggl-v2:26538:0:0:%E5%89%8D%E7%AF%87",
+          "episodeLabel": "前篇",
+          "episodeOrder": 0,
+          "failureKind": null,
+          "firstFrame": true,
+          "lineId": "ggl-v2:0:chs",
+          "lineIndex": 0,
+          "lineLabel": "chs",
+          "progressMs": 3113,
+          "status": "PASS",
+          "videoHeight": 1080,
+          "videoWidth": 1920
+        }
+      ],
+      "playBudgetExhausted": false,
+      "minimumProgressMs": 3000,
+      "totalLineCount": 1,
+      "verificationEvents": [],
+      "manualWaitMs": 0
+    }
+  ]
+}

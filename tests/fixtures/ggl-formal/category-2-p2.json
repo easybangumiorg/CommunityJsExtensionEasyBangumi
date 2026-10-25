@@ -1,0 +1,151 @@
+{
+  "code": 1,
+  "msg": "获取成功",
+  "info": {
+    "offset": 20,
+    "limit": 20,
+    "total": 3147,
+    "rows": [
+      {
+        "vod_id": 27182,
+        "vod_name": "黑化吧！圣女大人 第二季",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260929-1/bf5ffc149512d16ad360bcb7e6e55822.webp",
+        "vod_remarks": "更新至04集 / 00點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27112,
+        "vod_name": "被追放的转生重骑士用游戏知识开无双",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260702-1/17acbdb4a405f69fb9aa8651a50f4f40.webp",
+        "vod_remarks": "更新至17集 / 0點26分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27181,
+        "vod_name": "铁旅 邂逅铁道少女",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260929-1/b8aadf71ecf340bf819649d76d6f7df4.webp",
+        "vod_remarks": "更新至03集 / 00點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27179,
+        "vod_name": "FX战士久留美",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260929-1/b46cf0c2ae1fa9f5b5b1b32dba570a40.webp",
+        "vod_remarks": "更新至04集 / 21點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27177,
+        "vod_name": "归还者的魔法要特别 第二季",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260929-1/e896295e06ab6c19b564011ebe09495f.webp",
+        "vod_remarks": "更新至03集 / 02點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27232,
+        "vod_name": "新网球王子 U-17世界杯 决赛成员决定战",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20261008-1/8757f7291053e628f689514d1543211d.webp",
+        "vod_remarks": "更新至04集 / 23點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27176,
+        "vod_name": "兽王武神丹帝拜恩",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260929-1/25569d0251dcd137e67b2d06675cd12b.webp",
+        "vod_remarks": "更新至03集 / 02點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27175,
+        "vod_name": "转生成为魔剑了 第二季",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260929-1/a0c7277f4ad18a38143d39f50ba1c93f.webp",
+        "vod_remarks": "更新至04集 / 00點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27174,
+        "vod_name": "新 魔法骑士雷阿斯",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260928-1/a022b12216a4c741afa0f915d97ec65b.webp",
+        "vod_remarks": "更新至03集 / 23點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27172,
+        "vod_name": "佐佐木与文鸟小哔 第二季",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260928-1/3121b4baa712c5add15923b1d61c99f3.webp",
+        "vod_remarks": "更新至03集 / 22點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27171,
+        "vod_name": "侦探已死 第二季",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260928-1/6d4f067e5beb27dde4157bd10e2a54b0.webp",
+        "vod_remarks": "更新至03集 / 22點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27173,
+        "vod_name": "世界最强魔女，始动",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260928-1/f813f91963dd07e7411fffcac703eae9.webp",
+        "vod_remarks": "更新至03集 / 22點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27170,
+        "vod_name": "黑暗机器",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260928-1/a71d4f88f85ef35eeb8a764f6771c244.webp",
+        "vod_remarks": "更新至02集 / 23點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27230,
+        "vod_name": "弹珠汽水瓶里的千岁同学 Part 2",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20261003-1/021e9edc34d6d611081373861bc39466.webp",
+        "vod_remarks": "更新至15集 / 23點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27169,
+        "vod_name": "被流放的开挂魔术师讴歌随心所欲第二人生",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260928-1/81bb62a4e06b6c4cac57dea42b9f815c.webp",
+        "vod_remarks": "更新至03集 / 00點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27231,
+        "vod_name": "战斗之魂［Re］绝界之空",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20261006-1/45cfb7a1edf3cee5f1ef0337199af5e2.webp",
+        "vod_remarks": "更新至03集 / 23點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27196,
+        "vod_name": "幻想水浒传",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20260930-1/ef7d24724894acf411217277eaa591e1.webp",
+        "vod_remarks": "更新至03集 / 20:00",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27229,
+        "vod_name": "超巡！超条前辈",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20261003-1/50102f3fd0cde2ee1d9693ade44b80cb.webp",
+        "vod_remarks": "更新至03集 / 23點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27227,
+        "vod_name": "乱世千金倪亚‧利斯顿转生为娇弱千金的弑神武人华丽无双录",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20261003-1/f0251a0ad9e2939d477dbdf8e191cbe6.webp",
+        "vod_remarks": "更新至03集 / 21點30分",
+        "vod_year": "2026"
+      },
+      {
+        "vod_id": 27228,
+        "vod_name": "冷淡的佐藤同学只对我撒娇",
+        "vod_pic": "https://jpg.girigirilove.com/upload/vod/20261003-1/d07dea2e273a7af5ac34b88584b3cd5f.webp",
+        "vod_remarks": "更新至03集 / 22點00分",
+        "vod_year": "2026"
+      }
+    ]
+  }
+}
