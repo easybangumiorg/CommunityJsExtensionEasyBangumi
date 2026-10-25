@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "preparedAt": "2026-10-25T15:40:30.474284+00:00",
+  "deploymentVerified": false,
+  "sourceEnvironment": "release",
+  "approvedCount": 11,
+  "devCount": 82,
+  "onlineBefore": {
+    "indexUrl": "https://easybangumi.org/repository/v2/index.jsonl",
+    "sources": [
+      {
+        "key": "heyanle.age",
+        "versionCode": 1,
+        "sourceSha256": "237eafa2cd0e33cb87c5b3515ffca99e07551ed5295f4924d28cb92336c03d0b"
+      },
+      {
+        "key": "heyanle.ggl.beta",
+        "versionCode": 1,
+        "sourceSha256": "f7734b546d88b18161863bf2045d2f359120564a437133aeb5846158c4972748"
+      },
+      {
+        "key": "kazumi.7sefun",
+        "versionCode": 10201,
+        "sourceSha256": "a70a3122402577494e5c9f1f459acf022e7e27d33aa5654bea82027b051c8c62"
+      },
+      {
+        "key": "kazumi.9ciyuan",
+        "versionCode": 10301,
+        "sourceSha256": "a1d2eb0cebcc43ddf9d5e14acfd154e0232cbe7392fd80bcf02372adc5ff1e14"
+      },
+      {
+        "key": "kazumi.anime7",
+        "versionCode": 10001,
+        "sourceSha256": "73801c425db53e3d6ac9b2e8755e7b21a5c9b300ff5ceffe6a9db06d8e17d1b5"
+      },
+      {
+        "key": "kazumi.ant",
+        "versionCode": 3,
+        "sourceSha256": "daf3b2ba2814ddbcad3b47847a5a552ed600ef4c03ab9ba9cf2c5bbd8d6d882f"
+      },
+      {
+        "key": "kazumi.baimao",
+        "versionCode": 10001,
+        "sourceSha256": "59a45686c64f258b52c81e64f9dc8c926cc2460427943619f3fad55d5727d4ed"
+      },
+      {
+        "key": "kazumi.mifun",
+        "versionCode": 10101,
+        "sourceSha256": "cb260511ceee317353cf2f9f1759edd827bb001274cda9a744b89ea79d247976"
+      },
+      {
+        "key": "kazumi.mxdm",
+        "versionCode": 20301,
+        "sourceSha256": "398245c1858699dfbbe88424b9924c4d6f9c6e7210aab78e4193e922a2948be4"
+      },
+      {
+        "key": "kazumi.sorani",
+        "versionCode": 10000,
+        "sourceSha256": "a64f3e4c37dbb6540d0938bf46de85003084e4fb808bd9a82b3fa0af2bead914"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "key": "heyanle.age",
+      "versionCode": 1,
+      "versionName": "1.0",
+      "sourceSha256": "237eafa2cd0e33cb87c5b3515ffca99e07551ed5295f4924d28cb92336c03d0b",
+      "evidenceFile": "acceptance/evidence/2026-10-25/release/heyanle.age/acceptance-20261025-063628-d274d166.json",
+      "progressMs": 3101
+    },
+    {
+      "key": "heyanle.ggl.beta",
+      "versionCode": 1,
+      "versionName": "1.0",
+      "sourceSha256": "f7734b546d88b18161863bf2045d2f359120564a437133aeb5846158c4972748",
+      "evidenceFile": "acceptance/evidence/2026-10-25/release/heyanle.ggl.beta/acceptance-20261025-063649-f5896174.json",
+      "progressMs": 3003
+    },
+    {
+      "key": "kazumi.7sefun",
+      "versionCode": 10201,
+      "versionName": "1.2.1",
+      "sourceSha256": "a70a3122402577494e5c9f1f459acf022e7e27d33aa5654bea82027b051c8c62",
+      "evidenceFile": "acceptance/evidence/2026-10-25/release/kazumi.7sefun/acceptance-20261025-063705-253259a2.json",
+      "progressMs": 3024
+    },
+    {
+      "key": "kazumi.9ciyuan",
+      "versionCode": 10301,
+      "versionName": "1.3.1",
+      "sourceSha256": "a1d2eb0cebcc43ddf9d5e14acfd154e0232cbe7392fd80bcf02372adc5ff1e14",
+      "evidenceFile": "acceptance/evidence/2026-10-25/release/kazumi.9ciyuan/acceptance-20261025-063716-ce59271d.json",
+      "progressMs": 3177
+    },
+    {
+      "key": "kazumi.anime7",
+      "versionCode": 10001,
+      "versionName": "1.0.1",
+      "sourceSha256": "73801c425db53e3d6ac9b2e8755e7b21a5c9b300ff5ceffe6a9db06d8e17d1b5",
+      "evidenceFile": "acceptance/evidence/2026-10-25/release/kazumi.anime7/acceptance-20261025-063804-b9658515.json",
+      "progressMs": 3054
+    },
+    {
+      "key": "kazumi.ant",
+      "versionCode": 3,
+      "versionName": "0.0.3",
+      "sourceSha256": "daf3b2ba2814ddbcad3b47847a5a552ed600ef4c03ab9ba9cf2c5bbd8d6d882f",
+      "evidenceFile": "acceptance/evidence/2026-10-25/release/kazumi.ant/acceptance-20261025-063829-9c3f7956.json",
+      "progressMs": 3161
+    },
+    {
+      "key": "kazumi.baimao",
+      "versionCode": 10001,
+      "versionName": "1.0.1",
+      "sourceSha256": "59a45686c64f258b52c81e64f9dc8c926cc2460427943619f3fad55d5727d4ed",
+      "evidenceFile": "acceptance/evidence/2026-10-25/release/kazumi.baimao/acceptance-20261025-063850-c846aa57.json",
+      "progressMs": 3013
+    },
+    {
+      "key": "kazumi.mifun",
+      "versionCode": 10101,
+      "versionName": "1.1.1",
+      "sourceSha256": "cb260511ceee317353cf2f9f1759edd827bb001274cda9a744b89ea79d247976",
+      "evidenceFile": "acceptance/evidence/2026-10-25/release/kazumi.mifun/acceptance-20261025-063914-83e71ff8.json",
+      "progressMs": 3003
+    },
+    {
+      "key": "kazumi.mxdm",
+      "versionCode": 20301,
+      "versionName": "2.3.1",
+      "sourceSha256": "398245c1858699dfbbe88424b9924c4d6f9c6e7210aab78e4193e922a2948be4",
+      "evidenceFile": "acceptance/evidence/2026-10-25/release/kazumi.mxdm/acceptance-20261025-063937-4ed32e9e.json",
+      "progressMs": 3042
+    },
+    {
+      "key": "kazumi.sorani",
+      "versionCode": 10000,
+      "versionName": "1.0",
+      "sourceSha256": "a64f3e4c37dbb6540d0938bf46de85003084e4fb808bd9a82b3fa0af2bead914",
+      "evidenceFile": "acceptance/evidence/2026-10-25/release/kazumi.sorani/acceptance-20261025-153756-0a5d0988.json",
+      "progressMs": 3045
+    },
+    {
+      "key": "heyanle.ggl.v2",
+      "versionCode": 8,
+      "versionName": "1.6",
+      "sourceSha256": "c835dcbdffd5382b7d616576692e889bccf79ed141c2052cd0a805eb7f798552",
+      "evidenceFile": "acceptance/evidence/2026-10-25/release/heyanle.ggl.v2/acceptance-20261025-152937-6b1d64f9.json",
+      "progressMs": 3098
+    }
+  ],
+  "newKeys": [
+    "heyanle.ggl.v2"
+  ],
+  "removedOnlineKeys": [],
+  "existingOnlineSourcesByteIdentical": true,
+  "unresolvedClientMigration": false,
+  "notes": [
+    "旧 heyanle.ggl 和 kazumi.lmm 保持 pending。",
+    "原件中的失败结果保留；Sorani 首次超时后，观察原网页真实加载，再独立重试同一作品首集通过，根因未被精确定位。",
+    "分支准备及 PR 合并前不视为线上已发布。"
+  ]
+}

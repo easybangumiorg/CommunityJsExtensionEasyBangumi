@@ -1,0 +1,17 @@
+{
+  "code": 1,
+  "msg": "获取成功",
+  "info": {
+    "vod_id": 1091,
+    "vod_name": "孤独摇滚！",
+    "vod_pic": "upload/vod/20230404-1/b0ebddc307efc68f8d28352335e5c040.webp",
+    "vod_pic_thumb": "upload/vod/20230404-1/b0ebddc307efc68f8d28352335e5c040.webp",
+    "vod_remarks": "已完结",
+    "vod_year": "2022",
+    "vod_class": "音乐,喜剧,校园,日常",
+    "vod_isend": 1,
+    "vod_content": "<p>合成简介，仅用于验证 HTML 清理。</p>",
+    "vod_play_from": "chs",
+    "vod_play_url": "01$https://media.invalid/formal/1091/0/0.mp4#02$https://media.invalid/formal/1091/0/1.mp4#03$https://media.invalid/formal/1091/0/2.mp4#04$https://media.invalid/formal/1091/0/3.mp4#05$https://media.invalid/formal/1091/0/4.mp4#06$https://media.invalid/formal/1091/0/5.mp4#07$https://media.invalid/formal/1091/0/6.mp4#08$https://media.invalid/formal/1091/0/7.mp4#09$https://media.invalid/formal/1091/0/8.mp4#10$https://media.invalid/formal/1091/0/9.mp4#11$https://media.invalid/formal/1091/0/10.mp4#12$https://media.invalid/formal/1091/0/11.mp4"
+  }
+}

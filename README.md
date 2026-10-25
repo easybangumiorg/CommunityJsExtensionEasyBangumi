@@ -1,5 +1,9 @@
 # Community EasyBangumi Js Extension
 
+## 2026-10-25 GGL 正式站改版
+
+GiriGiriLove 新版使用独立 key `heyanle.ggl.v2`，版本 1.6 / code 8，适配官网新版 API，恢复首页、搜索、详情与播放，并统一 Host 设置。改 key 后的最终文件已通过魅族 21 固定首部、首集的真实播放验收，253 项 Rhino 回归通过。与旧源分开安装，旧收藏、历史和设置保留，需在新版中重新搜索关联。完整 release 门禁与 11 条产物通过，保留现网原有 10 条字节，仅新增 GGL 新版；dev 保持 82 条。详见[改版记录](docs/ggl-site-format-2026-10-25.md)与[发布准备](docs/release-promotion-2026-10-25-ggl-v2.md)。合并 PR 并核验官方索引后才算部署完成。
+
 ## 2026-10-20 当前发布准备
 
 本批准备 10 个通过源，7 个含首页 Tab 修正并递增版本；GGL 正式源与 LMM 因验证阻断退回 dev；sorani 按用户的内网说明保留现网版本，其他受限项继续 dev。详见[精确清单与验收](docs/release-promotion-2026-10-20.md)。通过 PR 合并并核验线上字节后才视为部署完成；以下日期段落为历史记录。

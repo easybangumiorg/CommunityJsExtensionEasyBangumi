@@ -16,13 +16,13 @@
       "status": "approved",
       "sourceSha256": "237eafa2cd0e33cb87c5b3515ffca99e07551ed5295f4924d28cb92336c03d0b",
       "versionCode": 1,
-      "evidenceFile": "acceptance/evidence/2026-10-17/pilot/heyanle.age/acceptance-20261017-090930-8dbd1b2a.json",
+      "evidenceFile": "acceptance/evidence/2026-10-25/release/heyanle.age/acceptance-20261025-063628-d274d166.json",
       "review": {
-        "reviewer": "Codex (heyanle 授权的仓库发布执行者)",
-        "reviewedAt": "2026-10-20T04:43:19.108787+00:00",
-        "comment": "用户于 2026-10-20 要求将目前能用的先发布 release。Codex 复核原始证据、最终 hash/版本、首页、固定搜索首部、逐线路首集、真实首帧与至少 3000ms 播放进度，严格 evidence gate 通过。此记录为整体发布授权与 Codex 证据复核，不声称用户逐源审阅原件或画面。"
+        "reviewer": "Codex（依照会话中已通过源纳入 release 的授权）",
+        "reviewedAt": "2026-10-25T15:40:30.474284+00:00",
+        "comment": "复核 2026-10-25 最终字节、key/版本、真机身份、固定搜索首部与线路首集、真实首帧和至少 3000ms 进度，严格 evidence gate 通过。不声称用户逐源人工审阅原件。"
       },
-      "note": "最终文件通过完整 source-acceptance-v1；限固定样本，不承诺全站作品和线路均可用。"
+      "note": "完整 source-acceptance-v1 通过，限本网络与固定样本；原件保留，未借用其他版本证据。"
     },
     {
       "key": "heyanle.ggl",
@@ -31,7 +31,7 @@
       "versionCode": 7,
       "evidenceFile": "acceptance/evidence/2026-10-17/remaining/heyanle.ggl/acceptance-20261017-091903-98e7fd29.json",
       "review": null,
-      "note": "2026-10-17 最新真机运行仍需人工验证；按 2026-10-20 用户要求先发布已确认可用源，本项退回 dev。旧通过原件保留，不能用旧 PASS 覆盖新阻断。",
+      "note": "旧正式源保持 pending；新版使用独立 key heyanle.ggl.v2，不覆盖旧源收藏/历史/设置。",
       "requiredClientCapabilities": [
         "manual-verification-webproxy-wrapper"
       ]
@@ -41,13 +41,26 @@
       "status": "approved",
       "sourceSha256": "f7734b546d88b18161863bf2045d2f359120564a437133aeb5846158c4972748",
       "versionCode": 1,
-      "evidenceFile": "acceptance/evidence/2026-10-17/remaining/heyanle.ggl.beta/acceptance-20261017-091930-a81df8f6.json",
+      "evidenceFile": "acceptance/evidence/2026-10-25/release/heyanle.ggl.beta/acceptance-20261025-063649-f5896174.json",
       "review": {
-        "reviewer": "Codex (heyanle 授权的仓库发布执行者)",
-        "reviewedAt": "2026-10-20T04:43:19.108787+00:00",
-        "comment": "用户于 2026-10-20 要求将目前能用的先发布 release。Codex 复核原始证据、最终 hash/版本、首页、固定搜索首部、逐线路首集、真实首帧与至少 3000ms 播放进度，严格 evidence gate 通过。此记录为整体发布授权与 Codex 证据复核，不声称用户逐源审阅原件或画面。"
+        "reviewer": "Codex（依照会话中已通过源纳入 release 的授权）",
+        "reviewedAt": "2026-10-25T15:40:30.474284+00:00",
+        "comment": "复核 2026-10-25 最终字节、key/版本、真机身份、固定搜索首部与线路首集、真实首帧和至少 3000ms 进度，严格 evidence gate 通过。不声称用户逐源人工审阅原件。"
       },
-      "note": "最终文件通过完整 source-acceptance-v1；限固定样本，不承诺全站作品和线路均可用。"
+      "note": "完整 source-acceptance-v1 通过，限本网络与固定样本；原件保留，未借用其他版本证据。"
+    },
+    {
+      "key": "heyanle.ggl.v2",
+      "status": "approved",
+      "sourceSha256": "c835dcbdffd5382b7d616576692e889bccf79ed141c2052cd0a805eb7f798552",
+      "versionCode": 8,
+      "evidenceFile": "acceptance/evidence/2026-10-25/release/heyanle.ggl.v2/acceptance-20261025-152937-6b1d64f9.json",
+      "review": {
+        "reviewer": "Codex（依照会话中已通过源纳入 release 的授权）",
+        "reviewedAt": "2026-10-25T15:40:30.474284+00:00",
+        "comment": "复核 2026-10-25 最终字节、key/版本、真机身份、固定搜索首部与线路首集、真实首帧和至少 3000ms 进度，严格 evidence gate 通过。不声称用户逐源人工审阅原件。"
+      },
+      "note": "独立新源；旧源收藏/历史/设置保留，需在新版重新搜索关联。本次公开 API 播放不依赖旧验证码桥。"
     },
     {
       "key": "heyanle.xifan",
@@ -90,65 +103,65 @@
       "status": "approved",
       "sourceSha256": "a70a3122402577494e5c9f1f459acf022e7e27d33aa5654bea82027b051c8c62",
       "versionCode": 10201,
-      "evidenceFile": "acceptance/evidence/2026-10-20/kazumi.7sefun/acceptance-20261020-043926-d331112c.json",
+      "evidenceFile": "acceptance/evidence/2026-10-25/release/kazumi.7sefun/acceptance-20261025-063705-253259a2.json",
       "review": {
-        "reviewer": "Codex (heyanle 授权的仓库发布执行者)",
-        "reviewedAt": "2026-10-20T04:43:19.108787+00:00",
-        "comment": "用户于 2026-10-20 要求将目前能用的先发布 release。Codex 复核原始证据、最终 hash/版本、首页、固定搜索首部、逐线路首集、真实首帧与至少 3000ms 播放进度，严格 evidence gate 通过。此记录为整体发布授权与 Codex 证据复核，不声称用户逐源审阅原件或画面。"
+        "reviewer": "Codex（依照会话中已通过源纳入 release 的授权）",
+        "reviewedAt": "2026-10-25T15:40:30.474284+00:00",
+        "comment": "复核 2026-10-25 最终字节、key/版本、真机身份、固定搜索首部与线路首集、真实首帧和至少 3000ms 进度，严格 evidence gate 通过。不声称用户逐源人工审阅原件。"
       },
-      "note": "最终文件通过完整 source-acceptance-v1；限固定样本，不承诺全站作品和线路均可用。"
+      "note": "完整 source-acceptance-v1 通过，限本网络与固定样本；原件保留，未借用其他版本证据。"
     },
     {
       "key": "kazumi.9ciyuan",
       "status": "approved",
       "sourceSha256": "a1d2eb0cebcc43ddf9d5e14acfd154e0232cbe7392fd80bcf02372adc5ff1e14",
       "versionCode": 10301,
-      "evidenceFile": "acceptance/evidence/2026-10-20/kazumi.9ciyuan/acceptance-20261020-043944-4135921b.json",
+      "evidenceFile": "acceptance/evidence/2026-10-25/release/kazumi.9ciyuan/acceptance-20261025-063716-ce59271d.json",
       "review": {
-        "reviewer": "Codex (heyanle 授权的仓库发布执行者)",
-        "reviewedAt": "2026-10-20T04:43:19.108787+00:00",
-        "comment": "用户于 2026-10-20 要求将目前能用的先发布 release。Codex 复核原始证据、最终 hash/版本、首页、固定搜索首部、逐线路首集、真实首帧与至少 3000ms 播放进度，严格 evidence gate 通过。此记录为整体发布授权与 Codex 证据复核，不声称用户逐源审阅原件或画面。"
+        "reviewer": "Codex（依照会话中已通过源纳入 release 的授权）",
+        "reviewedAt": "2026-10-25T15:40:30.474284+00:00",
+        "comment": "复核 2026-10-25 最终字节、key/版本、真机身份、固定搜索首部与线路首集、真实首帧和至少 3000ms 进度，严格 evidence gate 通过。不声称用户逐源人工审阅原件。"
       },
-      "note": "最终文件通过完整 source-acceptance-v1；限固定样本，不承诺全站作品和线路均可用。"
+      "note": "完整 source-acceptance-v1 通过，限本网络与固定样本；原件保留，未借用其他版本证据。"
     },
     {
       "key": "kazumi.anime7",
       "status": "approved",
       "sourceSha256": "73801c425db53e3d6ac9b2e8755e7b21a5c9b300ff5ceffe6a9db06d8e17d1b5",
       "versionCode": 10001,
-      "evidenceFile": "acceptance/evidence/2026-10-20/kazumi.anime7/acceptance-20261020-044002-c021288a.json",
+      "evidenceFile": "acceptance/evidence/2026-10-25/release/kazumi.anime7/acceptance-20261025-063804-b9658515.json",
       "review": {
-        "reviewer": "Codex (heyanle 授权的仓库发布执行者)",
-        "reviewedAt": "2026-10-20T04:43:19.108787+00:00",
-        "comment": "用户于 2026-10-20 要求将目前能用的先发布 release。Codex 复核原始证据、最终 hash/版本、首页、固定搜索首部、逐线路首集、真实首帧与至少 3000ms 播放进度，严格 evidence gate 通过。此记录为整体发布授权与 Codex 证据复核，不声称用户逐源审阅原件或画面。"
+        "reviewer": "Codex（依照会话中已通过源纳入 release 的授权）",
+        "reviewedAt": "2026-10-25T15:40:30.474284+00:00",
+        "comment": "复核 2026-10-25 最终字节、key/版本、真机身份、固定搜索首部与线路首集、真实首帧和至少 3000ms 进度，严格 evidence gate 通过。不声称用户逐源人工审阅原件。"
       },
-      "note": "最终文件通过完整 source-acceptance-v1；限固定样本，不承诺全站作品和线路均可用。"
+      "note": "完整 source-acceptance-v1 通过，限本网络与固定样本；原件保留，未借用其他版本证据。"
     },
     {
       "key": "kazumi.ant",
       "status": "approved",
       "sourceSha256": "daf3b2ba2814ddbcad3b47847a5a552ed600ef4c03ab9ba9cf2c5bbd8d6d882f",
       "versionCode": 3,
-      "evidenceFile": "acceptance/evidence/2026-10-20/kazumi.ant/acceptance-20261020-044021-f2954309.json",
+      "evidenceFile": "acceptance/evidence/2026-10-25/release/kazumi.ant/acceptance-20261025-063829-9c3f7956.json",
       "review": {
-        "reviewer": "Codex (heyanle 授权的仓库发布执行者)",
-        "reviewedAt": "2026-10-20T04:43:19.108787+00:00",
-        "comment": "用户于 2026-10-20 要求将目前能用的先发布 release。Codex 复核原始证据、最终 hash/版本、首页、固定搜索首部、逐线路首集、真实首帧与至少 3000ms 播放进度，严格 evidence gate 通过。此记录为整体发布授权与 Codex 证据复核，不声称用户逐源审阅原件或画面。"
+        "reviewer": "Codex（依照会话中已通过源纳入 release 的授权）",
+        "reviewedAt": "2026-10-25T15:40:30.474284+00:00",
+        "comment": "复核 2026-10-25 最终字节、key/版本、真机身份、固定搜索首部与线路首集、真实首帧和至少 3000ms 进度，严格 evidence gate 通过。不声称用户逐源人工审阅原件。"
       },
-      "note": "最终文件通过完整 source-acceptance-v1；限固定样本，不承诺全站作品和线路均可用。"
+      "note": "完整 source-acceptance-v1 通过，限本网络与固定样本；原件保留，未借用其他版本证据。"
     },
     {
       "key": "kazumi.baimao",
       "status": "approved",
       "sourceSha256": "59a45686c64f258b52c81e64f9dc8c926cc2460427943619f3fad55d5727d4ed",
       "versionCode": 10001,
-      "evidenceFile": "acceptance/evidence/2026-10-20/kazumi.baimao/acceptance-20261020-044041-9459690b.json",
+      "evidenceFile": "acceptance/evidence/2026-10-25/release/kazumi.baimao/acceptance-20261025-063850-c846aa57.json",
       "review": {
-        "reviewer": "Codex (heyanle 授权的仓库发布执行者)",
-        "reviewedAt": "2026-10-20T04:43:19.108787+00:00",
-        "comment": "用户于 2026-10-20 要求将目前能用的先发布 release。Codex 复核原始证据、最终 hash/版本、首页、固定搜索首部、逐线路首集、真实首帧与至少 3000ms 播放进度，严格 evidence gate 通过。此记录为整体发布授权与 Codex 证据复核，不声称用户逐源审阅原件或画面。"
+        "reviewer": "Codex（依照会话中已通过源纳入 release 的授权）",
+        "reviewedAt": "2026-10-25T15:40:30.474284+00:00",
+        "comment": "复核 2026-10-25 最终字节、key/版本、真机身份、固定搜索首部与线路首集、真实首帧和至少 3000ms 进度，严格 evidence gate 通过。不声称用户逐源人工审阅原件。"
       },
-      "note": "最终文件通过完整 source-acceptance-v1；限固定样本，不承诺全站作品和线路均可用。"
+      "note": "完整 source-acceptance-v1 通过，限本网络与固定样本；原件保留，未借用其他版本证据。"
     },
     {
       "key": "kazumi.gpjda",
@@ -176,26 +189,26 @@
       "status": "approved",
       "sourceSha256": "cb260511ceee317353cf2f9f1759edd827bb001274cda9a744b89ea79d247976",
       "versionCode": 10101,
-      "evidenceFile": "acceptance/evidence/2026-10-20/kazumi.mifun/acceptance-20261020-044104-15c8b3f3.json",
+      "evidenceFile": "acceptance/evidence/2026-10-25/release/kazumi.mifun/acceptance-20261025-063914-83e71ff8.json",
       "review": {
-        "reviewer": "Codex (heyanle 授权的仓库发布执行者)",
-        "reviewedAt": "2026-10-20T04:43:19.108787+00:00",
-        "comment": "用户于 2026-10-20 要求将目前能用的先发布 release。Codex 复核原始证据、最终 hash/版本、首页、固定搜索首部、逐线路首集、真实首帧与至少 3000ms 播放进度，严格 evidence gate 通过。此记录为整体发布授权与 Codex 证据复核，不声称用户逐源审阅原件或画面。"
+        "reviewer": "Codex（依照会话中已通过源纳入 release 的授权）",
+        "reviewedAt": "2026-10-25T15:40:30.474284+00:00",
+        "comment": "复核 2026-10-25 最终字节、key/版本、真机身份、固定搜索首部与线路首集、真实首帧和至少 3000ms 进度，严格 evidence gate 通过。不声称用户逐源人工审阅原件。"
       },
-      "note": "最终文件通过完整 source-acceptance-v1；限固定样本，不承诺全站作品和线路均可用。"
+      "note": "完整 source-acceptance-v1 通过，限本网络与固定样本；原件保留，未借用其他版本证据。"
     },
     {
       "key": "kazumi.mxdm",
       "status": "approved",
       "sourceSha256": "398245c1858699dfbbe88424b9924c4d6f9c6e7210aab78e4193e922a2948be4",
       "versionCode": 20301,
-      "evidenceFile": "acceptance/evidence/2026-10-20/kazumi.mxdm/acceptance-20261020-044123-2969b156.json",
+      "evidenceFile": "acceptance/evidence/2026-10-25/release/kazumi.mxdm/acceptance-20261025-063937-4ed32e9e.json",
       "review": {
-        "reviewer": "Codex (heyanle 授权的仓库发布执行者)",
-        "reviewedAt": "2026-10-20T04:43:19.108787+00:00",
-        "comment": "用户于 2026-10-20 要求将目前能用的先发布 release。Codex 复核原始证据、最终 hash/版本、首页、固定搜索首部、逐线路首集、真实首帧与至少 3000ms 播放进度，严格 evidence gate 通过。此记录为整体发布授权与 Codex 证据复核，不声称用户逐源审阅原件或画面。"
+        "reviewer": "Codex（依照会话中已通过源纳入 release 的授权）",
+        "reviewedAt": "2026-10-25T15:40:30.474284+00:00",
+        "comment": "复核 2026-10-25 最终字节、key/版本、真机身份、固定搜索首部与线路首集、真实首帧和至少 3000ms 进度，严格 evidence gate 通过。不声称用户逐源人工审阅原件。"
       },
-      "note": "最终文件通过完整 source-acceptance-v1；限固定样本，不承诺全站作品和线路均可用。"
+      "note": "完整 source-acceptance-v1 通过，限本网络与固定样本；原件保留，未借用其他版本证据。"
     },
     {
       "key": "kazumi.omofun03",
@@ -211,13 +224,13 @@
       "status": "approved",
       "sourceSha256": "a64f3e4c37dbb6540d0938bf46de85003084e4fb808bd9a82b3fa0af2bead914",
       "versionCode": 10000,
-      "evidenceFile": "acceptance/evidence/2026-10-14/release-prepublish/kazumi.sorani/acceptance-20261014-080945-0e494635.json",
+      "evidenceFile": "acceptance/evidence/2026-10-25/release/kazumi.sorani/acceptance-20261025-153756-0a5d0988.json",
       "review": {
-        "reviewer": "Codex (heyanle 授权的仓库发布执行者)",
-        "reviewedAt": "2026-10-20T04:45:23.858052+00:00",
-        "comment": "用户于2026-10-20说明当前处于内网、此前家中已测试的算已测试，明确不以当前内网超时下架。release保留现网1.0/10000原字节，使用10-14匹配此精确文件且仍在7天有效期内的完整通过原件。10-17家中带Tab修改文件通过与10-20新版在内网超时均留档；不把这两份不同hash报告伪称为现有版本的精确证据。"
+        "reviewer": "Codex（依照会话中已通过源纳入 release 的授权）",
+        "reviewedAt": "2026-10-25T15:40:30.474284+00:00",
+        "comment": "复核 2026-10-25 最终字节、key/版本、真机身份、固定搜索首部与线路首集、真实首帧和至少 3000ms 进度，严格 evidence gate 通过。不声称用户逐源人工审阅原件。"
       },
-      "note": "按用户环境说明保留现网原版本。新版Tab源仍在dev，10-20内网超时不作为旧版下架依据；历史记录全部保留。"
+      "note": "完整 source-acceptance-v1 通过，限本网络与固定样本；原件保留，未借用其他版本证据。"
     },
     {
       "key": "kazumi.tvtfun",

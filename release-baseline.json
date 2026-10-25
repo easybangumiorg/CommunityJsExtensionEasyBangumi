@@ -1,17 +1,12 @@
 {
   "schemaVersion": 1,
   "repositoryIndexUrl": "https://easybangumi.org/repository/v2/index.jsonl",
-  "observedOn": "2026-10-20",
+  "observedOn": "2026-10-25",
   "sources": [
     {
       "key": "heyanle.age",
       "versionCode": 1,
       "sourceSha256": "237eafa2cd0e33cb87c5b3515ffca99e07551ed5295f4924d28cb92336c03d0b"
-    },
-    {
-      "key": "heyanle.ggl",
-      "versionCode": 7,
-      "sourceSha256": "496af7c3a5a6d3fdb5a32c36e2f998a418130c3a6f4d3c161e854c31ef49c5bd"
     },
     {
       "key": "heyanle.ggl.beta",
@@ -20,43 +15,38 @@
     },
     {
       "key": "kazumi.7sefun",
-      "versionCode": 10200,
-      "sourceSha256": "45822ddf4e093a79a010fd3b2495ea005f38ec3516dc716f921e234b8ae5b966"
+      "versionCode": 10201,
+      "sourceSha256": "a70a3122402577494e5c9f1f459acf022e7e27d33aa5654bea82027b051c8c62"
     },
     {
       "key": "kazumi.9ciyuan",
-      "versionCode": 10300,
-      "sourceSha256": "b4c886296f0cfc64f6ff41c555ba326e50d19ca6f0ee699c6be66f48c920fdf9"
+      "versionCode": 10301,
+      "sourceSha256": "a1d2eb0cebcc43ddf9d5e14acfd154e0232cbe7392fd80bcf02372adc5ff1e14"
     },
     {
       "key": "kazumi.anime7",
-      "versionCode": 10000,
-      "sourceSha256": "57aced2e24c15a67be06910b00209401949a400a850228191e115d7d7ed67993"
+      "versionCode": 10001,
+      "sourceSha256": "73801c425db53e3d6ac9b2e8755e7b21a5c9b300ff5ceffe6a9db06d8e17d1b5"
     },
     {
       "key": "kazumi.ant",
-      "versionCode": 2,
-      "sourceSha256": "8d6df3755f6c448e5fc33f9fe33eb42a82fc9ad144bec24001a5939c1806117b"
+      "versionCode": 3,
+      "sourceSha256": "daf3b2ba2814ddbcad3b47847a5a552ed600ef4c03ab9ba9cf2c5bbd8d6d882f"
     },
     {
       "key": "kazumi.baimao",
-      "versionCode": 10000,
-      "sourceSha256": "d07b1e2ddec213a138041232b293865cdf85e7b12f4e5a1cd54ffb330ce5fa2a"
-    },
-    {
-      "key": "kazumi.lmm",
-      "versionCode": 20200,
-      "sourceSha256": "1b6448b326b8198b9c8c628afc5a01293a3787090e1ddbca05019723ef6af888"
+      "versionCode": 10001,
+      "sourceSha256": "59a45686c64f258b52c81e64f9dc8c926cc2460427943619f3fad55d5727d4ed"
     },
     {
       "key": "kazumi.mifun",
-      "versionCode": 10100,
-      "sourceSha256": "8048135c15412389421290bf8f242f51f39a655246b12874a1c13e29aaef2253"
+      "versionCode": 10101,
+      "sourceSha256": "cb260511ceee317353cf2f9f1759edd827bb001274cda9a744b89ea79d247976"
     },
     {
       "key": "kazumi.mxdm",
-      "versionCode": 20300,
-      "sourceSha256": "c7c5d41a575160e66dbb2805184f064c6c3b469f9a3e81e8f8c97adb665d29b6"
+      "versionCode": 20301,
+      "sourceSha256": "398245c1858699dfbbe88424b9924c4d6f9c6e7210aab78e4193e922a2948be4"
     },
     {
       "key": "kazumi.sorani",
@@ -69,6 +59,11 @@
       "key": "ayala.jellyfin",
       "versionCode": 8,
       "sourceSha256": "b6ebb3ef391be8285601508dc716519ccab0218aa80eac5ee71d4ee18a334c6a"
+    },
+    {
+      "key": "heyanle.ggl",
+      "versionCode": 7,
+      "sourceSha256": "496af7c3a5a6d3fdb5a32c36e2f998a418130c3a6f4d3c161e854c31ef49c5bd"
     },
     {
       "key": "heyanle.xifan",
@@ -96,6 +91,11 @@
       "key": "kazumi.gpjda",
       "versionCode": 10000,
       "sourceSha256": "d7c25a43df78ce859d8f4ccdd2fe7f9b484684dd5d1f990b129df316d13cf9c7"
+    },
+    {
+      "key": "kazumi.lmm",
+      "versionCode": 20200,
+      "sourceSha256": "1b6448b326b8198b9c8c628afc5a01293a3787090e1ddbca05019723ef6af888"
     },
     {
       "key": "kazumi.omofun03",

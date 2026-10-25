@@ -1,0 +1,55 @@
+{
+  "at": "2026-10-25T07:11:41.616676+00:00",
+  "request_origin": "https://ani.girigirilove.com",
+  "results": [
+    {
+      "id": 26538,
+      "line": "chs",
+      "line_index": 0,
+      "episode": "前篇",
+      "host": "akua.girigirilove.com",
+      "status": 206,
+      "type": "application/vnd.apple.mpegurl",
+      "playlist": true,
+      "mp4_ftyp": false,
+      "first_child": {
+        "host": "akua.girigirilove.com",
+        "status": 200,
+        "type": "image/jpeg",
+        "bytes_read": 1024,
+        "ts_sync": true,
+        "playlist": false
+      }
+    },
+    {
+      "id": 26168,
+      "line": "chs",
+      "line_index": 0,
+      "episode": "1080P",
+      "host": "akua.girigirilove.com",
+      "status": 206,
+      "type": "application/vnd.apple.mpegurl",
+      "playlist": true,
+      "mp4_ftyp": false,
+      "first_child": {
+        "host": "akua.girigirilove.com",
+        "status": 206,
+        "type": "video/mp2t",
+        "bytes_read": 1024,
+        "ts_sync": true,
+        "playlist": false
+      }
+    },
+    {
+      "id": 1091,
+      "line": "chs",
+      "line_index": 0,
+      "episode": "01",
+      "host": "ana.girigirilove.com",
+      "status": 206,
+      "type": "video/mp4",
+      "playlist": false,
+      "mp4_ftyp": true
+    }
+  ]
+}

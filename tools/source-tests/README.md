@@ -12,6 +12,7 @@ PYTHONPATH=src python3 -m unittest discover -s tests
 | 套件 | 检查数量 | 主要覆盖 |
 | --- | ---: | --- |
 | GGL Beta | 208 断言 | 实际 API 数据、顺序与分页、所有线路、Host/ApiHost、响应关闭、API15 Rhino |
+| GGL 正式版 | 253 断言 / 48 次请求 | 新版六分类、真实 offset、固定搜索顺序、完整选集、HostV2 兼容、旧 ID 提示、API15 Rhino |
 | MiFun | 182 断言 | HTML 首页/搜索/详情、整数分页 ABI、Host、旧收藏校验、官方播放接口、原验证窗口 |
 | MiliMili | 185 断言 | 目录真实偏移、单批搜索、剧集顺序、Host、登录接续、播放方式兼容性 |
 | 次元城 | 67 用例及 Rhino 检查 | 新版接口、完整剧集分页、旧 ID 明确迁移、Host、登录与原窗口接续 |

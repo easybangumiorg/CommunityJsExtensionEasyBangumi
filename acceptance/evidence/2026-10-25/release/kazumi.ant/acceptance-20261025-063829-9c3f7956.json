@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "protocolVersion": "source-acceptance-v1",
+  "generatedAt": "2026-10-25T06:38:49.383Z",
+  "context": {
+    "app": {
+      "buildType": "debug",
+      "gitCommit": "b687c2a7dc507ddd6259829eaa7d09f2bda60866",
+      "packageName": "com.heyanle.easybangumi4.sourcelab",
+      "versionCode": 115,
+      "versionName": "6.1.3"
+    },
+    "device": {
+      "androidVersion": "16",
+      "apiLevel": 36,
+      "isPhysicalDevice": true,
+      "manufacturer": "meizu",
+      "model": "MEIZU 21",
+      "serial": "461QYGFJ222HD"
+    },
+    "network": "current-LAN-WiFi-ADB-meizu21",
+    "repositoryEnvironment": "dev"
+  },
+  "config": {
+    "keywords": [
+      "孤独摇滚",
+      "孤獨搖滾",
+      "ぼっち・ざ・ろっく！",
+      "Bocchi the Rock"
+    ],
+    "manualTimeoutMs": 600000,
+    "maxManualAttempts": 3,
+    "minimumProgressMs": 3000,
+    "playBudgetMs": 240000,
+    "playInfoTimeoutMs": 45000,
+    "playTimeoutMs": 60000,
+    "selected": [
+      "kazumi.ant"
+    ],
+    "stepTimeoutMs": 25000,
+    "steps": [
+      "HOME",
+      "SEARCH",
+      "PLAY"
+    ]
+  },
+  "results": [
+    {
+      "key": "kazumi.ant",
+      "label": "ant",
+      "versionName": "0.0.3",
+      "versionCode": 3,
+      "sourceSha256": "daf3b2ba2814ddbcad3b47847a5a552ed600ef4c03ab9ba9cf2c5bbd8d6d882f",
+      "startedAt": "2026-10-25T06:38:34.621Z",
+      "finishedAt": "2026-10-25T06:38:49.383Z",
+      "verdict": "PASS",
+      "acceptance": "SEARCH_PLAYABLE",
+      "steps": [
+        {
+          "detail": "首页页签「」40 条内容",
+          "elapsedMs": 2099,
+          "failureKind": null,
+          "step": "HOME",
+          "verdict": "PASS"
+        },
+        {
+          "detail": "「孤独摇滚」RESULTS(3)；选择结果第 1 部「孤独摇滚(上) 剧场总集篇」",
+          "elapsedMs": 3042,
+          "failureKind": null,
+          "step": "SEARCH",
+          "verdict": "PASS"
+        },
+        {
+          "detail": "搜索「孤独摇滚(上) 剧场总集篇」线路 1/4「播放线路1」正片，首帧 1920x1080，推进 3161ms（已尝试 1 条线路）",
+          "elapsedMs": 9619,
+          "failureKind": null,
+          "step": "PLAY",
+          "verdict": "PASS"
+        }
+      ],
+      "searchAttempts": [
+        {
+          "detail": "「孤独摇滚」3 条",
+          "elapsedMs": 3040,
+          "failureKind": null,
+          "keyword": "孤独摇滚",
+          "pageKey": 0,
+          "resultCount": 3,
+          "status": "RESULTS"
+        }
+      ],
+      "selection": {
+        "cartoonId": "https%3A%2F%2Fwww.mayi520.org%2F%2Fvoddetail%2F239583.html|%E5%AD%A4%E7%8B%AC%E6%91%87%E6%BB%9A%28%E4%B8%8A%29+%E5%89%A7%E5%9C%BA%E6%80%BB%E9%9B%86%E7%AF%87|https%3A%2F%2Fcdn.aqdstatic.com%3A966%2Fposeidon%2Fupload%2Fvod%2F2025-04%2F174485772472985586.jpg",
+        "homePageLabel": null,
+        "keyword": "孤独摇滚",
+        "resultIndex": 0,
+        "route": "SEARCH_RESULT",
+        "title": "孤独摇滚(上) 剧场总集篇"
+      },
+      "lineAttempts": [
+        {
+          "detail": "首帧已渲染，进度推进 3161ms",
+          "elapsedMs": 9162,
+          "episodeId": "https%3A%2F%2Fwww.mayi520.org%2F%2Fvodplay%2F239583-1-1.html||",
+          "episodeLabel": "正片",
+          "episodeOrder": 0,
+          "failureKind": null,
+          "firstFrame": true,
+          "lineId": "0",
+          "lineIndex": 0,
+          "lineLabel": "播放线路1",
+          "progressMs": 3161,
+          "status": "PASS",
+          "videoHeight": 1080,
+          "videoWidth": 1920
+        }
+      ],
+      "playBudgetExhausted": false,
+      "minimumProgressMs": 3000,
+      "totalLineCount": 4,
+      "verificationEvents": [],
+      "manualWaitMs": 0
+    }
+  ]
+}
