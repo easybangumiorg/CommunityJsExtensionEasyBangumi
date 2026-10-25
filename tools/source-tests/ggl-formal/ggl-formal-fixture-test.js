@@ -13,12 +13,12 @@ function expectError(action, fragment, label) {
 }
 var titleReads = 0;
 function sdkSummary(id) {
-    var summary = { id: id, source: "heyanle.ggl" };
+    var summary = { id: id, source: "heyanle.ggl.v2" };
     Object.defineProperty(summary, "title", { get: function() { titleReads++; throw new Error("CartoonSummary has no title"); } });
     return summary;
 }
 
-equal(source.key, "heyanle.ggl", "formal source key stays independent of Beta");
+equal(source.key, "heyanle.ggl.v2", "formal source key stays independent of Beta");
 equal(getRootUrl(), "https://ani.girigirilove.com", "formal default Host");
 equal(gglApiRoot(), "https://m3u8.girigirilove.com", "API origin declared by formal client");
 var preferences = PreferenceComponent_getPreference();
@@ -56,7 +56,7 @@ for (var i = 0; i < GGL_CATEGORIES.length; i++) {
     equal(result.first, fixture.info.rows.length < fixture.info.total ? fixture.info.rows.length : null, "native offset continuation " + i);
     equal(result.second.get(0).id, "ggl-v2:" + fixture.info.rows[0].vod_id, "first row preserved " + i);
     equal(result.second.get(result.second.size() - 1).id, "ggl-v2:" + fixture.info.rows[fixture.info.rows.length - 1].vod_id, "last row preserved " + i);
-    equal(result.second.get(0).source, "heyanle.ggl", "formal key on cards " + i);
+    equal(result.second.get(0).source, "heyanle.ggl.v2", "formal key on cards " + i);
     assertTrue(lastRequest().url.indexOf("offset=0") >= 0 && lastRequest().url.indexOf("type_id=" + category.id) >= 0, "correct category query " + i);
     assertTrue(result.second.get(0).url.indexOf(GGL_HOST + "/detail/") === 0, "new formal detail route " + i);
 }

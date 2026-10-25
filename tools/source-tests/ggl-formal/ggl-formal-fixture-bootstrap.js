@@ -5,7 +5,7 @@ function print(value) { Packages.java.lang.System.out.println(String(value)); }
 var ArrayList = Packages.java.util.ArrayList;
 var HashMap = Packages.java.util.HashMap;
 var testPreferences = {};
-var source = { key: "heyanle.ggl" };
+var source = { key: String(fixtureSourceKey) };
 var Inject_NetworkHelper = { defaultLinuxUA: "fixture-user-agent" };
 var Inject_PreferenceHelper = { get: function(key, fallback) { return Object.prototype.hasOwnProperty.call(testPreferences, key) ? testPreferences[key] : fallback; } };
 var queuedResponses = [];

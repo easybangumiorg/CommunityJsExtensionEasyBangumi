@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "protocolVersion": "source-acceptance-v1",
+  "generatedAt": "2026-10-25T06:38:29.157Z",
+  "context": {
+    "app": {
+      "buildType": "debug",
+      "gitCommit": "b687c2a7dc507ddd6259829eaa7d09f2bda60866",
+      "packageName": "com.heyanle.easybangumi4.sourcelab",
+      "versionCode": 115,
+      "versionName": "6.1.3"
+    },
+    "device": {
+      "androidVersion": "16",
+      "apiLevel": 36,
+      "isPhysicalDevice": true,
+      "manufacturer": "meizu",
+      "model": "MEIZU 21",
+      "serial": "461QYGFJ222HD"
+    },
+    "network": "current-LAN-WiFi-ADB-meizu21",
+    "repositoryEnvironment": "dev"
+  },
+  "config": {
+    "keywords": [
+      "孤独摇滚",
+      "孤獨搖滾",
+      "ぼっち・ざ・ろっく！",
+      "Bocchi the Rock"
+    ],
+    "manualTimeoutMs": 600000,
+    "maxManualAttempts": 3,
+    "minimumProgressMs": 3000,
+    "playBudgetMs": 240000,
+    "playInfoTimeoutMs": 45000,
+    "playTimeoutMs": 60000,
+    "selected": [
+      "kazumi.anime7"
+    ],
+    "stepTimeoutMs": 25000,
+    "steps": [
+      "HOME",
+      "SEARCH",
+      "PLAY"
+    ]
+  },
+  "results": [
+    {
+      "key": "kazumi.anime7",
+      "label": "anime7",
+      "versionName": "1.0.1",
+      "versionCode": 10001,
+      "sourceSha256": "73801c425db53e3d6ac9b2e8755e7b21a5c9b300ff5ceffe6a9db06d8e17d1b5",
+      "startedAt": "2026-10-25T06:38:07.957Z",
+      "finishedAt": "2026-10-25T06:38:29.156Z",
+      "verdict": "PASS",
+      "acceptance": "SEARCH_PLAYABLE",
+      "steps": [
+        {
+          "detail": "首页页签「」40 条内容",
+          "elapsedMs": 2695,
+          "failureKind": null,
+          "step": "HOME",
+          "verdict": "PASS"
+        },
+        {
+          "detail": "「孤独摇滚」RESULTS(3)；选择结果第 1 部「孤独摇滚(上)」",
+          "elapsedMs": 1330,
+          "failureKind": null,
+          "step": "SEARCH",
+          "verdict": "PASS"
+        },
+        {
+          "detail": "搜索「孤独摇滚(上)」线路 1/1「線路1」HD中字，首帧 1920x1080，推进 3054ms（已尝试 1 条线路）",
+          "elapsedMs": 17170,
+          "failureKind": null,
+          "step": "PLAY",
+          "verdict": "PASS"
+        }
+      ],
+      "searchAttempts": [
+        {
+          "detail": "「孤独摇滚」3 条",
+          "elapsedMs": 1329,
+          "failureKind": null,
+          "keyword": "孤独摇滚",
+          "pageKey": 0,
+          "resultCount": 3,
+          "status": "RESULTS"
+        }
+      ],
+      "selection": {
+        "cartoonId": "https%3A%2F%2Fanime7.top%2F%2Fvod-detail%2F8965%2F|%E5%AD%A4%E7%8B%AC%E6%91%87%E6%BB%9A%28%E4%B8%8A%29|https%3A%2F%2Fani7.b-cdn.net%2Fupload%2Fvod%2F20250922-1%2F91061e4ac48b67e2e013d7224c726f24.jpg",
+        "homePageLabel": null,
+        "keyword": "孤独摇滚",
+        "resultIndex": 0,
+        "route": "SEARCH_RESULT",
+        "title": "孤独摇滚(上)"
+      },
+      "lineAttempts": [
+        {
+          "detail": "首帧已渲染，进度推进 3054ms",
+          "elapsedMs": 15167,
+          "episodeId": "https%3A%2F%2Fanime7.top%2F%2Fvod-play%2F8965-1-1%2F||",
+          "episodeLabel": "HD中字",
+          "episodeOrder": 0,
+          "failureKind": null,
+          "firstFrame": true,
+          "lineId": "0",
+          "lineIndex": 0,
+          "lineLabel": "線路1",
+          "progressMs": 3054,
+          "status": "PASS",
+          "videoHeight": 1080,
+          "videoWidth": 1920
+        }
+      ],
+      "playBudgetExhausted": false,
+      "minimumProgressMs": 3000,
+      "totalLineCount": 1,
+      "verificationEvents": [],
+      "manualWaitMs": 0
+    }
+  ]
+}

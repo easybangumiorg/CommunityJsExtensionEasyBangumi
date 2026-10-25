@@ -120,7 +120,7 @@
       "bytes": 1648
     }
   ],
-  "source_key": "heyanle.ggl",
+  "source_key": "heyanle.ggl.v2",
   "source_version": "1.6",
   "source_version_code": 8,
   "legacy_urls": [
@@ -153,9 +153,9 @@
       "is_only_vite_shell": true
     }
   ],
-  "legacy_policy": "No verified generic GV-to-numeric or old one-based line/episode mapping. Keep key but require old favorites to be searched and linked again. No app storage access.",
+  "legacy_policy": "Independent new source key heyanle.ggl.v2. Existing heyanle.ggl favorites/settings remain separate; search and link works to the new source explicitly. No automatic ID or application-storage migration.",
   "fixture_policy": "Only public title/ID/cover/status metadata retained. Story descriptions and every media URL replaced with synthetic data. No account, cookies, JWT, password, signature or session storage used or saved.",
-  "adapter_sha256": "f668a60f2b0d16d6d25388b93bbba9bec211303b6a9a1713ee20c4e71630f3d7",
+  "adapter_sha256": "c835dcbdffd5382b7d616576692e889bccf79ed141c2052cd0a805eb7f798552",
   "rhino_assertions": 253,
   "mocked_requests": 48
 }

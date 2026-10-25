@@ -1,5 +1,5 @@
-// @key heyanle.ggl
-// @label GiriGiriLove
+// @key heyanle.ggl.v2
+// @label GiriGiriLove 新版
 // @versionName 1.6
 // @versionCode 8
 // @libVersion 15
